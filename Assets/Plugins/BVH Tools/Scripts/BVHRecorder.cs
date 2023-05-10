@@ -13,43 +13,47 @@ using UnityEngine;
 
 public class BVHRecorder : MonoBehaviour {
     [Header("Recorder settings")]
-    [Tooltip("The bone rotations will be recorded this many times per second. Bone locations are recorded when this script starts running or genHierarchy() is called.")]
+    [Tooltip("(Fixed) The bone rotations will be recorded this many times per second. Bone locations are recorded when this script starts running or genHierarchy() is called.")]
     public float frameRate = 60.0f;
     [Tooltip("This is the directory into which BVH files are written. If left empty, it will be initialized to the standard Unity persistant data path, unless the filename field contains a slash or a backslash, in which case this field will be ignored completely instead.")]
     public string directory;
     [Tooltip("This is the filename to which the BVH file will be saved. If no filename is given, a new one will be generated based on a timestamp. If the file already exists, a number will be appended.")]
     public string filename;
-    [Tooltip("When this flag is set, existing files will be overwritten and no number will be appended at the end to avoid this.")]
+    [Tooltip("(Fixed) When this flag is set, existing files will be overwritten and no number will be appended at the end to avoid this.")]
     public bool overwrite = false;
-    [Tooltip("When this option is set, the BVH file will have the Z axis as up and the Y axis as forward instead of the normal BVH conventions.")]
+    [Tooltip("(Fixed) When this option is set, the BVH file will have the Z axis as up and the Y axis as forward instead of the normal BVH conventions.")]
     public bool blender = true;
-    [Tooltip("When this box is checked, motion data will be recorded. It is possible to uncheck and check this box to pause and resume the capturing process.")]
+    [Tooltip("(Fixed) When this box is checked, motion data will be recorded. It is possible to uncheck and check this box to pause and resume the capturing process.")]
     public bool capturing = false;
+    [Tooltip("(Fixed) When this box is checked, volatile motion data will be recorded. It is possible to uncheck and check this box to pause and resume the capturing process.")]
+    public bool voilatile = true;
     [Header("Advanced settings")]
-    [Tooltip("When this option is enabled, only humanoid bones will be targeted for detecting bones. This means that things like hair bones will not be added to the list of bones when detecting bones.")]
+    [Tooltip("(Fixed) When this option is enabled, only humanoid bones will be targeted for detecting bones. This means that things like hair bones will not be added to the list of bones when detecting bones.")]
     public bool enforceHumanoidBones = false;
-    [Tooltip("This option can be used to rename humanoid bones to standard bone names. If you don't know what this means, just leave it unticked.")]
+    [Tooltip("(Fixed) This option can be used to rename humanoid bones to standard bone names. If you don't know what this means, just leave it unticked.")]
     public bool renameBones = false;
-    [Tooltip("When this is enabled, after a drop in frame rate, multiple frames may be recorded in quick succession. When it is disabled, at least frame time milliseconds will pass before the next frame is recorded. Enabling it will help ensure that your recorded clip has the correct duration.")]
+    [Tooltip("(Fixed) When this is enabled, after a drop in frame rate, multiple frames may be recorded in quick succession. When it is disabled, at least frame time milliseconds will pass before the next frame is recorded. Enabling it will help ensure that your recorded clip has the correct duration.")]
     public bool catchUp = true;
     //[Tooltip("Coordinates are recorded with six decimals. If you require a BVH file where only two decimals are required, you can turn this on.")]
     //public bool lowPrecision = false;
-    [Tooltip("This should be checked when BVHRecorder is used through its API. It will disable its Start() and Update() functions. If you don't know what this means, just leave it unticked.")]
+    [Tooltip("(Fixed) This should be checked when BVHRecorder is used through its API. It will disable its Start() and Update() functions. If you don't know what this means, just leave it unticked.")]
     public bool scripted = false;
 
     [Header("Motion target")]
-    [Tooltip("This is the avatar for which motion should be captured. All skinned meshes that are part of the avatar should be children of this object. All bones should be initialized with zero rotations. This is usually the case for VRM avatars.")]
+    [Tooltip("(Fixed) This is the avatar for which motion should be captured. All skinned meshes that are part of the avatar should be children of this object. All bones should be initialized with zero rotations. This is usually the case for VRM avatars.")]
     public Animator targetAvatar = null;
-    [Tooltip("This is the root bone for the avatar, usually the hips. If this is not set, it will be detected automatically.")]
+    [Tooltip("(Fixed) This is the root bone for the avatar, usually the hips. If this is not set, it will be detected automatically.")]
     public Transform rootBone = null;
     [Tooltip("This list contains all the bones for which motion will be recorded. If nothing is assigned, it will be automatically generated when the script starts. When manually setting up an avatar the Unity Editor, you can press the corresponding button at the bottom of this component to automatically populate the list and add or remove bones manually if necessary.")]
     public List<Transform> bones;
 
     [Header("Informational")]
-    [Tooltip("This field shows how many frames are currently captured. Clearing the capture will reset this to 0.")]
+    [Tooltip("(Fixed) This field shows how many frames are currently captured. Clearing the capture will reset this to 0.")]
     public int frameNumber = 0;
-    [Tooltip("This field will be set to the filename written to by the saveBVH() function.")]
+    [Tooltip("(Fixed) This field will be set to the filename written to by the saveBVH() function.")]
     public string lastSavedFile = "";
+
+
 
     private Vector3 basePosition;
     private Vector3 offsetScale;
@@ -60,8 +64,8 @@ public class BVHRecorder : MonoBehaviour {
     private float lastFrame;
     private bool first = false;
     private List<string> frames = null;
-    private Dictionary<Transform, string> boneMap;
-    
+    private string frame_volatile = null;
+    private Dictionary<Transform, string> boneMap;    
 
     class SkelTree {
         public String name;
@@ -87,7 +91,7 @@ public class BVHRecorder : MonoBehaviour {
             throw new InvalidOperationException("Enforce humanoid bones and rename bones can only be used with humanoid avatars.");
         }
 
-        Dictionary<string, int> usedNames = new Dictionary<string, int>();
+        Dictionary<string, int> usedNames = new();
         RuntimeAnimatorController rac = targetAvatar.runtimeAnimatorController;
         targetAvatar.runtimeAnimatorController = null;
         boneMap = new Dictionary<Transform, string>();
@@ -383,6 +387,10 @@ public class BVHRecorder : MonoBehaviour {
         first = true;
     }
 
+    public void setCapturing(bool on_off=true) {
+        capturing = on_off;
+    }
+
     // This function stores the current frame's bone positions as a string
     public void captureFrame() {
         if (frames == null || hierarchy == "") {
@@ -402,6 +410,44 @@ public class BVHRecorder : MonoBehaviour {
         sb.Append("\n");
         frames.Add(sb.ToString());
         frameNumber++;
+    }
+
+    public void setVoilatileCapturing(bool on_off=true) {
+        voilatile = on_off;
+    }
+    
+    // This function returns the current frames bone positions as a string
+    public void captureFrameVoilatile() {
+        if (hierarchy == "") {
+            throw new InvalidOperationException("Hierarchy not initialized. You can initialize the hierarchy by calling genHierarchy().");
+        }
+
+        StringBuilder sb = new StringBuilder();
+        sb.Append(getOffset(skel.transform.position - basePosition));
+        foreach (SkelTree bone in boneOrder)
+        {
+            sb.Append("\t");
+            if (bone == skel)
+            {
+                sb.Append(getRotation(bone.transform.rotation));
+            }
+            else
+            {
+                sb.Append(getRotation(bone.transform.localRotation));
+            }
+        }
+        sb.Append("\n");
+        frame_volatile = sb.ToString();
+    }
+
+    public string getLastFrame()
+    {
+        //Debug.Log("Recorder Name: " + my_name);
+        if (voilatile)
+            return frame_volatile;
+        if (frames != null && frames.Count > 0)
+            return frames.Last();
+        return null;
     }
 
     // Just what it says
@@ -492,7 +538,10 @@ public class BVHRecorder : MonoBehaviour {
             } else {
                 lastFrame = Time.time;
             }
-            captureFrame();
+            if (voilatile)
+                captureFrameVoilatile();
+            else
+                captureFrame();
             first = false;
         }
     }
