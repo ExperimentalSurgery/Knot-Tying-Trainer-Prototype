@@ -1,0 +1,4 @@
+﻿Key,Id,English(en),German(de)
+empty,8545411072,This is a test!,Dies ist ein Test!
+test_edit,9939176693760,This is a new value,Dies ist ein neuer Wert!
+internal_test_edit,10316634693632,This is a new value from inside the editor.,"Dies ist ein neuer Wert, welcher im Editor erstellt wurde."
