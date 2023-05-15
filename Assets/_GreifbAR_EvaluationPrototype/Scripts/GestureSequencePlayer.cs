@@ -29,48 +29,50 @@ public class GestureSequencePlayer : MonoBehaviour
     private readonly DFKI.GestureModule _leftGestureModule = new();
     private readonly DFKI.GestureModule _rightGestureModule = new();
 
-
+    private bool playAllSequences = false;
     private int currentFrameLeft = 0;
     private int currentFrameRight = 0;
     private bool isPlayingLeft = false;
     private bool isPlayingRight = false;
-    private float loopStartTime;
-    private float loopEndTime => loopStartTime + sequenceDuration;
+    private float loopStartTimeLeft;
+    private float loopStartTimeRight;
+    private float loopEndTimeLeft => loopStartTimeLeft + sequenceDuration;
+    private float loopEndTimeRight => loopStartTimeRight + sequenceDuration;
     
 
     private void Update()
     {
         if (isPlayingLeft)
         {
-           
-            
             ApplyBVHFrame(_leftGestureModule.GetFrame(currentFrameLeft), leftExpertHand);
-            ApplyBVHFrame(_rightGestureModule.GetFrame(currentFrameRight), rightExpertHand);
 
             if (currentFrameLeft >= _leftGestureModule.GetSequenceEndFrameIndex(currentSequenceLeft)) {
                 currentSequenceLeft++;
-                loopStartTime = Time.time;
+                loopStartTimeLeft = Time.time;
                 currentFrameLeft = _leftGestureModule.GetSequenceStartFrameIndex(currentSequenceLeft);
             }
-            if (currentFrameRight >= _rightGestureModule.GetSequenceEndFrameIndex(currentSequenceRight)) {
-                currentSequenceRight++;
-                loopStartTime = Time.time;
-                currentFrameRight = _rightGestureModule.GetSequenceStartFrameIndex(currentSequenceRight);
-            }
-
             if (currentSequenceLeft >= _leftGestureModule.GetNumberOfSequences()-1) {
                 isPlayingLeft = false;
             }
+          
+            float normalizedProgress = (Time.time - loopStartTimeLeft) / (loopEndTimeLeft - loopStartTimeLeft);
+            currentFrameLeft = _leftGestureModule.GetSequenceStartFrameIndex(currentSequenceLeft) + (int)(_leftGestureModule.GetSequenceLength(currentSequenceLeft) * normalizedProgress);
             
+        }
+
+        if (isPlayingRight)
+        {
+            ApplyBVHFrame(_rightGestureModule.GetFrame(currentFrameRight), rightExpertHand);
+            if (currentFrameRight >= _rightGestureModule.GetSequenceEndFrameIndex(currentSequenceRight)) {
+                currentSequenceRight++;
+                loopStartTimeRight = Time.time;
+                currentFrameRight = _rightGestureModule.GetSequenceStartFrameIndex(currentSequenceRight);
+            }
             if (currentSequenceRight >= _rightGestureModule.GetNumberOfSequences()-1) {
                 isPlayingRight = false;
             }
-            
-            float normalizedProgress = (Time.time - loopStartTime) / (loopEndTime - loopStartTime);
-            currentFrameLeft = _leftGestureModule.GetSequenceStartFrameIndex(currentSequenceLeft) + (int)(_leftGestureModule.GetSequenceLength(currentSequenceLeft) * normalizedProgress);
+            float normalizedProgress = (Time.time - loopStartTimeRight) / (loopEndTimeRight - loopStartTimeRight);
             currentFrameRight = _rightGestureModule.GetSequenceStartFrameIndex(currentSequenceRight) + (int)(_rightGestureModule.GetSequenceLength(currentSequenceRight) * normalizedProgress);
-            
-
         }
 
     }
@@ -78,20 +80,25 @@ public class GestureSequencePlayer : MonoBehaviour
     private void Start()
     {
         InitSequence("recording_left","recording_right");
-        Play(0);
-        isPlayingLeft = true;
+        Play();
     }
 
-    public void Play(int sequence)
-    {
 
-        currentSequenceLeft = sequence;
-        currentSequenceRight = sequence;
+    public void Play(int singleSequence=-1)
+    {
+        if (singleSequence > 0) {
+            playAllSequences = false;
+        }
         
-        // setup for first sequence
+        // setup
+        currentSequenceLeft = singleSequence >= 0 ? singleSequence : 0;
+        currentSequenceRight = singleSequence >= 0 ? singleSequence : 0;
         currentFrameLeft = _leftGestureModule.GetSequenceStartFrameIndex(currentSequenceLeft);
         currentFrameRight = _rightGestureModule.GetSequenceStartFrameIndex(currentSequenceRight);
-        loopStartTime = Time.time;
+        loopStartTimeLeft = Time.time;
+        loopStartTimeRight = Time.time;
+        isPlayingLeft = true;
+        isPlayingRight = true;
     }
 
     public void InitSequence(string leftHandBvhFilename, string rightHandBvhFilename) {
@@ -99,9 +106,6 @@ public class GestureSequencePlayer : MonoBehaviour
         // load and pre-process the expert BVH files
         _leftGestureModule.BVHPreprocessing(BvhDirectory + leftHandBvhFilename + BvhSuffix);
         _rightGestureModule.BVHPreprocessing(BvhDirectory + rightHandBvhFilename + BvhSuffix);
-
-        Debug.Log("Processing BVHFileLeft. Sequences = "+_leftGestureModule.GetNumberOfSequences());
-        Debug.Log("Processing BVHFileRight. Sequences = "+_rightGestureModule.GetNumberOfSequences());
         
     }
     
