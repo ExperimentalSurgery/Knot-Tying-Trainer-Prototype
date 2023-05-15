@@ -1,14 +1,12 @@
 using System;
+using NMY;
 using UnityEngine;
 
 namespace DFKI.NMY
 {
     
-public class GestureSequencePlayer : MonoBehaviour
+public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePlayer>
 {
-    
-    
-
     [Tooltip("GameObject of left expert hand")]
     public GameObject leftExpertHand;
     [Tooltip("GameObject of right expert hand")]
@@ -77,12 +75,19 @@ public class GestureSequencePlayer : MonoBehaviour
 
     }
 
-    private void Start()
+    protected override void StartupEnter()
     {
+        base.StartupEnter();
         InitSequence("recording_left","recording_right");
         Play();
     }
 
+    public void Stop()
+    {
+        isPlayingLeft = false;
+        isPlayingRight = false;
+        playAllSequences = false;
+    }
 
     public void Play(int singleSequence=-1)
     {

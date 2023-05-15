@@ -1,7 +1,41 @@
 {
   "dependencies": {
+    "com.nmy.core": {
+      "version": "2.5.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.nmy.delegatecoroutines": "1.0.1"
+      },
+      "url": "http://nmyvm01:4873"
+    },
+    "com.nmy.delegatecoroutines": {
+      "version": "1.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "http://nmyvm01:4873"
+    },
+    "com.nmy.localization": {
+      "version": "2.1.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.nmy.core": "2.3.0"
+      },
+      "url": "http://nmyvm01:4873"
+    },
+    "com.nmy.vtt.core": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.nmy.core": "1.0.0"
+      },
+      "url": "http://nmyvm01:4873"
+    },
     "com.ultraleap.tracking": {
-      "version": "6.5.0",
+      "version": "6.8.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {},

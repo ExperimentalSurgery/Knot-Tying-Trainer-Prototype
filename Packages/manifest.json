@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "com.ultraleap.tracking": "6.5.0",
+    "com.nmy.core": "2.5.0",
+    "com.nmy.localization": "2.1.1",
+    "com.nmy.vtt.core": "1.0.0",
+    "com.ultraleap.tracking": "6.8.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.visualstudio": "2.0.18",
     "com.unity.ide.vscode": "1.2.5",
@@ -51,6 +54,13 @@
       "url": "https://package.openupm.com",
       "scopes": [
         "com.ultraleap"
+      ]
+    },
+    {
+      "name": "NMY Packages",
+      "url": "http://nmyvm01:4873",
+      "scopes": [
+        "com.nmy"
       ]
     }
   ]
