@@ -167,10 +167,6 @@ public class Sample : MonoBehaviour {
         Transform L_index_c = L_index_b.transform.Find("L_index_c");
         L_index_c.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
 
-
-
-
-
         // L_middle_Proximal
         i += 3; j += 3; k += 3;
         Transform L_middle_Proximal = L_Wrist.transform.Find("L_middle_Proximal");
@@ -186,11 +182,6 @@ public class Sample : MonoBehaviour {
         i += 3; j += 3; k += 3;
         Transform L_middle_c = L_middle_b.transform.Find("L_middle_c");
         L_middle_c.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
-
-
-
-
-
 
         // L_pinky_Proximal
         i += 3; j += 3; k += 3;
@@ -208,10 +199,6 @@ public class Sample : MonoBehaviour {
         Transform L_pinky_c = L_pinky_b.transform.Find("L_pinky_c");
         L_pinky_c.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
 
-
-
-
-
         // L_ring_Proximal
         i += 3; j += 3; k += 3;
         Transform L_ring_Proximal = L_Wrist.transform.Find("L_ring_Proximal");
@@ -227,12 +214,6 @@ public class Sample : MonoBehaviour {
         i += 3; j += 3; k += 3;
         Transform L_ring_c = L_ring_b.transform.Find("L_ring_c");
         L_ring_c.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
-
-
-
-
-
-
 
         // L_thumb_Proximal
         i += 3; j += 3; k += 3;
