@@ -15,9 +15,15 @@ public class GestureTrainingStep : VTTBaseListStep
     [SerializeField] private float minDuration = 0.5f;
     [SerializeField] private float maxDuration = 5;
     
+    // helper vars
+    private bool matchedLeft = false;
+    private bool matchedRight = false;
+    
     protected override void ActivateEnter()
     {
         base.ActivateEnter();
+        matchedLeft = false;
+        matchedRight = false;
         GestureSequencePlayer.instance.sequenceDuration = minDuration;
         GestureSequencePlayer.instance.Play(sequenceIndex);
         GestureSequencePlayer.instance.sequenceDuration = Mathf.Lerp(maxDuration, minDuration, GestureTrainingUI.instance.PlaybackSpeedScrollbar.value);
@@ -25,6 +31,27 @@ public class GestureTrainingStep : VTTBaseListStep
             float newDuration = Mathf.Lerp(maxDuration, minDuration, val);
             GestureSequencePlayer.instance.ChangeDuration(newDuration);
         });
+        
+        // Register for finish events
+        GestureSequencePlayer.instance.SequenceFinishedEvent.AddListener(OnGestureEvent);
+
+    }
+
+    private void OnGestureEvent(HandGestureParams parameters) {
+
+        if (parameters.isMatching && parameters.leftHand) {
+            matchedLeft = true;
+        }
+        else if (parameters.isMatching && parameters.leftHand == false)
+        {
+            matchedRight = true;
+        }
+
+        if (matchedLeft && matchedRight)
+        {
+            RaiseStepCompletedEvent();
+        }
+        
     }
 
     protected override void DeactivateEnter()

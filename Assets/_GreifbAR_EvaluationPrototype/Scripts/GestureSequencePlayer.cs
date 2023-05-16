@@ -1,13 +1,36 @@
 using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using NMY;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DFKI.NMY
 {
+
+    [Serializable]
+    public class HandGestureParams
+    {
+        public bool isMatching;
+        public bool leftHand = true; // 1=left, 0=right
+        public int sequenceIndex;
+    }
+    
     
 public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePlayer>
 {
+    
+    [Tooltip("Threshold for pose matching. Good default = 25")]
+    public float poseMatchingThreshold = 25;
+    
+    public BVHRecorder leftRecorder;
+    public BVHRecorder rightRecorder;
 
+    
+    public UnityEvent<HandGestureParams> SequenceFinishedEvent = new UnityEvent<HandGestureParams>(); 
+    public bool isPlayingLeft = false;
+    public bool isPlayingRight = false;
     public float normalizedProgressLeft;
     public float normalizedProgressRight;
     
@@ -35,15 +58,17 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     private bool loopSequence = false;
     private int currentFrameLeft = 0;
     private int currentFrameRight = 0;
-    public bool isPlayingLeft = false;
-    public bool isPlayingRight = false;
+
     private float loopStartTimeLeft;
     private float loopStartTimeRight;
     private float loopEndTimeLeft => loopStartTimeLeft + sequenceDuration;
     private float loopEndTimeRight => loopStartTimeRight + sequenceDuration;
-    
 
-    private void Update()
+
+    private bool[] left_hand_compare_mask;
+    private bool[] right_hand_compare_mask;
+
+    protected void ProcessFramePlayback()
     {
         if (isPlayingLeft)
         {
@@ -81,6 +106,66 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
             }
             normalizedProgressRight = (Time.time - loopStartTimeRight) / (loopEndTimeRight - loopStartTimeRight);
             currentFrameRight = _rightGestureModule.GetSequenceStartFrameIndex(currentSequenceRight) + (int)(_rightGestureModule.GetSequenceLength(currentSequenceRight) * normalizedProgressRight);
+        }
+    }
+    
+    
+    private void Update()
+    {
+       ProcessFramePlayback();
+       AnalyzePoseMatch();
+
+       if (Application.isEditor)
+       {
+           // Simulate left finished event
+           if (Input.GetKeyDown(KeyCode.Alpha1))
+           {
+               HandGestureParams gestureParams = new HandGestureParams();
+               gestureParams.isMatching = true;
+               gestureParams.leftHand = true;
+               gestureParams.sequenceIndex = currentSequenceLeft;
+               SequenceFinishedEvent.Invoke(gestureParams);
+           }
+           
+           // Simulate right finished event
+           if (Input.GetKeyDown(KeyCode.Alpha2))
+           {
+               HandGestureParams gestureParams = new HandGestureParams();
+               gestureParams.isMatching = true;
+               gestureParams.leftHand = false;
+               gestureParams.sequenceIndex = currentSequenceRight;
+               SequenceFinishedEvent.Invoke(gestureParams);
+           }
+       }
+    }
+
+    protected void AnalyzePoseMatch() {
+       
+        // get current life user frames from headset
+        float[] user_frame_data_left = GetFrame(leftRecorder);
+        float[] user_frame_data_right = GetFrame(rightRecorder);
+        
+        // compare user frames with end poses
+        if (_leftGestureModule.SimilarPose(_leftGestureModule.GetSequenceEndFrameIndex(currentSequenceLeft), user_frame_data_left,
+                poseMatchingThreshold, left_hand_compare_mask)) {
+
+            HandGestureParams gestureParams = new HandGestureParams();
+            gestureParams.isMatching = true;
+            gestureParams.leftHand = true;
+            gestureParams.sequenceIndex = currentSequenceLeft;
+            SequenceFinishedEvent.Invoke(gestureParams);
+                
+        }
+        // compare user frames with end poses
+        if (_rightGestureModule.SimilarPose(_rightGestureModule.GetSequenceEndFrameIndex(currentSequenceRight), user_frame_data_right,
+                poseMatchingThreshold, right_hand_compare_mask)) {
+        
+            HandGestureParams gestureParams = new HandGestureParams();
+            gestureParams.isMatching = true;
+            gestureParams.leftHand = false;
+            gestureParams.sequenceIndex = currentSequenceRight;
+            SequenceFinishedEvent.Invoke(gestureParams);
+            
         }
 
     }
@@ -130,8 +215,66 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         _leftGestureModule.BVHPreprocessing(BvhDirectory + leftHandBvhFilename + BvhSuffix);
         _rightGestureModule.BVHPreprocessing(BvhDirectory + rightHandBvhFilename + BvhSuffix);
         
+        
+        // generate compare masks - i.e. ignore first 6 parameters on both hands
+        left_hand_compare_mask = new bool[_leftGestureModule.GetParameterCount()];
+        for (int i = 0; i < 6; i++) {
+            left_hand_compare_mask[i] = false;
+        }
+        for (int i = 6; i < left_hand_compare_mask.Length; i++) {
+            left_hand_compare_mask[i] = true;
+        }
+        right_hand_compare_mask = new bool[_rightGestureModule.GetParameterCount()];
+        for (int i = 0; i < 6; i++) {
+            right_hand_compare_mask[i] = false;
+        }
+        for (int i = 6; i < right_hand_compare_mask.Length; i++) {
+            right_hand_compare_mask[i] = true;
+        }
+        
+        
+        
+        // setup life user recorders
+        if (leftRecorder == null) {
+            Debug.Log("Left recorder is NULL!");
+        }
+        leftRecorder.setVoilatileCapturing(true);
+        leftRecorder.setCapturing(true);
+
+        if (rightRecorder == null) {
+            Debug.Log("Right recorder is NULL!");
+        }
+        rightRecorder.setVoilatileCapturing(true);
+        rightRecorder.setCapturing(true);
+        
     }
     
+    private float[] GetFrame(BVHRecorder recorder) {
+        string frame = recorder.getLastFrame();
+        if (frame == null)
+            return null;
+        //Debug.Log("Capture Frame Length: " + frame);
+        return ParseFloats(frame);
+    }
+    
+    
+    private float[] ParseFloats(string input) {
+        // Cleanup consecutive spaces
+        string line = Regex.Replace(input, @"\s{1,}", " ");
+        line = line.Trim();
+
+        string[] tokens = line.Split(' ');
+
+        List<float> floats = new List<float>();
+
+        foreach (string token in tokens) {
+            if (float.TryParse(token, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out float value)) {
+                floats.Add(value);
+            }
+        }
+
+        return floats.ToArray();
+    }
     
         void ApplyBVHFrame(float[] bvhFrame, GameObject model) {
 
