@@ -7,6 +7,10 @@ namespace DFKI.NMY
     
 public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePlayer>
 {
+
+    public float normalizedProgressLeft;
+    public float normalizedProgressRight;
+    
     [Tooltip("GameObject of left expert hand")]
     public GameObject leftExpertHand;
     [Tooltip("GameObject of right expert hand")]
@@ -28,10 +32,11 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     private readonly DFKI.GestureModule _rightGestureModule = new();
 
     private bool playAllSequences = false;
+    private bool loopSequence = false;
     private int currentFrameLeft = 0;
     private int currentFrameRight = 0;
-    private bool isPlayingLeft = false;
-    private bool isPlayingRight = false;
+    public bool isPlayingLeft = false;
+    public bool isPlayingRight = false;
     private float loopStartTimeLeft;
     private float loopStartTimeRight;
     private float loopEndTimeLeft => loopStartTimeLeft + sequenceDuration;
@@ -45,7 +50,11 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
             ApplyBVHFrame(_leftGestureModule.GetFrame(currentFrameLeft), leftExpertHand);
 
             if (currentFrameLeft >= _leftGestureModule.GetSequenceEndFrameIndex(currentSequenceLeft)) {
-                currentSequenceLeft++;
+                if (playAllSequences)
+                {
+                    currentSequenceLeft++;
+                }
+
                 loopStartTimeLeft = Time.time;
                 currentFrameLeft = _leftGestureModule.GetSequenceStartFrameIndex(currentSequenceLeft);
             }
@@ -53,8 +62,8 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
                 isPlayingLeft = false;
             }
           
-            float normalizedProgress = (Time.time - loopStartTimeLeft) / (loopEndTimeLeft - loopStartTimeLeft);
-            currentFrameLeft = _leftGestureModule.GetSequenceStartFrameIndex(currentSequenceLeft) + (int)(_leftGestureModule.GetSequenceLength(currentSequenceLeft) * normalizedProgress);
+            normalizedProgressLeft = (Time.time - loopStartTimeLeft) / (loopEndTimeLeft - loopStartTimeLeft);
+            currentFrameLeft = _leftGestureModule.GetSequenceStartFrameIndex(currentSequenceLeft) + (int)(_leftGestureModule.GetSequenceLength(currentSequenceLeft) * normalizedProgressLeft);
             
         }
 
@@ -62,17 +71,26 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         {
             ApplyBVHFrame(_rightGestureModule.GetFrame(currentFrameRight), rightExpertHand);
             if (currentFrameRight >= _rightGestureModule.GetSequenceEndFrameIndex(currentSequenceRight)) {
-                currentSequenceRight++;
+                
+                if(playAllSequences){ currentSequenceRight++;}
                 loopStartTimeRight = Time.time;
                 currentFrameRight = _rightGestureModule.GetSequenceStartFrameIndex(currentSequenceRight);
             }
             if (currentSequenceRight >= _rightGestureModule.GetNumberOfSequences()-1) {
                 isPlayingRight = false;
             }
-            float normalizedProgress = (Time.time - loopStartTimeRight) / (loopEndTimeRight - loopStartTimeRight);
-            currentFrameRight = _rightGestureModule.GetSequenceStartFrameIndex(currentSequenceRight) + (int)(_rightGestureModule.GetSequenceLength(currentSequenceRight) * normalizedProgress);
+            normalizedProgressRight = (Time.time - loopStartTimeRight) / (loopEndTimeRight - loopStartTimeRight);
+            currentFrameRight = _rightGestureModule.GetSequenceStartFrameIndex(currentSequenceRight) + (int)(_rightGestureModule.GetSequenceLength(currentSequenceRight) * normalizedProgressRight);
         }
 
+    }
+
+
+    public void ChangeDuration(float newDuration)
+    {
+        sequenceDuration = newDuration;
+        loopStartTimeLeft = Time.time - sequenceDuration * normalizedProgressLeft;
+        loopStartTimeRight = Time.time - sequenceDuration * normalizedProgressRight;
     }
 
     protected override void StartupEnter()
