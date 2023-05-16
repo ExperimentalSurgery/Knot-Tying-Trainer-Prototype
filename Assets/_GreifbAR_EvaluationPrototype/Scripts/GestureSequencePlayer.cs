@@ -154,7 +154,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
             gestureParams.leftHand = true;
             gestureParams.sequenceIndex = currentSequenceLeft;
             SequenceFinishedEvent.Invoke(gestureParams);
-                
+            
         }
         // compare user frames with end poses
         if (_rightGestureModule.SimilarPose(_rightGestureModule.GetSequenceEndFrameIndex(currentSequenceRight), user_frame_data_right,
@@ -165,7 +165,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
             gestureParams.leftHand = false;
             gestureParams.sequenceIndex = currentSequenceRight;
             SequenceFinishedEvent.Invoke(gestureParams);
-            
+            HandVisualizer.instance.SetSuccessColor(false,true);    
         }
 
     }

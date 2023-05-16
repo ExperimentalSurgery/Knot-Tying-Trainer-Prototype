@@ -14,6 +14,7 @@ public class GestureTrainingStep : VTTBaseListStep
     [SerializeField] private int sequenceIndex = 0;
     [SerializeField] private float minDuration = 0.5f;
     [SerializeField] private float maxDuration = 5;
+    [SerializeField] private float poseMatchingThreshold = 25;
     
     // helper vars
     private bool matchedLeft = false;
@@ -24,6 +25,7 @@ public class GestureTrainingStep : VTTBaseListStep
         base.ActivateEnter();
         matchedLeft = false;
         matchedRight = false;
+        GestureSequencePlayer.instance.poseMatchingThreshold = poseMatchingThreshold;
         GestureSequencePlayer.instance.sequenceDuration = minDuration;
         GestureSequencePlayer.instance.Play(sequenceIndex);
         GestureSequencePlayer.instance.sequenceDuration = Mathf.Lerp(maxDuration, minDuration, GestureTrainingUI.instance.PlaybackSpeedScrollbar.value);
@@ -34,6 +36,10 @@ public class GestureTrainingStep : VTTBaseListStep
         
         // Register for finish events
         GestureSequencePlayer.instance.SequenceFinishedEvent.AddListener(OnGestureEvent);
+        
+        // show expert hands
+        HandVisualizer.instance.SetExpertHandVisibleRight(true);
+        HandVisualizer.instance.SetExpertHandVisibleLeft(true);
 
     }
 
@@ -41,10 +47,12 @@ public class GestureTrainingStep : VTTBaseListStep
 
         if (parameters.isMatching && parameters.leftHand) {
             matchedLeft = true;
+            HandVisualizer.instance.SetExpertHandVisibleLeft(false);
         }
         else if (parameters.isMatching && parameters.leftHand == false)
         {
             matchedRight = true;
+            HandVisualizer.instance.SetExpertHandVisibleRight(false);
         }
 
         if (matchedLeft && matchedRight)
