@@ -24,22 +24,16 @@ public class GestureTrainingUI : SingletonStartupBehaviour<GestureTrainingUI>
         set => progressFill = value;
     }
 
-    public void UpdateProgressFill(float normalizedValue)
-    {
-        if (progressFill && normalizedValue >=0.0f && normalizedValue <=1.0f) {
-            progressFill.fillAmount = normalizedValue;
-        }
-    }
-
 
     private void Update()
     {
+        GestureSequencePlayer player = GestureSequencePlayer.instance;
         // TODO: check if we need to split this for left / right
-        if (GestureSequencePlayer.instance.isPlayingLeft) {
-            progressFill.fillAmount = GestureSequencePlayer.instance.normalizedProgressLeft;
+        if (player.isPlayingLeft){
+            progressFill.fillAmount = player.PlayAllSequences ? player.normalizedProgressTotalLeft : player.normalizedProgressLeft;
         }
-        if (GestureSequencePlayer.instance.isPlayingRight) {
-            progressFill.fillAmount = GestureSequencePlayer.instance.normalizedProgressRight;
+        if (player.isPlayingRight) {
+            progressFill.fillAmount = player.PlayAllSequences ? player.normalizedProgressTotalRight : player.normalizedProgressRight;
         }
 
     }

@@ -44,13 +44,22 @@ namespace DFKI.NMY
         {
             leftExpertHand.gameObject.SetActive(visible);
         }
+
+
+        public void ResetColor()
+        {
+            userHandRenderer_left.material.SetFloat("_useOutline",0);
+            userHandRenderer_right.material.SetFloat("_useOutline",0);
+        }
         
         public void SetColor(Color c, bool left,bool right){
             if (left) {
-                userHandRenderer_left.sharedMaterial.color =c;
+                userHandRenderer_left.material.SetFloat("_useOutline",1);
+                userHandRenderer_left.material.SetColor("_OutlineColor",c);
             }
             if (right) {
-                userHandRenderer_right.sharedMaterial.color =c;
+                userHandRenderer_right.material.SetFloat("_useOutline",1);
+                userHandRenderer_right.material.SetColor("_OutlineColor",c);
             }
         }
 
