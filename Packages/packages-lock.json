@@ -34,6 +34,27 @@
       },
       "url": "http://nmyvm01:4873"
     },
+    "com.nmy.vtt.core.interactions": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.nmy.core": "1.0.0",
+        "com.nmy.vtt.core": "1.0.0"
+      },
+      "url": "http://nmyvm01:4873"
+    },
+    "com.nmy.vtt.core.virtualassistant": {
+      "version": "1.0.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.nmy.core": "1.0.0",
+        "com.nmy.vtt.core.interactions": "1.0.0",
+        "com.nmy.localization": "1.0.0"
+      },
+      "url": "http://nmyvm01:4873"
+    },
     "com.ultraleap.tracking": {
       "version": "6.8.0",
       "depth": 0,

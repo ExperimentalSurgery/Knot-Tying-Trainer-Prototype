@@ -3,6 +3,7 @@
     "com.nmy.core": "2.5.0",
     "com.nmy.localization": "2.1.1",
     "com.nmy.vtt.core": "1.0.0",
+    "com.nmy.vtt.core.virtualassistant": "1.0.2",
     "com.ultraleap.tracking": "6.8.0",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.feature.development": "1.0.1",

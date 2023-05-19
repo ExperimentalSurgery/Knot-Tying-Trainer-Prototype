@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a823e8adc58dc4a8f15c53f96a3278, type: 3}
+  m_Name: Mittelfingerknoten_Step2
+  m_EditorClassIdentifier: 
+  _key: Mittelfingerknoten_Step2
+  _ttsList:
+  - languageKey: DE
+    audio: {fileID: 8300000, guid: 8226395329f598048a3b8e6a6afd9a12, type: 3}
+    timestamps: {fileID: 4900000, guid: fe07d874eabb4954e963e5a0c633628b, type: 3}
