@@ -18,14 +18,35 @@ namespace DFKI.NMY
         {
             base.ActivateEnter();
             UserInterfaceManager.instance.UpdateStepInfos(stepTitle,stepDescription);
-            
-            
+
+            AudioClip clip;
+            textToSpeechData.TryGetAudio("DE", out clip);
+            if (clip) {
+                SFXManager.instance.PlayAudio(clip);
+            }
         }
 
         protected override void ActivateImmediatelyEnter()
         {
             base.ActivateImmediatelyEnter();
             UserInterfaceManager.instance.UpdateStepInfos(stepTitle,stepDescription);
+            AudioClip clip;
+            textToSpeechData.TryGetAudio("DE", out clip);
+            if (clip) {
+                SFXManager.instance.PlayAudio(clip);
+            }
+        }
+
+        protected override void DeactivateEnter()
+        {
+            base.DeactivateEnter();
+            SFXManager.instance.StopAudio();
+        }
+
+        protected override void DeactivateImmediatelyEnter()
+        {
+            base.DeactivateImmediatelyEnter();
+            SFXManager.instance.StopAudio();
         }
 
         [SerializeField] private float nextStepDelay = 2.0f;
