@@ -17,14 +17,20 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: c8e9d0b86a14fad48bbc021e7c3afdd7
   m_SerializeEntries:
-  - m_GUID: 906b53f8f754df44687c4e348c9ad17c
-    m_Address: Eva_Prototype_Locaization_en
+  - m_GUID: a37d657e28fa3ba489e536dec9efec77
+    m_Address: intro_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
-  - m_GUID: 8463067f5c5995744997c13a9076bedb
-    m_Address: CSV_Localization_en
+  - m_GUID: 7b7c0a4d66b72f44eb36866329b84e1a
+    m_Address: UI_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 3548e27ec654d3f44b296cbeb2892eeb
+    m_Address: setup_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

@@ -17,12 +17,16 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 06d7c10861e82574598199cd3200e065
   m_SerializeEntries:
-  - m_GUID: 75affb82ecf098740baa9a191501216a
-    m_Address: Assets/Localization/Eva_Prototype_Locaization Shared Data.asset
+  - m_GUID: 567f438eabf3afd48abfeadd60a13a8a
+    m_Address: Assets/Localization/intro Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-  - m_GUID: 08a15052c0838c9429455f289025daea
-    m_Address: Assets/Localization/CSV_Localization Shared Data.asset
+  - m_GUID: bdfec35c4dec91d4284333dada537d28
+    m_Address: Assets/Localization/UI Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: e194af856ffda94459908594d8dfac18
+    m_Address: Assets/Localization/setup Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
   m_ReadOnly: 1
