@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: intro_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 567f438eabf3afd48abfeadd60a13a8a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 11020050432
+    m_Localized: Noch nicht gesetzt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516874579968
+    m_Localized: "Dies ist die GreifbAR-Demo. Hier lernen Sie wie Sie einen Chirurgischenknoten
+      kn\xFCpfen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1317680459776
+    m_Localized: "Heben Sie bitte Ihre H\xE4nde bitte einmal vor sich."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1740894121984
+    m_Localized: "Ah sehr gut! Jetzt sehe ich Ihre H\xE4nde auch! Willkommen!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2022239645696
+    m_Localized: "Bevor wir der Erl\xE4uterung des Mittelfingerknoten beginnen, kurz
+      noch ein paar Grundlagen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2360212467712
+    m_Localized: Vor Ihnen befinden sich vier Tasten mit der sie die ganzen Anwendung
+      steuern.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2480437997568
+    m_Localized: "Taste 1 ist die \"Ein Schritt zur\xFCck\"-Taste. Falls es mal zu
+      schnell geht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2587963174912
+    m_Localized: "Probieren Sie die Zur\xFCck Taste bitte jetzt aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2692426510336
+    m_Localized: "Vor Ihnen befinden sich vier Tasten\u2026\n\nMoment, das hatte
+      wir doch schon. Sehr gut! Weiter gehts!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2973616844800
+    m_Localized: "Rechts in Ihrem Sichtfeld sehen Sie immer bei welchem Schritt sie
+      in gerade sind und was als n\xE4chstes kommt. Falls Sie diese \xDCbersicht
+      nicht sehen m\xF6chten, nutzen sie einfach Taste 3 um diese auszublenden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202382573568
+    m_Localized: 'Probieren Sie es jetzt einmal aus.
+
+
+      Blenden Sie die Handlungschritte
+      aus und wieder ein.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3411770617856
+    m_Localized: "Als letztes noch das Schl\xFCsselelement dieses Trainings. Vor
+      Ihnen sehen Sie nun ein paar digitale H\xE4nde projiziert.\n\nDies sind die
+      Trainerh\xE4nde. Sie werde Ihnen immer vormachen was als n\xE4chstes zu tun
+      ist."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3558407680000
+    m_Localized: Machen Sie Geste bitte mal nach.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3669359603712
+    m_Localized: Ah, super! Sie verstehen sich.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3777874636800
+    m_Localized: "Wenn die Trainerh\xE4nde etwas zu schnell vormachen k\xF6nnen Sie
+      die Abspielgeschwidigkeit jederzeit verlangsamen. Dr\xFCcke Sie Taste Zwei
+      um zwischen halber und normaler Geschwindigkeit zu wechseln."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3915733020672
+    m_Localized: Probieren Sie es jetzt einmal aus.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4005684064256
+    m_Localized: 'Sehr gut!
+
+
+      Fangen wir an mit Ihrem Training.'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
