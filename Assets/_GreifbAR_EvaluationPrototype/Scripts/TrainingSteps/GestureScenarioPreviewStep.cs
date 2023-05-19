@@ -13,7 +13,6 @@ namespace DFKI.NMY
         [Header("Sequences Config")]
         [SerializeField] private float singleSequenceDuration = 2f;
         
-        
         // runtime vars
         private bool finishedLeft = false;
         private bool finishedRight = false;

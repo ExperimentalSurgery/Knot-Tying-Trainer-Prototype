@@ -16,15 +16,47 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 75affb82ecf098740baa9a191501216a
   m_Entries:
   - m_Id: 11020050432
-    m_Key: empty
+    m_Key: tbd
     m_Metadata:
       m_Items: []
-  - m_Id: 31392949379072
-    m_Key: test_entry
+  - m_Id: 985852293120
+    m_Key: ui_next
     m_Metadata:
       m_Items: []
-  - m_Id: 31572062937088
-    m_Key: 456
+  - m_Id: 1127733014528
+    m_Key: ui_previous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1211711369216
+    m_Key: ui_start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1278363054080
+    m_Key: ui_stop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1328988303360
+    m_Key: ui_pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1388748746752
+    m_Key: ui_slower
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500556308480
+    m_Key: ui_faster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1580331970560
+    m_Key: ui_menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2135859146752
+    m_Key: ui_language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2202468888576
+    m_Key: ui_settings
     m_Metadata:
       m_Items: []
   m_Metadata:

@@ -19,15 +19,47 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 11020050432
-    m_Localized: This is a test!
+    m_Localized: Not set yet.
     m_Metadata:
       m_Items: []
-  - m_Id: 31392949379072
-    m_Localized: 123
+  - m_Id: 985852293120
+    m_Localized: Next
     m_Metadata:
       m_Items: []
-  - m_Id: 31572062937088
-    m_Localized: gfh
+  - m_Id: 1127733014528
+    m_Localized: Previous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1211711369216
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1278363054080
+    m_Localized: Stop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1328988303360
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1388748746752
+    m_Localized: Slower
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1500556308480
+    m_Localized: Faster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1580331970560
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2135859146752
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2202468888576
+    m_Localized: Settings
     m_Metadata:
       m_Items: []
   references:
