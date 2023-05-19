@@ -10,30 +10,23 @@ public class GestureTrainingUI : SingletonStartupBehaviour<GestureTrainingUI>
 {
 
     [SerializeField] private Scrollbar playbackSpeedScrollbar;
-    [SerializeField] private Image progressFill;
-
+    [SerializeField] private Image progressFillLeft;
+    [SerializeField] private Image progressFillRight;
+    
     public Scrollbar PlaybackSpeedScrollbar
     {
         get => playbackSpeedScrollbar;
         set => playbackSpeedScrollbar = value;
     }
 
-    public Image ProgressFill
-    {
-        get => progressFill;
-        set => progressFill = value;
-    }
-
-
     private void Update()
     {
         GestureSequencePlayer player = GestureSequencePlayer.instance;
-        // TODO: check if we need to split this for left / right
         if (player.isPlayingLeft){
-            progressFill.fillAmount = player.PlayAllSequences ? player.normalizedProgressTotalLeft : player.normalizedProgressLeft;
+            progressFillLeft.fillAmount = player.PlayAllSequences ? player.normalizedProgressTotalLeft : player.normalizedProgressLeft;
         }
         if (player.isPlayingRight) {
-            progressFill.fillAmount = player.PlayAllSequences ? player.normalizedProgressTotalRight : player.normalizedProgressRight;
+            progressFillRight.fillAmount = player.PlayAllSequences ? player.normalizedProgressTotalRight : player.normalizedProgressRight;
         }
 
     }

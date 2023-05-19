@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 namespace DFKI.NMY
 {
-    public class GestureScenarioPreviewStep : VTTBaseListStep
+    public class GestureScenarioPreviewStep : GestureBaseStep
     {
         
         [Header("Sequences Config")]
@@ -46,13 +46,11 @@ namespace DFKI.NMY
 
         private void OnScenarioPlaybackFinished(HandGestureParams eventParams)
         {
-            if (eventParams.leftHand)
-            {
+            if (eventParams.side.Equals(Hand.Left)) {
                 finishedLeft = true;
             }
 
-            if (eventParams.leftHand == false)
-            {
+            if (eventParams.side.Equals(Hand.Right)) {
                 finishedRight = true;
             }
 

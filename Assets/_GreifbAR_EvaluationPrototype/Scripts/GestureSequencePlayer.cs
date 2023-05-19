@@ -4,6 +4,7 @@ using System.Text.RegularExpressions;
 using NMY;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Assertions;
 using UnityEngine.Events;
 
 namespace DFKI.NMY
@@ -13,10 +14,11 @@ namespace DFKI.NMY
     public class HandGestureParams
     {
         public bool isMatching;
-        public bool leftHand = true; // 1=left, 0=right
+        public Hand side;
         public int sequenceIndex;
     }
     
+    public enum Hand{Left=0,Right=1}
     
 public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePlayer>
 {
@@ -25,6 +27,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     [SerializeField] private bool analyzePoseMatching = true;
     [SerializeField] private bool loopAllSequences = false;
     [SerializeField] private bool playAllSequences = false;
+    [SerializeField] private bool loopSingleSequencePlayback = false;
     [SerializeField] private bool autoStart = false;
     [Tooltip("Threshold for pose matching. Good default = 25")]
     [SerializeField] private float poseMatchingThreshold = 25;
@@ -53,6 +56,12 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     {
         get => analyzePoseMatching;
         set => analyzePoseMatching = value;
+    }
+
+    public bool LoopSingleSequencePlayback
+    {
+        get => loopSingleSequencePlayback;
+        set => loopSingleSequencePlayback = value;
     }
 
     public bool LoopAllSequences
@@ -113,6 +122,8 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     public int currentSequenceRight = 0;
     public bool isPlayingLeft = false;
     public bool isPlayingRight = false;
+    public bool isPausedLeft = false;
+    public bool isPausedRight = false;
     
     // Private runtime vars
     private bool[] left_hand_compare_mask;
@@ -141,166 +152,158 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         }
     }
 
-    protected void ProcessFramePlayback()
-    {
-        if (isPlayingLeft)
-        {
-            ApplyBVHFrame(_leftGestureModule.GetFrame(currentFrameLeft), leftExpertHand);
+    public void ProcessFrame(
+        GestureModule gestureModule, 
+        ref int currentFrame,
+        ref int currentSequence,
+        GameObject expertHand,
+        ref float startTime,
+        float endTime,
+        ref bool isPlaying,
+        ref List<int> playedFrames,
+        ref float normalizedProgress,
+        ref float normalizedProgressTotal,
+        Hand side) {
 
-            if (currentFrameLeft >= _leftGestureModule.GetSequenceEndFrameIndex(currentSequenceLeft)) {
+        if (!isPlaying) return;
+        
+        ApplyBVHFrame(gestureModule.GetFrame(currentFrame), expertHand);
+
+            
+            bool reachedEndFrame = currentFrame >= gestureModule.GetSequenceEndFrameIndex(currentSequence);
+            bool reachedLastSequence = (currentSequence >= gestureModule.GetNumberOfSequences() - 1);
+            if (reachedEndFrame) {
+
                 if (playAllSequences) {
-                    currentSequenceLeft++;
+                    startTime = Time.time;
+                    currentSequence = reachedLastSequence? 0 : currentSequence+1;
+                    currentFrame = gestureModule.GetSequenceStartFrameIndex(currentSequence);
                 }
-                loopStartTimeLeft = Time.time;
-                currentFrameLeft = _leftGestureModule.GetSequenceStartFrameIndex(currentSequenceLeft);
+                else if (!playAllSequences && loopSingleSequencePlayback)
+                {
+                    startTime = Time.time;
+                    currentFrame = gestureModule.GetSequenceStartFrameIndex(currentSequence);
+                }
+                else
+                {
+                    Stop();
+                }
             }
-
-            if (currentSequenceLeft >= _leftGestureModule.GetNumberOfSequences() - 1)
+        
+            // BVH File All Sequences Finish check
+            if (reachedEndFrame && reachedLastSequence)
             {
                 if (loopAllSequences) {
                     
                     // reset runtime params
-                    isPlayingLeft = true;
-                    playedFramesLeft.Clear();
-                    currentSequenceLeft = 0;
-                    // event params
-                    HandGestureParams gestureParams = new HandGestureParams();
-                    gestureParams.isMatching = false;
-                    gestureParams.leftHand = true;
-                    gestureParams.sequenceIndex = _leftGestureModule.GetNumberOfSequences();
-                    AllSequencesPlayedEvent.Invoke(gestureParams);
-                }
-                else {
-                    isPlayingLeft = false;
-                }
-            }
-
-            if (isPlayingLeft)
-            {
-                normalizedProgressLeft = (Time.time - loopStartTimeLeft) / (loopEndTimeLeft - loopStartTimeLeft);
-                normalizedProgressTotalLeft = (float)playedFramesLeft.Count / GetTotalFramesForAllSequencesLeft();
-                currentFrameLeft = _leftGestureModule.GetSequenceStartFrameIndex(currentSequenceLeft) +
-                                   (int)(_leftGestureModule.GetSequenceLength(currentSequenceLeft) *
-                                         normalizedProgressLeft);
-                if (!playedFramesLeft.Contains(currentFrameLeft))
-                {
-                    playedFramesLeft.Add(currentFrameLeft);
-                }
-            }
-
-        }
-
-        if (isPlayingRight)
-        {
-            ApplyBVHFrame(_rightGestureModule.GetFrame(currentFrameRight), rightExpertHand);
-            if (currentFrameRight >= _rightGestureModule.GetSequenceEndFrameIndex(currentSequenceRight)) {
-
-                if (playAllSequences) {
-                    currentSequenceRight++;
-                }
-                loopStartTimeRight = Time.time;
-                currentFrameRight = _rightGestureModule.GetSequenceStartFrameIndex(currentSequenceRight);
-            }
-            if (currentSequenceRight >= _rightGestureModule.GetNumberOfSequences()-1) {
-                if (loopAllSequences) {
+                    isPlaying = true;
+                    playedFrames.Clear();
+                    currentSequence = 0;
                     
-                    // reset runtime params
-                    isPlayingRight = true;
-                    playedFramesRight.Clear();
-                    currentSequenceRight = 0;
-                   
                     // event params
                     HandGestureParams gestureParams = new HandGestureParams();
                     gestureParams.isMatching = false;
-                    gestureParams.leftHand = false;
-                    gestureParams.sequenceIndex = _rightGestureModule.GetNumberOfSequences();
+                    gestureParams.side = side;
+                    gestureParams.sequenceIndex = gestureModule.GetNumberOfSequences();
                     AllSequencesPlayedEvent.Invoke(gestureParams);
                 }
                 else {
-                    isPlayingRight = false;
+                    Stop();
                 }
             }
 
-            if (isPlayingRight)
+            if (isPlaying)
             {
-                normalizedProgressRight = (Time.time - loopStartTimeRight) / (loopEndTimeRight - loopStartTimeRight);
-                normalizedProgressTotalRight = (float)playedFramesRight.Count / GetTotalFramesForAllSequencesRight();
-                currentFrameRight = _rightGestureModule.GetSequenceStartFrameIndex(currentSequenceRight) +
-                                    (int)(_rightGestureModule.GetSequenceLength(currentSequenceRight) *
-                                          normalizedProgressRight);
-                if (!playedFramesRight.Contains(currentFrameRight))
-                {
-                    playedFramesRight.Add(currentFrameRight);
+                normalizedProgress = (Time.time - startTime) / (endTime - startTime);
+                normalizedProgressTotal = (float)playedFrames.Count / GetTotalFramesForAllSequences(gestureModule);
+                currentFrame = gestureModule.GetSequenceStartFrameIndex(currentSequence) +
+                               (int)(gestureModule.GetSequenceLength(currentSequence) *
+                                     normalizedProgress);
+                if (!playedFrames.Contains(currentFrame)) {
+                    playedFrames.Add(currentFrame);
                 }
+                
+                //Debug.Log("seq:"+currentSequence+" sf:"+gestureModule.GetSequenceStartFrameIndex(currentSequence)+ " ef:"+gestureModule.GetSequenceEndFrameIndex(currentSequence)+" p:"+playedFrames.Count+" f:"+currentFrame);
+
             }
+           
         }
-    }
-
-
-    public int GetTotalFramesForAllSequencesLeft()
-    {
-        int c = 0;
-        for (int i = 0; i < _leftGestureModule.GetNumberOfSequences(); i++) {
-            c += _leftGestureModule.GetSequenceLength(i);
-        }
-        return c;
-    }
-    
-    public int GetTotalFramesForAllSequencesRight()
-    {
-        int c = 0;
-        for (int i = 0; i < _rightGestureModule.GetNumberOfSequences(); i++) {
-            c += _rightGestureModule.GetSequenceLength(i);
-        }
-        return c;
-    }
-    
     
     private void Update()
     {
-       ProcessFramePlayback();
+        ProcessFrame(_leftGestureModule, ref currentFrameLeft, ref currentSequenceLeft, leftExpertHand, ref loopStartTimeLeft, loopEndTimeLeft, ref isPlayingLeft, ref playedFramesLeft, ref normalizedProgressLeft, ref normalizedProgressTotalLeft, Hand.Left);
+        ProcessFrame(_rightGestureModule, ref currentFrameRight, ref currentSequenceRight, rightExpertHand, ref loopStartTimeRight, loopEndTimeRight, ref isPlayingRight, ref playedFramesRight, ref normalizedProgressRight, ref normalizedProgressTotalRight, Hand.Right);
 
-       if (AnalyzePoseMatching)
-       {
-           AnalyzePoseMatch();
 
-           if (Application.isEditor)
-           {
-               // Simulate left finished event
-               if (Input.GetKeyDown(KeyCode.Alpha1))
-               {
-                   HandGestureParams gestureParams = new HandGestureParams();
-                   gestureParams.isMatching = true;
-                   gestureParams.leftHand = true;
-                   gestureParams.sequenceIndex = currentSequenceLeft;
-                   SequenceFinishedEvent.Invoke(gestureParams);
-               }
+        if (Application.isEditor)
+        {
 
-               // Simulate right finished event
-               if (Input.GetKeyDown(KeyCode.Alpha2))
-               {
-                   HandGestureParams gestureParams = new HandGestureParams();
-                   gestureParams.isMatching = true;
-                   gestureParams.leftHand = false;
-                   gestureParams.sequenceIndex = currentSequenceRight;
-                   SequenceFinishedEvent.Invoke(gestureParams);
-               }
-           }
-       }
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                Pause();
+            }
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Resume();
+            }
+
+        }
+
+        if (AnalyzePoseMatching)
+        {
+            AnalyzePoseMatch();
+            
+            if (Application.isEditor)
+            {
+                
+                // Simulate left finished event
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                {
+                    HandGestureParams gestureParams = new HandGestureParams();
+                    gestureParams.isMatching = true;
+                    gestureParams.side = Hand.Left;
+                    gestureParams.sequenceIndex = currentSequenceLeft;
+                    SequenceFinishedEvent.Invoke(gestureParams);
+                }
+
+                // Simulate right finished event
+                if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    HandGestureParams gestureParams = new HandGestureParams();
+                    gestureParams.isMatching = true;
+                    gestureParams.side = Hand.Right;
+                    gestureParams.sequenceIndex = currentSequenceRight;
+                    SequenceFinishedEvent.Invoke(gestureParams);
+                }
+            }
+        }
     }
 
+
+    public int GetTotalFramesForAllSequences(GestureModule gm)
+    {
+        int c = 0;
+        for (int i = 0; i < gm.GetNumberOfSequences(); i++) {
+            c += gm.GetSequenceLength(i);
+        }
+        return c;
+    }
+    
+    
     protected void AnalyzePoseMatch() {
        
         
         if (isPlayingLeft)
         {
+            
             // get current life user frames from headset
             float[] user_frame_data_left = GetFrame(leftRecorder);
             // compare user frames with end poses
             if (_leftGestureModule.SimilarPose(_leftGestureModule.GetSequenceEndFrameIndex(currentSequenceLeft), user_frame_data_left, poseMatchingThreshold, left_hand_compare_mask)) {
                 HandGestureParams gestureParams = new HandGestureParams();
                 gestureParams.isMatching = true;
-                gestureParams.leftHand = true;
+                gestureParams.side = Hand.Left;
                 gestureParams.sequenceIndex = currentSequenceLeft;
                 SequenceFinishedEvent.Invoke(gestureParams);
 
@@ -315,7 +318,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
             if (_rightGestureModule.SimilarPose(_rightGestureModule.GetSequenceEndFrameIndex(currentSequenceRight), user_frame_data_right, poseMatchingThreshold, right_hand_compare_mask)) {
                 HandGestureParams gestureParams = new HandGestureParams();
                 gestureParams.isMatching = true;
-                gestureParams.leftHand = false;
+                gestureParams.side = Hand.Right;
                 gestureParams.sequenceIndex = currentSequenceRight;
                 SequenceFinishedEvent.Invoke(gestureParams);
                 HandVisualizer.instance.SetSuccessColor(false, true);
@@ -336,11 +339,16 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     {
         isPlayingLeft = false;
         isPlayingRight = false;
+        isPausedLeft = false;
+        isPausedRight = false;
         playAllSequences = false;
     }
 
     public void Play(int singleSequence=-1)
     {
+        
+        Debug.Log("Play()");
+        
         if (singleSequence > 0) {
             playAllSequences = false;
         }
@@ -361,7 +369,18 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
 
     public void Pause()
     {
-        //TODO: Implement
+        isPausedLeft = true;
+        isPausedRight = true;
+        isPlayingLeft = false;
+        isPlayingRight = false;
+    }
+
+    public void Resume()
+    {
+        isPausedLeft = false;
+        isPausedRight = false;
+        isPlayingLeft = true;
+        isPlayingRight = true;
     }
 
     public void InitSequence() {

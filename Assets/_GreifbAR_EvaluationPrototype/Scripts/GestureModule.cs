@@ -291,7 +291,7 @@ namespace DFKI {
          * frame: a frame coming from the outside (i.e., current user frame)
          * 
          */
-        private float[] CalculateFrameDeviation(int frameIdx, float[] frame) {
+        public float[] CalculateFrameDeviation(int frameIdx, float[] frame) {
             if (frame == null)
                 return null;
             Assert.AreEqual(bvhData[frameIdx].GetLength(0), frame.Length, "Frames do not match in size: " + bvhData[frameIdx].GetLength(0) + " != " + frame.Length + ". (290)");

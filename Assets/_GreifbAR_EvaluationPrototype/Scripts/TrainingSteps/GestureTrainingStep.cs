@@ -9,7 +9,7 @@ using Image = UnityEngine.UI.Image;
 namespace DFKI.NMY.TrainingSteps
 {
     
-public class GestureTrainingStep : VTTBaseListStep
+public class GestureTrainingStep : GestureBaseStep
 {
 
     [Header("Gesture Training Step")] 
@@ -17,7 +17,8 @@ public class GestureTrainingStep : VTTBaseListStep
     [SerializeField] private float minDuration = 0.5f;
     [SerializeField] private float maxDuration = 5;
     [SerializeField] private float poseMatchingThreshold = 25;
-    [SerializeField] private float nextStepDelay = 2.0f;
+ 
+    [SerializeField] private bool loopSequence = true;
     
     // helper vars
     private bool matchedLeft = false;
@@ -29,10 +30,11 @@ public class GestureTrainingStep : VTTBaseListStep
         matchedLeft = false;
         matchedRight = false;
         
-        // Apply config to gestureplayer
+        // Apply config to GesturePlayer
         GestureSequencePlayer.instance.PoseMatchingThreshold = poseMatchingThreshold;
         GestureSequencePlayer.instance.SequenceDuration = minDuration;
         GestureSequencePlayer.instance.PlayAllSequences = false;
+        GestureSequencePlayer.instance.LoopSingleSequencePlayback = true;
         GestureSequencePlayer.instance.AnalyzePoseMatching = true;
         GestureSequencePlayer.instance.Play(sequenceIndex);
         GestureSequencePlayer.instance.SequenceDuration = Mathf.Lerp(maxDuration, minDuration, GestureTrainingUI.instance.PlaybackSpeedScrollbar.value);
@@ -50,18 +52,19 @@ public class GestureTrainingStep : VTTBaseListStep
         
         // Reset colors of user hands
         HandVisualizer.instance.ResetColor();
+        
+        StopAllCoroutines();
 
     }
 
     private void OnGestureEvent(HandGestureParams parameters) {
 
-        if (parameters.isMatching && parameters.leftHand) {
+        if (parameters.isMatching && parameters.side.Equals(Hand.Left)) {
             Debug.Log("Matched left");
             matchedLeft = true;
             HandVisualizer.instance.SetSuccessColor(true,false);
         }
-        else if (parameters.isMatching && parameters.leftHand == false)
-        {
+        else if (parameters.isMatching && parameters.side.Equals(Hand.Right)) {
             Debug.Log("Matched right");
             matchedRight = true;
             HandVisualizer.instance.SetSuccessColor(false,true);
@@ -75,18 +78,19 @@ public class GestureTrainingStep : VTTBaseListStep
     }
 
 
-    public IEnumerator TriggerDelayedCompletion() {
+    public override IEnumerator TriggerDelayedCompletion() {
+        GestureSequencePlayer.instance.SequenceFinishedEvent.RemoveListener(OnGestureEvent);
         GestureSequencePlayer.instance.Stop();
         HandVisualizer.instance.SetExpertHandVisibleRight(false);
         HandVisualizer.instance.SetExpertHandVisibleLeft(false);    
         UserInterfaceManager.instance.ShowSuccessPanel();
-        yield return new WaitForSeconds(nextStepDelay);
-        RaiseStepCompletedEvent();
+        return base.TriggerDelayedCompletion();
     }
 
     protected override void DeactivateEnter()
     {
         base.DeactivateEnter();
+        GestureSequencePlayer.instance.SequenceFinishedEvent.RemoveListener(OnGestureEvent);
         UserInterfaceManager.instance.HideSuccessPanel();
         GestureSequencePlayer.instance.Stop();
     }
