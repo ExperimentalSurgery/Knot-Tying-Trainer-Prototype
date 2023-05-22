@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Google Sheets Service
   m_EditorClassIdentifier: 
   m_ApiKey: 
-  m_ClientId: 289413244643-0me5fntgtjak99qrjmm0adt06ri0hro8.apps.googleusercontent.com
-  m_ClientSecret: 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
+  m_ClientId: 289413244643-b9belg9uqe98hbp7fh1reehvs3r9eaud.apps.googleusercontent.com
+  m_ClientSecret: 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
   m_AuthenticationType: 1
   m_ApplicationName: Greifbar_EvaluationPrototype
   m_NewSheetProperties:

@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219d4e90086947c4db1e1ebdf256b5cb, type: 3}
   m_Name: GoogleTextToSpeech
   m_EditorClassIdentifier: 
-  _credentials: {fileID: 0}
+  _credentials: {fileID: 4900000, guid: d73036553e69dda4ab4d5be52c5fd699, type: 3}
   _stringTable:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:8c4f275133ebebc4d8ba6029cca8fdb7
   _assetTable:
     m_TableReference:
-      m_TableCollectionName: 
-  _outputFolder: {fileID: 0}
+      m_TableCollectionName: GUID:76332df8ca684cd4a81092660eb77cc0
+  _outputFolder: {fileID: 102900000, guid: b70c1481b0fda8447b0ef2322cb27ac1, type: 3}
   _outputFilePattern: '[LOCALE_CODE]_[KEY]'
   _dateTimeFormat: yyyy-MM-dd HH:mm:ss
   _createSubFolders: 1
-  _textToSpeechConfigurations: []
+  _textToSpeechConfigurations:
+  - {fileID: 11400000, guid: 7aa931ae16138884d9856dca5f930e13, type: 2}
+  - {fileID: 11400000, guid: eb766c5b1512d154a85f7d69c7b0ef47, type: 2}

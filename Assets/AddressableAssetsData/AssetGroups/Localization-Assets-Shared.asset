@@ -29,6 +29,14 @@ MonoBehaviour:
     m_Address: Assets/Localization/setup Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: 76332df8ca684cd4a81092660eb77cc0
+    m_Address: Assets/Localization/AssetTables/Greifbar_AssetTable Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 8c4f275133ebebc4d8ba6029cca8fdb7
+    m_Address: Assets/Localization/TTS/test Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:

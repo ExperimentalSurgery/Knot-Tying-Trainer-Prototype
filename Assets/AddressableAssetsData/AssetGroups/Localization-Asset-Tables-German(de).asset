@@ -10,21 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-String-Tables-German (de)
+  m_Name: Localization-Asset-Tables-German(de)
   m_EditorClassIdentifier: 
-  m_GroupName: Localization-String-Tables-German (de)
+  m_GroupName: Localization-Asset-Tables-German(de)
   m_Data:
     m_SerializedData: []
-  m_GUID: f62fab7a23c877e48a3a41a7bb1a883b
+  m_GUID: 51cb5fdebe8ed614f9e2b157bfbfcebb
   m_SerializeEntries:
-  - m_GUID: fa44f403e4d934548a3ac1dc4b728746
-    m_Address: UI_de
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-de
-    - Preload
-  - m_GUID: 5934027e7f30f5c4bbc07912a8d68764
-    m_Address: setup_de
+  - m_GUID: f512b255e022c8e40956c2cf41b64fff
+    m_Address: Greifbar_AssetTable_de
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
@@ -33,5 +27,5 @@ MonoBehaviour:
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: f6e8292c5f16e7145b3ca9513fc1b1e4, type: 2}
-    - {fileID: 11400000, guid: 046f6953094c75e4c9787228b8d12b58, type: 2}
+    - {fileID: 11400000, guid: ab715b5f9fdd8d44aa4285722d905e27, type: 2}
+    - {fileID: 11400000, guid: fd02184a3255a4f4cbac0e9413ff26ca, type: 2}

@@ -5,186 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db4b24e-3b2b-4a07-b416-6d49153c6a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/UI Shared Data.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/UI_de.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/UI_en.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/intro Shared Data.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/intro Shared Data.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/intro.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/intro.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/intro_de.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/intro_de.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/intro_en.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/intro_en.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/setup Shared Data.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/setup Shared Data.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/setup.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/setup.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/setup_de.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/setup_de.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/setup_en.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Localization/setup_en.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/preview.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-German (de).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-German (de).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CustomProjectSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CustomProjectSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/UI.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HandVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HandVisualizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HandVisualizer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HandVisualizer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SFXManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SFXManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SFXManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SFXManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/English (en).asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/English (en).asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/German (de).asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/German (de).asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/Google Sheets Service.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Google Sheets Service.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/UI Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/UI Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/UI_de.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/UI_de.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/UI_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/UI_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/intro Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/intro Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/intro_de.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/intro_de.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/intro_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/intro_en.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureBaseStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureBaseStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureBaseStep.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureBaseStep.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenario.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenario.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenario.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenario.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenarioPreviewStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenarioPreviewStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenarioPreviewStep.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenarioPreviewStep.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureTrainingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureTrainingController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureTrainingController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureTrainingController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserInterfaceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserInterfaceManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserInterfaceManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserInterfaceManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/CSV_Localization Shared Data.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/CSV_Localization Shared Data.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/UI_en.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/CSV_Localization.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/CSV_Localization.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/UI Shared Data.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/CSV_Localization.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/CSV_Localization.csv.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/CSV_Localization_de.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/CSV_Localization_de.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/UI_de.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/CSV_Localization_en.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/CSV_Localization_en.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Credentials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Credentials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Credentials/nmy-lautmaler-localization-sheets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Credentials/nmy-lautmaler-localization-sheets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Credentials/nmy-lautmaler-localization-sheets.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Credentials/nmy-lautmaler-localization-sheets.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/English (en).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/English (en).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/English (en).asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Eva_Prototype_Locaization Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Eva_Prototype_Locaization Shared Data.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Eva_Prototype_Locaization Shared Data.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Eva_Prototype_Locaization.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/UI.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Eva_Prototype_Locaization.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Eva_Prototype_Locaization_de.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Eva_Prototype_Locaization_de.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Eva_Prototype_Locaization_de.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Eva_Prototype_Locaization_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Eva_Prototype_Locaization_en.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Eva_Prototype_Locaization_en.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/German (de).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/German (de).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/German (de).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/German (de).asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Google Sheets Service.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Google Sheets Service.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Google Sheets Service.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Google Sheets Service.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Localization Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Localization Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Localization/Localization Settings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Localization Settings.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Aruco.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/Aruco.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Aruco.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/Aruco.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Base.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/Base.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Base.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/Base.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Blue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Blue.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Blue.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Case.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/Case.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Case.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/Case.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Cube_Grid.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cube_Grid.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Cube_Grid.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cube_Grid.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/ErrorMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/ErrorMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/ErrorMat.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/ErrorMat.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Floor_Grid.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Floor_Grid.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Floor_Grid.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Floor_Grid.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Hands.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Hands.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/Hands.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Hands.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/RubberBand.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/RubberBand.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/RubberBand.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/RubberBand.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/SuccMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/SuccMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/SuccMat.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/SuccMat.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/grid_01_gray_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/grid_01_gray_2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/grid_01_gray_2.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/grid_01_gray_2.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/table.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/table.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Materials/table.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/table.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Models/Trainerbank_V0.4_Unity.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Trainerbank_V0.4_Unity.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Models/Trainerbank_V0.4_Unity.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Trainerbank_V0.4_Unity.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Models/knotenbank.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/knotenbank.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Models/knotenbank.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/knotenbank.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Models/table.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/table.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Models/table.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/table.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Prefabs/Cube.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cube.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Prefabs/Cube.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cube.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Prefabs/Floor.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floor.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Prefabs/Floor.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floor.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/DevScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/DevScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevScene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/InputSystem.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/InputSystem.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/UI Playground.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Playground.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/UI Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Playground.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/UI Playground.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Playground.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/UI Playground/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Playground/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/UI Playground/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Playground/LightingData.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/UI Playground/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Playground/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/UI Playground/Lightmap-0_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Playground/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/UI Playground/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Playground/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/UI Playground/Lightmap-0_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Playground/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/UI Playground/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Playground/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scenes/UI Playground/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Playground/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/BVHManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BVHManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/BVHManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BVHManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/GestureModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GestureModule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/GestureModule.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GestureModule.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/GestureSequencePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/GestureSequencePlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/GestureSequencePlayer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/HandVisualizer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/HandVisualizer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/KnotbankController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KnotbankController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/KnotbankController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KnotbankController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/SFXManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/SFXManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/Sample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sample.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/Sample.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sample.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureBaseStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureBaseStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureScenario.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureScenario.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureScenarioPreviewStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureScenarioPreviewStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureTrainingController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureTrainingController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureTrainingStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureTrainingStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureTrainingStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UI/GestureTrainingUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UI/GestureTrainingUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UI/GestureTrainingUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UserInterfaceManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UserInterfaceManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/Grid_BluePrint.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Grid_BluePrint.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/Grid_BluePrint.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Grid_BluePrint.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/Grid_Lime.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Grid_Lime.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/Grid_Lime.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Grid_Lime.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/Grid_Red.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Grid_Red.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/Grid_Red.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Grid_Red.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/UI/progress-bar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/UI/progress-bar.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/WoodFine0020_M.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/WoodFine0020_M.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/WoodFine0020_M.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/WoodFine0020_M.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/grid_01_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/grid_01_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/grid_01_gray.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/grid_01_gray.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/varjo_aruco_100.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/varjo_aruco_100.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Textures/varjo_aruco_100.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/varjo_aruco_100.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Sounds/GoogleTextToSpeech.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Sounds/GoogleTextToSpeech.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,20 +34,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/GestureSequencePlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/HandVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/SFXManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/Sample.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureBaseStep.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureScenario.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureScenarioPreviewStep.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureTrainingController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UI/GestureTrainingUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UserInterfaceManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.vtt.core.virtualassistant@1.0.2/Runtime/Components/Scripts/TTS/AudioCollection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.vtt.core.virtualassistant@1.0.2/Runtime/Components/Scripts/TTS/TTSController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.googlecloudtexttospeech@0.0.1-r.14/Editor/GoogleTextToSpeech.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.vtt.core@1.0.0/Runtime/Core Logic Scripts/VTTBaseListStep.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.vtt.core@1.0.0/Runtime/Core Logic Scripts/VTTIndexBasedListController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.vtt.core@1.0.0/Runtime/Core Logic Scripts/VTTSimpleStepController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Tables/LocalizationTable.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -219,6 +52,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -293,6 +128,9 @@
       <workItem from="1684475319317" duration="443000" />
       <workItem from="1684476009204" duration="13332000" />
       <workItem from="1684500528014" duration="3890000" />
+      <workItem from="1684739073795" duration="3088000" />
+      <workItem from="1684744080772" duration="1419000" />
+      <workItem from="1684748408971" duration="598000" />
     </task>
     <servers />
   </component>
