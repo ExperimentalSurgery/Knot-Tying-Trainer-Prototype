@@ -2,7 +2,7 @@ using System.Collections;
 using NMY;
 using NMY.VTT.Core;
 using UnityEngine;
-using UnityEngine.UI;
+
 using Image = UnityEngine.UI.Image;
 
 
@@ -37,11 +37,13 @@ public class GestureTrainingStep : GestureBaseStep
         GestureSequencePlayer.instance.LoopSingleSequencePlayback = true;
         GestureSequencePlayer.instance.AnalyzePoseMatching = true;
         GestureSequencePlayer.instance.Play(sequenceIndex);
-        GestureSequencePlayer.instance.SequenceDuration = Mathf.Lerp(maxDuration, minDuration, GestureTrainingUI.instance.PlaybackSpeedScrollbar.value);
-        GestureTrainingUI.instance.PlaybackSpeedScrollbar.onValueChanged.AddListener((val)=> {
+        /*TODO: Mark Peter --> re Impl 
+        GestureSequencePlayer.instance.SequenceDuration = Mathf.Lerp(maxDuration, minDuration, UserInterfaceManager.instance.PlaybackSpeedScrollbar.value);
+        UserInterfaceManager.instance.PlaybackSpeedScrollbar.onValueChanged.AddListener((val)=> {
             float newDuration = Mathf.Lerp(maxDuration, minDuration, val);
             GestureSequencePlayer.instance.ChangeDuration(newDuration);
         });
+        */
         
         // Register for finish events
         GestureSequencePlayer.instance.SequenceFinishedEvent.AddListener(OnGestureEvent);
