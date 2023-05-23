@@ -1,4 +1,5 @@
 using System.Collections;
+using Microsoft.MixedReality.Toolkit.UI;
 using NMY;
 using NMY.VTT.Core;
 using UnityEngine;
@@ -37,14 +38,15 @@ public class GestureTrainingStep : GestureBaseStep
         GestureSequencePlayer.instance.LoopSingleSequencePlayback = true;
         GestureSequencePlayer.instance.AnalyzePoseMatching = true;
         GestureSequencePlayer.instance.Play(sequenceIndex);
-        /*TODO: Mark Peter --> re Impl 
-        GestureSequencePlayer.instance.SequenceDuration = Mathf.Lerp(maxDuration, minDuration, UserInterfaceManager.instance.PlaybackSpeedScrollbar.value);
-        UserInterfaceManager.instance.PlaybackSpeedScrollbar.onValueChanged.AddListener((val)=> {
-            float newDuration = Mathf.Lerp(maxDuration, minDuration, val);
-            GestureSequencePlayer.instance.ChangeDuration(newDuration);
-        });
-        */
-        
+       
+       
+        if (UserInterfaceManager.instance.PlaybackSpeedSliderMrtk)
+        {
+            GestureSequencePlayer.instance.SequenceDuration = Mathf.Lerp(maxDuration, minDuration, UserInterfaceManager.instance.PlaybackSpeedSliderMrtk.SliderValue);
+            UserInterfaceManager.instance.PlaybackSpeedSliderMrtk.OnValueUpdated.AddListener(OnSpeedSliderUpdated);
+
+        }
+
         // Register for finish events
         GestureSequencePlayer.instance.SequenceFinishedEvent.AddListener(OnGestureEvent);
         
@@ -57,6 +59,12 @@ public class GestureTrainingStep : GestureBaseStep
         
         StopAllCoroutines();
 
+    }
+
+    private void OnSpeedSliderUpdated(SliderEventData eventData)
+    {
+        float newDuration = Mathf.Lerp(maxDuration, minDuration, eventData.NewValue);
+        GestureSequencePlayer.instance.ChangeDuration(newDuration);
     }
 
     private void OnGestureEvent(HandGestureParams parameters) {

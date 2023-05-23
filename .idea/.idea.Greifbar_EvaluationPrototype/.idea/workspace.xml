@@ -8,12 +8,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MRTK/Examples/Experimental/ProgressIndicator/ProgressIndicatorSceneSystemProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MRTK/Examples/Experimental/ProgressIndicator/ProgressIndicatorSceneSystemProfile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MixedRealityToolkit.Generated/ProjectPreferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MixedRealityToolkit.Generated/ProjectPreferences.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevScene_MRTK.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevScene_MRTK.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenario.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenario.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserInterfaceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserInterfaceManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureTrainingStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureTrainingStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UI/GestureTrainingUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UI/GestureTrainingUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

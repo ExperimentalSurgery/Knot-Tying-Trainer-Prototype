@@ -26,14 +26,52 @@ namespace DFKI.NMY
             GestureSequencePlayer.instance.RightHandBvhFile = bvhFileRight;
             GestureSequencePlayer.instance.InitSequence();
             base.ActivateEnter();
+            if (UserInterfaceManager.instance.ForwardButtonMrtk)
+            {
+                UserInterfaceManager.instance.ForwardButtonMrtk.OnClick.AddListener(OnForwardTriggered);
+            }
+            if (UserInterfaceManager.instance.PauseButtonMrtk)
+            {
+                UserInterfaceManager.instance.PauseButtonMrtk.OnClick.AddListener(OnPauseTriggered);
+            }
+            
+        }
+        protected override void ActivateImmediatelyEnter() => ActivateEnter();
+
+        protected override void DeactivateEnter()
+        {
+            base.DeactivateEnter();
+            if (UserInterfaceManager.instance.ForwardButtonMrtk)
+            {
+                UserInterfaceManager.instance.ForwardButtonMrtk.OnClick.RemoveListener(OnForwardTriggered);
+            }
+            if (UserInterfaceManager.instance.PauseButtonMrtk)
+            {
+                UserInterfaceManager.instance.PauseButtonMrtk.OnClick.RemoveListener(OnPauseTriggered);
+            }
         }
 
-        protected override void ActivateImmediatelyEnter()
+        protected override void DeactivateImmediatelyEnter() => DeactivateEnter();
+
+        private void OnForwardTriggered()
         {
-            GestureSequencePlayer.instance.LeftHandBvhFile = bvhFileLeft;
-            GestureSequencePlayer.instance.RightHandBvhFile = bvhFileRight;
-            GestureSequencePlayer.instance.InitSequence();
-            base.ActivateImmediatelyEnter();
+            GestureBaseStep step = (entrys[currentStepIndex] as GestureBaseStep);
+            step.RaiseStepCompletedEvent();
         }
+
+        private void OnPauseTriggered()
+        {
+            if (GestureSequencePlayer.instance.isPlayingLeft && GestureSequencePlayer.instance.isPlayingRight)
+            {
+                GestureSequencePlayer.instance.Pause();
+            }
+            else
+            {
+                GestureSequencePlayer.instance.Resume();
+            }
+
+        }
+
+       
     }
 }

@@ -24,6 +24,9 @@ namespace DFKI.NMY
         [SerializeField] private TextMeshPro stepTitleMrtk;
         [SerializeField] private TextMeshProUGUI stepDescriptionMrtk;
         [SerializeField] private ProgressIndicatorLoadingBar progressIndicatorMrtk;
+        [SerializeField] private PinchSlider playbackSpeedSliderMrtk;
+        [SerializeField] private Interactable pauseButtonMrtk;
+        [SerializeField] private Interactable forwardButtonMrtk;
 
         public void ShowSuccessPanel()=>successPanel.Activate();
         public void HideSuccessPanel()=>successPanel.Deactivate();
@@ -42,10 +45,23 @@ namespace DFKI.NMY
             if(progressIndicatorMrtk) OpenIndicator(progressIndicatorMrtk);
         }
 
-        public Scrollbar PlaybackSpeedScrollbar
+
+        public Interactable PauseButtonMrtk
         {
-            get => playbackSpeedScrollbar;
-            set => playbackSpeedScrollbar = value;
+            get => pauseButtonMrtk;
+            set => pauseButtonMrtk = value;
+        }
+
+        public Interactable ForwardButtonMrtk
+        {
+            get => forwardButtonMrtk;
+            set => forwardButtonMrtk = value;
+        }
+
+        public PinchSlider PlaybackSpeedSliderMrtk
+        {
+            get => playbackSpeedSliderMrtk;
+            set => playbackSpeedSliderMrtk = value;
         }
 
         private void Update()
