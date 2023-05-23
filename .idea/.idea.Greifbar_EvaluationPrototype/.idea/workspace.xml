@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db4b24e-3b2b-4a07-b416-6d49153c6a95" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandInteractionExamples.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandInteractionExamples.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/GestureSequencePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/GestureSequencePlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/MRTK/Providers/LeapMotion/LeapMotionArticulatedHand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/GestureSequencePlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UI/GestureTrainingUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.googlecloudtexttospeech@0.0.1-r.14/Editor/GoogleTextToSpeech.cs" root0="SKIP_HIGHLIGHTING" />

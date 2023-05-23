@@ -215,7 +215,15 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
             if (isPlaying)
             {
                 normalizedProgress = (Time.time - startTime) / (endTime - startTime);
-                normalizedProgressTotal = (float)playedFrames.Count / GetTotalFramesForAllSequences(gestureModule);
+                if (playAllSequences)
+                {
+                    normalizedProgressTotal = (float)playedFrames.Count / GetTotalFramesForAllSequences(gestureModule);
+                }
+                else
+                {
+                    normalizedProgressTotal = normalizedProgress;
+                }
+
                 currentFrame = gestureModule.GetSequenceStartFrameIndex(currentSequence) +
                                (int)(gestureModule.GetSequenceLength(currentSequence) *
                                      normalizedProgress);
@@ -226,6 +234,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
                 //Debug.Log("seq:"+currentSequence+" sf:"+gestureModule.GetSequenceStartFrameIndex(currentSequence)+ " ef:"+gestureModule.GetSequenceEndFrameIndex(currentSequence)+" p:"+playedFrames.Count+" f:"+currentFrame);
 
             }
+            
            
         }
     
@@ -342,6 +351,10 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         isPausedLeft = false;
         isPausedRight = false;
         playAllSequences = false;
+        normalizedProgressLeft = 0.0f;
+        normalizedProgressRight = 0.0f;
+        normalizedProgressTotalLeft = 0.0f;
+        normalizedProgressTotalRight = 0.0f;
     }
 
     public void Play(int singleSequence=-1)

@@ -730,7 +730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 394906fe25356a546a732a31cfc7171b, type: 3}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5857,7 +5857,6 @@ MonoBehaviour:
   lateDeactivationSound: {fileID: 0}
   lateDeactivationSearch: {fileID: 0}
   lateDeactivationSteps: []
-  textToSpeechData: {fileID: 11400000, guid: fe9b23829717d944c925f3f1bdf66370, type: 2}
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:bdfec35c4dec91d4284333dada537d28
@@ -5876,6 +5875,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  spokenTextTts: {fileID: 0}
   nextStepDelay: 3
   sequenceIndex: 2
   minDuration: 0.5
@@ -5946,7 +5946,6 @@ MonoBehaviour:
   lateDeactivationSound: {fileID: 0}
   lateDeactivationSearch: {fileID: 0}
   lateDeactivationSteps: []
-  textToSpeechData: {fileID: 11400000, guid: 6f0753a14284f4145b75684639999560, type: 2}
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:bdfec35c4dec91d4284333dada537d28
@@ -5965,6 +5964,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  spokenTextTts: {fileID: 0}
   nextStepDelay: 3
   sequenceIndex: 4
   minDuration: 0.5
@@ -6035,7 +6035,6 @@ MonoBehaviour:
   lateDeactivationSound: {fileID: 0}
   lateDeactivationSearch: {fileID: 0}
   lateDeactivationSteps: []
-  textToSpeechData: {fileID: 11400000, guid: 16f6e63f6fcc08849a9b42bdd8917da1, type: 2}
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:bdfec35c4dec91d4284333dada537d28
@@ -6054,6 +6053,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  spokenTextTts: {fileID: 0}
   nextStepDelay: 3
   sequenceIndex: 3
   minDuration: 0.5
@@ -10653,7 +10653,6 @@ MonoBehaviour:
   lateDeactivationSound: {fileID: 0}
   lateDeactivationSearch: {fileID: 0}
   lateDeactivationSteps: []
-  textToSpeechData: {fileID: 11400000, guid: 4551a0c3482de5a4f9103ef2bacf1e22, type: 2}
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:567f438eabf3afd48abfeadd60a13a8a
@@ -10672,6 +10671,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  spokenTextTts: {fileID: 0}
   nextStepDelay: 2
   singleSequenceDuration: 1
   references:
@@ -11355,7 +11355,6 @@ MonoBehaviour:
   lateDeactivationSound: {fileID: 0}
   lateDeactivationSearch: {fileID: 0}
   lateDeactivationSteps: []
-  textToSpeechData: {fileID: 11400000, guid: f4999087005aaaa488c0ab22c1945cc9, type: 2}
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:bdfec35c4dec91d4284333dada537d28
@@ -11374,6 +11373,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  spokenTextTts: {fileID: 0}
   nextStepDelay: 3
   sequenceIndex: 1
   minDuration: 0.5
@@ -11699,12 +11699,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 394906fe25356a546a732a31cfc7171b, type: 3}
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.833
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -11885,7 +11885,6 @@ MonoBehaviour:
   lateDeactivationSound: {fileID: 0}
   lateDeactivationSearch: {fileID: 0}
   lateDeactivationSteps: []
-  textToSpeechData: {fileID: 11400000, guid: a97b2f2125157b94fa2a287a7f5b6235, type: 2}
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:bdfec35c4dec91d4284333dada537d28
@@ -11904,6 +11903,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  spokenTextTts: {fileID: 0}
   nextStepDelay: 2
   sequenceIndex: 0
   minDuration: 0.5
