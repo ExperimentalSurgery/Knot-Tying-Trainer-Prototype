@@ -12,11 +12,9 @@ public class KnotbankController : MonoBehaviour
     public Light tensionLED;
     public Light contactLED;
 
-    private string tmpStr;
     private int tmpInt;
 
     private int contactVal;
-    private int counter;
 
     private float yBase;
 
@@ -41,13 +39,8 @@ public class KnotbankController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (contactVal == 1)
-            counter++;
-        else
-            counter = 0;
-		
-        if (counter >= 10) 
+    {		
+        if (contactVal == 0) 
         { 
             rubberBands.SetBlendShapeWeight(0, 100);
             baseMatInst.color = offGreen;
@@ -64,31 +57,24 @@ public class KnotbankController : MonoBehaviour
     // Invoked when a line of data is received from the serial device.
     void OnMessageArrived(string msg)
     {
-		if (msg.StartsWith("Tension Grams"))
-		{
-            tmpStr = msg.Substring(msg.IndexOf(':')+1);
-            if (int.TryParse(tmpStr.Trim(), out tmpInt))
-            {
-                knotBankBase.localPosition = new Vector3(knotBankBase.localPosition.x, yBase - ((tmpInt - 20) / 200000f), knotBankBase.localPosition.z);
-                caseMatInst.color = Color.Lerp(offGreen, offRed, Map(tmpInt-20, 0, -330, 0f,1f));
-                tensionLED.color = Color.Lerp(Color.green, Color.red, Map(tmpInt - 20, 0, -330, 0f, 1f));
+        string[] data = msg.Split(';');
+        Debug.Log($"Contact: {data[0]} - Tension Grams: {data[1]}");
 
-                Debug.Log($"Tension Grams: {tmpInt}");
-            }
+        if (int.TryParse(data[1], out tmpInt))
+        {
+            knotBankBase.localPosition = new Vector3(knotBankBase.localPosition.x, yBase - ((tmpInt - 20) / 200000f), knotBankBase.localPosition.z);
+            caseMatInst.color = Color.Lerp(offGreen, offRed, Map(tmpInt - 20, 0, -330, 0f, 1f));
+            tensionLED.color = Color.Lerp(Color.green, Color.red, Map(tmpInt - 20, 0, -330, 0f, 1f));
         }
-		else if (msg.StartsWith("Contact"))
-		{
-            tmpStr = msg.Substring(msg.IndexOf(':')+1);
-            if (int.TryParse(tmpStr.Trim(), out tmpInt))
-                contactVal = tmpInt;
 
-            Debug.Log($"Contact: {tmpInt}");
-        }
-	}
+        if (int.TryParse(data[0], out tmpInt))
+            contactVal = tmpInt;
+    }
 
     // Invoked when a connect/disconnect event occurs. The parameter 'success'
     // will be 'true' upon connection, and 'false' upon disconnection or
     // failure to connect.
+
     void OnConnectionEvent(bool success)
     {
         if (success)
