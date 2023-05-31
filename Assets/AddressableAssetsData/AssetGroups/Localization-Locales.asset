@@ -17,13 +17,13 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 09fff16902b7cb64cb392ca5b4edc4af
   m_SerializeEntries:
-  - m_GUID: 6622c36c961da6444b7d995de71c7ffa
-    m_Address: German(de)
+  - m_GUID: 37d75f92e3152f04ea0573cc004e47bd
+    m_Address: German (de)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
-  - m_GUID: 43775f00dfd88c744b1fd053abcc5d7f
-    m_Address: English(en)
+  - m_GUID: 6a5006aeebf27a34298bd07a3356eafe
+    m_Address: English (en)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale

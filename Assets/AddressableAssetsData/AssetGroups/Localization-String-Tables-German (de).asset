@@ -16,7 +16,55 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: f62fab7a23c877e48a3a41a7bb1a883b
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: e62ae44abd6eda94ab05a0593b423f9f
+    m_Address: VorschauMittelfingerknoten_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    - Preload
+  - m_GUID: ee54d39a34f5b774bbe7b4230a0d0cc4
+    m_Address: Introduction_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    - Preload
+  - m_GUID: 1b84ce235c4814a4398de22f9480a6df
+    m_Address: Setup_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    - Preload
+  - m_GUID: f6f464607cf86654a985cad74d998430
+    m_Address: Mittelfingerknoten_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    - Preload
+  - m_GUID: f89343c562c517845a8a6ac72661b133
+    m_Address: VorschauZeigefingerknoten_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    - Preload
+  - m_GUID: 023dda8714d4ac24b86e482fbc117f75
+    m_Address: Zeigefingerknoten_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    - Preload
+  - m_GUID: 2b042f888cb98524cbcd718e78eca8dd
+    m_Address: FeedbackScreen_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    - Preload
+  - m_GUID: 1506bcea4c594174c900dc9f0f09d57d
+    m_Address: UserInterface_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:

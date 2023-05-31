@@ -16,13 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 51cb5fdebe8ed614f9e2b157bfbfcebb
-  m_SerializeEntries:
-  - m_GUID: f512b255e022c8e40956c2cf41b64fff
-    m_Address: Greifbar_AssetTable_de
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-de
-    - Preload
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:

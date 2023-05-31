@@ -16,7 +16,43 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: dbb0dd8f2d47fe44883ef49b3abd3027
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 2257739dac409d545ae6a9774429691c
+    m_Address: VorschauMittelfingerknoten_Assets_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: fbdb072799ba8394bae175ba3f437a63
+    m_Address: Introduction_Assets_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: c2c49bab29d712847ac7170c521868c4
+    m_Address: Setup_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 9b23b48c1f013de4c8b9d7aed710a6b0
+    m_Address: Mittelfingerknoten_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 01fa7cf84aa2ce54b87e3ae990263459
+    m_Address: VorschauZeigefingerknoten_Assets_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: a7aa44a774f838740a3ec9fc2c0884cc
+    m_Address: Zeigefingerknoten_Assets_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Mittelfingerknoten
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 9c3e8db84a4bb604dbec4e87a6e8ec1d, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: b53c11cb11d6c494f80a9ea6b52e6d16, type: 2}
+  - {fileID: 11400000, guid: f6f464607cf86654a985cad74d998430, type: 2}
+  m_Extensions:
+  - rid: 4556038250801397986
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds:
+    - rid: 4556038250801397986
+      type: {class: GoogleSheetsExtension, ns: UnityEditor.Localization.Plugins.Google, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_SheetsServiceProvider: {fileID: 11400000, guid: 69fe8e3d3eb158c46a07a949cecd2287, type: 2}
+        m_SpreadsheetId: 1jWIurlJBMtL0z0yfrDsUfYcyVt7MDmmFbIR9Gvf21B4
+        m_SheetId: 574667478
+        m_Columns:
+        - rid: 4556038250801397987
+        - rid: 4556038250801397988
+        - rid: 4556038250801397989
+        m_RemoveMissingPulledKeys: 1
+    - rid: 4556038250801397987
+      type: {class: KeyColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: A
+    - rid: 4556038250801397988
+      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: B
+        m_LocaleIdentifier:
+          m_Code: en
+        m_IncludeComments: 0
+    - rid: 4556038250801397989
+      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: C
+        m_LocaleIdentifier:
+          m_Code: de
+        m_IncludeComments: 0

@@ -17,24 +17,60 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 06d7c10861e82574598199cd3200e065
   m_SerializeEntries:
-  - m_GUID: 567f438eabf3afd48abfeadd60a13a8a
-    m_Address: Assets/Localization/intro Shared Data.asset
+  - m_GUID: ecdb536c5a6e77549bd3128316b607ed
+    m_Address: Assets/Localization/StringTables/VorschauMittelfingerknoten Shared
+      Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-  - m_GUID: bdfec35c4dec91d4284333dada537d28
-    m_Address: Assets/Localization/UI Shared Data.asset
+  - m_GUID: fc69b00c1ba4be240900452a7030be4e
+    m_Address: Assets/Localization/AssetTables/VorschauMittelfingerknoten_Assets
+      Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-  - m_GUID: e194af856ffda94459908594d8dfac18
-    m_Address: Assets/Localization/setup Shared Data.asset
+  - m_GUID: 8b54c45a014b4d14aabc06489dbe5bc0
+    m_Address: Assets/Localization/StringTables/Introduction Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-  - m_GUID: 76332df8ca684cd4a81092660eb77cc0
-    m_Address: Assets/Localization/AssetTables/Greifbar_AssetTable Shared Data.asset
+  - m_GUID: 4de38e98376a1df4fa7901352b647740
+    m_Address: Assets/Localization/AssetTables/Introduction_Assets Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-  - m_GUID: 8c4f275133ebebc4d8ba6029cca8fdb7
-    m_Address: Assets/Localization/TTS/test Shared Data.asset
+  - m_GUID: 03d10c4bda2076040a2706f6e217ee9d
+    m_Address: Assets/Localization/StringTables/Setup Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 9c3e8db84a4bb604dbec4e87a6e8ec1d
+    m_Address: Assets/Localization/StringTables/Mittelfingerknoten Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: bc2ddf4480c37a64585b03465c45fb51
+    m_Address: Assets/Localization/AssetTables/Mittelfingerknoten Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 6f3ff9144ac54b9418f0f8157c4e9c7b
+    m_Address: Assets/Localization/StringTables/VorschauZeigefingerknoten Shared
+      Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: d93a6c64817b89c4eb29fe5ce3220b18
+    m_Address: Assets/Localization/AssetTables/VorschauZeigefingerknoten_Assets Shared
+      Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: d118df3f032750240bfd3c3b0da8deed
+    m_Address: Assets/Localization/AssetTables/Zeigefingerknoten_Assets Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 2db8d6f7299d77344baec80c35d39145
+    m_Address: Assets/Localization/StringTables/Zeigefingerknoten Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: aa99f3308bc977c4386bcfc929b68d92
+    m_Address: Assets/Localization/StringTables/FeedbackScreen Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: e1e1b9f435608844c844ff6f4baf2bd6
+    m_Address: Assets/Localization/StringTables/UserInterface Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
   m_ReadOnly: 1
