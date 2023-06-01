@@ -360,8 +360,6 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     public void Play(int singleSequence=-1)
     {
         
-        Debug.Log("Play()");
-        
         if (singleSequence > 0) {
             playAllSequences = false;
         }

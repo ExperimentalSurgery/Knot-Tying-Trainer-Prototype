@@ -14,12 +14,6 @@ namespace DFKI.NMY
         [SerializeField] private string bvhFileRight = "";
 
 
-        private void Update()
-        {
-            if(Input.GetKeyDown(KeyCode.N)) TriggerNextStepIndex();
-            if(Input.GetKeyDown(KeyCode.P)) TriggerPreviousStepIndex();
-        }
-
         protected override void ActivateEnter()
         {
             GestureSequencePlayer.instance.LeftHandBvhFile = bvhFileLeft;

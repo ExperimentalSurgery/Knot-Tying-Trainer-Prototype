@@ -9,18 +9,21 @@ using Image = UnityEngine.UI.Image;
 
 namespace DFKI.NMY.TrainingSteps
 {
-    
+ 
+    public enum GestureCheckMethod {Manually=0,PoseMatch=1}
 public class GestureTrainingStep : GestureBaseStep
 {
-
+    
     [Header("Gesture Training Step")] 
     [SerializeField] private int sequenceIndex = 0;
+
+    [Header("CompletionConfig")]
+    [SerializeField] private GestureCheckMethod checkMethod = GestureCheckMethod.PoseMatch;
+    [SerializeField] private KeyCode manualCompletionKey = KeyCode.N;
     [SerializeField] private float minDuration = 0.5f;
     [SerializeField] private float maxDuration = 5;
     [SerializeField] private float poseMatchingThreshold = 25;
- 
-    [SerializeField] private bool loopSequence = true;
-    
+
     // helper vars
     private bool matchedLeft = false;
     private bool matchedRight = false;
@@ -48,7 +51,15 @@ public class GestureTrainingStep : GestureBaseStep
         }
 
         // Register for finish events
-        GestureSequencePlayer.instance.SequenceFinishedEvent.AddListener(OnGestureEvent);
+        switch (checkMethod)
+        {
+            case GestureCheckMethod.Manually:
+                break;
+            case GestureCheckMethod.PoseMatch:
+                GestureSequencePlayer.instance.SequenceFinishedEvent.AddListener(OnGestureEvent);
+                break;
+        }
+        
         
         // show expert hands
         HandVisualizer.instance.SetExpertHandVisibleRight(true);
@@ -80,13 +91,15 @@ public class GestureTrainingStep : GestureBaseStep
             HandVisualizer.instance.SetSuccessColor(false,true);
         }
 
-        if (matchedLeft && matchedRight)
-        {
-            StartCoroutine(TriggerDelayedCompletion());
+        if (matchedLeft && matchedRight) {
+           TriggerCompletionManually();
         }
         
     }
 
+    public void TriggerCompletionManually() {
+        StartCoroutine(TriggerDelayedCompletion());
+    }
 
     public override IEnumerator TriggerDelayedCompletion() {
         GestureSequencePlayer.instance.SequenceFinishedEvent.RemoveListener(OnGestureEvent);
@@ -107,8 +120,8 @@ public class GestureTrainingStep : GestureBaseStep
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.N)) {
-            RaiseStepCompletedEvent();
+        if (isActivated && !locked && checkMethod.Equals(GestureCheckMethod.Manually) && Input.GetKeyDown(manualCompletionKey)) {
+            TriggerCompletionManually();
         }
     }
 

@@ -13,10 +13,25 @@ namespace DFKI.NMY
         [SerializeField] private LocalizedString stepTitle;
         [SerializeField] private LocalizedString stepDescription;
         [SerializeField] private LocalizedTextToSpeechItem spokenTextTts;
+        protected bool locked = false;
+
+
+        public LocalizedString StepTitle
+        {
+            get => stepTitle;
+            set => stepTitle = value;
+        }
+
+        public LocalizedString StepDescription
+        {
+            get => stepDescription;
+            set => stepDescription = value;
+        }
 
         protected override void ActivateEnter()
         {
             base.ActivateEnter();
+            locked = false;
             UserInterfaceManager.instance.UpdateStepInfos(stepTitle,stepDescription);
 
             if (spokenTextTts && spokenTextTts.audioClip) {
@@ -28,6 +43,7 @@ namespace DFKI.NMY
         protected override void ActivateImmediatelyEnter()
         {
             base.ActivateImmediatelyEnter();
+            locked = false;
             UserInterfaceManager.instance.UpdateStepInfos(stepTitle,stepDescription);
             //AudioClip clip;
             if (spokenTextTts && spokenTextTts.audioClip) {
@@ -38,25 +54,29 @@ namespace DFKI.NMY
 protected override void DeactivateEnter()
 {
 base.DeactivateEnter();
+locked = false;
 SFXManager.instance.StopAudio();
 }
 
 protected override void DeactivateImmediatelyEnter()
 {
 base.DeactivateImmediatelyEnter();
+locked = false;
 SFXManager.instance.StopAudio();
 }
 
 [SerializeField] private float nextStepDelay = 2.0f;
 public virtual IEnumerator TriggerDelayedCompletion()
 {
-yield return new WaitForSeconds(nextStepDelay);
-RaiseStepCompletedEvent();
+    locked = true;
+    yield return new WaitForSeconds(nextStepDelay);
+    RaiseStepCompletedEvent();
+    locked = false;
 }
 
 protected override void OnStepComplete()
 {
-
+    locked = false;
 }
 
 protected override void OnStepReset() {

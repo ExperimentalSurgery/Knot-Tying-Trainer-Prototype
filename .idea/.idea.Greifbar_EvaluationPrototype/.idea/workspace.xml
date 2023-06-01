@@ -6,16 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8db4b24e-3b2b-4a07-b416-6d49153c6a95" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MRTK/Examples/Experimental/ProgressIndicator/ProgressIndicatorSceneSystemProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MRTK/Examples/Experimental/ProgressIndicator/ProgressIndicatorSceneSystemProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MixedRealityToolkit.Generated/ProjectPreferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MixedRealityToolkit.Generated/ProjectPreferences.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevScene_MRTK.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevScene_MRTK.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureBaseStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureBaseStep.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenario.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureScenario.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserInterfaceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserInterfaceManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureTrainingStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/TrainingSteps/GestureTrainingStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureTrainingStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureTrainingStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/GestureSequencePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/GestureSequencePlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +19,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/MRTK/Providers/LeapMotion/LeapMotionArticulatedHand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/GestureSequencePlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_GreifbAR_EvaluationPrototype/Scripts/UI/GestureTrainingUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GestureStepListEntry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.googlecloudtexttospeech@0.0.1-r.14/Editor/GoogleTextToSpeech.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.vtt.core@1.0.0/Runtime/Core Logic Scripts/EventArgs/ListControllerEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.vtt.core@1.0.0/Runtime/Core Logic Scripts/VTTBaseListStep.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.vtt.core@1.0.0/Runtime/Core Logic Scripts/VTTIndexBasedListController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.vtt.core@1.0.0/Runtime/Core Logic Scripts/VTTSimpleStepController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -66,7 +61,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.26f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\Mark\Documents\wkspaces\GIT\Greifbar_EvaluationPrototype -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Mark\Documents\wkspaces\GIT\Greifbar_EvaluationPrototype" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -74,7 +69,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.26f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\Mark\Documents\wkspaces\GIT\Greifbar_EvaluationPrototype -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Mark\Documents\wkspaces\GIT\Greifbar_EvaluationPrototype" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -122,6 +117,8 @@
       <workItem from="1684739073795" duration="3088000" />
       <workItem from="1684744080772" duration="1419000" />
       <workItem from="1684748408971" duration="1193000" />
+      <workItem from="1685612310658" duration="2109000" />
+      <workItem from="1685620988632" duration="5534000" />
     </task>
     <servers />
   </component>
