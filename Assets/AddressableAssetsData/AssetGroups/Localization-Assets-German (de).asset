@@ -22,191 +22,229 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 181bb4983e04fcc4caf2ac9e3232b5b2
     m_Address: de_intro_assi_trainerhands
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0be2d1a4427b79242959a5b718345e8a
     m_Address: de_tbd
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e731863acdac492449dea9a63595227a
     m_Address: de_intro_assi_try_gesture
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 476573346672ea848b5d1874f3ebdeaf
     m_Address: de_intro_assi_basics
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2dd8414c66e7c9d4da8f743f87fba297
     m_Address: de_intro_assi_welcome
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 223cf0abb13c8de43807c8f2889d0eb6
     m_Address: de_intro_assi_try_trainerhands_speed
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 489441f210851ec4eae2ce6b6dae0cc7
     m_Address: de_intro_assi_starttraining
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bd718cffee3c246469310bfc38e0826d
     m_Address: de_intro_assi_after_gesture
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4e7dc5c7ff655994cb75357eecdf584e
     m_Address: de_intro_assi_backbutton
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4d3510c2b7debc84f95ea4b5b0d6e009
     m_Address: de_intro_assi_after_backbutton
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 07df0f3e3def16b4c9e76b1f11a2f172
     m_Address: de_intro_assi_start
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dd9ed35fab3a1f540ba043a99d5d8aba
     m_Address: de_intro_assi_raisehands
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f215b9c20f31c684ab981fd33e9b8c99
     m_Address: de_intro_assi_try_nextstepsbutton
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c06a4ef58f03bbe458d54ad792ed6c5c
     m_Address: de_intro_assi_buttons
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8d1263880653ba84cb0541b8e4a193f9
     m_Address: de_intro_assi_nextstepsbutton
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3edde0bdf1b024040adf969ecae37376
     m_Address: de_intro_assi_trainerhands_speed
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8c40801a7b1422840851aef4442ab290
     m_Address: de_tbd
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 35c0754951d4e034abe8bd244553886d
     m_Address: de_setup_assi_start
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b8584923b3a0ab94ba025aacce70a033
     m_Address: de_setup_assi_rubberbands
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 756507ba7d89db946b351b6ed22d555a
     m_Address: de_setup_assi_show-0
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1ab3c2ed74fbe374c8bf0c863d7cd4b1
     m_Address: de_setup_assi_pull
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 142858b67f5d1914ea28fa8bb53cee83
     m_Address: de_setup_assi_show-1
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5175c2d536d4e444088954be8ac8da2e
     m_Address: de_setup_assi_verynice-1
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ee5264ca755a50f4188e460b3332e7d2
     m_Address: de_setup_assi_cross-1
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 55da8c2914e9bcb4fa9fe50c9b59ce90
     m_Address: de_setup_assi_cross-2
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c61d07e83cedd8140bee83f9d2c3932e
     m_Address: de_setup_assi_cross-3
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8821d8442d2dcc3479571fb4cae9b6de
     m_Address: de_setup_assi_thumbsup
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: aabfbd1191e720345bdfb4e285cd222d
     m_Address: de_setup_assi_verynice-2
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8613cd9e47774db478e7c9ac17167078
     m_Address: de_setup_assi_pickup-1
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ef0564e4913cfa0438658e1c02537c67
     m_Address: de_setup_assi_pickup-2
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 194ed89a5ef3a074a9a624199f4f72b1
     m_Address: de_setup_assi_try_pickup
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7265ab36629242440ba93d4e0176242f
     m_Address: de_setup_assi_fail
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dd5d67fe0cc5d454a869173e9e8bd58f
     m_Address: de_setup_assi_help-1
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5dda439d1224e124284b3b32a83651ee
     m_Address: de_setup_assi_help-2
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4edbe255528e7614ca59ff7031ffba59
     m_Address: de_setup_assi_help-3
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1324b674b8e543c4f9df8fae2f035d30
     m_Address: de_setup_assi_success
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cad1cb2f523f11641bdc0f5cbd764472
     m_Address: de_setup_assi_end
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:

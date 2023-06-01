@@ -18,7 +18,7 @@ MonoBehaviour:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
   _assetTable:
     m_TableReference:
-      m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
   _outputFolder: {fileID: 102900000, guid: 34d2b2fec3f131c4baa865ea73671aa4, type: 3}
   _outputFilePattern: '[LOCALE_CODE]_[KEY]'
   _dateTimeFormat: yyyy-MM-dd HH:mm:ss

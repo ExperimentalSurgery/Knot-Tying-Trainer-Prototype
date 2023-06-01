@@ -22,57 +22,75 @@ MonoBehaviour:
       Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fc69b00c1ba4be240900452a7030be4e
     m_Address: Assets/Localization/AssetTables/VorschauMittelfingerknoten_Assets
       Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8b54c45a014b4d14aabc06489dbe5bc0
     m_Address: Assets/Localization/StringTables/Introduction Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4de38e98376a1df4fa7901352b647740
     m_Address: Assets/Localization/AssetTables/Introduction_Assets Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 03d10c4bda2076040a2706f6e217ee9d
     m_Address: Assets/Localization/StringTables/Setup Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9c3e8db84a4bb604dbec4e87a6e8ec1d
     m_Address: Assets/Localization/StringTables/Mittelfingerknoten Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bc2ddf4480c37a64585b03465c45fb51
     m_Address: Assets/Localization/AssetTables/Mittelfingerknoten Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6f3ff9144ac54b9418f0f8157c4e9c7b
     m_Address: Assets/Localization/StringTables/VorschauZeigefingerknoten Shared
       Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d93a6c64817b89c4eb29fe5ce3220b18
     m_Address: Assets/Localization/AssetTables/VorschauZeigefingerknoten_Assets Shared
       Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d118df3f032750240bfd3c3b0da8deed
     m_Address: Assets/Localization/AssetTables/Zeigefingerknoten_Assets Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2db8d6f7299d77344baec80c35d39145
     m_Address: Assets/Localization/StringTables/Zeigefingerknoten Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: aa99f3308bc977c4386bcfc929b68d92
     m_Address: Assets/Localization/StringTables/FeedbackScreen Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e1e1b9f435608844c844ff6f4baf2bd6
     m_Address: Assets/Localization/StringTables/UserInterface Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b188132f14f78694489f8b37c2d04742
+    m_Address: Assets/Localization/AssetTables/Setup_Assets Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:

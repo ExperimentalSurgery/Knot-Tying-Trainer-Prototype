@@ -14,255 +14,255 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LocaleId:
     m_Code: en
-  m_SharedData: {fileID: 0}
+  m_SharedData: {fileID: 11400000, guid: b188132f14f78694489f8b37c2d04742, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 1059067629568
+  - m_Id: 90237931520
     m_Localized: 2bffd2ae79cb1f74b81febda86fddfac
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397930
-  - m_Id: 1060971843584
+      - rid: 5524020116102840322
+  - m_Id: 91840155648
     m_Localized: 0ab35bb7deb183e489a06e154d863e6f
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397932
-  - m_Id: 1062767005696
+      - rid: 5524020116102840325
+  - m_Id: 93433991168
     m_Localized: 62aef77e644d1b649a1fd2b921944104
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397934
-  - m_Id: 1064578945024
+      - rid: 5524020116102840327
+  - m_Id: 95069769728
     m_Localized: d7763981f81e00a43ab1bf7ba69da7c6
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397936
-  - m_Id: 1066445410304
+      - rid: 5524020116102840329
+  - m_Id: 96713936896
     m_Localized: 6049c8fc665d1be47bf7c51a3b10a49e
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397938
-  - m_Id: 1068290904064
+      - rid: 5524020116102840331
+  - m_Id: 98286800896
     m_Localized: 4ed6d4e75b6fd5440b4b4a97511febbb
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397940
-  - m_Id: 1070052511744
+      - rid: 5524020116102840333
+  - m_Id: 99914190848
     m_Localized: dcc967b940387ef4b8ab7a7fa1bb1d2f
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397942
-  - m_Id: 1071801536512
+      - rid: 5524020116102840335
+  - m_Id: 101415751680
     m_Localized: d7460246509c8364c94ca1782f73c18c
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397944
-  - m_Id: 1073592504320
+      - rid: 5524020116102840337
+  - m_Id: 102997004288
     m_Localized: 8aa612cebc960094aa310409151ac4eb
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397946
-  - m_Id: 1075366694912
+      - rid: 5524020116102840339
+  - m_Id: 104720863232
     m_Localized: 7584661774786ba44abfe9c450d5d332
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397948
-  - m_Id: 1077124108288
+      - rid: 5524020116102840341
+  - m_Id: 106281144320
     m_Localized: 003b5a6ea363cb54b9bd77bbf97ab641
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397950
-  - m_Id: 1078940241920
+      - rid: 5524020116102840343
+  - m_Id: 107912728576
     m_Localized: b2189932dfe943e459e225e9527e89b6
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397952
-  - m_Id: 1080706043904
+      - rid: 5524020116102840345
+  - m_Id: 109477203968
     m_Localized: 04d9c8c0c938b7d40965924410572842
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397954
-  - m_Id: 1082769641472
+      - rid: 5524020116102840347
+  - m_Id: 111033290752
     m_Localized: 9ceeb859eaf869a4692848d759563874
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397956
-  - m_Id: 1084652883968
+      - rid: 5524020116102840349
+  - m_Id: 112731983872
     m_Localized: 2e6ef9be437ebb64a803868008f39230
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397958
-  - m_Id: 1086452240384
+      - rid: 5524020116102840351
+  - m_Id: 114380345344
     m_Localized: e1867eece9070eb4d9c6c53a18cc0c89
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397960
-  - m_Id: 1088591335424
+      - rid: 5524020116102840353
+  - m_Id: 115919654912
     m_Localized: c614a526c6c20c14b8b85572e061ea29
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397962
-  - m_Id: 1090575241216
+      - rid: 5524020116102840355
+  - m_Id: 117618348032
     m_Localized: ee094b0c737bb89429b622fc8bcde62a
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397964
-  - m_Id: 1092454289408
+      - rid: 5524020116102840357
+  - m_Id: 119182823424
     m_Localized: 853b7f6a4d9871d48a9c86d4f9360cbe
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397966
-  - m_Id: 1094454972416
+      - rid: 5524020116102840359
+  - m_Id: 120843767808
     m_Localized: c04a4ff94cf9ec449a1c21d240a8f4cc
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397968
-  - m_Id: 1096631816192
+      - rid: 5524020116102840361
+  - m_Id: 122429214720
     m_Localized: 08596d3d86d97e54cb6e8f6e8a9eeaff
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397970
+      - rid: 5524020116102840363
   references:
     version: 2
     RefIds:
-    - rid: 4556038250801397930
+    - rid: 5524020116102840322
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:33
-        lastModified: 2023-05-31 16:00:33
+        created: 2023-06-01 11:08:05
+        lastModified: 2023-06-01 11:08:05
         spokenText: Not set yet.
-    - rid: 4556038250801397932
+    - rid: 5524020116102840325
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:33
-        lastModified: 2023-05-31 16:00:33
+        created: 2023-06-01 11:08:05
+        lastModified: 2023-06-01 11:08:05
         spokenText: 'Let''s start with the first, simple step: on the table in front
           of you will see a knot bank. This consists of two strands, which we want
           to tie together with a knot.'
-    - rid: 4556038250801397934
+    - rid: 5524020116102840327
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:34
-        lastModified: 2023-05-31 16:00:34
+        created: 2023-06-01 11:08:06
+        lastModified: 2023-06-01 11:08:06
         spokenText: Pass the thread under both strands.
-    - rid: 4556038250801397936
+    - rid: 5524020116102840329
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:34
-        lastModified: 2023-05-31 16:00:34
+        created: 2023-06-01 11:08:06
+        lastModified: 2023-06-01 11:08:06
         spokenText: It's very simple - I'll show you.
-    - rid: 4556038250801397938
+    - rid: 5524020116102840331
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:35
-        lastModified: 2023-05-31 16:00:35
+        created: 2023-06-01 11:08:06
+        lastModified: 2023-06-01 11:08:06
         spokenText: Now please pull lightly on both ends so that there is some tension
           on the thread. When the system detects the correct amount of tension, it
           will continue.
-    - rid: 4556038250801397940
+    - rid: 5524020116102840333
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:35
-        lastModified: 2023-05-31 16:00:35
+        created: 2023-06-01 11:08:07
+        lastModified: 2023-06-01 11:08:07
         spokenText: I'll do it again for you.
-    - rid: 4556038250801397942
+    - rid: 5524020116102840335
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:36
-        lastModified: 2023-05-31 16:00:36
+        created: 2023-06-01 11:08:07
+        lastModified: 2023-06-01 11:08:07
         spokenText: Very nice. That was quite simple.
-    - rid: 4556038250801397944
+    - rid: 5524020116102840337
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:36
-        lastModified: 2023-05-31 16:00:36
+        created: 2023-06-01 11:08:07
+        lastModified: 2023-06-01 11:08:07
         spokenText: Now I will cross the thread once, that is, lead it once around
           the material to be knotted.
-    - rid: 4556038250801397946
+    - rid: 5524020116102840339
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:36
-        lastModified: 2023-05-31 16:00:36
+        created: 2023-06-01 11:08:08
+        lastModified: 2023-06-01 11:08:08
         spokenText: We tie with the right hand, so after crossing the left end must
           be down, i.e. closer to you
-    - rid: 4556038250801397948
+    - rid: 5524020116102840341
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:37
-        lastModified: 2023-05-31 16:00:37
+        created: 2023-06-01 11:08:08
+        lastModified: 2023-06-01 11:08:08
         spokenText: First look at how I do it and also cross the two ends of the
           thread.
-    - rid: 4556038250801397950
+    - rid: 5524020116102840343
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:37
-        lastModified: 2023-05-31 16:00:37
+        created: 2023-06-01 11:08:09
+        lastModified: 2023-06-01 11:08:09
         spokenText: When you are done please show me a thumbs up.
-    - rid: 4556038250801397952
+    - rid: 5524020116102840345
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:38
-        lastModified: 2023-05-31 16:00:38
+        created: 2023-06-01 11:08:09
+        lastModified: 2023-06-01 11:08:09
         spokenText: Super! I see already. We understand each other. Let's get on
           with it.
-    - rid: 4556038250801397954
+    - rid: 5524020116102840347
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:38
-        lastModified: 2023-05-31 16:00:38
+        created: 2023-06-01 11:08:09
+        lastModified: 2023-06-01 11:08:09
         spokenText: Pick up each half of the thread between your thumb and index
           finger. Grasp the loose thread ends with the remaining fingers.
-    - rid: 4556038250801397956
+    - rid: 5524020116102840349
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:39
-        lastModified: 2023-05-31 16:00:39
+        created: 2023-06-01 11:08:10
+        lastModified: 2023-06-01 11:08:10
         spokenText: This sounds complicated, as you can see, I use my pinky, ring
           finger and middle finger to form a tube through which the thread runs.
-    - rid: 4556038250801397958
+    - rid: 5524020116102840351
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:39
-        lastModified: 2023-05-31 16:00:39
+        created: 2023-06-01 11:08:10
+        lastModified: 2023-06-01 11:08:10
         spokenText: Now do it yourself, now cross the thread. Hold the threads as
           described and shown.
-    - rid: 4556038250801397960
+    - rid: 5524020116102840353
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:40
-        lastModified: 2023-05-31 16:00:40
+        created: 2023-06-01 11:08:11
+        lastModified: 2023-06-01 11:08:11
         spokenText: That's not quite it yet.
-    - rid: 4556038250801397962
+    - rid: 5524020116102840355
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:40
-        lastModified: 2023-05-31 16:00:40
+        created: 2023-06-01 11:08:11
+        lastModified: 2023-06-01 11:08:11
         spokenText: You need to grasp the thread between your index finger and thumb.
-    - rid: 4556038250801397964
+    - rid: 5524020116102840357
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:41
-        lastModified: 2023-05-31 16:00:41
+        created: 2023-06-01 11:08:11
+        lastModified: 2023-06-01 11:08:11
         spokenText: Please tighten the thread a little more to get a tight knot.
-    - rid: 4556038250801397966
+    - rid: 5524020116102840359
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:41
-        lastModified: 2023-05-31 16:00:41
+        created: 2023-06-01 11:08:12
+        lastModified: 2023-06-01 11:08:12
         spokenText: Please relax the thread a little so as not to cause a skin tear
           later.
-    - rid: 4556038250801397968
+    - rid: 5524020116102840361
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:41
-        lastModified: 2023-05-31 16:00:41
+        created: 2023-06-01 11:08:12
+        lastModified: 2023-06-01 11:08:12
         spokenText: Super! That worked well!
-    - rid: 4556038250801397970
+    - rid: 5524020116102840363
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-05-31 16:00:42
-        lastModified: 2023-05-31 16:00:42
+        created: 2023-06-01 11:08:13
+        lastModified: 2023-06-01 11:08:13
         spokenText: This is your starting position. Every node starts in this state.
           As you can see, the system always confirms a successful position by briefly
           lighting your hands green.

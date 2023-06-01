@@ -16,5 +16,6 @@ EditorBuildSettings:
     com.unity.addressableassets: {fileID: 11400000, guid: d9fad6cd4c82ca24bb9390ee6a82862e, type: 2}
     com.unity.localization.addressable-group-rules: {fileID: 0}
     com.unity.localization.settings: {fileID: 11400000, guid: 442b734da8c18d34d99221827ca14f1d, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: a5d1ad538b6bcc64a8d8304db25c0a05, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1f4372c32bef0944ba5fd810ce86e47d, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: d51c0ecc082ad2847842bed8d72234be, type: 2}
