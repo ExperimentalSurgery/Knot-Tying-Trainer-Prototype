@@ -43,6 +43,7 @@ namespace DFKI.NMY
         {
             base.StartupEnter();
             if(progressIndicatorMrtk) OpenIndicator(progressIndicatorMrtk);
+            playbackSpeedSliderMrtk.gameObject.SetActive(false);
         }
 
 
@@ -69,7 +70,6 @@ namespace DFKI.NMY
             GestureSequencePlayer player = GestureSequencePlayer.instance;
             if (player.isPlayingLeft){
                 if(progressIndicatorMrtk) progressIndicatorMrtk.Progress =player.PlayAllSequences ? player.normalizedProgressTotalLeft : player.normalizedProgressLeft;
-                
                 if(progressFillLeft)progressFillLeft.fillAmount = player.PlayAllSequences ? player.normalizedProgressTotalLeft : player.normalizedProgressLeft;
             }
             if (player.isPlayingRight) {
@@ -78,8 +78,11 @@ namespace DFKI.NMY
                 if(progressFillRight)progressFillRight.fillAmount = player.PlayAllSequences ? player.normalizedProgressTotalRight : player.normalizedProgressRight;
             }
             
-            
+        }
 
+        public void TogglePinchSlider()
+        {
+            playbackSpeedSliderMrtk.gameObject.SetActive(!playbackSpeedSliderMrtk.gameObject.activeInHierarchy);
         }
         
         private async void OpenIndicator(IProgressIndicator indicator)

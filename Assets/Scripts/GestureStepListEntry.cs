@@ -1,11 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using DFKI.NMY;
+using DFKI.NMY.TrainingSteps;
 using TMPro;
 using UnityEngine;
 
 public class GestureStepListEntry : MonoBehaviour
 {
 
+    public GestureBaseStep connectedStep;
     [SerializeField] private Animator animator;
     [SerializeField] private TextMeshPro tmpTitle;
 
@@ -18,5 +22,13 @@ public class GestureStepListEntry : MonoBehaviour
     {
         tmpTitle.text = title;
     }
-    
+
+
+    private void Update()
+    {
+        if (connectedStep) {
+            tmpTitle.text = connectedStep.gameObject.name;
+            animator.SetBool("highlight",connectedStep.isActivated);
+        }
+    }
 }
