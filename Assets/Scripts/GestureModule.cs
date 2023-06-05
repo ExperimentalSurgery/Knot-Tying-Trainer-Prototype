@@ -202,9 +202,9 @@ namespace DFKI {
             }
             sequencePoseIndices.Add((int)((sequences[^2] + sequences[^1]) / 2));
 
-            for (int i = 0; i < sequencePoseIndices.Count; i++)
-                Debug.Log("Item " + i + " = " + sequencePoseIndices[i]);
-
+            /*for (int i = 0; i < sequencePoseIndices.Count; i++)
+                Debug.Log("Item " + i + " = " + sequencePoseIndices[i]);*/
+            
             Assert.AreEqual(sequenceStart.Count, sequenceEnd.Count, "Start and End sequences do not match elements. (203)");
             Assert.AreEqual(sequenceStart.Count + 2, sequencePoseIndices.Count, "Sequences and poses do not match: " + (sequenceStart.Count + 2) + ", " + sequencePoseIndices.Count + ". (204)");
         }

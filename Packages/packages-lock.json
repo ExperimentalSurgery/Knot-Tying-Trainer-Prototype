@@ -1,47 +1,12 @@
 {
   "dependencies": {
-    "com.nmy.core": {
-      "version": "2.5.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.nmy.delegatecoroutines": "1.0.1"
-      },
-      "url": "http://nmyvm01:4873"
-    },
-    "com.nmy.delegatecoroutines": {
-      "version": "1.0.1",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "http://nmyvm01:4873"
-    },
     "com.nmy.googlecloudtexttospeech": {
-      "version": "0.0.1-r.14",
+      "version": "file:../LocalPackages/com.nmy.googlecloudtexttospeech@0.0.1-r.14",
       "depth": 0,
-      "source": "registry",
+      "source": "local",
       "dependencies": {
         "com.unity.localization": "1.3.2"
-      },
-      "url": "http://nmyvm01:4873"
-    },
-    "com.nmy.localization": {
-      "version": "2.1.1",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.nmy.core": "2.3.0"
-      },
-      "url": "http://nmyvm01:4873"
-    },
-    "com.nmy.vtt.core": {
-      "version": "1.0.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.nmy.core": "1.0.0"
-      },
-      "url": "http://nmyvm01:4873"
+      }
     },
     "com.ultraleap.tracking": {
       "version": "6.8.1",
