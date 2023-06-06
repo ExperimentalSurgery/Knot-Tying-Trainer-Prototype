@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using DFKI.NMY;
 using DFKI.NMY.TrainingSteps;
 using Microsoft.MixedReality.Toolkit.Utilities;
+using NMY;
 using NMY.VTT.Core;
 using UnityEngine;
 
-public class GestureStepListView : MonoBehaviour
+public class GestureStepListView : SimpleAnimatorActivatable
 {
 
     [SerializeField] private GridObjectCollection root;

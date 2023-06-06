@@ -26,21 +26,23 @@ namespace DFKI.NMY
             }
         }
 
+        public void ResetCurrentScenario() {
+            GestureScenario currentScenario = trainings[currentStepIndex] as GestureScenario;
+            if (currentScenario) {
+                currentScenario.ResetListController();
+                currentScenario.Activate();
+            }
+        }
 
-        public void GoToPreviousStep()
-        {
-            
+        public void GoToPreviousStep() {
             GestureScenario currentScenario = trainings[currentStepIndex] as GestureScenario;
             int targetIndex = currentScenario.GetPreviousStepIndex();
-
             currentScenario.ResetListController();
             currentScenario.Activate();
-            return;
-
+            
             int index = 0;
-            foreach (VTTBaseListStep step in currentScenario.trainingSteps) {
-                if (index == targetIndex){break;}
-                step.RaiseStepCompletedEvent();
+            for (int i = 0; i < targetIndex;i++) {
+                currentScenario.trainingSteps[i].RaiseStepCompletedEvent();
             }
         }
         

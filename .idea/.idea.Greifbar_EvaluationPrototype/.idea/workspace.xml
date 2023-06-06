@@ -11,6 +11,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f25bb1b3538144878e699a18759bce9d7c00/70/68aaa3bc/VTTIndexBasedListController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f25bb1b3538144878e699a18759bce9d7c00/e6/ee15ef64/VTTBaseListStep.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MRTK/Providers/LeapMotion/LeapMotionArticulatedHand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GestureStepListEntry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.googlecloudtexttospeech@0.0.1-r.14/Editor/GoogleTextToSpeech.cs" root0="SKIP_HIGHLIGHTING" />

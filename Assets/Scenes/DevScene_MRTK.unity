@@ -835,7 +835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoStartup: 1
   startupInAwake: 0
-  successPanel: {fileID: 0}
+  successPanel: {fileID: 1070445663}
   trainingStepListView: {fileID: 8517493155275806190}
   stepTitleMrtk: {fileID: 1539416026}
   stepDescriptionMrtk: {fileID: 1669179209}
@@ -6213,7 +6213,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1410225494053211784, guid: 3f1f46cbecbe08e46a303ccfdb5b498a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1874729665501627384, guid: 3f1f46cbecbe08e46a303ccfdb5b498a, type: 3}
       propertyPath: m_IsActive
@@ -6249,7 +6249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2204069621878992595, guid: 3f1f46cbecbe08e46a303ccfdb5b498a, type: 3}
       propertyPath: m_text
-      value: PAUSE
+      value: LIST
       objectReference: {fileID: 0}
     - target: {fileID: 2204069621878992595, guid: 3f1f46cbecbe08e46a303ccfdb5b498a, type: 3}
       propertyPath: m_textAlignment
@@ -6337,7 +6337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2204069623052342159, guid: 3f1f46cbecbe08e46a303ccfdb5b498a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4607504470098667674, guid: 3f1f46cbecbe08e46a303ccfdb5b498a, type: 3}
       propertyPath: m_Mesh
@@ -6366,7 +6366,7 @@ PrefabInstance:
     - target: {fileID: 8405082116546204954, guid: 3f1f46cbecbe08e46a303ccfdb5b498a, type: 3}
       propertyPath: iconQuadTexture
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2800000, guid: bd30f98596e69f7469fda20a47760dd1, type: 3}
     - target: {fileID: 8779034279059886464, guid: 3f1f46cbecbe08e46a303ccfdb5b498a, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -11018,15 +11018,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1070445661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1073348051, guid: 9d0e1c4dbad98b944be69882f1b8fd90, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e0b9717a185cac419bc9919e49c8686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   autoStartup: 1
   startupInAwake: 1
-  _hasStartedUp: 0
-  _isActivated: 0
-  _isTransitioning: 0
   _isInitiallyActivated: 0
+  animator: {fileID: 0}
+  parameterName: show
 --- !u!1 &1123900275
 GameObject:
   m_ObjectHideFlags: 0

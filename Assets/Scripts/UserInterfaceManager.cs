@@ -22,8 +22,13 @@ namespace DFKI.NMY
         [SerializeField] private Interactable pauseButtonMrtk;
         [SerializeField] private Interactable forwardButtonMrtk;
 
-        public void ShowSuccessPanel()=>successPanel.Activate();
-        public void HideSuccessPanel()=>successPanel.Deactivate();
+        public void ShowSuccessPanel() {
+            if (successPanel) successPanel.Activate();
+        }
+
+        public void HideSuccessPanel() {
+            if(successPanel) successPanel.Deactivate();
+        }
 
         public void UpdateStepInfos(LocalizedString title, LocalizedString description)
         {
@@ -65,7 +70,7 @@ namespace DFKI.NMY
 
         public void ToggleStepListView()
         {
-            trainingStepListView.gameObject.SetActive(!trainingStepListView.isActiveAndEnabled);
+            if(trainingStepListView) trainingStepListView.Activate(!trainingStepListView.isActivated);
         }
         
         
