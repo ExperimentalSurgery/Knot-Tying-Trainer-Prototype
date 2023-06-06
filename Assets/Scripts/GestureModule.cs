@@ -178,7 +178,7 @@ namespace DFKI {
             List<int> sequences = SegmentFramesIntoSequences();
             Assert.AreNotEqual(sequences.Count, 0, "Sequence count is 0. (178)");
 
-            Debug.Log("Sequence items: " + sequences.Count);
+            //Debug.Log("Sequence items: " + sequences.Count);
 
             sequenceStart = new List<int>();
             sequenceEnd = new List<int>();

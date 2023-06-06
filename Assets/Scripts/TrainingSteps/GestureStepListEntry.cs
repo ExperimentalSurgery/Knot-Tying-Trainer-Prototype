@@ -26,8 +26,7 @@ public class GestureStepListEntry : MonoBehaviour
 
     private void Update()
     {
-        if (connectedStep)
-        {
+        if (connectedStep) {
             tmpTitle.text = "Schritt";
             animator.SetBool("highlight",connectedStep.isActivated);
         }

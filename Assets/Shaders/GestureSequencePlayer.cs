@@ -43,6 +43,8 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     [SerializeField] private BVHRecorder rightRecorder;
     [Tooltip("GameObject of left expert hand")] public GameObject leftExpertHand;
     [Tooltip("GameObject of right expert hand")] public GameObject rightExpertHand;
+
+    [SerializeField] private bool useReducedSpeed = false;
     
     // Consts
     private const string BvhSuffix = ".bvh";
@@ -50,6 +52,8 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     private float loopEndTimeLeft => loopStartTimeLeft + sequenceDuration;
     private float loopEndTimeRight => loopStartTimeRight + sequenceDuration;
 
+    private float currentSpeedMultiplier = 1f;
+    private float initialSequenceDuration =5;
     
     // Properties
     public bool AnalyzePoseMatching
@@ -152,6 +156,13 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         }
     }
 
+    public void ToggleSpeed(bool useDefault=false)
+    {
+        useReducedSpeed = !useDefault && !useReducedSpeed;
+        currentSpeedMultiplier = useReducedSpeed ? 0.5f : 1.0f;
+        ChangeDuration(initialSequenceDuration);
+    }
+    
     public void ProcessFrame(
         GestureModule gestureModule, 
         ref int currentFrame,
@@ -339,7 +350,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
 
     public void ChangeDuration(float newDuration)
     {
-        sequenceDuration = newDuration;
+        sequenceDuration = newDuration * currentSpeedMultiplier;
         loopStartTimeLeft = Time.time - sequenceDuration * normalizedProgressLeft;
         loopStartTimeRight = Time.time - sequenceDuration * normalizedProgressRight;
     }
@@ -363,6 +374,10 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         if (singleSequence > 0) {
             playAllSequences = false;
         }
+
+        
+        // backup vars
+        initialSequenceDuration = SequenceDuration;
         
         // setup
         currentSequenceLeft = singleSequence >= 0 ? singleSequence : 0;
