@@ -835,7 +835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoStartup: 1
   startupInAwake: 0
-  successPanel: {fileID: 1070445663}
+  successPanel: {fileID: 0}
   trainingStepListView: {fileID: 8517493155275806190}
   stepTitleMrtk: {fileID: 1539416026}
   stepDescriptionMrtk: {fileID: 1669179209}
@@ -6113,7 +6113,6 @@ MonoBehaviour:
   iterativeMode: 1
   trainings:
   - {fileID: 1390560690}
-  - {fileID: 1674021569}
 --- !u!1 &862531905
 GameObject:
   m_ObjectHideFlags: 0
@@ -12619,7 +12618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1674021568
 Transform:
   m_ObjectHideFlags: 0
@@ -13719,6 +13718,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 750c7fa16f14dcf49b67ab2648ab515c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoStartup: 1
+  startupInAwake: 0
+  _isInitiallyActivated: 0
+  animator: {fileID: 0}
+  parameterName: show
   root: {fileID: 8517493155275806189}
   training: {fileID: 822173244}
   stepRowPrefab: {fileID: 5575196357511982833, guid: 5322ca3f43b702d4cbe6ae0d1ac78eb9, type: 3}
