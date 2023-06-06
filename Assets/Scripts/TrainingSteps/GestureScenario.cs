@@ -65,7 +65,26 @@ namespace DFKI.NMY
             }
 
         }
+        
+        /**
+         * Calculate next step index
+         **/
+        public int GetNextStepIndex()
+        {
+            int next = currentStepIndex == entrys.Count ? currentStepIndex : currentStepIndex + 1;
+            return next;
+        }
+        /**
+        * Calculate previous step index
+        **/
+        public int GetPreviousStepIndex()
+        {
 
-       
+            int prev = currentStepIndex == 0 ? currentStepIndex : currentStepIndex - 1;
+            return prev;
+
+        }
+        
+        
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using NMY.VTT.Core;
@@ -16,6 +17,35 @@ namespace DFKI.NMY
             for (int i = 0; i < trainings.Count; i++) { base.entrys.Add(i, trainings[i]); }
         }
 
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                GoToPreviousStep();
+            }
+        }
+
+
+        public void GoToPreviousStep()
+        {
+            
+            GestureScenario currentScenario = trainings[currentStepIndex] as GestureScenario;
+            int targetIndex = currentScenario.GetPreviousStepIndex();
+
+            currentScenario.ResetListController();
+            currentScenario.Activate();
+            return;
+
+            int index = 0;
+            foreach (VTTBaseListStep step in currentScenario.trainingSteps) {
+                if (index == targetIndex){break;}
+                step.RaiseStepCompletedEvent();
+            }
+        }
+        
+        
+        
         protected override void OnControllerReset() {
         }
 

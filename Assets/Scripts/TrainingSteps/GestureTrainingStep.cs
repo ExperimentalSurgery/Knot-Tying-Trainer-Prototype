@@ -20,8 +20,7 @@ public class GestureTrainingStep : GestureBaseStep
     [Header("CompletionConfig")]
     [SerializeField] private GestureCheckMethod checkMethod = GestureCheckMethod.PoseMatch;
     [SerializeField] private KeyCode manualCompletionKey = KeyCode.N;
-    [SerializeField] private float minDuration = 0.5f;
-    [SerializeField] private float maxDuration = 5;
+    [SerializeField] private float sequenceDuration = 0.5f;
     [SerializeField] private float poseMatchingThreshold = 25;
 
     // helper vars
@@ -36,20 +35,14 @@ public class GestureTrainingStep : GestureBaseStep
         
         // Apply config to GesturePlayer
         GestureSequencePlayer.instance.PoseMatchingThreshold = poseMatchingThreshold;
-        GestureSequencePlayer.instance.SequenceDuration = minDuration;
+        GestureSequencePlayer.instance.ToggleSpeed(useDefault:true);
+        GestureSequencePlayer.instance.ChangeDuration(sequenceDuration);
         GestureSequencePlayer.instance.PlayAllSequences = false;
         GestureSequencePlayer.instance.LoopSingleSequencePlayback = true;
         GestureSequencePlayer.instance.AnalyzePoseMatching = true;
         GestureSequencePlayer.instance.Play(sequenceIndex);
        
        
-        if (UserInterfaceManager.instance.PlaybackSpeedSliderMrtk)
-        {
-            GestureSequencePlayer.instance.SequenceDuration = Mathf.Lerp(maxDuration, minDuration, UserInterfaceManager.instance.PlaybackSpeedSliderMrtk.SliderValue);
-            UserInterfaceManager.instance.PlaybackSpeedSliderMrtk.OnValueUpdated.AddListener(OnSpeedSliderUpdated);
-
-        }
-
         // Register for finish events
         switch (checkMethod)
         {
@@ -72,11 +65,6 @@ public class GestureTrainingStep : GestureBaseStep
 
     }
 
-    private void OnSpeedSliderUpdated(SliderEventData eventData)
-    {
-        float newDuration = Mathf.Lerp(maxDuration, minDuration, eventData.NewValue);
-        GestureSequencePlayer.instance.ChangeDuration(newDuration);
-    }
 
     private void OnGestureEvent(HandGestureParams parameters) {
 
@@ -98,6 +86,7 @@ public class GestureTrainingStep : GestureBaseStep
     }
 
     public void TriggerCompletionManually() {
+        
         StartCoroutine(TriggerDelayedCompletion());
     }
 
@@ -134,6 +123,7 @@ public class GestureTrainingStep : GestureBaseStep
     }
     protected override void OnStepReset()
     {
+        
     }
 
     protected override void OnPause()
