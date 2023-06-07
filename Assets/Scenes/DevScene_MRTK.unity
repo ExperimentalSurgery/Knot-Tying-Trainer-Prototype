@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -835,13 +835,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoStartup: 1
   startupInAwake: 0
-  successPanel: {fileID: 0}
+  mainTrainingController: {fileID: 822173244}
+  successPanel: {fileID: 1070445663}
   trainingStepListView: {fileID: 8517493155275806190}
   stepTitleMrtk: {fileID: 1539416026}
   stepDescriptionMrtk: {fileID: 1669179209}
   progressIndicatorMrtk: {fileID: 2023472402}
   pauseButtonMrtk: {fileID: 877584980}
   forwardButtonMrtk: {fileID: 1473793297}
+  previouStepBtn: {fileID: 0}
+  speedToggleBtn: {fileID: 0}
+  listViewToggleBtn: {fileID: 0}
 --- !u!1001 &333811205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6112,7 +6116,7 @@ MonoBehaviour:
   titleExtension_key: empty
   iterativeMode: 1
   trainings:
-  - {fileID: 1390560690}
+  - {fileID: 1674021569}
 --- !u!1 &862531905
 GameObject:
   m_ObjectHideFlags: 0
@@ -11017,14 +11021,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1070445661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0b9717a185cac419bc9919e49c8686, type: 3}
+  m_Script: {fileID: 1073348051, guid: 9d0e1c4dbad98b944be69882f1b8fd90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   autoStartup: 1
   startupInAwake: 1
   _isInitiallyActivated: 0
-  animator: {fileID: 0}
-  parameterName: show
 --- !u!1 &1123900275
 GameObject:
   m_ObjectHideFlags: 0
@@ -11743,7 +11745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1390560689
 Transform:
   m_ObjectHideFlags: 0
@@ -12618,7 +12620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1674021568
 Transform:
   m_ObjectHideFlags: 0
@@ -13512,7 +13514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 512626097072290254, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
       propertyPath: m_Name
-      value: PressableButtonPlated48x48mm-LastStep
+      value: PressableButtonPlated48x48mm-PreviousStep
       objectReference: {fileID: 0}
     - target: {fileID: 512626097072290254, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
       propertyPath: m_IsActive
@@ -13581,21 +13583,49 @@ PrefabInstance:
     - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 822173244}
+      objectReference: {fileID: 327365043}
     - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToPreviousStep
+      value: OnPreviousStepButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DFKI.NMY.GestureTrainingController, Assembly-CSharp
+      value: DFKI.NMY.UserInterfaceManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 327365043}
+    - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnPreviousStepButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DFKI.NMY.UserInterfaceManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944056074510407533, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7867650816251270135, guid: 102dcc156b21e1d4889aa4a974e11378, type: 3}

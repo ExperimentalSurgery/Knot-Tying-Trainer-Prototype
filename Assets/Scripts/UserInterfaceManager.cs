@@ -11,7 +11,8 @@ namespace DFKI.NMY
 {
     public class UserInterfaceManager : SingletonStartupBehaviour<UserInterfaceManager>
     {
-
+        
+        [SerializeField] private GestureTrainingController mainTrainingController;
         [SerializeField] private ActivatableStartupBehaviour successPanel;
         [SerializeField] private GestureStepListView trainingStepListView;
         
@@ -21,7 +22,14 @@ namespace DFKI.NMY
         [SerializeField] private ProgressIndicatorLoadingBar progressIndicatorMrtk;
         [SerializeField] private Interactable pauseButtonMrtk;
         [SerializeField] private Interactable forwardButtonMrtk;
-
+        
+        [Header("Control Panel Buttons")]
+        [SerializeField] private Interactable previouStepBtn;
+        [SerializeField] private Interactable speedToggleBtn;
+        [SerializeField] private Interactable listViewToggleBtn;
+        
+        
+        
         public void ShowSuccessPanel() {
             if (successPanel) successPanel.Activate();
         }
@@ -73,6 +81,7 @@ namespace DFKI.NMY
             if(trainingStepListView) trainingStepListView.Activate(!trainingStepListView.isActivated);
         }
         
+        public void OnPreviousStepButtonClicked() => mainTrainingController.GoToPreviousStep();
         
         private async void OpenIndicator(IProgressIndicator indicator)
         {
