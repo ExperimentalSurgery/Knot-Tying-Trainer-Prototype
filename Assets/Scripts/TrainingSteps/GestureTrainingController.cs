@@ -35,6 +35,7 @@ namespace DFKI.NMY
         }
 
         public void GoToPreviousStep() {
+            Debug.Log("GoToPreviousStep");
             GestureScenario currentScenario = trainings[currentStepIndex] as GestureScenario;
             int targetIndex = currentScenario.GetPreviousStepIndex();
             currentScenario.ResetListController();
