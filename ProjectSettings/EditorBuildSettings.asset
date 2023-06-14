@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DevScene.unity
-    guid: e88b594d4ceb67548966bcc511e9fd7d
-  - enabled: 1
-    path: Assets/MRTK/Examples/Demos/UX/ProgressIndicator/Scenes/ProgressIndicatorExamplesAdditiveLoad.unity
-    guid: 6656338ce09c49d4cbeb765266d02fb9
+    path: Assets/Scenes/DevScene_MRTK.unity
+    guid: d20da2bda2362fb41b3a157464cbc94d
   m_configObjects:
     Varjo.XR.Settings: {fileID: 11400000, guid: 193edbd0753342c4fb4861d6003f1053, type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: d9fad6cd4c82ca24bb9390ee6a82862e, type: 2}
