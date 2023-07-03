@@ -1,15 +1,80 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-public class KnotGesturePreviewStep : KnotGestureBaseStep
+namespace DFKI.NMY
 {
-    
-    [Header("Sequences Config")]
-    [SerializeField] private float singleSequenceDuration = 2f;
-        
-    // runtime vars
-    private bool finishedLeft = false;
-    private bool finishedRight = false;
+    public class KnotGesturePreviewStep : KnotGestureBaseStep
+    {
 
+        [Header("Sequences Config")] [SerializeField]
+        private float singleSequenceDuration = 2f;
+
+        // runtime vars
+        private bool finishedLeft = false;
+        private bool finishedRight = false;
+
+
+        // PRE STEP
+        protected override async UniTask PreStepActionAsync(CancellationToken ct)
+        {
+            await base.PreStepActionAsync(ct);
+
+            FinishedCriteria = false;
+            
+            // Apply config to gestureplayer
+            GestureSequencePlayer.instance.SequenceDuration = singleSequenceDuration;
+            GestureSequencePlayer.instance.PlayAllSequences = true;
+            GestureSequencePlayer.instance.LoopAllSequences = true;
+            GestureSequencePlayer.instance.AnalyzePoseMatching = false;
+            GestureSequencePlayer.instance.Play();
+            
+            // show expert hands
+            HandVisualizer.instance.SetExpertHandVisibleRight(true);
+            HandVisualizer.instance.SetExpertHandVisibleLeft(true);
+        
+            // Reset colors of user hands
+            HandVisualizer.instance.ResetColor();
+            
+            // Register for finish events
+            GestureSequencePlayer.instance.AllSequencesPlayedEvent.AddListener(OnScenarioPlaybackFinished);
+            
+            // reset check vars
+            finishedLeft = false;
+            finishedRight = false;
+
+        }
+
+        private void OnScenarioPlaybackFinished(HandGestureParams eventParams)
+        {
+            if (eventParams.side.Equals(Hand.Left))
+            {
+                finishedLeft = true;
+            }
+
+            if (eventParams.side.Equals(Hand.Right))
+            {
+                finishedRight = true;
+            }
+
+            if (finishedLeft && finishedRight)
+            {
+                FinishedCriteria = true;
+            }
+        }
+
+
+        // POST STEP
+        protected override async UniTask PostStepActionAsync(CancellationToken ct)
+        {
+            await base.PostStepActionAsync(ct);
+            SFXManager.instance.StopAudio();
+            GestureSequencePlayer.instance.Stop();
+        }
+        
+        
+
+    }
 }

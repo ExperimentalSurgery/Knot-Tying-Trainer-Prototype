@@ -10,7 +10,6 @@ using Image = UnityEngine.UI.Image;
 namespace DFKI.NMY.TrainingSteps
 {
  
-    public enum GestureCheckMethod {Manually=0,PoseMatch=1}
 public class GestureTrainingStep : GestureBaseStep
 {
     
