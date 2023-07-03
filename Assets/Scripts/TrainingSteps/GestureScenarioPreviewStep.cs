@@ -16,6 +16,8 @@ namespace DFKI.NMY
         // runtime vars
         private bool finishedLeft = false;
         private bool finishedRight = false;
+        
+        
         protected override void ActivateEnter()
         {
             base.ActivateEnter();
