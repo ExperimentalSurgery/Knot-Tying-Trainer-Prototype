@@ -69,7 +69,7 @@ namespace DFKI.NMY
             await base.PostStepActionAsync(ct);
             SFXManager.instance.StopAudio();
         }
-
+        
         public virtual UniTask WaitForFinishedCriteria(CancellationToken ct)
         {
             return UniTask.WaitUntil(() => _finishedCriteria, cancellationToken: ct);

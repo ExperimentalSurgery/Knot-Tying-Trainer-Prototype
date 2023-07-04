@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using DFKI.NMY;
 using DFKI.NMY.TrainingSteps;
+using NMY.VirtualRealityTraining.Steps;
 using TMPro;
 using UnityEngine;
 
 public class GestureStepListEntry : MonoBehaviour
 {
 
-    public GestureBaseStep connectedStep;
+    public KnotGestureBaseStep connectedStep;
     [SerializeField] private Animator animator;
     [SerializeField] private TextMeshPro tmpTitle;
 
@@ -28,7 +29,7 @@ public class GestureStepListEntry : MonoBehaviour
     {
         if (connectedStep) {
             tmpTitle.text = "Schritt";
-            animator.SetBool("highlight",connectedStep.isActivated);
+            animator.SetBool("highlight",connectedStep.stepState.Equals(BaseTrainingStep.StepState.StepStarted));
         }
     }
 }

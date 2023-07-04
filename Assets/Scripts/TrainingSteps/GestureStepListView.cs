@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using DFKI.NMY;
 using DFKI.NMY.TrainingSteps;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using NMY;
+using NMY.VirtualRealityTraining;
+using NMY.VirtualRealityTraining.Steps;
 using NMY.VTT.Core;
 using UnityEngine;
 
@@ -12,54 +15,39 @@ public class GestureStepListView : SimpleAnimatorActivatable
 {
 
     [SerializeField] private GridObjectCollection root;
-    [SerializeField] private GestureTrainingController training;
     [SerializeField] private GestureStepListEntry stepRowPrefab;
-    
-    private GestureScenario currenTraining;
-    
-    private void Awake()
-    {
-                
-        //entryPrevious.gameObject.SetActive(false);
-        //entryCurrent.gameObject.SetActive(false);
-        //entryNext.gameObject.SetActive(false);
-        
-        training.EntryActivationEvent -= OnTrainingStarted;
-        training.EntryActivationEvent += OnTrainingStarted;
+    [SerializeField] private BaseTrainingStepUnityEvents trainingEvents;
 
-        foreach (var t in training.trainings)
-        {
-            t.EntryCompletedEvent -= OnStepCompleted;
-            t.EntryCompletedEvent += OnStepCompleted;
-        }
-        
+
+    protected override void StartupEnter()
+    {
+        base.StartupEnter();
+        trainingEvents.stepStartedEvent.AddListener(OnStepStarted);
     }
 
-    private void OnStepCompleted(object sender, ListControllerEventArgs e) {
-     
-    }
+    
 
-    private void OnTrainingStarted(object sender, ListControllerEventArgs e)
+    private void OnStepStarted(BaseTrainingStepEventArgs args)
     {
-        
-        currenTraining = e.caller as GestureScenario;
-        
+        Debug.Log("Started Steps args="+args.step.gameObject.name);
+        // Cleanup UI
         foreach (Transform child in root.transform) {
             GameObject.Destroy(child.gameObject);
         }
-        foreach (var step in currenTraining.trainingSteps)
-        { 
-            
-            GestureStepListEntry entry = Instantiate(stepRowPrefab.gameObject, root.transform).GetComponent<GestureStepListEntry>();
-            entry.gameObject.name = "trainingstep";
-            entry.connectedStep = step as GestureBaseStep;
-        }
 
+        var candidatesAsChilds = args.step.transform.GetComponentsInChildren<BaseTrainingStep>();
+        Debug.Log("found child steps c="+candidatesAsChilds.Length);
+        foreach (var childStep in candidatesAsChilds)
+        {
+            
+                GestureStepListEntry entry = Instantiate(stepRowPrefab.gameObject, root.transform).GetComponent<GestureStepListEntry>();
+                entry.gameObject.name = "trainingstep";
+                entry.connectedStep = childStep as KnotGestureBaseStep;
+            
+        }
         root.UpdateCollection();
 
     }
 
-    private void Update()
-    {
-    }
+
 }
