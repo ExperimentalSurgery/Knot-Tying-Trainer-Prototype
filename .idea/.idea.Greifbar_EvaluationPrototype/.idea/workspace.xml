@@ -6,12 +6,30 @@
   <component name="ChangeListManager">
     <list default="true" id="8db4b24e-3b2b-4a07-b416-6d49153c6a95" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/Highlight.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/Highlight.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/TrainingStepListEntry.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/TrainingStepListEntry.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MRTK/SDK/Features/UX/Interactable/Materials/HolographicBackPlate.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MRTK/SDK/Features/UX/Interactable/Materials/HolographicBackPlate.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/Aruco.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/Aruco.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/Base.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/Base.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/Case.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/Case.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/RubberBand.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/RubberBand.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Trainerbank_V0.4_Unity.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Trainerbank_V0.4_Unity.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/knotenbank.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/knotenbank.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/table.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/table.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PressableButtonPlated48x48mm-Forward Interactable Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PressableButtonPlated48x48mm-Forward Interactable Variant.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevScene_MRTK.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevScene_MRTK.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TraingSteps.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TraingSteps.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/Conversion/KnotGestureBaseStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/Conversion/KnotGestureBaseStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureStepListEntry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureStepListEntry.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureStepListView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GestureStepListView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +37,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5b1850993e1e4002b4964fd1e417219c3200/bf/8ed54bba/ScreenCapture.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MRTK/Providers/LeapMotion/LeapMotionArticulatedHand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TrainingSteps/Conversion/KnotGestureBaseStep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TrainingSteps/Conversion/KnotGesturePreviewStep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TrainingSteps/Conversion/KnotGestureStep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TrainingSteps/Conversion/MRTKInteractableStep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TrainingSteps/Conversion/PointCloudViewerStep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.virtualrealitytrainingsteps@6.1.8/Runtime/Controller/TrainingStepController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.virtualrealitytrainingsteps@6.1.8/Runtime/NetworkAvatars/NetworkAvatarRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.nmy.virtualrealitytrainingsteps@6.1.8/Runtime/Steps/BaseTrainingStep.cs" root0="SKIP_HIGHLIGHTING" />
@@ -155,7 +176,7 @@
       <workItem from="1688365301221" duration="58000" />
       <workItem from="1688367821916" duration="9558000" />
       <workItem from="1688386243768" duration="8632000" />
-      <workItem from="1688450398631" duration="3009000" />
+      <workItem from="1688450398631" duration="8202000" />
     </task>
     <servers />
   </component>

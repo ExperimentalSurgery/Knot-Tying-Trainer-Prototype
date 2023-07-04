@@ -55,8 +55,9 @@ namespace DFKI.NMY
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
+            FinishedCriteria = false;
             UserInterfaceManager.instance.UpdateStepInfos(stepTitle, stepDescription);
-
+            
             if (spokenTextTts && spokenTextTts.audioClip)
             {
                 SFXManager.instance.PlayAudio(spokenTextTts.audioClip);

@@ -29,14 +29,12 @@ public class GestureStepListView : SimpleAnimatorActivatable
 
     private void OnStepStarted(BaseTrainingStepEventArgs args)
     {
-        Debug.Log("Started Steps args="+args.step.gameObject.name);
         // Cleanup UI
         foreach (Transform child in root.transform) {
             GameObject.Destroy(child.gameObject);
         }
 
         var candidatesAsChilds = args.step.transform.GetComponentsInChildren<BaseTrainingStep>();
-        Debug.Log("found child steps c="+candidatesAsChilds.Length);
         foreach (var childStep in candidatesAsChilds)
         {
             
