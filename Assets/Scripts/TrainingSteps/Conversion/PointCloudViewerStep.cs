@@ -6,15 +6,17 @@ using UnityEngine;
 
 namespace DFKI.NMY
 {
+    
+    
     public class PointCloudViewerStep : KnotGestureBaseStep
     {
         [SerializeField] private PointCloudPlayer player;
-        
+
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
             player.FinishedPointCloudPlayback.AddListener(OnPlaybackFinished);
-            
+           
         }
         
         // POST STEP

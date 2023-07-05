@@ -1,6 +1,7 @@
 using System;
 using NMY.GoogleCloudTextToSpeech;
 using NMY.VirtualRealityTraining.Steps;
+using NMY.VirtualRealityTraining.VirtualAssistant;
 using UnityEngine;
 using UnityEngine.Localization;
 
@@ -17,7 +18,7 @@ namespace DFKI.NMY
         [Header("Step Data")] [SerializeField] private LocalizedString stepTitle;
         [SerializeField] private LocalizedString stepDescription;
         [SerializeField] private LocalizedTextToSpeechItem spokenTextTts;
-
+        [SerializeField] private LocalizedTextToSpeechAudioClip ttsContainer;
 
         public bool FinishedCriteria
         {
@@ -61,6 +62,8 @@ namespace DFKI.NMY
             if (spokenTextTts && spokenTextTts.audioClip)
             {
                 SFXManager.instance.PlayAudio(spokenTextTts.audioClip);
+                LocalizedTextToSpeechAudioClip item;
+               
             }
         }
 
@@ -68,7 +71,7 @@ namespace DFKI.NMY
         protected override async UniTask PostStepActionAsync(CancellationToken ct)
         {
             await base.PostStepActionAsync(ct);
-            SFXManager.instance.StopAudio();
+            VirtualAssistant.instance.StopSpeaking();
         }
         
         public virtual UniTask WaitForFinishedCriteria(CancellationToken ct)

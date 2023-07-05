@@ -157,6 +157,7 @@ Transform:
   - {fileID: 327365042}
   - {fileID: 885057379}
   - {fileID: 1824148555}
+  - {fileID: 414589760}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1087,7 +1088,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 9317916}
     m_Modifications:
     - target: {fileID: 1379757873531507028, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: playStream
@@ -1099,19 +1100,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.067
+      value: -0.40986636
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.756
+      value: -2.9152713
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.703
+      value: 0.9200782
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1146,6 +1147,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
+--- !u!4 &414589760 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
+  m_PrefabInstance: {fileID: 414589759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &414589762 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5591926636507169600, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
@@ -6285,6 +6291,14 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   spokenTextTts: {fileID: 11400000, guid: 2dd8414c66e7c9d4da8f743f87fba297, type: 2}
+  ttsContainer:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
   _interactable: {fileID: 2121429401}
   references:
     version: 2
@@ -7114,6 +7128,14 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   spokenTextTts: {fileID: 11400000, guid: 07df0f3e3def16b4c9e76b1f11a2f172, type: 2}
+  ttsContainer:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
   sequenceIndex: 1
   checkMethod: 0
   manualCompletionKey: 110
@@ -12073,6 +12095,14 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   spokenTextTts: {fileID: 11400000, guid: 476573346672ea848b5d1874f3ebdeaf, type: 2}
+  ttsContainer:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
   singleSequenceDuration: 2
   references:
     version: 2
@@ -12577,6 +12607,14 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   spokenTextTts: {fileID: 11400000, guid: 3edde0bdf1b024040adf969ecae37376, type: 2}
+  ttsContainer:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
   minTrackedDuration: 5
   leftHand: {fileID: 1622491108}
   rightHand: {fileID: 1247129562}
@@ -13259,6 +13297,14 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   spokenTextTts: {fileID: 11400000, guid: 07df0f3e3def16b4c9e76b1f11a2f172, type: 2}
+  ttsContainer:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
   sequenceIndex: 0
   checkMethod: 0
   manualCompletionKey: 110
@@ -14151,6 +14197,14 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   spokenTextTts: {fileID: 11400000, guid: 4edbe255528e7614ca59ff7031ffba59, type: 2}
+  ttsContainer:
+    m_TableReference:
+      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
+    m_TableEntryReference:
+      m_KeyId: 1078634057728
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
   player: {fileID: 414589762}
   references:
     version: 2
