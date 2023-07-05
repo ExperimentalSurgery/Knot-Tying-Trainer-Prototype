@@ -6,19 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8db4b24e-3b2b-4a07-b416-6d49153c6a95" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-English (en).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-German (de).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-German (de).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-German (de).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-German (de).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PointCloudPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PointCloudPlayer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevScene_MRTK.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevScene_MRTK.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/Conversion/KnotGestureBaseStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/Conversion/KnotGestureBaseStep.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/Conversion/PointCloudViewerStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/Conversion/PointCloudViewerStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings/Resources/XRSimulationPreferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings/Resources/XRSimulationPreferences.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings/SimulationEnvironmentAssetsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings/SimulationEnvironmentAssetsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings/SimulationEnvironmentAssetsManager.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings/SimulationEnvironmentAssetsManager.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/GestureSequencePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/GestureSequencePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFile.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +159,7 @@
       <workItem from="1688367821916" duration="9558000" />
       <workItem from="1688386243768" duration="8632000" />
       <workItem from="1688450398631" duration="8202000" />
-      <workItem from="1688559270726" duration="798000" />
+      <workItem from="1688559270726" duration="5078000" />
     </task>
     <servers />
   </component>

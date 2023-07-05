@@ -17,7 +17,6 @@ namespace DFKI.NMY
 
         [Header("Step Data")] [SerializeField] private LocalizedString stepTitle;
         [SerializeField] private LocalizedString stepDescription;
-        [SerializeField] private LocalizedTextToSpeechItem spokenTextTts;
         [SerializeField] private LocalizedTextToSpeechAudioClip ttsContainer;
 
         public bool FinishedCriteria
@@ -36,6 +35,12 @@ namespace DFKI.NMY
         {
             get => stepDescription;
             set => stepDescription = value;
+        }
+
+        public LocalizedTextToSpeechAudioClip TtsContainer
+        {
+            get => ttsContainer;
+            set => ttsContainer = value;
         }
 
         protected override async UniTask ClientStepActionAsync(CancellationToken ct)
@@ -59,11 +64,8 @@ namespace DFKI.NMY
             FinishedCriteria = false;
             UserInterfaceManager.instance.UpdateStepInfos(stepTitle, stepDescription);
             
-            if (spokenTextTts && spokenTextTts.audioClip)
-            {
-                SFXManager.instance.PlayAudio(spokenTextTts.audioClip);
-                LocalizedTextToSpeechAudioClip item;
-               
+            if (ttsContainer.IsEmpty == false) {
+                VirtualAssistant.instance.Speak(ttsContainer, ct);
             }
         }
 
