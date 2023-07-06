@@ -38,6 +38,16 @@ namespace DFKI.NMY
             if(successPanel) successPanel.Deactivate();
         }
 
+        public void ShowProgressIndicator()
+        {
+            if(progressIndicatorMrtk) progressIndicatorMrtk.gameObject.SetActive(true);
+            
+        }
+
+        public void HideProgressIndicator() {
+            if(progressIndicatorMrtk) progressIndicatorMrtk.gameObject.SetActive(false);
+        }
+
         public void UpdateStepInfos(LocalizedString title, LocalizedString description)
         {
             if(stepDescriptionMrtk)stepTitleMrtk.text = title.GetLocalizedString();

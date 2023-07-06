@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace DFKI.NMY
 {
@@ -10,38 +11,34 @@ namespace DFKI.NMY
     public enum GestureCheckMethod {Manually=0,PoseMatch=1}
 
     
-    public class KnotGestureStep : KnotGestureBaseStep
+    public class KnotGestureStep : BVHGestureBaseStep
     {
-        
-        [Header("Gesture Training Step")] 
-        [SerializeField] private int sequenceIndex = 0;
 
         [Header("CompletionConfig")]
         [SerializeField] private GestureCheckMethod checkMethod = GestureCheckMethod.PoseMatch;
         [SerializeField] private KeyCode manualCompletionKey = KeyCode.N;
         [SerializeField] private float sequenceDuration = 0.5f;
         [SerializeField] private float poseMatchingThreshold = 25;
+        
 
         // helper vars
         private bool matchedLeft = false;
         private bool matchedRight = false;
         
-        
-
         // PRE STEP
         protected override async UniTask PreStepActionAsync(CancellationToken ct) {
             await base.PreStepActionAsync(ct);
             matchedLeft = false;
             matchedRight = false;
-        
-            // Apply config to GesturePlayer
+            
+            // Apply config to GestureSequencePlayer
             GestureSequencePlayer.instance.PoseMatchingThreshold = poseMatchingThreshold;
             GestureSequencePlayer.instance.ToggleSpeed(useDefault:true);
             GestureSequencePlayer.instance.ChangeDuration(sequenceDuration);
             GestureSequencePlayer.instance.PlayAllSequences = false;
             GestureSequencePlayer.instance.LoopSingleSequencePlayback = true;
             GestureSequencePlayer.instance.AnalyzePoseMatching = true;
-            GestureSequencePlayer.instance.Play(sequenceIndex);
+            GestureSequencePlayer.instance.Play(SequenceIndex);
        
        
             // Register for finish events

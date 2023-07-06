@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using Microsoft.MixedReality.Toolkit.UI;
@@ -7,20 +5,21 @@ using UnityEngine;
 
 namespace DFKI.NMY
 {
-    public class MRTKInteractableStep : KnotGestureBaseStep {
+    public class MRTKInteractableStep : GreifbarBaseStep {
 
-        [SerializeField] private Interactable _interactable;
-
+        
+        [Header("MRTK Interactable Step")]
+        [SerializeField] private Interactable interactable;
         
         // PRE STEP
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
-            _interactable.OnClick.AddListener(OnInteractableClicked);
+            interactable.OnClick.AddListener(OnInteractableClicked);
         }
 
         private void OnInteractableClicked() {
-            _interactable.OnClick.RemoveListener(OnInteractableClicked);
+            interactable.OnClick.RemoveListener(OnInteractableClicked);
             FinishedCriteria = true;
         }
 
@@ -28,7 +27,7 @@ namespace DFKI.NMY
         protected override async UniTask PostStepActionAsync(CancellationToken ct)
         {
             await base.PostStepActionAsync(ct);
-            _interactable.OnClick.RemoveListener(OnInteractableClicked);
+            interactable.OnClick.RemoveListener(OnInteractableClicked);
         }
 
 

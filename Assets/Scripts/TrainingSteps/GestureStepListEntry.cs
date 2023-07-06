@@ -10,7 +10,7 @@ using UnityEngine;
 public class GestureStepListEntry : MonoBehaviour
 {
 
-    public KnotGestureBaseStep connectedStep;
+    public GreifbarBaseStep connectedStep;
     [SerializeField] private Animator animator;
     [SerializeField] private TextMeshPro tmpTitle;
 

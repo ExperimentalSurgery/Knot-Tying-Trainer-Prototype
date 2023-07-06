@@ -40,7 +40,7 @@ public class GestureStepListView : SimpleAnimatorActivatable
             
                 GestureStepListEntry entry = Instantiate(stepRowPrefab.gameObject, root.transform).GetComponent<GestureStepListEntry>();
                 entry.gameObject.name = "trainingstep";
-                entry.connectedStep = childStep as KnotGestureBaseStep;
+                entry.connectedStep = childStep as GreifbarBaseStep;
             
         }
         root.UpdateCollection();

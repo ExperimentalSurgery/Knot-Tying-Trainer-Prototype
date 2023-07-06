@@ -11,14 +11,17 @@ namespace DFKI.NMY
     using Cysharp.Threading.Tasks;
     using System.Threading;
 
-    public class KnotGestureBaseStep : BaseTrainingStep
+    public class GreifbarBaseStep : BaseTrainingStep
     {
-        private bool _finishedCriteria = false;
 
-        [Header("Step Data")] [SerializeField] private LocalizedString stepTitle;
+        [Header("Localized Step Data")] 
+        [SerializeField] private LocalizedString stepTitle;
         [SerializeField] private LocalizedString stepDescription;
         [SerializeField] private LocalizedTextToSpeechAudioClip ttsContainer;
-
+        
+        
+        private bool _finishedCriteria = false;
+        
         public bool FinishedCriteria
         {
             get => _finishedCriteria;

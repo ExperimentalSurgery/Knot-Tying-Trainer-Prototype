@@ -10,23 +10,24 @@ namespace DFKI.NMY
 {
     
     
-    public class PointCloudViewerStep : KnotGestureBaseStep
+    public class PointCloudViewerStep : GreifbarBaseStep
     {                                                           
+        [Header("PointCloudViewerStep")]
         [SerializeField] private string pathToSequence = "PointClouds/***";
         [SerializeField] private PointCloudPlayer player;
         [SerializeField] private PointCloudManager manager;
-        
-        
-        
+
+        [Header("(Optional) Player Settings")] [SerializeField]
+        private bool manipulateFPS = false;
+        [SerializeField] private int targetFPS = 30;
+
         protected override async UniTask ClientStepActionAsync(CancellationToken ct)
         {
-            try
-            {
+            try {
                 await VirtualAssistant.instance.Speak(TtsContainer, ct);
                 RaiseClientStepFinished();
             }
-            catch (OperationCanceledException)
-            {
+            catch (OperationCanceledException) {
                 RaiseClientStepFinished();
             }
 
@@ -35,7 +36,8 @@ namespace DFKI.NMY
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
-            VirtualAssistant.instance.StopSpeaking();     
+            VirtualAssistant.instance.StopSpeaking();
+            manager.fps = manipulateFPS ? targetFPS : manager.fps;
             player.pathToSequence = pathToSequence;
             //player.FinishedPointCloudPlayback.AddListener(OnPlaybackFinished);
             manager.playStream = true;

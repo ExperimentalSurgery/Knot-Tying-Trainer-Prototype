@@ -1,17 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace DFKI.NMY
 {
-    public class KnotGesturePreviewStep : KnotGestureBaseStep
+    public class KnotGesturePreviewStep : BVHGestureBaseStep
     {
 
-        [Header("Sequences Config")] [SerializeField]
-        private float singleSequenceDuration = 2f;
+        [Header("KnotGesturePreviewStep")] 
+        [SerializeField] private float singleSequenceDuration = 2f;
 
+        [Tooltip("[Optional] Instead of using the currennt config of the GestureSequencePlayer the file-references will be set and the player re-initialiuzed")]
         // runtime vars
         private bool finishedLeft = false;
         private bool finishedRight = false;
@@ -49,18 +48,15 @@ namespace DFKI.NMY
 
         private void OnScenarioPlaybackFinished(HandGestureParams eventParams)
         {
-            if (eventParams.side.Equals(Hand.Left))
-            {
+            if (eventParams.side.Equals(Hand.Left)) {
                 finishedLeft = true;
             }
 
-            if (eventParams.side.Equals(Hand.Right))
-            {
+            if (eventParams.side.Equals(Hand.Right)) {
                 finishedRight = true;
             }
 
-            if (finishedLeft && finishedRight)
-            {
+            if (finishedLeft && finishedRight) {
                 FinishedCriteria = true;
             }
         }

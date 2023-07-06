@@ -9,7 +9,7 @@ using UnityEngine.Serialization;
 
 namespace DFKI.NMY
 {
-    public class LeapHandsVisibleStep : KnotGestureBaseStep
+    public class LeapHandsVisibleStep : GreifbarBaseStep
     {
 
         [SerializeField] private float minTrackedDuration = 2f;
