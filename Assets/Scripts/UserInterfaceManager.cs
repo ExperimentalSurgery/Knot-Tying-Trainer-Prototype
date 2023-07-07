@@ -1,34 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using Microsoft.MixedReality.Toolkit.UI;
 using NMY;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
-using UnityEngine.UI;
 
 namespace DFKI.NMY
 {
     public class UserInterfaceManager : SingletonStartupBehaviour<UserInterfaceManager>
     {
         
-        [SerializeField] private GestureTrainingController mainTrainingController;
+        [Header("References")]
         [SerializeField] private ActivatableStartupBehaviour successPanel;
         [SerializeField] private GestureStepListView trainingStepListView;
-        
-        [Header("MRTK UI")]
         [SerializeField] private TextMeshPro stepTitleMrtk;
         [SerializeField] private TextMeshProUGUI stepDescriptionMrtk;
         [SerializeField] private ProgressIndicatorLoadingBar progressIndicatorMrtk;
-        [SerializeField] private Interactable pauseButtonMrtk;
-        [SerializeField] private Interactable forwardButtonMrtk;
         
         [Header("Control Panel Buttons")]
-        [SerializeField] private Interactable previouStepBtn;
-        [SerializeField] private Interactable speedToggleBtn;
-        [SerializeField] private Interactable listViewToggleBtn;
+        [SerializeField] private GreifbarMRTKInteractable previouStepBtn;
+        [SerializeField] private GreifbarMRTKInteractable speedToggleBtn;
+        [SerializeField] private GreifbarMRTKInteractable listViewToggleBtn;
         
         
+        protected override void StartupEnter()
+        {
+            base.StartupEnter();
+            if(progressIndicatorMrtk) OpenIndicator(progressIndicatorMrtk);
+            if(previouStepBtn) previouStepBtn.OnClick.AddListener(OnPreviousStepButtonClicked);
+            if(speedToggleBtn) speedToggleBtn.OnClick.AddListener(TogglePlaybackSpeed);
+            if(listViewToggleBtn) listViewToggleBtn.OnClick.AddListener(ToggleStepListView);
+        }
+
         
         public void ShowSuccessPanel() {
             if (successPanel) successPanel.Activate();
@@ -54,44 +56,17 @@ namespace DFKI.NMY
             if(stepDescriptionMrtk)stepDescriptionMrtk.text = description.GetLocalizedString();
         }
 
-        protected override void StartupEnter()
-        {
-            base.StartupEnter();
-            if(progressIndicatorMrtk) OpenIndicator(progressIndicatorMrtk);
-        }
-
-
-        public Interactable PauseButtonMrtk
-        {
-            get => pauseButtonMrtk;
-            set => pauseButtonMrtk = value;
-        }
-
-        public Interactable ForwardButtonMrtk
-        {
-            get => forwardButtonMrtk;
-            set => forwardButtonMrtk = value;
-        }
         
-        private void Update()
-        {
-            GestureSequencePlayer player = GestureSequencePlayer.instance;
-            if (player.isPlayingLeft){
-                if(progressIndicatorMrtk) progressIndicatorMrtk.Progress =player.PlayAllSequences ? player.normalizedProgressTotalLeft : player.normalizedProgressLeft;
-            }
-            if (player.isPlayingRight) {
-                if(progressIndicatorMrtk) progressIndicatorMrtk.Progress = player.PlayAllSequences ? player.normalizedProgressTotalRight : player.normalizedProgressRight;
-            }
-        }
 
         public void TogglePlaybackSpeed() => GestureSequencePlayer.instance.ToggleSpeed();
 
-        public void ToggleStepListView()
-        {
+        public void ToggleStepListView() {
             if(trainingStepListView) trainingStepListView.Activate(!trainingStepListView.isActivated);
         }
         
-        public void OnPreviousStepButtonClicked() => mainTrainingController.GoToPreviousStep();
+        public void OnPreviousStepButtonClicked() {
+            //TODO: Implement
+        }
         
         private async void OpenIndicator(IProgressIndicator indicator)
         {

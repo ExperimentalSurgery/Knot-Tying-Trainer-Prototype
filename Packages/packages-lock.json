@@ -28,7 +28,7 @@
       "url": "http://nmyvm01:4873"
     },
     "com.ultraleap.tracking": {
-      "version": "6.9.0",
+      "version": "6.10.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {},

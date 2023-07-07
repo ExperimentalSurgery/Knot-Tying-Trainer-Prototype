@@ -9,17 +9,19 @@ namespace DFKI.NMY
 
         
         [Header("MRTK Interactable Step")]
-        [SerializeField] private Interactable interactable;
-        
+        [SerializeField] private GreifbarMRTKInteractable interactable;
+
         // PRE STEP
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
             interactable.OnClick.AddListener(OnInteractableClicked);
+            interactable.ShowHiglighter();
         }
 
         private void OnInteractableClicked() {
             interactable.OnClick.RemoveListener(OnInteractableClicked);
+            interactable.HideHighlighter();
             FinishedCriteria = true;
         }
 
@@ -28,6 +30,7 @@ namespace DFKI.NMY
         {
             await base.PostStepActionAsync(ct);
             interactable.OnClick.RemoveListener(OnInteractableClicked);
+            interactable.HideHighlighter();
         }
 
 
