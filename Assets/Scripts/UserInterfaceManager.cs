@@ -11,7 +11,6 @@ namespace DFKI.NMY
         
         [Header("References")]
         [SerializeField] private ActivatableStartupBehaviour successPanel;
-        [SerializeField] private GestureStepListView trainingStepListView;
         [SerializeField] private TextMeshPro stepTitleMrtk;
         [SerializeField] private TextMeshProUGUI stepDescriptionMrtk;
         [SerializeField] private ProgressIndicatorLoadingBar progressIndicatorMrtk;
@@ -61,7 +60,9 @@ namespace DFKI.NMY
         public void TogglePlaybackSpeed() => GestureSequencePlayer.instance.ToggleSpeed();
 
         public void ToggleStepListView() {
-            if(trainingStepListView) trainingStepListView.Activate(!trainingStepListView.isActivated);
+            
+            //TODO: re impl
+            
         }
         
         public void OnPreviousStepButtonClicked() {

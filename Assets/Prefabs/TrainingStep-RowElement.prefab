@@ -522,7 +522,7 @@ Transform:
   m_Children:
   - {fileID: 2208439502537359538}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8629686535668040187
 MonoBehaviour:
@@ -571,7 +571,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 1
   m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &5575196357511982833
 MonoBehaviour:
@@ -585,7 +585,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e75502fe36551fb48be9b91ce8ba7165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedStep: {fileID: 0}
   animator: {fileID: 2684660906944426812}
   tmpTitle: {fileID: 4383786502031733014}
 --- !u!1 &8564015903374916408

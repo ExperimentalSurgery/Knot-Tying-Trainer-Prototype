@@ -1,22 +1,16 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using DFKI.NMY;
-using DFKI.NMY.TrainingSteps;
-using NMY.VirtualRealityTraining.Steps;
 using TMPro;
 using UnityEngine;
 
+[Serializable]
 public class GestureStepListEntry : MonoBehaviour
 {
 
-    public GreifbarBaseStep connectedStep;
     [SerializeField] private Animator animator;
     [SerializeField] private TextMeshPro tmpTitle;
 
-    public void Highlight(bool state)
-    {
-        animator.SetBool("show",state);
+    public void Highlight(bool state) {
+        animator.SetBool("highlight",state);
     }
 
     public void SetTitle(string title)
@@ -24,12 +18,4 @@ public class GestureStepListEntry : MonoBehaviour
         tmpTitle.text = title;
     }
 
-
-    private void Update()
-    {
-        if (connectedStep) {
-            tmpTitle.text = "Schritt";
-            animator.SetBool("highlight",connectedStep.stepState.Equals(BaseTrainingStep.StepState.StepStarted));
-        }
-    }
 }
