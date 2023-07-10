@@ -19,7 +19,9 @@ namespace DFKI.NMY
         [SerializeField] private GreifbarMRTKInteractable previouStepBtn;
         [SerializeField] private GreifbarMRTKInteractable speedToggleBtn;
         [SerializeField] private GreifbarMRTKInteractable listViewToggleBtn;
-        
+
+
+        private bool taskListVisible = false;
         
         protected override void StartupEnter()
         {
@@ -59,10 +61,14 @@ namespace DFKI.NMY
 
         public void TogglePlaybackSpeed() => GestureSequencePlayer.instance.ToggleSpeed();
 
-        public void ToggleStepListView() {
-            
-            //TODO: re impl
-            
+        public void ToggleStepListView()
+        {
+            taskListVisible = !taskListVisible;
+            // As there will be several instances of it for different schapters we need to search and loop over those and configure
+            var instances = FindObjectsOfType<GreifbarTrainingStepList>(includeInactive:true);
+            foreach(var taskList  in instances) {
+                taskList.gameObject.SetActive(taskListVisible);
+            }
         }
         
         public void OnPreviousStepButtonClicked() {

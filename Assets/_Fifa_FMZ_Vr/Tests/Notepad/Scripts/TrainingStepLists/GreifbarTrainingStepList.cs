@@ -21,37 +21,39 @@ namespace DFKI.NMY
             foreach (var item in _taskList)
             {
                 GestureStepListEntry spawned = Instantiate(rowEntryPrefab,grid.transform);
-                spawned.gameObject.name = item.task.gameObject.name;
                 GreifbarTaskItem converted = item as GreifbarTaskItem;
                 converted.SetListItem(spawned);
                 converted.onTaskStarted.AddListener(OnTaskHasStarted);
                 converted.onTaskCompleted.AddListener(OnTaskHasCompleted);
                 converted.SetTitle(converted.task.gameObject.name);
+                converted.Highlight(item.task.stepState.Equals(BaseTrainingStep.StepState.StepStarted));
+
+                if (converted.task as GreifbarBaseStep) {
+                    converted.SetTitle((converted.task as GreifbarBaseStep).StepTitle.GetLocalizedString());
+                }
+                else
+                {
+                    converted.SetTitle(converted.task.gameObject.name);
+                }
+                
             }
             grid.UpdateCollection();
         }
 
         private void Update()
         {
-            /*
-            foreach (var item in _taskList)
-            {
-                item.Highlight(item.task.stepState.Equals(BaseTrainingStep.StepState.StepStarted));
+            foreach (var item in _taskList) {
+                GreifbarTaskItem converted = item as GreifbarTaskItem;
+                converted.Highlight(item.task.stepState.Equals(BaseTrainingStep.StepState.StepStarted));
             }
-            */
-        }
-
-        private void OnTaskHasCompleted(BaseTaskItem item)
-        {
-            GreifbarTaskItem converted = item as GreifbarTaskItem;
-            converted.Highlight(false);
-        }
-
-        private void OnTaskHasStarted(BaseTaskItem item)
-        {
-            Debug.Log("On Task Started");
-            if(item is GreifbarTaskItem converted) converted.Highlight(true);
             
+        }
+
+        private void OnTaskHasCompleted(BaseTaskItem item) {
+            // Prepared
+        }
+        private void OnTaskHasStarted(BaseTaskItem item) {
+            //Prepared
         }
     }
     
