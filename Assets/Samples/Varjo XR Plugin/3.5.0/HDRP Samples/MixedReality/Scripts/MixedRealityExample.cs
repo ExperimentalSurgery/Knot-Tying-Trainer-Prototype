@@ -109,12 +109,15 @@ public class MixedRealityExample : MonoBehaviour
                 videoSeeThrough = VarjoMixedReality.StartRender();
                 // if (HDCameraData)
                 //     HDCameraData.clearColorMode = HDAdditionalCameraData.ClearColorMode.Color;
+                xrCamera.clearFlags = CameraClearFlags.Color;
+                xrCamera.backgroundColor = Color.clear;
             }
             else
             {
                 VarjoMixedReality.StopRender();
                 // if (HDCameraData)
                 //     HDCameraData.clearColorMode = HDAdditionalCameraData.ClearColorMode.Sky;
+                xrCamera.clearFlags = CameraClearFlags.Skybox;
             }
             videoSeeThroughEnabled = videoSeeThrough;
         }
