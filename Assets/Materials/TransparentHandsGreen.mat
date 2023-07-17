@@ -7,8 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Blue
+  m_Name: TransparentHandsGreen
   m_Shader: {fileID: 4800000, guid: c5b35a4c19d643f4f87637cdd8587b98, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _USEFRESNEL_ON
@@ -19,6 +21,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -87,6 +90,6 @@ Material:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 22.408676, g: 22.408676, b: 22.408676, a: 0.09803922}
-    - _MainColor: {r: 0.21958593, g: 3.3402483, b: 4.2320194, a: 0.105882354}
+    - _MainColor: {r: 0.8083617, g: 4.23202, b: 0.22157165, a: 0.105882354}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
