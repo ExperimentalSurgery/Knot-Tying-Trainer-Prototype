@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 516874579968
-    m_Localized: "Dies ist die GreifbAR-Demo. Hier lernen Sie wie Sie einen chirurgischen
+    m_Localized: "Willkommen zur GreifbAR-Demo. Hier lernen Sie wie Sie einen chirurgischen
       Knoten kn\xFCpfen."
     m_Metadata:
       m_Items: []
@@ -36,12 +36,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2022239645696
-    m_Localized: "Bevor wir mit der Erl\xE4uterung des Mittelfingerknoten beginnen,
+    m_Localized: "Bevor wir mit der Erl\xE4uterung des Mittelfingerknotens beginnen,
       kurz noch ein paar Grundlagen."
     m_Metadata:
       m_Items: []
   - m_Id: 2360212467712
-    m_Localized: Vor Ihnen befinden sich vier Tasten mit der sie die ganze Anwendung
+    m_Localized: Vor Ihnen befinden sich drei Tasten mit der sie die ganze Anwendung
       steuern.
     m_Metadata:
       m_Items: []
@@ -55,14 +55,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2692426510336
-    m_Localized: "Vor Ihnen befinden sich vier Tasten\u2026\n\nMoment, das hatten
+    m_Localized: "Vor Ihnen befinden sich drei Tasten\u2026\n\nMoment, das hatten
       wir doch schon. Sehr gut! Weiter gehts!"
     m_Metadata:
       m_Items: []
   - m_Id: 2973616844800
     m_Localized: "Rechts in Ihrem Sichtfeld sehen Sie immer bei welchem Schritt sie
-      in gerade sind und was als n\xE4chstes kommt. Falls Sie diese \xDCbersicht
-      nicht sehen m\xF6chten, nutzen sie einfach Taste 3 um diese auszublenden."
+      gerade sind und was als n\xE4chstes kommt. Falls Sie diese \xDCbersicht nicht
+      sehen m\xF6chten, nutzen sie einfach Taste 3 um diese auszublenden."
     m_Metadata:
       m_Items: []
   - m_Id: 3202382573568
@@ -76,12 +76,12 @@ MonoBehaviour:
   - m_Id: 3411770617856
     m_Localized: "Als letztes noch das Schl\xFCsselelement dieses Trainings. Vor
       Ihnen sehen Sie nun ein paar digitale H\xE4nde projiziert.\n\nDas sind die
-      Trainerh\xE4nde. Diese werden Ihnen immer vormachen, was als n\xE4chstes zu
+      Trainer-H\xE4nde. Diese werden Ihnen immer vormachen, was als n\xE4chstes zu
       tun ist."
     m_Metadata:
       m_Items: []
   - m_Id: 3558407680000
-    m_Localized: Machen Sie Geste bitte mal nach.
+    m_Localized: Machen Sie die Geste bitte mal nach.
     m_Metadata:
       m_Items: []
   - m_Id: 3669359603712
@@ -89,9 +89,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3777874636800
-    m_Localized: "Wenn die Trainerh\xE4nde etwas zu schnell vormachen, k\xF6nnen
-      Sie die Abspielgeschwidigkeit jederzeit verlangsamen. Dr\xFCcke Sie Taste Zwei
-      um zwischen halber und normaler Geschwindigkeit zu wechseln."
+    m_Localized: "Wenn die Trainer-H\xE4nde etwas \"zu schnell\" vormachen, k\xF6nnen
+      Sie die Abspiel-Geschwindigkeit jederzeit verlangsamen. Dr\xFCcken Sie Taste
+      Zwei um zwischen halber und normaler Geschwindigkeit zu wechseln."
     m_Metadata:
       m_Items: []
   - m_Id: 3915733020672

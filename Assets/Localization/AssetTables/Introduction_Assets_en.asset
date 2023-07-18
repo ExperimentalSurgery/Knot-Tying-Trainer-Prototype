@@ -161,12 +161,12 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:07
-        lastModified: 2023-05-31 16:00:07
+        lastModified: 2023-07-18 18:31:12
         spokenText: 'There are four keys in front of you...
 
 
           Wait, we''ve
-          already had that. Very good! Let''s go!'
+          already had that. Very good! Let''s continue!'
     - rid: 4556038250801397914
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:

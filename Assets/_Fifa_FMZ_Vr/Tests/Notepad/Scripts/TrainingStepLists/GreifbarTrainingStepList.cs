@@ -10,6 +10,8 @@ namespace DFKI.NMY
     {
         [SerializeField] private GestureStepListEntry rowEntryPrefab;
         [SerializeField] private GridObjectCollection grid;
+        public bool chapterActive;
+
         protected override void OnEnable()
         {
             base.OnEnable();
@@ -54,6 +56,11 @@ namespace DFKI.NMY
         }
         private void OnTaskHasStarted(BaseTaskItem item) {
             //Prepared
+        }
+
+        public void SetChapterState(bool val)
+        {
+            chapterActive = val;
         }
     }
     

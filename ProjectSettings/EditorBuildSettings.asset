@@ -11,6 +11,7 @@ EditorBuildSettings:
   m_configObjects:
     Varjo.XR.Settings: {fileID: 11400000, guid: 193edbd0753342c4fb4861d6003f1053, type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: d9fad6cd4c82ca24bb9390ee6a82862e, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 597868d2401066f419c2ffe302637b9a, type: 2}
     com.unity.localization.addressable-group-rules: {fileID: 0}
     com.unity.localization.settings: {fileID: 11400000, guid: 442b734da8c18d34d99221827ca14f1d, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: a5d1ad538b6bcc64a8d8304db25c0a05, type: 2}

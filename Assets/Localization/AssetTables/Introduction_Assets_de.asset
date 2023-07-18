@@ -116,9 +116,9 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:04
-        lastModified: 2023-07-17 18:03:11
-        spokenText: "Dies ist die GreifbAR-Demo. Hier lernen Sie wie Sie einen chirurgischen
-          Knoten kn\xFCpfen."
+        lastModified: 2023-07-18 18:31:11
+        spokenText: "Willkommen zur GreifbAR-Demo. Hier lernen Sie wie Sie einen
+          chirurgischen Knoten kn\xFCpfen."
     - rid: 4556038250801397901
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -135,15 +135,15 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:05
-        lastModified: 2023-07-17 18:03:11
-        spokenText: "Bevor wir mit der Erl\xE4uterung des Mittelfingerknoten beginnen,
+        lastModified: 2023-07-18 18:31:12
+        spokenText: "Bevor wir mit der Erl\xE4uterung des Mittelfingerknotens beginnen,
           kurz noch ein paar Grundlagen."
     - rid: 4556038250801397907
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:05
-        lastModified: 2023-07-17 18:03:12
-        spokenText: Vor Ihnen befinden sich vier Tasten mit der sie die ganze Anwendung
+        lastModified: 2023-07-18 18:31:12
+        spokenText: Vor Ihnen befinden sich drei Tasten mit der sie die ganze Anwendung
           steuern.
     - rid: 4556038250801397909
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
@@ -162,16 +162,16 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:07
-        lastModified: 2023-07-17 18:05:53
-        spokenText: "Vor Ihnen befinden sich vier Tasten\u2026\n\nMoment, das hatten
+        lastModified: 2023-07-18 18:31:12
+        spokenText: "Vor Ihnen befinden sich drei Tasten\u2026\n\nMoment, das hatten
           wir doch schon. Sehr gut! Weiter gehts!"
     - rid: 4556038250801397915
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:07
-        lastModified: 2023-05-31 16:00:07
+        lastModified: 2023-07-18 18:31:12
         spokenText: "Rechts in Ihrem Sichtfeld sehen Sie immer bei welchem Schritt
-          sie in gerade sind und was als n\xE4chstes kommt. Falls Sie diese \xDCbersicht
+          sie gerade sind und was als n\xE4chstes kommt. Falls Sie diese \xDCbersicht
           nicht sehen m\xF6chten, nutzen sie einfach Taste 3 um diese auszublenden."
     - rid: 4556038250801397917
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
@@ -187,17 +187,17 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:08
-        lastModified: 2023-07-17 18:03:12
+        lastModified: 2023-07-18 18:31:12
         spokenText: "Als letztes noch das Schl\xFCsselelement dieses Trainings. Vor
           Ihnen sehen Sie nun ein paar digitale H\xE4nde projiziert.\n\nDas sind
-          die Trainerh\xE4nde. Diese werden Ihnen immer vormachen, was als n\xE4chstes
+          die Trainer-H\xE4nde. Diese werden Ihnen immer vormachen, was als n\xE4chstes
           zu tun ist."
     - rid: 4556038250801397921
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:09
-        lastModified: 2023-05-31 16:00:09
-        spokenText: Machen Sie Geste bitte mal nach.
+        lastModified: 2023-07-18 18:31:12
+        spokenText: Machen Sie die Geste bitte mal nach.
     - rid: 4556038250801397923
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -208,10 +208,10 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:10
-        lastModified: 2023-07-17 18:03:12
-        spokenText: "Wenn die Trainerh\xE4nde etwas zu schnell vormachen, k\xF6nnen
-          Sie die Abspielgeschwidigkeit jederzeit verlangsamen. Dr\xFCcke Sie Taste
-          Zwei um zwischen halber und normaler Geschwindigkeit zu wechseln."
+        lastModified: 2023-07-18 18:31:13
+        spokenText: "Wenn die Trainer-H\xE4nde etwas \"zu schnell\" vormachen, k\xF6nnen
+          Sie die Abspiel-Geschwindigkeit jederzeit verlangsamen. Dr\xFCcken Sie
+          Taste Zwei um zwischen halber und normaler Geschwindigkeit zu wechseln."
     - rid: 4556038250801397927
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
