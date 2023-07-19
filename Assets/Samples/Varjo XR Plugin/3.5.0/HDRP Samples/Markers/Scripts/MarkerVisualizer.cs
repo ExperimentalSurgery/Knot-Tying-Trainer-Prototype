@@ -35,7 +35,10 @@ public class MarkerVisualizer : MonoBehaviour
                 ConstraintSource scr = new ConstraintSource();
                 scr.sourceTransform = this.transform;
                 scr.weight = 1f;
-                childTransform.AddSource(scr);
+                if(childTransform.sourceCount > 0)
+                    childTransform.SetSource(0, scr);
+                else
+                    childTransform.AddSource(scr);
                 childTransform.constraintActive = true;
             }
         }        

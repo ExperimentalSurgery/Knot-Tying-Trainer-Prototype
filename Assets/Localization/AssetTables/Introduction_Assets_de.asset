@@ -103,9 +103,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 4556038250801397929
+  - m_Id: 17757963624787968
+    m_Localized: 140fc492f9f4fcf45b718f6ee88ef626
+    m_Metadata:
+      m_Items:
+      - rid: 1383838077761617923
   references:
     version: 2
     RefIds:
+    - rid: 1383838077761617923
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-19 15:53:23
+        lastModified: 2023-07-19 15:53:23
+        spokenText: "Sie sollten nun sehen, wie die Trainer-H\xE4nde eine Geste vorf\xFChren."
     - rid: 4556038250801397897
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:

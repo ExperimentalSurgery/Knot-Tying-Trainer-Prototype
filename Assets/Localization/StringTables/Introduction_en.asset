@@ -109,6 +109,10 @@ MonoBehaviour:
       Let''s start with your training.'
     m_Metadata:
       m_Items: []
+  - m_Id: 17758107564912640
+    m_Localized: You should now see the trainer hands performing a gesture.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

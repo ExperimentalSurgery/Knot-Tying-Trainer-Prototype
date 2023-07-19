@@ -83,6 +83,10 @@ MonoBehaviour:
     m_Key: intro_assi_starttraining
     m_Metadata:
       m_Items: []
+  - m_Id: 17757963624787968
+    m_Key: intro_assi_view_gesture
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 4556038250801397850
@@ -164,6 +168,10 @@ MonoBehaviour:
           - en
           - de
         - m_KeyId: 1094119428096
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 17757963624787968
           m_TableCodes:
           - en
           - de

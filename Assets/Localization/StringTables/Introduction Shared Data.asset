@@ -63,6 +63,10 @@ MonoBehaviour:
     m_Key: intro_assi_trainerhands
     m_Metadata:
       m_Items: []
+  - m_Id: 17758107564912640
+    m_Key: intro_assi_view_gesture
+    m_Metadata:
+      m_Items: []
   - m_Id: 3558407680000
     m_Key: intro_assi_try_gesture
     m_Metadata:

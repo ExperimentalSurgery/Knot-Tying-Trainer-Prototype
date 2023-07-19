@@ -44,6 +44,9 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     [Tooltip("GameObject of left expert hand")] public GameObject leftExpertHand;
     [Tooltip("GameObject of right expert hand")] public GameObject rightExpertHand;
 
+    public Vector3 rightHandPosMod;
+    public Vector3 rightHandRotMod;
+
     [SerializeField] private bool useReducedSpeed = false;
     
     // Consts
@@ -242,7 +245,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
                     playedFrames.Add(currentFrame);
                 }
                 
-                // Debug.Log("seq:"+currentSequence+" sf:"+gestureModule.GetSequenceStartFrameIndex(currentSequence)+ " ef:"+gestureModule.GetSequenceEndFrameIndex(currentSequence)+" p:"+playedFrames.Count+" f:"+currentFrame);
+                //Debug.Log("seq:"+currentSequence+" sf:"+gestureModule.GetSequenceStartFrameIndex(currentSequence)+ " ef:"+gestureModule.GetSequenceEndFrameIndex(currentSequence)+" p:"+playedFrames.Count+" f:"+currentFrame);
 
             }
             
@@ -481,13 +484,23 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         int i = 4, j = 3, k = 5;
         int sign1 = 1, sign2 = -1, sign3 = 1;
 
-
         Transform elbow = model.transform.Find("Elbow");
+        if (elbow.parent.name == "Right")
+        {
+            elbow.localPosition = new Vector3(rightHandPosMod.x * bvhFrame[0], rightHandPosMod.y * bvhFrame[1], rightHandPosMod.z * bvhFrame[2]);
+            elbow.localEulerAngles = new Vector3(rightHandRotMod.x * bvhFrame[i], rightHandRotMod.y * bvhFrame[j], rightHandRotMod.z * bvhFrame[k]);
+        }
+        else
+        {
+            elbow.localPosition = new Vector3(-1 * bvhFrame[0], sign2 * bvhFrame[1], sign3 * bvhFrame[2]);
+            elbow.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
+        }
+
 
         // L_Wrist
         i += 3; j += 3; k += 3;
         Transform L_Wrist = elbow.transform.Find("L_Wrist");
-        //L_Wrist.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
+        L_Wrist.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
 
 
         // L_index_Proximal

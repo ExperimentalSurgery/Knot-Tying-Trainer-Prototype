@@ -105,6 +105,10 @@ MonoBehaviour:
       Fangen wir nun an mit Ihrem Training.'
     m_Metadata:
       m_Items: []
+  - m_Id: 17758107564912640
+    m_Localized: "Sie sollten nun sehen, wie die Trainer-H\xE4nde eine Geste vorf\xFChren."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
