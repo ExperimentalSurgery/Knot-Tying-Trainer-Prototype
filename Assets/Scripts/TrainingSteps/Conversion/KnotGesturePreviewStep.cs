@@ -1,6 +1,7 @@
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using NMY.VirtualRealityTraining.VirtualAssistant;
 
 namespace DFKI.NMY
 {
@@ -9,6 +10,8 @@ namespace DFKI.NMY
 
         [Header("KnotGesturePreviewStep")] 
         [SerializeField] private float singleSequenceDuration = 2f;
+
+        public bool finishStepOnSeqEnd = true;
 
         [Tooltip("[Optional] Instead of using the currennt config of the GestureSequencePlayer the file-references will be set and the player re-initialiuzed")]
         // runtime vars
@@ -48,6 +51,9 @@ namespace DFKI.NMY
 
         private void OnScenarioPlaybackFinished(HandGestureParams eventParams)
         {
+            if(!finishStepOnSeqEnd)
+                return;
+
             if (eventParams.side.Equals(Hand.Left)) {
                 finishedLeft = true;
             }
@@ -61,16 +67,12 @@ namespace DFKI.NMY
             }
         }
 
-
         // POST STEP
         protected override async UniTask PostStepActionAsync(CancellationToken ct)
         {
             await base.PostStepActionAsync(ct);
-            SFXManager.instance.StopAudio();
+            //SFXManager.instance.StopAudio();
             GestureSequencePlayer.instance.Stop();
         }
-        
-        
-
     }
 }

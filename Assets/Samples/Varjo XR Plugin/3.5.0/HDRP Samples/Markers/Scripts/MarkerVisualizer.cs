@@ -23,6 +23,9 @@ public class MarkerVisualizer : MonoBehaviour
         //transform.localScale = new Vector3(marker.size.x, marker.size.x, marker.size.z);
         idText.text = marker.id.ToString();
 
+        if(sceneObjectNames.Length == 0)
+            return;
+
         if(childTransform != null && childTransform.sourceCount != 0)
             return;
 

@@ -46,16 +46,39 @@ namespace DFKI.NMY
             set => ttsContainer = value;
         }
 
+        public bool useTTS = true;
+
         protected override async UniTask ClientStepActionAsync(CancellationToken ct)
         {
-            try
+            if(ttsContainer == null)
+                useTTS = false;
+                
+            if (useTTS)
             {
-                await WaitForFinishedCriteria(ct);
-                RaiseClientStepFinished();
+                try
+                {
+                    var speakTask = VirtualAssistant.instance.Speak(ttsContainer, ct);
+                    var finishedCriteriaTask = WaitForFinishedCriteria(ct);
+                    await UniTask.WhenAll(speakTask, finishedCriteriaTask);
+                    RaiseClientStepFinished();
+                }
+                catch (OperationCanceledException)
+                {
+                    RaiseClientStepFinished();
+                }
             }
-            catch (OperationCanceledException)
+            else
             {
-                RaiseClientStepFinished();
+                try
+                {
+                    var finishedCriteriaTask = WaitForFinishedCriteria(ct);
+                    await UniTask.WhenAny(finishedCriteriaTask);
+                    RaiseClientStepFinished();
+                }
+                catch (OperationCanceledException)
+                {
+                    RaiseClientStepFinished();
+                }
             }
 
         }
@@ -66,17 +89,12 @@ namespace DFKI.NMY
             await base.PreStepActionAsync(ct);
             FinishedCriteria = false;
             UserInterfaceManager.instance.UpdateStepInfos(stepTitle, stepDescription);
-            
-            if (ttsContainer.IsEmpty == false) {
-                VirtualAssistant.instance.Speak(ttsContainer, ct);
-            }
         }
 
         // POST STEP
         protected override async UniTask PostStepActionAsync(CancellationToken ct)
         {
             await base.PostStepActionAsync(ct);
-            VirtualAssistant.instance.StopSpeaking();
         }
         
         public virtual UniTask WaitForFinishedCriteria(CancellationToken ct)

@@ -11,10 +11,11 @@ public class MarkerManager : MonoBehaviour
     private List<long> absentIds;
     private Dictionary<long, MarkerVisualizer> markerVisualizers;
 
-    public VarjoMarker marker;
-
     public Transform xrRig;
-    public GameObject markerPrefab;
+
+    public GameObject defaultPrefab;
+
+    public MarkerObject[] markerObjects;
 
     public bool markersEnabled = true;
     private bool _markersEnabled;
@@ -24,13 +25,20 @@ public class MarkerManager : MonoBehaviour
 
     private Transform markerTransform;
 
+    [System.Serializable]
+    public struct MarkerObject
+    {
+        public int id;
+        public GameObject prefab;
+        public bool isDynamic;        
+    }
+
     void Start()
     {
         markers = new List<VarjoMarker>();
         markerIds = new List<long>();
         absentIds = new List<long>();
         markerVisualizers = new Dictionary<long, MarkerVisualizer>();
-        marker = new VarjoMarker();
     }
 
     void Update()
@@ -96,7 +104,16 @@ public class MarkerManager : MonoBehaviour
 
     void CreateMarkerVisualizer(VarjoMarker marker)
     {
-        GameObject go = Instantiate(markerPrefab);
+        GameObject objectToSpawn = defaultPrefab;
+        var query = markerObjects.Where(x => x.id == marker.id);
+        if (query.Count() > 0)
+        {
+            MarkerObject mo = query.ElementAt(0);
+            if(mo.prefab != null)
+                objectToSpawn = mo.prefab;
+        }
+
+        GameObject go = Instantiate(objectToSpawn);
         markerTransform = go.transform;
         go.name = marker.id.ToString();
         markerTransform.SetParent(xrRig);

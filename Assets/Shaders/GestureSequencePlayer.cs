@@ -162,7 +162,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     public void ToggleSpeed(bool useDefault=false)
     {
         useReducedSpeed = !useDefault && !useReducedSpeed;
-        currentSpeedMultiplier = useReducedSpeed ? 0.5f : 1.0f;
+        currentSpeedMultiplier = useReducedSpeed ? 2.0f : 1.0f;
         ChangeDuration(initialSequenceDuration);
     }
     
