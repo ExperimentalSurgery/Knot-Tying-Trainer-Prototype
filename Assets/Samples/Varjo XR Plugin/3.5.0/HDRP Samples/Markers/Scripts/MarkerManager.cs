@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -24,6 +25,11 @@ public class MarkerManager : MonoBehaviour
     private long _markerTimeout;
 
     private Transform markerTransform;
+
+    public event EventHandler<MarkerDetectedEventArgs> MarkerDetectedEventHandler;
+    public delegate void MarkerDetectedEvent(object sender, MarkerDetectedEventArgs e);
+
+    private MarkerDetectedEvent markerEvent;
 
     [System.Serializable]
     public struct MarkerObject
@@ -120,6 +126,7 @@ public class MarkerManager : MonoBehaviour
         MarkerVisualizer visualizer = go.GetComponent<MarkerVisualizer>();
         markerVisualizers.Add(marker.id, visualizer);
         visualizer.SetMarkerData(marker);
+        OnMarkerDetected(new MarkerDetectedEventArgs(marker));
     }
 
     void UpdateMarkerVisualizer(VarjoMarker marker)
@@ -135,4 +142,23 @@ public class MarkerManager : MonoBehaviour
         }
     }
 
+    protected virtual void OnMarkerDetected(MarkerDetectedEventArgs e)
+        {
+            EventHandler<MarkerDetectedEventArgs> handler = MarkerDetectedEventHandler;
+            if (handler != null)
+            {
+                handler(this, e);
+            }
+        }
+
+}
+
+public class MarkerDetectedEventArgs : EventArgs
+{
+    public VarjoMarker marker { get; set; }
+
+    public MarkerDetectedEventArgs(VarjoMarker _marker)
+    {
+        marker = _marker;
+    }
 }

@@ -2,6 +2,7 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using NMY.VirtualRealityTraining.VirtualAssistant;
+using System.Threading.Tasks;
 
 namespace DFKI.NMY
 {
@@ -18,7 +19,7 @@ namespace DFKI.NMY
         private bool finishedLeft = false;
         private bool finishedRight = false;
 
-
+        public int extraDelay;
         // PRE STEP
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
@@ -70,8 +71,11 @@ namespace DFKI.NMY
         // POST STEP
         protected override async UniTask PostStepActionAsync(CancellationToken ct)
         {
+            if(extraDelay > 0)
+                await Task.Delay(extraDelay);  
+
             await base.PostStepActionAsync(ct);
-            //SFXManager.instance.StopAudio();
+            SFXManager.instance.StopAudio();
             GestureSequencePlayer.instance.Stop();
         }
     }

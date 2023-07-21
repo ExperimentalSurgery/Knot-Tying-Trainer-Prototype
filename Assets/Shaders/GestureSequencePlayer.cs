@@ -46,6 +46,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
 
     public Vector3 rightHandPosMod;
     public Vector3 rightHandRotMod;
+    public Vector3 originOffset;
 
     [SerializeField] private bool useReducedSpeed = false;
     
@@ -487,12 +488,12 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         Transform elbow = model.transform.Find("Elbow");
         if (elbow.parent.name == "Right")
         {
-            elbow.localPosition = new Vector3(rightHandPosMod.x * bvhFrame[0], rightHandPosMod.y * bvhFrame[1], rightHandPosMod.z * bvhFrame[2]);
+            elbow.localPosition = new Vector3(rightHandPosMod.x *( bvhFrame[0] + originOffset.x), rightHandPosMod.y *( bvhFrame[1] + originOffset.y), rightHandPosMod.z * (bvhFrame[2] + originOffset.z));
             elbow.localEulerAngles = new Vector3(rightHandRotMod.x * bvhFrame[i], rightHandRotMod.y * bvhFrame[j], rightHandRotMod.z * bvhFrame[k]);
         }
         else
         {
-            elbow.localPosition = new Vector3(-1 * bvhFrame[0], sign2 * bvhFrame[1], sign3 * bvhFrame[2]);
+            elbow.localPosition = new Vector3(-1 * (bvhFrame[0] + originOffset.x), sign2 * (bvhFrame[1] + originOffset.y), sign3 * (bvhFrame[2] + originOffset.z));
             elbow.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
         }
 

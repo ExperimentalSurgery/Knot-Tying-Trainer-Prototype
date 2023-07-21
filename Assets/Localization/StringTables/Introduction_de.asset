@@ -109,6 +109,42 @@ MonoBehaviour:
     m_Localized: "Sie sollten nun sehen, wie die Trainer-H\xE4nde eine Geste vorf\xFChren."
     m_Metadata:
       m_Items: []
+  - m_Id: 18429656638828544
+    m_Localized: Willkommen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188672
+    m_Localized: zur GreifbAR Demo!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188673
+    m_Localized: "H\xE4nde heben"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188674
+    m_Localized: "Bitte heben Sie ihre H\xE4nde."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188675
+    m_Localized: Bedienung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188676
+    m_Localized: "3 Kn\xF6pfe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188677
+    m_Localized: Geste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188678
+    m_Localized: Machen Sie die Geste nach.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188679
+    m_Localized: Geschwindigkeit
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

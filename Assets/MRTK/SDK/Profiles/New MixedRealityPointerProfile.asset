@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db393d206eab4604ab74278cb6cda355, type: 3}
-  m_Name: DisablePointersExamplePointerProfile
+  m_Name: New MixedRealityPointerProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
   pointingExtent: 10
   pointingRaycastLayerMasks:
   - serializedVersion: 2
     m_Bits: 4294967291
-  debugDrawPointingRays: 1
+  debugDrawPointingRays: 0
   debugDrawPointingRayColors:
   - {r: 1, g: 0.58280706, b: 0, a: 1}
   - {r: 0.86426115, g: 1, b: 0, a: 1}
@@ -30,14 +30,14 @@ MonoBehaviour:
   useHeadGazeOverride: 0
   isEyeTrackingEnabled: 0
   pointerOptions:
-  - controllerType: 1071
-    handedness: 7
-    pointerPrefab: {fileID: 1247086986094436, guid: d5b94136462644c9873bb3347169ae7e, type: 3}
+  - controllerType: 768
+    handedness: 255
+    pointerPrefab: {fileID: 1247086986094436, guid: 51e60b8742bc47640923ac9e75ea74e9, type: 3}
     prioritizedLayerMasks:
     - serializedVersion: 2
       m_Bits: 4294967291
-  - controllerType: 3072
-    handedness: 7
+  - controllerType: 2048
+    handedness: 255
     pointerPrefab: {fileID: 1247086986094436, guid: 039b325c9e8fd0545a0475fd4aa35b10, type: 3}
     prioritizedLayerMasks:
     - serializedVersion: 2

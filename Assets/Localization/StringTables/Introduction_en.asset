@@ -113,6 +113,46 @@ MonoBehaviour:
     m_Localized: You should now see the trainer hands performing a gesture.
     m_Metadata:
       m_Items: []
+  - m_Id: 18429656638828544
+    m_Localized: Welcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188672
+    m_Localized: to the GreifbAR demo!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188673
+    m_Localized: Raise Hands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188674
+    m_Localized: Please raise your hands.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188675
+    m_Localized: The controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188676
+    m_Localized: 3 buttons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188677
+    m_Localized: Gesture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188678
+    m_Localized: Repeat the gesture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188679
+    m_Localized: Playback Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18429656668188680
+    m_Localized: Set the playback speed.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

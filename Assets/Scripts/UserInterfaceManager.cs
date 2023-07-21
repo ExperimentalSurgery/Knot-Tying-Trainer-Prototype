@@ -57,6 +57,7 @@ namespace DFKI.NMY
 
         public void HideProgressIndicator() {
             if(progressIndicatorMrtk) progressIndicatorMrtk.gameObject.SetActive(false);
+             Debug.Log("HideProgressIndicator");
         }
 
         public void UpdateStepInfos(LocalizedString title, LocalizedString description)

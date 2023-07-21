@@ -34,7 +34,7 @@ namespace DFKI.NMY
             }
             
             // For this step we want to activate the Expert Hands as Preview (optionally)
-            PreviewHands.instance.gameObject.SetActive(showExpertHands);
+            ExpertHands.instance.gameObject.SetActive(showExpertHands);
             if(showProgressBar)UserInterfaceManager.instance.ShowProgressIndicator();
             else UserInterfaceManager.instance.HideProgressIndicator();
             
@@ -46,7 +46,7 @@ namespace DFKI.NMY
         // POST STEP
         protected override async UniTask PostStepActionAsync(CancellationToken ct) {
             await base.PostStepActionAsync(ct);
-            PreviewHands.instance.gameObject.SetActive(false);
+            ExpertHands.instance.gameObject.SetActive(false);
             UserInterfaceManager.instance.HideProgressIndicator();
         }
 
