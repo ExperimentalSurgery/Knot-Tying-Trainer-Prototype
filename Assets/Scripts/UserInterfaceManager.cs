@@ -1,7 +1,6 @@
 using Microsoft.MixedReality.Toolkit.UI;
 using NMY;
 using NMY.VirtualRealityTraining;
-using NMY.VTT;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
