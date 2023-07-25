@@ -15,260 +15,204 @@ MonoBehaviour:
   m_TableCollectionName: Mittelfingerknoten
   m_TableCollectionNameGuidString: bc2ddf4480c37a64585b03465c45fb51
   m_Entries:
-  - m_Id: 1809246237564928
-    m_Key: tbd_0
+  - m_Id: 19925740047032320
+    m_Key: mfk_intro_assi_getactive
     m_Metadata:
       m_Items: []
-  - m_Id: 1809247604908032
-    m_Key: tbd_1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809248854810624
-    m_Key: tbd_2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809250113101824
-    m_Key: tbd_3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809251371393024
-    m_Key: tbd_4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809252625489920
-    m_Key: tbd_5
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809253883781120
-    m_Key: tbd_6
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809255129489408
-    m_Key: tbd_7
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809256454889472
-    m_Key: tbd_8
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809257717374976
-    m_Key: tbd_9
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809258967277568
-    m_Key: tbd_10
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809260229763072
-    m_Key: tbd_11
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809261488054272
-    m_Key: tbd_12
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809262742151168
-    m_Key: tbd_13
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1809263992053760
+  - m_Id: 19925741905108992
     m_Key: tbd_14
     m_Metadata:
       m_Items: []
-  - m_Id: 1809265271316480
+  - m_Id: 19925743834488832
     m_Key: tbd_15
     m_Metadata:
       m_Items: []
-  - m_Id: 1809266588327936
+  - m_Id: 19925745780645888
     m_Key: tbd_16
     m_Metadata:
       m_Items: []
-  - m_Id: 1809267842424832
+  - m_Id: 19925747726802944
     m_Key: tbd_17
     m_Metadata:
       m_Items: []
-  - m_Id: 1809269109104640
+  - m_Id: 19925749631016960
     m_Key: tbd_18
     m_Metadata:
       m_Items: []
-  - m_Id: 1809270350618624
+  - m_Id: 19925751577174016
     m_Key: tbd_19
     m_Metadata:
       m_Items: []
-  - m_Id: 1809271596326912
+  - m_Id: 19925753535913984
     m_Key: tbd_20
     m_Metadata:
       m_Items: []
-  - m_Id: 1809272867201024
+  - m_Id: 19925755494653952
     m_Key: tbd_21
     m_Metadata:
       m_Items: []
-  - m_Id: 1809274159046656
+  - m_Id: 19925757398867968
     m_Key: tbd_22
     m_Metadata:
       m_Items: []
-  - m_Id: 1809275425726464
+  - m_Id: 19925759332442112
     m_Key: tbd_23
     m_Metadata:
       m_Items: []
-  - m_Id: 1809276709183488
+  - m_Id: 19925761253433344
     m_Key: tbd_24
     m_Metadata:
       m_Items: []
-  - m_Id: 1809278001029120
+  - m_Id: 19925763191201792
     m_Key: tbd_25
     m_Metadata:
       m_Items: []
-  - m_Id: 1809279242543104
+  - m_Id: 19925765099610112
     m_Key: tbd_26
     m_Metadata:
       m_Items: []
-  - m_Id: 1809280505028608
+  - m_Id: 19925767024795648
     m_Key: tbd_27
     m_Metadata:
       m_Items: []
-  - m_Id: 1809282061115392
+  - m_Id: 19925768975147008
     m_Key: tbd_28
     m_Metadata:
       m_Items: []
-  - m_Id: 1809283315212288
+  - m_Id: 19925770917109760
     m_Key: tbd_29
     m_Metadata:
       m_Items: []
-  - m_Id: 1809284779024384
+  - m_Id: 19925772846489600
     m_Key: tbd_30
     m_Metadata:
       m_Items: []
-  - m_Id: 1809286133784576
+  - m_Id: 19925774805229568
     m_Key: tbd_31
     m_Metadata:
       m_Items: []
-  - m_Id: 1809287438213120
+  - m_Id: 19925776772358144
     m_Key: tbd_32
     m_Metadata:
       m_Items: []
-  - m_Id: 1809288780390400
+  - m_Id: 19925778701737984
     m_Key: tbd_33
     m_Metadata:
       m_Items: []
-  - m_Id: 1809290026098688
+  - m_Id: 19925780656283648
     m_Key: tbd_34
     m_Metadata:
       m_Items: []
-  - m_Id: 1809291263418368
+  - m_Id: 19925782564691968
     m_Key: tbd_35
     m_Metadata:
       m_Items: []
-  - m_Id: 1809292513320960
+  - m_Id: 19925784519237632
     m_Key: tbd_36
     m_Metadata:
       m_Items: []
-  - m_Id: 1809293771612160
+  - m_Id: 19925786473783296
     m_Key: tbd_37
     m_Metadata:
       m_Items: []
-  - m_Id: 1809295029903360
+  - m_Id: 19925788394774528
     m_Key: tbd_38
     m_Metadata:
       m_Items: []
-  - m_Id: 1809296263028736
+  - m_Id: 19925790366097408
     m_Key: tbd_39
     m_Metadata:
       m_Items: []
-  - m_Id: 1809297521319936
+  - m_Id: 19925792316448768
     m_Key: tbd_40
     m_Metadata:
       m_Items: []
-  - m_Id: 1809298855108608
+  - m_Id: 19925794283577344
     m_Key: tbd_41
     m_Metadata:
       m_Items: []
-  - m_Id: 1809300088233984
+  - m_Id: 19925796259094528
     m_Key: tbd_42
     m_Metadata:
       m_Items: []
-  - m_Id: 1809301346525184
+  - m_Id: 19925798196862976
     m_Key: tbd_43
     m_Metadata:
       m_Items: []
-  - m_Id: 1809302588039168
+  - m_Id: 19925800151408640
     m_Key: tbd_44
     m_Metadata:
       m_Items: []
-  - m_Id: 1809303837941760
+  - m_Id: 19925802110148608
     m_Key: tbd_45
     m_Metadata:
       m_Items: []
-  - m_Id: 1809305071067136
+  - m_Id: 19925804110831616
     m_Key: tbd_46
     m_Metadata:
       m_Items: []
-  - m_Id: 1809306325164032
+  - m_Id: 19925806061182976
     m_Key: tbd_47
     m_Metadata:
       m_Items: []
-  - m_Id: 1809307583455232
+  - m_Id: 19925808007340032
     m_Key: tbd_48
     m_Metadata:
       m_Items: []
-  - m_Id: 1809308917243904
+  - m_Id: 19925810066743296
     m_Key: tbd_49
     m_Metadata:
       m_Items: []
-  - m_Id: 19895236484653056
-    m_Key: mfk_assi_getactive
+  - m_Id: 19925812017094656
+    m_Key: mfk_intro_assi_startposition
     m_Metadata:
       m_Items: []
-  - m_Id: 19895238401449984
-    m_Key: mfk_assi_startposition
+  - m_Id: 19925814017777664
+    m_Key: mfk_intro_assi_sequences
     m_Metadata:
       m_Items: []
-  - m_Id: 19895240368578560
-    m_Key: mfk_assi_sequences
+  - m_Id: 19925816010072064
+    m_Key: mfk_intro_assi_tryrepeat
     m_Metadata:
       m_Items: []
-  - m_Id: 19895242318929920
-    m_Key: mfk_assi_tryrepeat
+  - m_Id: 19925817977200640
+    m_Key: mfk_part1_assi_firststep
     m_Metadata:
       m_Items: []
-  - m_Id: 19895244269281280
-    m_Key: mfk_assi_firststep
+  - m_Id: 19925819927552000
+    m_Key: mfk_part1_assi_tension
     m_Metadata:
       m_Items: []
-  - m_Id: 19895246240604160
-    m_Key: mfk_assi_tension
+  - m_Id: 19925821861126144
+    m_Key: mfk_part1_assi_tensionlights
     m_Metadata:
       m_Items: []
-  - m_Id: 19895248220315648
-    m_Key: mfk_assi_tensionlights
+  - m_Id: 19925823832449024
+    m_Key: mfk_part1_assi_stretchrightfingers
     m_Metadata:
       m_Items: []
-  - m_Id: 19895250183249920
-    m_Key: mfk_assi_stretchrightfingers
+  - m_Id: 19925825833132032
+    m_Key: mfk_part1_assi_turnrighthand
     m_Metadata:
       m_Items: []
-  - m_Id: 19895252133601280
-    m_Key: mfk_assi_turnrighthand
+  - m_Id: 19925827833815040
+    m_Key: mfk_part1_assi_holdposition
     m_Metadata:
       m_Items: []
-  - m_Id: 19895254075564032
-    m_Key: mfk_assi_holdposition
+  - m_Id: 19925829830303744
+    m_Key: mfk_part1_assi_tryrepeat2
     m_Metadata:
       m_Items: []
-  - m_Id: 19895256088829952
-    m_Key: mfk_assi_tryrepeat2
+  - m_Id: 19925831864541184
+    m_Key: mfk_part1_assi_tension2
     m_Metadata:
       m_Items: []
-  - m_Id: 19895258064347136
-    m_Key: mfk_assi_tension2
+  - m_Id: 19925833852641280
+    m_Key: mfk_part1_assi_greenstringonfinger
     m_Metadata:
       m_Items: []
-  - m_Id: 19895260023087104
-    m_Key: mfk_assi_greenstringonfinger
-    m_Metadata:
-      m_Items: []
-  - m_Id: 19895262053130240
-    m_Key: mfk_assi_success
+  - m_Id: 19925835953987584
+    m_Key: mfk_part1_assi_success
     m_Metadata:
       m_Items: []
   m_Metadata:
@@ -343,147 +287,131 @@ MonoBehaviour:
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809263992053760
+        - m_KeyId: 19923321519071232
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809265271316480
+        - m_KeyId: 19923319853932544
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809266588327936
+        - m_KeyId: 19923318151045120
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809267842424832
+        - m_KeyId: 19923316481712128
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809269109104640
+        - m_KeyId: 19923314808184832
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809270350618624
+        - m_KeyId: 19923313117880320
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809271596326912
+        - m_KeyId: 19923310152507392
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809272867201024
+        - m_KeyId: 19923306780286976
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809274159046656
+        - m_KeyId: 19923305110953984
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809275425726464
+        - m_KeyId: 19923299117293568
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809276709183488
+        - m_KeyId: 19923296680402944
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809278001029120
+        - m_KeyId: 19923290149871616
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809279242543104
+        - m_KeyId: 19923287771701248
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809280505028608
+        - m_KeyId: 19923286093979648
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809282061115392
+        - m_KeyId: 19923284437229568
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809283315212288
+        - m_KeyId: 19923282763702272
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809284779024384
+        - m_KeyId: 19923281077592064
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809286133784576
+        - m_KeyId: 19923279420841984
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809287438213120
+        - m_KeyId: 19923277726343168
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809288780390400
+        - m_KeyId: 19923276040232960
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809290026098688
+        - m_KeyId: 19923274383482880
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809291263418368
+        - m_KeyId: 19923272676401152
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809292513320960
+        - m_KeyId: 19923271019651072
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809293771612160
+        - m_KeyId: 19923269346123776
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809295029903360
+        - m_KeyId: 19923267676790784
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809296263028736
+        - m_KeyId: 19923265743216640
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809297521319936
+        - m_KeyId: 19923263989997568
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809298855108608
+        - m_KeyId: 19923262240972800
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809300088233984
+        - m_KeyId: 19923260550668288
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809301346525184
+        - m_KeyId: 19923258822615040
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809302588039168
+        - m_KeyId: 19923323234541568
           m_TableCodes:
           - en
           - de
-        - m_KeyId: 1809303837941760
-          m_TableCodes:
-          - en
-          - de
-        - m_KeyId: 1809305071067136
-          m_TableCodes:
-          - en
-          - de
-        - m_KeyId: 1809306325164032
-          m_TableCodes:
-          - en
-          - de
-        - m_KeyId: 1809307583455232
-          m_TableCodes:
-          - en
-          - de
-        - m_KeyId: 1809308917243904
+        - m_KeyId: 19923324991954944
           m_TableCodes:
           - en
           - de
@@ -542,5 +470,278 @@ MonoBehaviour:
         - m_KeyId: 19895262053130240
           m_TableCodes:
           - en
+          - de
+        - m_KeyId: 19923326791311360
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923328586473472
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923330364858368
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923332113883136
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923334005514240
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923335788093440
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923337637781504
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923339365834752
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923341051944960
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923342754832384
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923344440942592
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923346110275584
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923347825745920
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923349507661824
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923351193772032
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923352875687936
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923354591158272
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19923356264685568
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925740047032320
+          m_TableCodes:
+          - de
+          - en
+        - m_KeyId: 19925741905108992
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925743834488832
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925745780645888
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925747726802944
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925749631016960
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925751577174016
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925753535913984
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925755494653952
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925757398867968
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925759332442112
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925761253433344
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925763191201792
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925765099610112
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925767024795648
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925768975147008
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925770917109760
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925772846489600
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925774805229568
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925776772358144
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925778701737984
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925780656283648
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925782564691968
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925784519237632
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925786473783296
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925788394774528
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925790366097408
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925792316448768
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925794283577344
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925796259094528
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925798196862976
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925800151408640
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925802110148608
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925804110831616
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925806061182976
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925808007340032
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925810066743296
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925812017094656
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925814017777664
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925816010072064
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925817977200640
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925819927552000
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925821861126144
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925823832449024
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925825833132032
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925827833815040
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925829830303744
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925831864541184
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925833852641280
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19925835953987584
+          m_TableCodes:
+          - en
+          - de
         m_TypeString: NMY.GoogleCloudTextToSpeech.LocalizedTextToSpeechItem, com.nmy.googlecloudtexttospeech,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
