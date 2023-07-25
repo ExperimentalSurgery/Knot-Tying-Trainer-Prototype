@@ -53,10 +53,9 @@ namespace DFKI.NMY
             if(ttsContainer == null)
                 useTTS = false;
                 
-            if (useTTS)
-            {
-                try
-                {
+            
+            if (!ttsContainer.IsEmpty && ttsContainer!=null) {
+                try {
                     var speakTask = VirtualAssistant.instance.Speak(ttsContainer, ct);
                     var finishedCriteriaTask = WaitForFinishedCriteria(ct);
                     await UniTask.WhenAll(speakTask, finishedCriteriaTask);

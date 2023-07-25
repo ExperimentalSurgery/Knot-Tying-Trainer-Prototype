@@ -61,8 +61,9 @@ namespace DFKI.NMY
 
         public void UpdateStepInfos(LocalizedString title, LocalizedString description)
         {
-            if(stepDescriptionMrtk)stepTitleMrtk.text = title.GetLocalizedString();
-            if(stepDescriptionMrtk)stepDescriptionMrtk.text = description.GetLocalizedString();
+            if(stepTitleMrtk && !title.IsEmpty) stepTitleMrtk.text = title.GetLocalizedString();
+            if(stepDescriptionMrtk && !description.IsEmpty) stepDescriptionMrtk.text = description.GetLocalizedString();
+            
         }
 
         

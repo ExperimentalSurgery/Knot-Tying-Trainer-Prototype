@@ -9,6 +9,8 @@ namespace DFKI.NMY
     public class KnotbankTensionStep : GreifbarBaseStep
     {
 
+        [Header("Knotbank TensionStep")]
+        [Range(0,1)]
         [SerializeField] private int targetValue = 1;
         
         // private vars
@@ -29,7 +31,7 @@ namespace DFKI.NMY
         }
 
         // Invoked when a line of data is received from the serial device.
-        void OnMessageArrived(string msg) {
+        public void OnMessageArrived(string msg) {
             string[] data = msg.Split(';');
             //Debug.Log($"Contact: {data[0]} - Tension Grams: {data[1]}");
 
