@@ -16,59 +16,59 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 9c3e8db84a4bb604dbec4e87a6e8ec1d
   m_Entries:
   - m_Id: 11020050432
-    m_Key: tbd_0
+    m_Key: mfk_assi_getactive
     m_Metadata:
       m_Items: []
-  - m_Id: 2158398902272
-    m_Key: tbd_1
+  - m_Id: 19895220789567488
+    m_Key: mfk_assi_startposition
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456704
-    m_Key: tbd_2
+  - m_Id: 19895220814733312
+    m_Key: mfk_assi_sequences
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456705
-    m_Key: tbd_3
+  - m_Id: 19895220814733313
+    m_Key: mfk_assi_tryrepeat
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456706
-    m_Key: tbd_4
+  - m_Id: 19895220818927616
+    m_Key: mfk_assi_firststep
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456707
-    m_Key: tbd_5
+  - m_Id: 19895220818927617
+    m_Key: mfk_assi_tension
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456708
-    m_Key: tbd_6
+  - m_Id: 19895220818927618
+    m_Key: mfk_assi_tensionlights
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456709
-    m_Key: tbd_7
+  - m_Id: 19895220818927619
+    m_Key: mfk_assi_stretchrightfingers
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456710
-    m_Key: tbd_8
+  - m_Id: 19895220818927620
+    m_Key: mfk_assi_turnrighthand
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456711
-    m_Key: tbd_9
+  - m_Id: 19895220818927621
+    m_Key: mfk_assi_holdposition
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456712
-    m_Key: tbd_10
+  - m_Id: 19895220818927622
+    m_Key: mfk_assi_tryrepeat2
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456713
-    m_Key: tbd_11
+  - m_Id: 19895220818927623
+    m_Key: mfk_assi_tension2
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456714
-    m_Key: tbd_12
+  - m_Id: 19895220818927624
+    m_Key: mfk_assi_greenstringonfinger
     m_Metadata:
       m_Items: []
-  - m_Id: 2158432456715
-    m_Key: tbd_13
+  - m_Id: 19895220818927625
+    m_Key: mfk_assi_success
     m_Metadata:
       m_Items: []
   - m_Id: 2158432456716

@@ -22,585 +22,736 @@ MonoBehaviour:
     m_Localized: df0939fe74954704dbd17ba866f9c6f6
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606738
+      - rid: 6073544477279256579
   - m_Id: 1809247604908032
     m_Localized: 1a2e21973f378b3479ff3feab0bdb7ce
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606740
+      - rid: 6073544477279256581
   - m_Id: 1809248854810624
     m_Localized: cb93e740f9dccec46821d42166b527c5
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606742
+      - rid: 6073544477279256583
   - m_Id: 1809250113101824
     m_Localized: 5893d876dba201e45801dce47f105e8c
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606744
+      - rid: 6073544477279256585
   - m_Id: 1809251371393024
     m_Localized: 10d635fc676f01249a88c81ce5a08715
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606746
+      - rid: 6073544477279256587
   - m_Id: 1809252625489920
     m_Localized: 27a633b73e016e940aad70bd34119257
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606748
+      - rid: 6073544477279256589
   - m_Id: 1809253883781120
     m_Localized: 40b3cde952db13449975db5d725be56a
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606750
+      - rid: 6073544477279256591
   - m_Id: 1809255129489408
     m_Localized: 501dd400277a1d04d9c5868dc635291b
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606752
+      - rid: 6073544477279256593
   - m_Id: 1809256454889472
     m_Localized: 5c338dfa47d013842a9d33d998b83e4a
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606754
+      - rid: 6073544477279256595
   - m_Id: 1809257717374976
     m_Localized: 87d29bf170ec26848a06a87bb23e2d1f
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606756
+      - rid: 6073544477279256597
   - m_Id: 1809258967277568
     m_Localized: a7d418b64cab55443a0f51d6c1d1937c
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606758
+      - rid: 6073544477279256599
   - m_Id: 1809260229763072
     m_Localized: e39d0d56c676202468ec372617191d15
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606760
+      - rid: 6073544477279256601
   - m_Id: 1809261488054272
     m_Localized: c734b0f9b3139ad4f9bd6e796d4656b6
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606762
+      - rid: 6073544477279256603
   - m_Id: 1809262742151168
     m_Localized: 2fcd4ae9ea787064e9fd3935488d26bb
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606764
+      - rid: 6073544477279256605
   - m_Id: 1809263992053760
     m_Localized: 32aabbb185235c04a8da2b767649e73e
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606766
+      - rid: 6073544477279256607
   - m_Id: 1809265271316480
     m_Localized: c896abbffe8760449b5e3bfa4e26b447
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606768
+      - rid: 6073544477279256609
   - m_Id: 1809266588327936
     m_Localized: cec4eba055c71f643b6e2cedbf436539
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606770
+      - rid: 6073544477279256611
   - m_Id: 1809267842424832
     m_Localized: 8146a2a19fb3f5b479cb6d05afd606f2
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606772
+      - rid: 6073544477279256613
   - m_Id: 1809269109104640
     m_Localized: 12071581999b99b4392f2c74b33185c5
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606774
+      - rid: 6073544477279256615
   - m_Id: 1809270350618624
     m_Localized: c94387c1305441844b1d7e688a94732d
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606776
+      - rid: 6073544477279256617
   - m_Id: 1809271596326912
     m_Localized: e162d2cf78471e84c897433cb5901c2a
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606778
+      - rid: 6073544477279256619
   - m_Id: 1809272867201024
     m_Localized: af1d52687e4f8cd47abbbf5f4e23cb5e
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606780
+      - rid: 6073544477279256621
   - m_Id: 1809274159046656
     m_Localized: 478be598511a0554fba4aca340164ef4
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606782
+      - rid: 6073544477279256623
   - m_Id: 1809275425726464
     m_Localized: b7fd7bccb9f3b3245bf8990a9a1b0e91
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606784
+      - rid: 6073544477279256625
   - m_Id: 1809276709183488
     m_Localized: 898d889030538dc46831128510158a53
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606786
+      - rid: 6073544477279256627
   - m_Id: 1809278001029120
     m_Localized: b62b7521321cb3f4688df5c4c8654b82
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606788
+      - rid: 6073544477279256629
   - m_Id: 1809279242543104
     m_Localized: f1bb590222f0bb24cb7e5828bcc8845f
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606790
+      - rid: 6073544477279256631
   - m_Id: 1809280505028608
     m_Localized: 2362b24f8b84b344a90b0c93bbee91b2
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606792
+      - rid: 6073544477279256633
   - m_Id: 1809282061115392
     m_Localized: 02846eaa89999054cb3ece80017da7e0
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606794
+      - rid: 6073544477279256635
   - m_Id: 1809283315212288
     m_Localized: f71b6d23319832c4795701ddde54cc72
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606796
+      - rid: 6073544477279256637
   - m_Id: 1809284779024384
     m_Localized: 65920edb77c064044b16a79dafbc71cf
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606798
+      - rid: 6073544477279256639
   - m_Id: 1809286133784576
     m_Localized: 927cc1b6dc666b04992e447607281be4
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606800
+      - rid: 6073544477279256641
   - m_Id: 1809287438213120
     m_Localized: 37dee6ed73fb4564983cad311d56ccdc
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606802
+      - rid: 6073544477279256643
   - m_Id: 1809288780390400
     m_Localized: 68319449a6f5ed446a74e2121934fdf4
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606804
+      - rid: 6073544477279256645
   - m_Id: 1809290026098688
     m_Localized: 5a76079ce2acd164e810dee23fbd5732
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606806
+      - rid: 6073544477279256647
   - m_Id: 1809291263418368
     m_Localized: 609bf2c0b83889c4e8b00e654cea18f9
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606808
+      - rid: 6073544477279256649
   - m_Id: 1809292513320960
     m_Localized: a15127b0f98fa824fb9e76fa26d4237e
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606810
+      - rid: 6073544477279256651
   - m_Id: 1809293771612160
     m_Localized: b1357fd158af8c145ab8cbe6a1477905
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606812
+      - rid: 6073544477279256653
   - m_Id: 1809295029903360
     m_Localized: 7a67e858aea28054c9dd2fadd8112577
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606814
+      - rid: 6073544477279256655
   - m_Id: 1809296263028736
     m_Localized: ff2445c2ed7094449a6b973c523e9e51
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606816
+      - rid: 6073544477279256657
   - m_Id: 1809297521319936
     m_Localized: fbfdbe17569f1a947b20ef84e71e3de5
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606818
+      - rid: 6073544477279256659
   - m_Id: 1809298855108608
     m_Localized: 7226d68e99af2a14bbf496cdac58d8ad
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606820
+      - rid: 6073544477279256661
   - m_Id: 1809300088233984
     m_Localized: 6421f92a248620948a36592776409823
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606822
+      - rid: 6073544477279256663
   - m_Id: 1809301346525184
     m_Localized: 0dd1af53d79c73b46bfaba35e43eb431
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606824
+      - rid: 6073544477279256665
   - m_Id: 1809302588039168
     m_Localized: 683eb734f0b905044bd4281ea03a6dbc
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606826
+      - rid: 6073544477279256667
   - m_Id: 1809303837941760
     m_Localized: cbed97f98c2cb264c8545e5f997beaab
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606828
+      - rid: 6073544477279256669
   - m_Id: 1809305071067136
     m_Localized: 3a201191871074f4b9495111f1c70f7b
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606830
+      - rid: 6073544477279256671
   - m_Id: 1809306325164032
     m_Localized: ef4930769b11c594cb2992481e5dc829
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606832
+      - rid: 6073544477279256673
   - m_Id: 1809307583455232
     m_Localized: 00180881a957e574ab77f74897fd2dd0
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606834
+      - rid: 6073544477279256675
   - m_Id: 1809308917243904
     m_Localized: c757eea430ac4424db8987b943e4577c
     m_Metadata:
       m_Items:
-      - rid: 5524020211541606836
+      - rid: 6073544477279256677
+  - m_Id: 19895236484653056
+    m_Localized: 7b9081f79d67367428ae3ab1e72e577e
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256679
+  - m_Id: 19895238401449984
+    m_Localized: a3d61302e0f294a47b050d0aa6052d38
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256681
+  - m_Id: 19895240368578560
+    m_Localized: 6f3befd527ceea544b0e665ac3315ab9
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256683
+  - m_Id: 19895242318929920
+    m_Localized: e70bddb811861ee42852942aa5069ee9
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256685
+  - m_Id: 19895244269281280
+    m_Localized: 5ceecf54e9189284abea19d7cf1b5688
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256687
+  - m_Id: 19895246240604160
+    m_Localized: 65a3dd812baddfa4e92f338167a5c7e6
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256689
+  - m_Id: 19895248220315648
+    m_Localized: db9cc4dc4eb7da9428f0d7bb195e578e
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256691
+  - m_Id: 19895250183249920
+    m_Localized: 78ad2880681abe9438353da127330db7
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256693
+  - m_Id: 19895252133601280
+    m_Localized: bb899872e751c4541a9a9cb0ecb9055b
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256695
+  - m_Id: 19895254075564032
+    m_Localized: 4a6820954192b56458f0304b737ecc50
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256697
+  - m_Id: 19895256088829952
+    m_Localized: 023176163f8755d45911ed455988baef
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256699
+  - m_Id: 19895258064347136
+    m_Localized: 94bb91f67af8efe46b9896754dd75691
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256701
+  - m_Id: 19895260023087104
+    m_Localized: 1f17501792fefb94b8e8dd6d28520ac8
+    m_Metadata:
+      m_Items:
+      - rid: 6073544477279256703
   references:
     version: 2
     RefIds:
-    - rid: 5524020211541606738
+    - rid: 6073544477279256579
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:07
-        lastModified: 2023-06-05 16:03:07
+        created: 2023-07-25 13:39:30
+        lastModified: 2023-07-25 13:39:30
         spokenText: "Nun k\xF6nnen Sie selbst aktiv werden."
-    - rid: 5524020211541606740
+    - rid: 6073544477279256581
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:07
-        lastModified: 2023-06-05 16:03:07
+        created: 2023-07-25 13:39:30
+        lastModified: 2023-07-25 13:39:30
         spokenText: Nehmen Sie die  Ausgangsposition ein.
-    - rid: 5524020211541606742
+    - rid: 6073544477279256583
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:07
-        lastModified: 2023-06-05 16:03:07
+        created: 2023-07-25 13:39:31
+        lastModified: 2023-07-25 13:39:31
         spokenText: "Die Einzelschritte werden Sie nun in zusammenh\xE4ngenden Sequenzen
           ausf\xFChren, die immer in Ruhepositionen enden."
-    - rid: 5524020211541606744
+    - rid: 6073544477279256585
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:08
-        lastModified: 2023-06-05 16:03:08
+        created: 2023-07-25 13:39:31
+        lastModified: 2023-07-25 13:39:31
         spokenText: "Ihr Ziel f\xFCr heute ist es erfolgreiche diese Sequenzen nach
           zu knonten."
-    - rid: 5524020211541606746
+    - rid: 6073544477279256587
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:08
-        lastModified: 2023-06-05 16:03:08
+        created: 2023-07-25 13:39:32
+        lastModified: 2023-07-25 13:39:32
         spokenText: "Ich mache Ihnen nun den ersten zusammenh\xE4ngen Schritt vor."
-    - rid: 5524020211541606748
+    - rid: 6073544477279256589
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:08
-        lastModified: 2023-06-05 16:03:08
+        created: 2023-07-25 13:39:33
+        lastModified: 2023-07-25 13:39:33
         spokenText: "Als erstes bringen und halten Sie mit der linken Hand w\xE4hrend
           des gesamten Knotenvorgangs den Faden unter Spannung."
-    - rid: 5524020211541606750
+    - rid: 6073544477279256591
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:09
-        lastModified: 2023-06-05 16:03:09
+        created: 2023-07-25 13:39:33
+        lastModified: 2023-07-25 13:39:33
         spokenText: "Die Knotenbank leuchtet Gr\xFCn solange sie eine gute Spannung
           halten. Zu wenig und sie leuchtet gelb. Zu viel und sie leuchtet orange."
-    - rid: 5524020211541606752
+    - rid: 6073544477279256593
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:09
-        lastModified: 2023-06-05 16:03:09
+        created: 2023-07-25 13:39:34
+        lastModified: 2023-07-25 13:39:34
         spokenText: "Als n\xE4chstes Strecken Sie Mittel-, Ring- und den kleinen
           Finger ihrer rechten Hand aus."
-    - rid: 5524020211541606754
+    - rid: 6073544477279256595
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:09
-        lastModified: 2023-06-05 16:03:09
+        created: 2023-07-25 13:39:34
+        lastModified: 2023-07-25 13:39:34
         spokenText: "Dabei drehen Sie Ihre Hand so dass der linke, gr\xFCne Faden
           auf Ihrem kleinen Finger ruht."
-    - rid: 5524020211541606756
+    - rid: 6073544477279256597
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:09
-        lastModified: 2023-06-05 16:03:09
+        created: 2023-07-25 13:39:35
+        lastModified: 2023-07-25 13:39:35
         spokenText: "Diese Position halten Sie dann bitte w\xE4hrend ich den n\xE4chsten
           Schritt vormache."
-    - rid: 5524020211541606758
+    - rid: 6073544477279256599
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:10
-        lastModified: 2023-06-05 16:03:10
+        created: 2023-07-25 13:39:36
+        lastModified: 2023-07-25 13:39:36
         spokenText: 'Machen Sie es mir nun nach:'
-    - rid: 5524020211541606760
+    - rid: 6073544477279256601
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:10
-        lastModified: 2023-06-05 16:03:10
+        created: 2023-07-25 13:39:36
+        lastModified: 2023-07-25 13:39:36
         spokenText: "Mit links Spannung aufbauen und halten, w\xE4hrend Sie rechts
           die drei freien Finger ausstrecken."
-    - rid: 5524020211541606762
+    - rid: 6073544477279256603
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:10
-        lastModified: 2023-06-05 16:03:10
+        created: 2023-07-25 13:39:37
+        lastModified: 2023-07-25 13:39:37
         spokenText: "Der gr\xFCne Faden ruht auf Ihrem kleinen Finger."
-    - rid: 5524020211541606764
+    - rid: 6073544477279256605
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:11
-        lastModified: 2023-06-05 16:03:11
+        created: 2023-07-25 13:39:37
+        lastModified: 2023-07-25 13:39:37
         spokenText: Sehr gut! Weiter gehts.
-    - rid: 5524020211541606766
+    - rid: 6073544477279256607
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:11
-        lastModified: 2023-06-05 16:03:11
+        created: 2023-07-25 13:39:38
+        lastModified: 2023-07-25 13:39:38
         spokenText: "Als n\xE4chstes werden Sie den roten Faden mit Ihrem Ringfinger
           unter den gr\xFCnen Faden f\xFChren."
-    - rid: 5524020211541606768
+    - rid: 6073544477279256609
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:11
-        lastModified: 2023-06-05 16:03:11
+        created: 2023-07-25 13:39:38
+        lastModified: 2023-07-25 13:39:38
         spokenText: Das klingt kompliziert, ist aber ganz einfach. Ich mache es Ihnen
           einmal vor.
-    - rid: 5524020211541606770
+    - rid: 6073544477279256611
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:12
-        lastModified: 2023-06-05 16:03:12
+        created: 2023-07-25 13:39:39
+        lastModified: 2023-07-25 13:39:39
         spokenText: Als erster bewegen Sie Ihre rechte Hand auf den roten Faden zu.
-    - rid: 5524020211541606772
+    - rid: 6073544477279256613
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:12
-        lastModified: 2023-06-05 16:03:12
+        created: 2023-07-25 13:39:39
+        lastModified: 2023-07-25 13:39:39
         spokenText: Ziel ist es den roten Faden auf das Gelenk zwischen Fingermittelgelenke
           des Mittelfingers der rechten Hand zu platzieren.
-    - rid: 5524020211541606774
+    - rid: 6073544477279256615
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:12
-        lastModified: 2023-06-05 16:03:12
+        created: 2023-07-25 13:39:40
+        lastModified: 2023-07-25 13:39:40
         spokenText: "Wenn der Faden dort platziert ist, f\xFChren Sie den roten Faden
           in Richtung ihrer Ringfingerspitze."
-    - rid: 5524020211541606776
+    - rid: 6073544477279256617
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:12
-        lastModified: 2023-06-05 16:03:12
+        created: 2023-07-25 13:39:41
+        lastModified: 2023-07-25 13:39:41
         spokenText: "Mit etwas Geschick kr\xFCmmen Sie dann den Mittelfinger und
           ziehen dabei den roten Faden in Richtung Handinnenfl\xE4che unter den den
           gr\xFCnen Faden."
-    - rid: 5524020211541606778
+    - rid: 6073544477279256619
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:13
-        lastModified: 2023-06-05 16:03:13
+        created: 2023-07-25 13:39:41
+        lastModified: 2023-07-25 13:39:41
         spokenText: In der Position verweilen Sie dann bitte.
-    - rid: 5524020211541606780
+    - rid: 6073544477279256621
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:13
-        lastModified: 2023-06-05 16:03:13
+        created: 2023-07-25 13:39:42
+        lastModified: 2023-07-25 13:39:42
         spokenText: 'Machen Sie es mir nun nach:'
-    - rid: 5524020211541606782
+    - rid: 6073544477279256623
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:13
-        lastModified: 2023-06-05 16:03:13
+        created: 2023-07-25 13:39:42
+        lastModified: 2023-07-25 13:39:42
         spokenText: "Bewegen Sie die rechte Hand zwischen die zwei F\xE4den. der
           gr\xFCne Faden bleibt dabei auf dem Endgelenke des kleinen Fingers und
           der roten Faden wird auf dem Mittelgelenk des Mittelfinger der rechten
           Hand platziert."
-    - rid: 5524020211541606784
+    - rid: 6073544477279256625
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:14
-        lastModified: 2023-06-05 16:03:14
+        created: 2023-07-25 13:39:43
+        lastModified: 2023-07-25 13:39:43
         spokenText: "Dann kr\xFCmmen Sie den Mittelfinger der rechten Hand und f\xFChren
           den roten Faden unter dem gr\xFCnen Faden hindurch."
-    - rid: 5524020211541606786
+    - rid: 6073544477279256627
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:14
-        lastModified: 2023-06-05 16:03:14
+        created: 2023-07-25 13:39:43
+        lastModified: 2023-07-25 13:39:43
         spokenText: Wunderbar! Direkt weiter zum bereits vorletzten Schritt. Sie
           haben es fast geschafft!
-    - rid: 5524020211541606788
+    - rid: 6073544477279256629
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:14
-        lastModified: 2023-06-05 16:03:14
+        created: 2023-07-25 13:39:44
+        lastModified: 2023-07-25 13:39:44
         spokenText: "In diesem Schritt werden Sie den gr\xFCnen Faden zwischen Ring-
           und Mittelfinger f\xFChren und dort festhalten."
-    - rid: 5524020211541606790
+    - rid: 6073544477279256631
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:15
-        lastModified: 2023-06-05 16:03:15
+        created: 2023-07-25 13:39:44
+        lastModified: 2023-07-25 13:39:44
         spokenText: "Sie werden einfach den gekr\xFCmmten Mittelfinger wieder strecken
           und dabei den gr\xFCnen Faden nach unten dr\xFCcken."
-    - rid: 5524020211541606792
+    - rid: 6073544477279256633
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:15
-        lastModified: 2023-06-05 16:03:15
+        created: 2023-07-25 13:39:45
+        lastModified: 2023-07-25 13:39:45
         spokenText: Klemmen Sie dann den Faden mit zwischen dem gestreckten Ring-
           und Mittelfinger ein.
-    - rid: 5524020211541606794
+    - rid: 6073544477279256635
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:15
-        lastModified: 2023-06-05 16:03:15
+        created: 2023-07-25 13:39:46
+        lastModified: 2023-07-25 13:39:46
         spokenText: "Lassen Sie den gr\xFCnen Faden mit Ihrem Zeigenfinger und Daumen
           noch nicht los."
-    - rid: 5524020211541606796
+    - rid: 6073544477279256637
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:16
-        lastModified: 2023-06-05 16:03:16
+        created: 2023-07-25 13:39:46
+        lastModified: 2023-07-25 13:39:46
         spokenText: In der Position verweilen Sie dann bitte.
-    - rid: 5524020211541606798
+    - rid: 6073544477279256639
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:16
-        lastModified: 2023-06-05 16:03:16
+        created: 2023-07-25 13:39:47
+        lastModified: 2023-07-25 13:39:47
         spokenText: 'Machen Sie es mir nun nach:'
-    - rid: 5524020211541606800
+    - rid: 6073544477279256641
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:16
-        lastModified: 2023-06-05 16:03:16
+        created: 2023-07-25 13:39:47
+        lastModified: 2023-07-25 13:39:47
         spokenText: "Strecken Sie den Mittelfinger und dr\xFCcken so den gr\xFCnen
           Faden herunter."
-    - rid: 5524020211541606802
+    - rid: 6073544477279256643
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:17
-        lastModified: 2023-06-05 16:03:17
+        created: 2023-07-25 13:39:48
+        lastModified: 2023-07-25 13:39:48
         spokenText: "Klemmen Sie den gr\xFCnen Faden zwischen Ihrem Ring- und Mittelfinger
           ein."
-    - rid: 5524020211541606804
+    - rid: 6073544477279256645
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:17
-        lastModified: 2023-06-05 16:03:17
+        created: 2023-07-25 13:39:48
+        lastModified: 2023-07-25 13:39:48
         spokenText: "Hervorragend! Gehen wir \xFCber zum letzten Schritt \xFCber."
-    - rid: 5524020211541606806
+    - rid: 6073544477279256647
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:17
-        lastModified: 2023-06-05 16:03:17
+        created: 2023-07-25 13:39:49
+        lastModified: 2023-07-25 13:39:49
         spokenText: "Die letzte Abfolge die Sie bew\xE4ltigen, wirkt erstmal etwas
           l\xE4nger als die anderen. Daf\xFCr ist sie aber wirklich simpel und intuitiv."
-    - rid: 5524020211541606808
+    - rid: 6073544477279256649
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:17
-        lastModified: 2023-06-05 16:03:17
+        created: 2023-07-25 13:39:49
+        lastModified: 2023-07-25 13:39:49
         spokenText: Das Ziel ist es den Knoten nun fertig zu stellen.
-    - rid: 5524020211541606810
+    - rid: 6073544477279256651
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:18
-        lastModified: 2023-06-05 16:03:18
+        created: 2023-07-25 13:39:50
+        lastModified: 2023-07-25 13:39:50
         spokenText: "Das erste was Sie machen ist den Faden zwischen Zeigefinger
           und Daumen loszulassen. Am besten Strecken Sie den Zeigefinger um das lose,
           gr\xFCne Fadenende frei zu bekommen."
-    - rid: 5524020211541606812
+    - rid: 6073544477279256653
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:18
-        lastModified: 2023-06-05 16:03:18
+        created: 2023-07-25 13:39:50
+        lastModified: 2023-07-25 13:39:50
         spokenText: "Ziehen Sie nun Ihren Mittel-, Ring- und Kleinenfinger aus der
           Schlaufe, w\xE4hrend Sie den gr\xFCnen Faden zwischen Ring- und Mittelfinger
           halten."
-    - rid: 5524020211541606814
+    - rid: 6073544477279256655
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:18
-        lastModified: 2023-06-05 16:03:18
+        created: 2023-07-25 13:39:51
+        lastModified: 2023-07-25 13:39:51
         spokenText: "Greifen Sie den gr\xFCnen Faden nun mit Ihrem Daumen und Zeigenfinger."
-    - rid: 5524020211541606816
+    - rid: 6073544477279256657
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:19
-        lastModified: 2023-06-05 16:03:19
+        created: 2023-07-25 13:39:51
+        lastModified: 2023-07-25 13:39:51
         spokenText: Ziehen Sie nun den Knoten mit der rechten Hand fest.
-    - rid: 5524020211541606818
+    - rid: 6073544477279256659
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:19
-        lastModified: 2023-06-05 16:03:19
+        created: 2023-07-25 13:39:52
+        lastModified: 2023-07-25 13:39:52
         spokenText: "Dr\xFCcken Sie nun den Knoten mit dem Zeigefinger auf die Knotenbank,
           um maximale Festigkeit zu gew\xE4hrleisten."
-    - rid: 5524020211541606820
+    - rid: 6073544477279256661
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:19
-        lastModified: 2023-06-05 16:03:19
+        created: 2023-07-25 13:39:53
+        lastModified: 2023-07-25 13:39:53
         spokenText: Das sind jetzt viele Schritte aber Sie schaffen das.
-    - rid: 5524020211541606822
+    - rid: 6073544477279256663
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:20
-        lastModified: 2023-06-05 16:03:20
+        created: 2023-07-25 13:39:53
+        lastModified: 2023-07-25 13:39:53
         spokenText: 'Machen Sie es mir nun nach:'
-    - rid: 5524020211541606824
+    - rid: 6073544477279256665
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:20
-        lastModified: 2023-06-05 16:03:20
+        created: 2023-07-25 13:39:54
+        lastModified: 2023-07-25 13:39:54
         spokenText: Erst Zeigefinger und Daumen los lassen.
-    - rid: 5524020211541606826
+    - rid: 6073544477279256667
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:20
-        lastModified: 2023-06-05 16:03:20
+        created: 2023-07-25 13:39:54
+        lastModified: 2023-07-25 13:39:54
         spokenText: Faden durch die Schlaufe ziehen.
-    - rid: 5524020211541606828
+    - rid: 6073544477279256669
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:20
-        lastModified: 2023-06-05 16:03:20
+        created: 2023-07-25 13:39:55
+        lastModified: 2023-07-25 13:39:55
         spokenText: "Greifen Sie den gr\xFCnen Faden mit Zeigefinger und Daumen und
           ziehen Sie den Knoten fest."
-    - rid: 5524020211541606830
+    - rid: 6073544477279256671
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:21
-        lastModified: 2023-06-05 16:03:21
+        created: 2023-07-25 13:39:55
+        lastModified: 2023-07-25 13:39:55
         spokenText: "Dr\xFCcken Sie den Knoten fest."
-    - rid: 5524020211541606832
+    - rid: 6073544477279256673
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:21
-        lastModified: 2023-06-05 16:03:21
+        created: 2023-07-25 13:39:56
+        lastModified: 2023-07-25 13:39:56
         spokenText: Hervorragend! Das war sehr gut!
-    - rid: 5524020211541606834
+    - rid: 6073544477279256675
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:21
-        lastModified: 2023-06-05 16:03:21
+        created: 2023-07-25 13:39:56
+        lastModified: 2023-07-25 13:39:56
         spokenText: "Schauen wir einmal den Feedbackbogen f\xFCr den Mittelfinger
           knoten an."
-    - rid: 5524020211541606836
+    - rid: 6073544477279256677
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
-        created: 2023-06-05 16:03:22
-        lastModified: 2023-06-05 16:03:22
+        created: 2023-07-25 13:39:57
+        lastModified: 2023-07-25 13:39:57
         spokenText: "Das war es f\xFCr diese \xDCbung. Fahren Sie fort mit dem Zeigefingerknoten."
+    - rid: 6073544477279256679
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:23
+        lastModified: 2023-07-25 13:50:23
+        spokenText: "Nun k\xF6nnen Sie selbst aktiv werden."
+    - rid: 6073544477279256681
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:23
+        lastModified: 2023-07-25 13:50:23
+        spokenText: Nehmen Sie die Ausgangsposition ein.
+    - rid: 6073544477279256683
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:24
+        lastModified: 2023-07-25 13:50:24
+        spokenText: "Die Einzelschritte werden Sie nun in zusammenh\xE4ngenden Sequenzen
+          ausf\xFChren, die immer in Ruhepositionen enden."
+    - rid: 6073544477279256685
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:24
+        lastModified: 2023-07-25 13:50:24
+        spokenText: "Ihr Ziel f\xFCr heute ist es erfolgreich diese Sequenzen nach
+          zu knonten."
+    - rid: 6073544477279256687
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:25
+        lastModified: 2023-07-25 13:50:25
+        spokenText: "Ich mache Ihnen nun den ersten zusammenh\xE4ngen Schritt vor."
+    - rid: 6073544477279256689
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:25
+        lastModified: 2023-07-25 13:50:25
+        spokenText: "Als erstes bringen und halten Sie mit der linken Hand w\xE4hrend
+          des gesamten Knotenvorgangs den Faden unter Spannung."
+    - rid: 6073544477279256691
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:26
+        lastModified: 2023-07-25 13:50:26
+        spokenText: "Die Knotenbank leuchtet Gr\xFCn solange sie eine gute Spannung
+          halten. Zu wenig und sie leuchtet gelb. Zu viel und sie leuchtet orange."
+    - rid: 6073544477279256693
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:26
+        lastModified: 2023-07-25 13:50:26
+        spokenText: "Als n\xE4chstes Strecken Sie Mittel-, Ring- und den kleinen
+          Finger ihrer rechten Hand aus."
+    - rid: 6073544477279256695
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:27
+        lastModified: 2023-07-25 13:50:27
+        spokenText: "Dabei drehen Sie Ihre Hand so dass der linke, gr\xFCne Faden
+          auf Ihrem kleinen Finger ruht."
+    - rid: 6073544477279256697
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:27
+        lastModified: 2023-07-25 13:50:27
+        spokenText: "Diese Position halten Sie dann bitte w\xE4hrend ich den n\xE4chsten
+          Schritt vormache."
+    - rid: 6073544477279256699
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:28
+        lastModified: 2023-07-25 13:50:28
+        spokenText: 'Machen Sie es mir nun nach:'
+    - rid: 6073544477279256701
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:28
+        lastModified: 2023-07-25 13:50:28
+        spokenText: "Mit links Spannung aufbauen und halten, w\xE4hrend Sie rechts
+          die drei freien Finger ausstrecken."
+    - rid: 6073544477279256703
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-07-25 13:50:29
+        lastModified: 2023-07-25 13:50:29
+        spokenText: "Der gr\xFCne Faden ruht auf Ihrem kleinen Finger."

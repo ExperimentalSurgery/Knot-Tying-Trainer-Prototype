@@ -21,22 +21,10 @@ namespace DFKI.NMY
         private bool manipulateFPS = false;
         [SerializeField] private int targetFPS = 30;
 
-        protected override async UniTask ClientStepActionAsync(CancellationToken ct)
-        {
-            try {
-                await VirtualAssistant.instance.Speak(TtsContainer, ct);
-                RaiseClientStepFinished();
-            }
-            catch (OperationCanceledException) {
-                RaiseClientStepFinished();
-            }
-
-        }
         
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
-            VirtualAssistant.instance.StopSpeaking();
             manager.fps = manipulateFPS ? targetFPS : manager.fps;
             player.pathToSequence = pathToSequence;
             //player.FinishedPointCloudPlayback.AddListener(OnPlaybackFinished);
@@ -50,10 +38,10 @@ namespace DFKI.NMY
             manager.playStream = false;    
         }
         
-        
-
-        private void OnPlaybackFinished() {
+        /*
+         private void OnPlaybackFinished() {
             FinishedCriteria = true;
         }
+        */
     }
 }

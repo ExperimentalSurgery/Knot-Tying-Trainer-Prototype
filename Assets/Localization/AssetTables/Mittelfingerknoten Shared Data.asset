@@ -215,6 +215,62 @@ MonoBehaviour:
     m_Key: tbd_49
     m_Metadata:
       m_Items: []
+  - m_Id: 19895236484653056
+    m_Key: mfk_assi_getactive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895238401449984
+    m_Key: mfk_assi_startposition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895240368578560
+    m_Key: mfk_assi_sequences
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895242318929920
+    m_Key: mfk_assi_tryrepeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895244269281280
+    m_Key: mfk_assi_firststep
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895246240604160
+    m_Key: mfk_assi_tension
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895248220315648
+    m_Key: mfk_assi_tensionlights
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895250183249920
+    m_Key: mfk_assi_stretchrightfingers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895252133601280
+    m_Key: mfk_assi_turnrighthand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895254075564032
+    m_Key: mfk_assi_holdposition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895256088829952
+    m_Key: mfk_assi_tryrepeat2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895258064347136
+    m_Key: mfk_assi_tension2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895260023087104
+    m_Key: mfk_assi_greenstringonfinger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19895262053130240
+    m_Key: mfk_assi_success
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 5524020211541606736
@@ -431,5 +487,60 @@ MonoBehaviour:
           m_TableCodes:
           - en
           - de
+        - m_KeyId: 19895236484653056
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895238401449984
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895240368578560
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895242318929920
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895244269281280
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895246240604160
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895248220315648
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895250183249920
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895252133601280
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895254075564032
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895256088829952
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895258064347136
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895260023087104
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 19895262053130240
+          m_TableCodes:
+          - en
         m_TypeString: NMY.GoogleCloudTextToSpeech.LocalizedTextToSpeechItem, com.nmy.googlecloudtexttospeech,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
