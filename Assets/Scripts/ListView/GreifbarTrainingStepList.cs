@@ -33,6 +33,9 @@ namespace DFKI.NMY
                 if (converted.task as GreifbarBaseStep) {
                     converted.SetTitle((converted.task as GreifbarBaseStep).StepTitle.GetLocalizedString());
                 }
+                else if(converted.task as GreifbarVirtualAssistantStep){
+                    converted.SetTitle((converted.task as GreifbarVirtualAssistantStep).StepTitle.GetLocalizedString());
+                }
                 else
                 {
                     converted.SetTitle(converted.task.gameObject.name);
