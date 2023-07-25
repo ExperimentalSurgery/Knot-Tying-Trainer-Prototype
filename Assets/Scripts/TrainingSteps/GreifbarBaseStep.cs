@@ -19,7 +19,6 @@ namespace DFKI.NMY
         [SerializeField] private LocalizedString stepDescription;
         [SerializeField] private LocalizedTextToSpeechAudioClip ttsContainer;
         
-        
         private bool _finishedCriteria = false;
         
         public bool FinishedCriteria
@@ -45,15 +44,9 @@ namespace DFKI.NMY
             get => ttsContainer;
             set => ttsContainer = value;
         }
-
-        public bool useTTS = true;
-
+        
         protected override async UniTask ClientStepActionAsync(CancellationToken ct)
         {
-            if(ttsContainer == null)
-                useTTS = false;
-                
-            
             if (!ttsContainer.IsEmpty && ttsContainer!=null) {
                 try {
                     var speakTask = VirtualAssistant.instance.Speak(ttsContainer, ct);
