@@ -43,6 +43,8 @@ public class MarkerVisualizer : MonoBehaviour
                 else
                     childTransform.AddSource(scr);
                 childTransform.constraintActive = true;
+                childTransform.SetRotationOffset(0, new Vector3(0,180,0));
+
             }
         }        
     }

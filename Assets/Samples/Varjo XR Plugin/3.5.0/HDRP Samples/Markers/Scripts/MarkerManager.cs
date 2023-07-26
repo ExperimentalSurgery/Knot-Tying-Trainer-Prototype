@@ -143,14 +143,13 @@ public class MarkerManager : MonoBehaviour
     }
 
     protected virtual void OnMarkerDetected(MarkerDetectedEventArgs e)
+    {
+        EventHandler<MarkerDetectedEventArgs> handler = MarkerDetectedEventHandler;
+        if (handler != null)
         {
-            EventHandler<MarkerDetectedEventArgs> handler = MarkerDetectedEventHandler;
-            if (handler != null)
-            {
-                handler(this, e);
-            }
+            handler(this, e);
         }
-
+    }
 }
 
 public class MarkerDetectedEventArgs : EventArgs

@@ -6,8 +6,10 @@
  * https://creativecommons.org/licenses/by/2.0/
  */
 
+using System;
 using UnityEngine;
 using System.Threading;
+using NMY;
 
 /**
  * This class allows a Unity program to continually check for messages from a
@@ -23,7 +25,7 @@ using System.Threading;
  * on the integrity of the message. It's up to the one that makes sense of the
  * data.
  */
-public class SerialController : MonoBehaviour
+public class SerialController : SingletonStartupBehaviour<SerialController>
 {
     [Tooltip("Port name with which the SerialPort object will be created.")]
     public string portName = "COM3";
@@ -54,6 +56,19 @@ public class SerialController : MonoBehaviour
     // Internal reference to the Thread and the object that runs in it.
     protected Thread thread;
     protected SerialThreadLines serialThread;
+
+    public event EventHandler<MessageEventArgs> SerialMessageEventHandler;
+    public delegate void SerialMessageEvent(object sender, MessageEventArgs e);
+    private SerialMessageEvent serialMessagEvent;
+
+    protected virtual void OnSerialMessage(MessageEventArgs e)
+    {
+        EventHandler<MessageEventArgs> handler = SerialMessageEventHandler;
+        if (handler != null)
+        {            
+            handler(this, e);
+        }
+    }
 
 
     // ------------------------------------------------------------------------
@@ -123,7 +138,8 @@ public class SerialController : MonoBehaviour
         else if (ReferenceEquals(message, SERIAL_DEVICE_DISCONNECTED))
             messageListener.SendMessage("OnConnectionEvent", false);
         else
-            messageListener.SendMessage("OnMessageArrived", message);
+            OnSerialMessage(new MessageEventArgs(message));
+            //messageListener.SendMessage("OnMessageArrived", message);
     }
 
     // ------------------------------------------------------------------------
@@ -156,4 +172,14 @@ public class SerialController : MonoBehaviour
         this.userDefinedTearDownFunction = userFunction;
     }
 
+}
+
+public class MessageEventArgs : EventArgs
+{
+    public string message { get; set; }
+
+    public MessageEventArgs(string _message)
+    {
+        message = _message;
+    }
 }
