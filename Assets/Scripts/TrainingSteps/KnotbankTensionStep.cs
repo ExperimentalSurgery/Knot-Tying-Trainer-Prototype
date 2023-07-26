@@ -8,37 +8,48 @@ namespace DFKI.NMY
 {
     public class KnotbankTensionStep : GreifbarBaseStep
     {
-
+        
+        
         [Header("Knotbank TensionStep")]
         [Range(0,1)]
         [SerializeField] private int targetValue = 1;
-        
-        // private vars
+        [SerializeField] private float minHoldDuration = 2f;
+
+        // runtime vars
         private int tmpInt;
         private int contactVal;
         private float remainingDuration;
+        private SerialController knotBankSerialController;
         
-        [SerializeField] private float minHoldDuration = 2f;
-
         protected override async UniTask PreStepActionAsync(CancellationToken ct) {
             await base.PreStepActionAsync(ct);
             remainingDuration = minHoldDuration;
+            // Search for SerialController and register Events
+            knotBankSerialController = SerialController.instance;
+            if (knotBankSerialController) {
+                knotBankSerialController.SerialMessageEventHandler -= OnMessageArrived;
+                knotBankSerialController.SerialMessageEventHandler += OnMessageArrived;
+            }
+            
+           
         }
-        
-        protected override async UniTask PostStepActionAsync(CancellationToken ct) {
-            await base.PostStepActionAsync(ct);
-            remainingDuration = 0f;
-        }
-
         // Invoked when a line of data is received from the serial device.
-        public void OnMessageArrived(string msg) {
-            string[] data = msg.Split(';');
-            //Debug.Log($"Contact: {data[0]} - Tension Grams: {data[1]}");
-
+        private void OnMessageArrived(object sender, MessageEventArgs e) {
+            string[] data = e.message.Split(';');
             if (int.TryParse(data[0], out tmpInt)) {
                 contactVal = tmpInt;
             }
         }
+        protected override async UniTask PostStepActionAsync(CancellationToken ct) {
+            await base.PostStepActionAsync(ct);
+            remainingDuration = 0f;
+            // Unsubscribe from SerialController Events
+            if (knotBankSerialController) {
+                knotBankSerialController.SerialMessageEventHandler -= OnMessageArrived;
+            }
+        }
+
+        
         
         private void Update()
         {
