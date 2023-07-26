@@ -19,8 +19,8 @@ namespace DFKI.NMY
         [SerializeField] private KeyCode manualCompletionKey = KeyCode.N;
         [SerializeField] private float sequenceDuration = 0.5f;
         [SerializeField] private float poseMatchingThreshold = 25;
-        
 
+       
         // helper vars
         private bool matchedLeft = false;
         private bool matchedRight = false;

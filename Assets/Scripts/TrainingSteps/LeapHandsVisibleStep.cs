@@ -11,7 +11,7 @@ namespace DFKI.NMY
 {
     public class LeapHandsVisibleStep : GreifbarBaseStep
     {
-
+        [Header("Leap Hands Visible Step")]
         [SerializeField] private float minTrackedDuration = 2f;
         [SerializeField] private HandModelBase leftHand;
         [SerializeField] private HandModelBase rightHand;

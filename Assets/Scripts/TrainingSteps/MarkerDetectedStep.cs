@@ -6,6 +6,7 @@ using Cysharp.Threading.Tasks;
 using Leap.Unity;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.XR.Management;
 using Varjo;
 using Varjo.XR;
 
@@ -20,8 +21,17 @@ namespace DFKI.NMY
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
-            markerManager = FindObjectOfType<MarkerManager>();
-            markerManager.MarkerDetectedEventHandler += OnMarkerDetected;
+
+                try
+                {
+                    markerManager = FindObjectOfType<MarkerManager>();
+                    markerManager.MarkerDetectedEventHandler += OnMarkerDetected;
+                }
+                catch (Exception e)
+                {
+                    FinishedCriteria = true;
+                }
+
         }
         
         
@@ -29,7 +39,9 @@ namespace DFKI.NMY
         protected override async UniTask PostStepActionAsync(CancellationToken ct)
         {
             await base.PostStepActionAsync(ct);
-            markerManager.MarkerDetectedEventHandler -= OnMarkerDetected;
+            if (markerManager) {
+                markerManager.MarkerDetectedEventHandler -= OnMarkerDetected;
+            }
         }
 
         private void OnMarkerDetected(object sender, MarkerDetectedEventArgs e)

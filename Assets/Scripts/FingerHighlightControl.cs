@@ -1,9 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace DFKI.NMY
 {
+    [Serializable]
+    public class FingerHighlightContainer
+    {
+        public FingerHighlightControl.Part Part;
+        public FingerHighlightControl.Mode Mode;
+        public bool LeftHand;
+        public bool RightHand;
+    }
     public class FingerHighlightControl : MonoBehaviour
     {
         public enum Part {Hand, Thumb, Thumb_Tip, Index, Index_Tip, Middle, Middle_Tip, Ring, Ring_Tip, Pinky, Pinky_Tip};

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Microsoft.MixedReality.Toolkit.UI;
 using NMY;
 using NMY.VirtualRealityTraining;
@@ -6,13 +7,15 @@ using UnityEngine;
 using UnityEngine.Localization;
 using System.Threading;
 using NMY.VirtualRealityTraining.Steps;
+using UnityEditor.Animations;
 
 namespace DFKI.NMY
 {
     public class UserInterfaceManager : SingletonStartupBehaviour<UserInterfaceManager>
     {
-        
-        [Header("References")]
+
+        [Header("References")] 
+        [SerializeField] private FingerHighlightControl fingerHighlightControl;
         [SerializeField] private ActivatableStartupBehaviour successPanel;
         [SerializeField] private TextMeshPro stepTitleMrtk;
         [SerializeField] private TextMeshProUGUI stepDescriptionMrtk;
@@ -66,7 +69,37 @@ namespace DFKI.NMY
             
         }
 
+        public void ResetFingerHighlights()
+        {
+            
+            foreach (var trigger in fingerHighlightControl.handAnimatorLeft.parameters)
+            {
+                if (trigger.type == AnimatorControllerParameterType.Trigger)
+                {
+                    fingerHighlightControl.handAnimatorLeft.ResetTrigger(trigger.name);
+                    fingerHighlightControl.handAnimatorRight.ResetTrigger(trigger.name);
+                }
+                else if (trigger.type == AnimatorControllerParameterType.Bool)
+                {
+                    fingerHighlightControl.handAnimatorLeft.SetBool(trigger.name,false);
+                    fingerHighlightControl.handAnimatorRight.SetBool(trigger.name,false);
+                }
+            }
+        }
         
+        public void FingerHighlight(FingerHighlightContainer config) {
+
+            if (fingerHighlightControl)
+            {
+                if (config.LeftHand) {
+                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, config.LeftHand);
+                }
+
+                if (config.RightHand) {
+                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, config.RightHand);
+                }
+            }
+        }
 
         public void TogglePlaybackSpeed() => GestureSequencePlayer.instance.ToggleSpeed();
 

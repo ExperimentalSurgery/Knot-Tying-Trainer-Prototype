@@ -17,6 +17,7 @@ namespace DFKI.NMY
         [SerializeField] private int sequenceIndex = 0;
         [SerializeField] private bool showExpertHands = true;
         [SerializeField] private bool showProgressBar = true;
+        
         public int SequenceIndex
         {
             get => sequenceIndex;

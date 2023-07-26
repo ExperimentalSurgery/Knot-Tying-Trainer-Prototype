@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using NMY.GoogleCloudTextToSpeech;
 using NMY.VirtualRealityTraining.Steps;
 using NMY.VirtualRealityTraining.VirtualAssistant;
@@ -10,7 +11,7 @@ namespace DFKI.NMY
 
     using Cysharp.Threading.Tasks;
     using System.Threading;
-
+    
     public class GreifbarBaseStep : BaseTrainingStep
     {
 
@@ -19,6 +20,11 @@ namespace DFKI.NMY
         [SerializeField] private LocalizedString stepDescription;
         [SerializeField] private LocalizedTextToSpeechAudioClip ttsContainer;
         
+        
+        [Header("Hand Highlight Config")]
+        [SerializeField] private List<FingerHighlightContainer> highlights = new List<FingerHighlightContainer>();
+        
+        // privates
         private bool _finishedCriteria = false;
         
         public bool FinishedCriteria
@@ -47,6 +53,8 @@ namespace DFKI.NMY
         
         protected override async UniTask ClientStepActionAsync(CancellationToken ct)
         {
+            
+            // TTS Playback
             if (!ttsContainer.IsEmpty && ttsContainer!=null) {
                 try {
                     var speakTask = VirtualAssistant.instance.Speak(ttsContainer, ct);
@@ -72,7 +80,12 @@ namespace DFKI.NMY
                     RaiseClientStepFinished();
                 }
             }
-
+            
+            // Hand Highlighting
+            foreach (FingerHighlightContainer highlightConfig in highlights) {
+                UserInterfaceManager.instance.FingerHighlight(highlightConfig);
+            }
+            
         }
 
         // PRE STEP
@@ -80,6 +93,7 @@ namespace DFKI.NMY
         {
             await base.PreStepActionAsync(ct);
             FinishedCriteria = false;
+            UserInterfaceManager.instance.ResetFingerHighlights();
             UserInterfaceManager.instance.UpdateStepInfos(stepTitle, stepDescription);
         }
 
@@ -87,6 +101,7 @@ namespace DFKI.NMY
         protected override async UniTask PostStepActionAsync(CancellationToken ct)
         {
             await base.PostStepActionAsync(ct);
+            UserInterfaceManager.instance.ResetFingerHighlights();
         }
         
         public virtual UniTask WaitForFinishedCriteria(CancellationToken ct)
