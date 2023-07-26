@@ -35,16 +35,22 @@ namespace DFKI.NMY
             SetHighlight(Part.Middle, Mode.FlashOnce, false);
         }
         
-        [ContextMenu("Left Hand Pulse On")]
+        [ContextMenu("Left Hand Pulse Toggle")]
         public void TestTrigger2()
         {
             SetHighlight(Part.Hand, Mode.Pulse, true);
         }
         
-        [ContextMenu("Left Hand Pulse Off")]
+        [ContextMenu("Left Hand Index Tip Toggle")]
         public void TestTrigger3()
         {
-            SetHighlight(Part.Hand, Mode.Pulse, true);
+            SetHighlight(Part.Index_Tip, Mode.Pulse, true);
+        }
+
+        [ContextMenu("Left Hand Ring Toggle")]
+        public void TestTrigger4()
+        {
+            SetHighlight(Part.Ring, Mode.Pulse, true);
         }
 
         public void SetHighlight(Part partToHighlight, Mode mode, bool leftHand)
