@@ -3,6 +3,7 @@ using Microsoft.MixedReality.Toolkit.Utilities;
 using NMY.VirtualRealityTraining;
 using NMY.VirtualRealityTraining.Steps;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace DFKI.NMY
 {
@@ -27,18 +28,12 @@ namespace DFKI.NMY
                 converted.SetListItem(spawned);
                 converted.onTaskStarted.AddListener(OnTaskHasStarted);
                 converted.onTaskCompleted.AddListener(OnTaskHasCompleted);
-                converted.SetTitle(converted.task.gameObject.name);
-                converted.Highlight(item.task.stepState.Equals(BaseTrainingStep.StepState.StepStarted));
-
-                if (converted.task as GreifbarBaseStep) {
-                    converted.SetTitle((converted.task as GreifbarBaseStep).StepTitle.GetLocalizedString());
-                }
-                else if(converted.task as GreifbarVirtualAssistantStep){
-                    converted.SetTitle((converted.task as GreifbarVirtualAssistantStep).StepTitle.GetLocalizedString());
-                }
-                else
-                {
-                    converted.SetTitle(converted.task.gameObject.name);
+                converted.Highlight(item.task.stepState.Equals(BaseTrainingStep.StepState.StepFinished));
+                
+                GreifbarChapter chapter = converted.task as GreifbarChapter;
+                if(chapter) {
+                    if(!chapter.ChapterTitle.IsEmpty)converted.SetTitle(chapter.ChapterTitle.GetLocalizedString());
+                    if(chapter.ChapterIcon) converted.SetIcon(chapter.ChapterIcon);
                 }
                 
             }
@@ -49,7 +44,7 @@ namespace DFKI.NMY
         {
             foreach (var item in _taskList) {
                 GreifbarTaskItem converted = item as GreifbarTaskItem;
-                converted.Highlight(item.task.stepState.Equals(BaseTrainingStep.StepState.StepStarted));
+                converted.Highlight(item.task.stepState.Equals(BaseTrainingStep.StepState.StepFinished));
             }
             
         }
@@ -75,7 +70,7 @@ namespace DFKI.NMY
         public void SetListItem(GestureStepListEntry entry) => listItem = entry;
         public void SetTitle(string name)=>listItem.SetTitle(name);
         public void Highlight(bool state) => listItem.Highlight(state);
-         
+        public void SetIcon(Sprite icon) => listItem.SetIcon(icon);
     }
     
 }

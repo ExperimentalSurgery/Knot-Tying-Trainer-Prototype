@@ -1,15 +1,31 @@
 using System.Threading;
 using Cysharp.Threading.Tasks;
+using UnityEngine.Localization;
 using NMY.VirtualRealityTraining.Steps;
+using UnityEngine;
 
 namespace DFKI.NMY
 {
     public class GreifbarChapter : ChapterTrainingStep
     {
         
-        // PRE STEP
-        protected override async UniTask PreStepActionAsync(CancellationToken ct)
+        [SerializeField] private LocalizedString chapterTitle;
+        [SerializeField] private Sprite chapterIcon;
+
+        public LocalizedString ChapterTitle
         {
+            get => chapterTitle;
+            set => chapterTitle = value;
+        }
+
+        public Sprite ChapterIcon
+        {
+            get => chapterIcon;
+            set => chapterIcon = value;
+        }
+
+        // PRE STEP
+        protected override async UniTask PreStepActionAsync(CancellationToken ct) {
             await base.PreStepActionAsync(ct);
         }
 
