@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace DFKI.NMY
 {
@@ -10,16 +11,20 @@ namespace DFKI.NMY
     {
         public FingerHighlightControl.Part Part;
         public FingerHighlightControl.Mode Mode;
-        public bool LeftHand;
-        public bool RightHand;
+        public bool LeftHand=true;
+        public bool RightHand=true;
+        public bool ExpertHands=true;
+        public bool UserHands=true;
     }
     public class FingerHighlightControl : MonoBehaviour
     {
         public enum Part {Hand, Thumb, Thumb_Tip, Index, Index_Tip, Middle, Middle_Tip, Ring, Ring_Tip, Pinky, Pinky_Tip};
         public enum Mode {FlashOnce, Pulse, On, Off};
 
-        public Animator handAnimatorRight;
-        public Animator handAnimatorLeft;
+        public Animator handAnimatorUserRight;
+        public Animator handAnimatorUserLeft;
+        public Animator handAnimatorExpertRight;
+        public Animator handAnimatorExpertLeft;
 
         public SkinnedMeshRenderer rightHandRenderer;
         public SkinnedMeshRenderer leftHandRenderer;
@@ -32,37 +37,47 @@ namespace DFKI.NMY
             leftHandRenderer.material = new Material(leftHandRenderer.material);
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
         
         [ContextMenu("Right Middle FlashOnce")]
         public void TestTrigger()
         {
-            SetHighlight(Part.Middle, Mode.FlashOnce, false);
+            SetHighlight(Part.Middle, Mode.FlashOnce, false,handAnimatorUserLeft,handAnimatorUserRight);
         }
         
         [ContextMenu("Left Hand Pulse Toggle")]
         public void TestTrigger2()
         {
-            SetHighlight(Part.Hand, Mode.Pulse, true);
+            SetHighlight(Part.Hand, Mode.Pulse, true,handAnimatorUserLeft,handAnimatorUserRight);
         }
         
         [ContextMenu("Left Hand Index Tip Toggle")]
         public void TestTrigger3()
         {
-            SetHighlight(Part.Index_Tip, Mode.Pulse, true);
+            SetHighlight(Part.Index_Tip, Mode.Pulse, true,handAnimatorUserLeft,handAnimatorUserRight);
         }
 
         [ContextMenu("Left Hand Ring Toggle")]
         public void TestTrigger4()
         {
-            SetHighlight(Part.Ring, Mode.Pulse, true);
+            SetHighlight(Part.Ring, Mode.Pulse, true,handAnimatorUserLeft,handAnimatorUserRight);
         }
 
-        public void SetHighlight(Part partToHighlight, Mode mode, bool leftHand)
+        public void SetHighlight(Part partToHighlight, Mode mode, bool leftHand, bool userHands, bool expertHands)
+        {
+            if (userHands)
+            {
+                SetHighlight(partToHighlight,mode,leftHand,handAnimatorUserLeft,handAnimatorUserRight);
+            }
+
+            if (expertHands)
+            {
+                SetHighlight(partToHighlight,mode,leftHand,handAnimatorExpertLeft,handAnimatorExpertRight);
+                
+            }
+        }
+        
+        
+        protected void SetHighlight(Part partToHighlight, Mode mode, bool leftHand,Animator animatorLeft,Animator animatorRight)
         {
             string triggerString = "";
 
@@ -72,27 +87,27 @@ namespace DFKI.NMY
             {
                 case Mode.FlashOnce:
                     if(leftHand)
-                        handAnimatorLeft.SetTrigger(triggerString);
+                        animatorLeft.SetTrigger(triggerString);
                     else
-                        handAnimatorRight.SetTrigger(triggerString);
+                        animatorRight.SetTrigger(triggerString);
                     break;
                 case Mode.Pulse:
                     if(leftHand)
-                        handAnimatorLeft.SetBool(triggerString, !handAnimatorLeft.GetBool(triggerString));
+                        animatorLeft.SetBool(triggerString, !animatorLeft.GetBool(triggerString));
                     else
-                        handAnimatorRight.SetBool(triggerString, !handAnimatorLeft.GetBool(triggerString));
+                        animatorRight.SetBool(triggerString, !animatorRight.GetBool(triggerString));
                     break;
                 case Mode.On:
                     if(leftHand)
-                        handAnimatorLeft.SetBool(triggerString, true);
+                        animatorLeft.SetBool(triggerString, true);
                     else
-                        handAnimatorRight.SetBool(triggerString, true);
+                        animatorRight.SetBool(triggerString, true);
                     break;
                 case Mode.Off:
                     if(leftHand)
-                        handAnimatorLeft.SetBool(triggerString, false);
+                        animatorLeft.SetBool(triggerString, false);
                     else
-                        handAnimatorRight.SetBool(triggerString, false);
+                        animatorRight.SetBool(triggerString, false);
                     break;
                 default:
                     break;

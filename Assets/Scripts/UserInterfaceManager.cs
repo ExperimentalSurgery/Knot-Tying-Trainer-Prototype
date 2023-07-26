@@ -7,7 +7,6 @@ using UnityEngine;
 using UnityEngine.Localization;
 using System.Threading;
 using NMY.VirtualRealityTraining.Steps;
-using UnityEditor.Animations;
 
 namespace DFKI.NMY
 {
@@ -72,17 +71,17 @@ namespace DFKI.NMY
         public void ResetFingerHighlights()
         {
             
-            foreach (var trigger in fingerHighlightControl.handAnimatorLeft.parameters)
+            foreach (var trigger in fingerHighlightControl.handAnimatorUserLeft.parameters)
             {
                 if (trigger.type == AnimatorControllerParameterType.Trigger)
                 {
-                    fingerHighlightControl.handAnimatorLeft.ResetTrigger(trigger.name);
-                    fingerHighlightControl.handAnimatorRight.ResetTrigger(trigger.name);
+                    fingerHighlightControl.handAnimatorUserLeft.ResetTrigger(trigger.name);
+                    fingerHighlightControl.handAnimatorUserRight.ResetTrigger(trigger.name);
                 }
                 else if (trigger.type == AnimatorControllerParameterType.Bool)
                 {
-                    fingerHighlightControl.handAnimatorLeft.SetBool(trigger.name,false);
-                    fingerHighlightControl.handAnimatorRight.SetBool(trigger.name,false);
+                    fingerHighlightControl.handAnimatorUserLeft.SetBool(trigger.name,false);
+                    fingerHighlightControl.handAnimatorUserRight.SetBool(trigger.name,false);
                 }
             }
         }
@@ -92,11 +91,11 @@ namespace DFKI.NMY
             if (fingerHighlightControl)
             {
                 if (config.LeftHand) {
-                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, config.LeftHand);
+                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, config.LeftHand,config.UserHands,config.ExpertHands);
                 }
 
                 if (config.RightHand) {
-                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, config.RightHand);
+                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, config.RightHand,config.UserHands,config.ExpertHands);
                 }
             }
         }
