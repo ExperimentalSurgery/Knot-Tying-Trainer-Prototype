@@ -8411,7 +8411,25 @@ MonoBehaviour:
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
-  highlights: []
+  highlights:
+  - Part: 9
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 1
+    UserHands: 0
+  - Part: 7
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 1
+    UserHands: 0
+  - Part: 5
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 1
+    UserHands: 0
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.MixedReality.Toolkit.UI;
 using NMY;
@@ -41,7 +42,12 @@ namespace DFKI.NMY
             mainStepController = FindObjectOfType<TrainingStepController>();
         }
 
-        
+
+        private void Update()
+        {
+            Debug.Log(mainStepController.previousStep.gameObject.name);
+        }
+
         public void ShowSuccessPanel() {
             if (successPanel) successPanel.Activate();
         }
