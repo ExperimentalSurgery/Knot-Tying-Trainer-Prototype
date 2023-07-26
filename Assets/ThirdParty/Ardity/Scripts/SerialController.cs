@@ -31,11 +31,7 @@ public class SerialController : SingletonStartupBehaviour<SerialController>
     public string portName = "COM3";
 
     [Tooltip("Baud rate that the serial device is using to transmit data.")]
-    public int baudRate = 9600;
-
-    [Tooltip("Reference to an scene object that will receive the events of connection, " +
-             "disconnection and the messages from the serial device.")]
-    public GameObject messageListener;
+    public int baudRate = 57600;
 
     [Tooltip("After an error in the serial communication, or an unsuccessful " +
              "connect, how many milliseconds we should wait.")]
@@ -122,11 +118,6 @@ public class SerialController : SingletonStartupBehaviour<SerialController>
     // ------------------------------------------------------------------------
     void Update()
     {
-        // If the user prefers to poll the messages instead of receiving them
-        // via SendMessage, then the message listener should be null.
-        if (messageListener == null)
-            return;
-
         // Read the next message from the queue
         string message = (string)serialThread.ReadMessage();
         if (message == null)
@@ -134,9 +125,11 @@ public class SerialController : SingletonStartupBehaviour<SerialController>
 
         // Check if the message is plain data or a connect/disconnect event.
         if (ReferenceEquals(message, SERIAL_DEVICE_CONNECTED))
-            messageListener.SendMessage("OnConnectionEvent", true);
+            //messageListener.SendMessage("OnConnectionEvent", true);
+            Debug.Log(message);
         else if (ReferenceEquals(message, SERIAL_DEVICE_DISCONNECTED))
-            messageListener.SendMessage("OnConnectionEvent", false);
+            //messageListener.SendMessage("OnConnectionEvent", false);
+            Debug.Log(message);
         else
             OnSerialMessage(new MessageEventArgs(message));
             //messageListener.SendMessage("OnMessageArrived", message);
