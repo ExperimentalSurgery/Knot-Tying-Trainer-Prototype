@@ -8,7 +8,11 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Hands
+<<<<<<< Updated upstream
   m_Shader: {fileID: 4800000, guid: c5b35a4c19d643f4f87637cdd8587b98, type: 3}
+=======
+  m_Shader: {fileID: 4800000, guid: f6c2c83a7d53cba469eee5135d158452, type: 3}
+>>>>>>> Stashed changes
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -21,7 +25,11 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+<<<<<<< Updated upstream
   m_LockedProperties: 
+=======
+  m_LockedProperties: _IndexVisibility
+>>>>>>> Stashed changes
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -46,7 +54,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _IndexFinger:
+<<<<<<< Updated upstream
         m_Texture: {fileID: 0}
+=======
+        m_Texture: {fileID: 2800000, guid: fff44e2670e2109498fe7362a15d6b69, type: 3}
+>>>>>>> Stashed changes
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -58,7 +70,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MiddleFinger:
+<<<<<<< Updated upstream
         m_Texture: {fileID: 0}
+=======
+        m_Texture: {fileID: 2800000, guid: 216d0402cf8276240bd2de1477afea24, type: 3}
+>>>>>>> Stashed changes
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -70,6 +86,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PinkyFinger:
+<<<<<<< Updated upstream
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -79,6 +96,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ThumbFinger:
         m_Texture: {fileID: 0}
+=======
+        m_Texture: {fileID: 2800000, guid: a785488d65780f947b8345f3b14dcfeb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RingFinger:
+        m_Texture: {fileID: 2800000, guid: 641c85a53b6dd9e49b774bd10e0646b9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ThumbFinger:
+        m_Texture: {fileID: 2800000, guid: c2183ff12bcc5e94a9a34f5b4bf5dc22, type: 3}
+>>>>>>> Stashed changes
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -92,32 +120,54 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+<<<<<<< Updated upstream
     - _IndexTipVisibility: 1
     - _IndexVisibility: 1
     - _LightIntensity: 1
     - _Metallic: 0
     - _MiddleTipVisibility: 1
     - _MiddleVisibility: 1
+=======
+    - _IndexTipVisibility: 0
+    - _IndexVisibility: 0
+    - _LightIntensity: 1
+    - _Metallic: 0
+    - _MiddleTipVisibility: 0
+    - _MiddleVisibility: 0
+>>>>>>> Stashed changes
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Outline: 0.001
     - _Parallax: 0.02
+<<<<<<< Updated upstream
     - _PinkyTipVisibility: 1
     - _PinkyVisibility: 1
     - _RingTipVisibility: 1
     - _RingVisibility: 1
+=======
+    - _PinkyTipVisibility: 0
+    - _PinkyVisibility: 0
+    - _RingTipVisibility: 0
+    - _RingVisibility: 0
+>>>>>>> Stashed changes
     - _ScaleCorrection: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+<<<<<<< Updated upstream
     - _ThumbTipVisibility: 1
     - _ThumbVisibility: 1
+=======
+    - _ThumbTipVisibility: 0
+    - _ThumbVisibility: 0
+>>>>>>> Stashed changes
     - _UVSec: 0
     - _ZWrite: 1
     - _useFresnel: 1
     - _useLighting: 1
     - _useOutline: 0
     m_Colors:
+<<<<<<< Updated upstream
     - _AllHandColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
@@ -134,4 +184,22 @@ Material:
     - _RingTipColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThumbColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThumbTipColor: {r: 1, g: 1, b: 1, a: 1}
+=======
+    - _AllHandColor: {r: 0, g: 1, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 23.968628, g: 23.968628, b: 23.968628, a: 0.09803922}
+    - _IndexColor: {r: 0, g: 1, b: 0, a: 1}
+    - _IndexTipColor: {r: 0, g: 1, b: 0, a: 1}
+    - _MainColor: {r: 0.9056604, g: 0.45151725, b: 0.2691349, a: 1}
+    - _MiddleColor: {r: 0, g: 1, b: 0, a: 1}
+    - _MiddleTipColor: {r: 0, g: 1, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _PinkyColor: {r: 0, g: 1, b: 0, a: 1}
+    - _PinkyTipColor: {r: 0, g: 1, b: 0, a: 1}
+    - _RingColor: {r: 0, g: 1, b: 0, a: 1}
+    - _RingTipColor: {r: 0, g: 1, b: 0, a: 1}
+    - _ThumbColor: {r: 0, g: 1, b: 0, a: 1}
+    - _ThumbTipColor: {r: 0, g: 1, b: 0, a: 1}
+>>>>>>> Stashed changes
   m_BuildTextureStacks: []
