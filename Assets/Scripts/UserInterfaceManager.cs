@@ -43,10 +43,6 @@ namespace DFKI.NMY
         }
 
 
-        private void Update()
-        {
-            Debug.Log(mainStepController.previousStep.gameObject.name);
-        }
 
         public void ShowSuccessPanel() {
             if (successPanel) successPanel.Activate();
