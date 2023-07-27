@@ -41,7 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4998316545666057522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1154b40a21a942c3887f6a666c109526, type: 3}
+  m_Script: {fileID: 1997864064, guid: a59d05a8903cae94fa99d5b5eee1a253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _autoConnectClientAs: 2
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4998316546253430919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8064d53dd8eb59f4e94d79669632f869, type: 3}
+  m_Script: {fileID: 937122603, guid: a59d05a8903cae94fa99d5b5eee1a253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4998316546986248192
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4998316547310567987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdeaddf674865a540a55253e0aa817f5, type: 3}
+  m_Script: {fileID: 1192185906, guid: a59d05a8903cae94fa99d5b5eee1a253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _enableVoip: 0
@@ -380,6 +380,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4998316547663121269}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d386094075d58404cbefe6a78b09f9fa, type: 3}
+  m_Script: {fileID: 285225423, guid: a59d05a8903cae94fa99d5b5eee1a253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

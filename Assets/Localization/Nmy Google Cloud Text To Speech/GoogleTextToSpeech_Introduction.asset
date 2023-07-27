@@ -9,20 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 219d4e90086947c4db1e1ebdf256b5cb, type: 3}
+  m_Script: {fileID: -1751535375, guid: f63d233839afc3f43a87c874e5a5d81d, type: 3}
   m_Name: GoogleTextToSpeech_Introduction
   m_EditorClassIdentifier: 
-  _credentials: {fileID: 4900000, guid: d73036553e69dda4ab4d5be52c5fd699, type: 3}
-  _stringTable:
-    m_TableReference:
-      m_TableCollectionName: GUID:8b54c45a014b4d14aabc06489dbe5bc0
-  _assetTable:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-  _outputFolder: {fileID: 102900000, guid: 71f182c91f3d3114f8f1ecc1b2eaf31a, type: 3}
-  _outputFilePattern: '[LOCALE_CODE]_[KEY]'
-  _dateTimeFormat: yyyy-MM-dd HH:mm:ss
-  _createSubFolders: 1
-  _textToSpeechConfigurations:
-  - {fileID: 11400000, guid: 01aae4220094a534a80519cd5283f0a7, type: 2}
-  - {fileID: 11400000, guid: cf5661ddaf14ed04eb11205d91bd54e8, type: 2}
+  autoStartup: 1
+  startupInAwake: 0
+  key: 
+  useLineSeparator: 1
+  textModification: 0
+  target: {fileID: 0}
