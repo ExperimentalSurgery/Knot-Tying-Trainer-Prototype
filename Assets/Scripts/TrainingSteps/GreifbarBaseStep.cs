@@ -18,7 +18,6 @@ namespace DFKI.NMY
         [Header("Localized Step Data")] 
         [SerializeField] private LocalizedString stepTitle;
         [SerializeField] private LocalizedString stepDescription;
-        [SerializeField] private LocalizedTextToSpeechAudioClip ttsContainer;
         
         
         [Header("Hand Highlight Config")]
@@ -45,46 +44,22 @@ namespace DFKI.NMY
             set => stepDescription = value;
         }
 
-        public LocalizedTextToSpeechAudioClip TtsContainer
-        {
-            get => ttsContainer;
-            set => ttsContainer = value;
-        }
         
         protected override async UniTask ClientStepActionAsync(CancellationToken ct)
         {
-            
-            // TTS Playback
-            if (!ttsContainer.IsEmpty && ttsContainer!=null) {
                 try {
-                    var speakTask = VirtualAssistant.instance.Speak(ttsContainer, ct);
-                    var finishedCriteriaTask = WaitForFinishedCriteria(ct);
-                    await UniTask.WhenAll(speakTask, finishedCriteriaTask);
-                    RaiseClientStepFinished();
-                }
-                catch (OperationCanceledException)
-                {
-                    RaiseClientStepFinished();
-                }
-            }
-            else
-            {
-                try
-                {
                     var finishedCriteriaTask = WaitForFinishedCriteria(ct);
                     await UniTask.WhenAny(finishedCriteriaTask);
                     RaiseClientStepFinished();
                 }
-                catch (OperationCanceledException)
-                {
+                catch (OperationCanceledException) {
                     RaiseClientStepFinished();
                 }
-            }
-            
-            // Hand Highlighting
-            foreach (FingerHighlightContainer highlightConfig in highlights) {
-                UserInterfaceManager.instance.FingerHighlight(highlightConfig);
-            }
+         
+                // Hand Highlighting
+                foreach (FingerHighlightContainer highlightConfig in highlights) {
+                    UserInterfaceManager.instance.FingerHighlight(highlightConfig);
+                }
             
         }
 
