@@ -27,6 +27,7 @@ namespace DFKI.NMY
             await base.PreStepActionAsync(ct);
             
             // stop current player actions
+            player.gameObject.SetActive(true);
             player.StopThread();
             manager.playStream = false;
             
@@ -42,6 +43,7 @@ namespace DFKI.NMY
             await base.PostStepActionAsync(ct);
             player.StopThread();
             manager.playStream = false;
+            player.gameObject.SetActive(false);
         }
         
     }

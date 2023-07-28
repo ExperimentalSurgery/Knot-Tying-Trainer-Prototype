@@ -69,6 +69,10 @@ namespace DFKI.NMY
             await base.PostStepActionAsync(ct);
             GestureSequencePlayer.instance.SequenceFinishedEvent.RemoveListener(OnGestureEvent);
             GestureSequencePlayer.instance.Stop();
+            
+            // Reset colors of user hands
+            HandVisualizer.instance.ResetColor();
+
         }
         
         private void OnGestureEvent(HandGestureParams parameters) {
