@@ -1134,14 +1134,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1092248768512
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   interactable: {fileID: 1619887483}
   references:
@@ -1577,14 +1569,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
@@ -2741,14 +2725,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   pathToSequence: PointClouds/Sample
   player: {fileID: 414589762}
@@ -4825,14 +4801,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925831864541184
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   changeBvhFile: 0
   bvhFileLeft: thumbsup_left
@@ -4921,7 +4889,7 @@ MonoBehaviour:
   previouStepBtn: {fileID: 5540900027882647833}
   speedToggleBtn: {fileID: 1619887483}
   listViewToggleBtn: {fileID: 1941220020}
-  tutorialPreviousStep: {fileID: 0}
+  tutorialPreviousStep: {fileID: 493092217}
 --- !u!1 &337604082
 GameObject:
   m_ObjectHideFlags: 0
@@ -4984,7 +4952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rootTrainingStep: {fileID: 469847259}
-  _startTrainingStep: {fileID: 1057018869}
+  _startTrainingStep: {fileID: 469847259}
   _continueNextStepAction:
     m_UseReference: 0
     m_Action:
@@ -4996,8 +4964,8 @@ MonoBehaviour:
       m_Interactions: Press
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: ea1dc1c1-f6c8-4d0e-b0d7-59cd8b2796fa
-        m_Path: "<Keyboard>/#(\xD6)"
+        m_Id: fd5bf74e-a2c6-466d-8b51-d56a3cb0053e
+        m_Path: <Mouse>/middleButton
         m_Interactions: 
         m_Processors: 
         m_Groups: 
@@ -5658,27 +5626,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.081
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.676
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477809832810372259, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6972,14 +6940,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1076645957632
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   interactable: {fileID: 5540900027882647833}
   references:
@@ -7110,14 +7070,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925819927552000
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   targetValue: 1
   minHoldDuration: 2
@@ -7530,14 +7482,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   pathToSequence: PointClouds/Sample
   player: {fileID: 414589762}
@@ -7899,14 +7843,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1065388445696
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights:
   - Part: 0
     Mode: 1
@@ -8088,14 +8024,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 112731983872
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
@@ -9349,14 +9277,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1086456434688
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights:
   - Part: 0
     Mode: 0
@@ -9778,14 +9698,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   markerID: 200
   markerManager: {fileID: 254323660}
@@ -11044,14 +10956,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   targetValue: 0
   minHoldDuration: 1.5
@@ -11495,14 +11399,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925823832449024
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights:
   - Part: 9
     Mode: 1
@@ -12392,14 +12288,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1082471845888
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   interactable: {fileID: 1941220020}
   references:
@@ -16120,14 +16008,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1067288465408
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   minTrackedDuration: 1
   leftHand: {fileID: 1622491108}
@@ -19874,14 +19754,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   interactable: {fileID: 1941220020}
   references:
@@ -21385,14 +21257,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 17757963624787968
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
@@ -24758,14 +24622,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   pathToSequence: PointClouds/Sample
   player: {fileID: 414589762}
@@ -24939,14 +24795,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 106281144320
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
@@ -25191,14 +25039,6 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ttsContainer:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   highlights: []
   pathToSequence: PointClouds/Sample
   player: {fileID: 414589762}

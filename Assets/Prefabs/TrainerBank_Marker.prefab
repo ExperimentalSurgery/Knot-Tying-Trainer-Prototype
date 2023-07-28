@@ -513,7 +513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idText: {fileID: 304281654124635703}
-  isDynamic: 1
+  isDynamic: 0
   sceneObjectNames:
   - MRTK UI
   - StartButtonCenter
