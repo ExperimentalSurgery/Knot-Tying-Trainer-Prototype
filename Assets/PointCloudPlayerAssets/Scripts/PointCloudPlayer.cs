@@ -82,7 +82,9 @@ public class PointCloudPlayer : MonoBehaviour {
 	}
 
 	void Update () {
-
+		
+		if(bpcReader==null || pcManager == null)return;
+		
 		//HandleUserInput ();
 		int BufferCount = bpcReader.nFramesRead - pcManager.currentFrameIndex;
 		bool allFramesRead = bpcReader.nFrames == bpcReader.nFramesRead;
