@@ -146,9 +146,9 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-06-01 11:08:06
-        lastModified: 2023-06-01 11:08:06
+        lastModified: 2023-07-28 14:21:43
         spokenText: "F\xFChren Sie den Faden unter beiden Str\xE4ngen hindurch, so
-          dass die Farben auf den korrekte Seiten liegen."
+          dass die Farben auf den korrekten Seiten liegen."
     - rid: 5524020116102840330
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -159,10 +159,10 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-06-01 11:08:07
-        lastModified: 2023-06-01 11:08:07
+        lastModified: 2023-07-28 14:21:43
         spokenText: Jetzt ziehen Sie bitte dann leicht an beiden Enden, so dass etwas
           Spannung auf dem Faden ist. Wenn das System die Richtige Menge an Spannung
-          erkennt, dann geht es weiter.
+          erkennt, geht es weiter.
     - rid: 5524020116102840334
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -186,9 +186,9 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-06-01 11:08:08
-        lastModified: 2023-06-01 11:08:08
+        lastModified: 2023-07-28 14:21:43
         spokenText: "Wir binden mit der rechten Hand, daher muss nach dem \xDCberkreuzen
-          das linke Ende unten, d.h. n\xE4her an Ihnen liegen"
+          das linke Ende unten, n\xE4her an Ihnen liegen"
     - rid: 5524020116102840342
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -200,8 +200,8 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-06-01 11:08:09
-        lastModified: 2023-06-01 11:08:09
-        spokenText: Wenn Sie fertig sind zeigen Sie mir bitte ein Daumen hoch.
+        lastModified: 2023-07-28 14:21:43
+        spokenText: Wenn Sie fertig sind zeigen Sie mir bitte einen Daumen hoch.
     - rid: 5524020116102840346
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:

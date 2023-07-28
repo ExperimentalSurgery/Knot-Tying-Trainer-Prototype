@@ -31,7 +31,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 403796144128
     m_Localized: "F\xFChren Sie den Faden unter beiden Str\xE4ngen hindurch, so dass
-      die Farben auf den korrekte Seiten liegen."
+      die Farben auf den korrekten Seiten liegen."
     m_Metadata:
       m_Items: []
   - m_Id: 601767292928
@@ -41,7 +41,7 @@ MonoBehaviour:
   - m_Id: 4628605317120
     m_Localized: Jetzt ziehen Sie bitte dann leicht an beiden Enden, so dass etwas
       Spannung auf dem Faden ist. Wenn das System die Richtige Menge an Spannung
-      erkennt, dann geht es weiter.
+      erkennt, geht es weiter.
     m_Metadata:
       m_Items: []
   - m_Id: 5811793309696
@@ -59,7 +59,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6416377065472
     m_Localized: "Wir binden mit der rechten Hand, daher muss nach dem \xDCberkreuzen
-      das linke Ende unten, d.h. n\xE4her an Ihnen liegen"
+      das linke Ende unten, n\xE4her an Ihnen liegen"
     m_Metadata:
       m_Items: []
   - m_Id: 6546966720512
@@ -68,7 +68,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6606739746816
-    m_Localized: Wenn Sie fertig sind zeigen Sie mir bitte ein Daumen hoch.
+    m_Localized: Wenn Sie fertig sind zeigen Sie mir bitte einen Daumen hoch.
     m_Metadata:
       m_Items: []
   - m_Id: 10700191707136
@@ -91,7 +91,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 776692848697344
-    m_Localized: Das stimmt noch nicht  ganz.
+    m_Localized: Das stimmt noch nicht ganz.
     m_Metadata:
       m_Items: []
   - m_Id: 776861702987776
