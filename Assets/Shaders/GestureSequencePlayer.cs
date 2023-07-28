@@ -345,7 +345,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
                 gestureParams.side = Hand.Right;
                 gestureParams.sequenceIndex = currentSequenceRight;
                 SequenceFinishedEvent.Invoke(gestureParams);
-                HandVisualizer.instance.SetSuccessColor(false, true);
+                HandVisualizer.instance.SetSuccessOutline(false, true);
             }
         }
 

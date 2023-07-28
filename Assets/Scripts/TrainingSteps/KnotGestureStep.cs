@@ -14,7 +14,9 @@ namespace DFKI.NMY
     public class KnotGestureStep : BVHGestureBaseStep
     {
 
-        [Header("CompletionConfig")]
+
+        [Header("CompletionConfig")] 
+        [SerializeField] private float successOutlineDuration = 2.5f;
         [SerializeField] private GestureCheckMethod checkMethod = GestureCheckMethod.PoseMatch;
         [SerializeField] private KeyCode manualCompletionKey = KeyCode.N;
         [SerializeField] private float sequenceDuration = 0.5f;
@@ -55,9 +57,6 @@ namespace DFKI.NMY
             // show expert hands
             HandVisualizer.instance.SetExpertHandVisibleRight(true);
             HandVisualizer.instance.SetExpertHandVisibleLeft(true);
-        
-            // Reset colors of user hands
-            HandVisualizer.instance.ResetColor();
             
             StopAllCoroutines();
           
@@ -70,9 +69,6 @@ namespace DFKI.NMY
             GestureSequencePlayer.instance.SequenceFinishedEvent.RemoveListener(OnGestureEvent);
             GestureSequencePlayer.instance.Stop();
             
-            // Reset colors of user hands
-            HandVisualizer.instance.ResetColor();
-
         }
         
         private void OnGestureEvent(HandGestureParams parameters) {
@@ -80,12 +76,12 @@ namespace DFKI.NMY
             if (parameters.isMatching && parameters.side.Equals(Hand.Left)) {
                 Debug.Log("Matched left");
                 matchedLeft = true;
-                HandVisualizer.instance.SetSuccessColor(true,false);
+                HandVisualizer.instance.SetSuccessOutline(true,false);
             }
             else if (parameters.isMatching && parameters.side.Equals(Hand.Right)) {
                 Debug.Log("Matched right");
                 matchedRight = true;
-                HandVisualizer.instance.SetSuccessColor(false,true);
+                HandVisualizer.instance.SetSuccessOutline(false,true);
             }
 
             if (matchedLeft && matchedRight) {
@@ -108,6 +104,7 @@ namespace DFKI.NMY
             GestureSequencePlayer.instance.Stop();
             HandVisualizer.instance.SetExpertHandVisibleRight(false);
             HandVisualizer.instance.SetExpertHandVisibleLeft(false);
+            HandVisualizer.instance.SetTimedSuccessOutline(successOutlineDuration,true,true);
             FinishedCriteria = true;
         }
         

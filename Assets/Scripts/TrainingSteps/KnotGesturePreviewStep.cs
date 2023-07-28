@@ -39,7 +39,7 @@ namespace DFKI.NMY
             HandVisualizer.instance.SetExpertHandVisibleLeft(true);
         
             // Reset colors of user hands
-            HandVisualizer.instance.ResetColor();
+            HandVisualizer.instance.ResetOutline();
             
             // Register for finish events
             GestureSequencePlayer.instance.AllSequencesPlayedEvent.AddListener(OnScenarioPlaybackFinished);

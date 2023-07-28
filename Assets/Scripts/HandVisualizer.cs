@@ -46,13 +46,13 @@ namespace DFKI.NMY
         }
 
 
-        public void ResetColor()
+        public void ResetOutline()
         {
             userHandRenderer_left.material.SetFloat("_useOutline",0);
             userHandRenderer_right.material.SetFloat("_useOutline",0);
         }
         
-        public void SetColor(Color c, bool left,bool right){
+        public void SetOutlineColor(Color c, bool left,bool right){
             if (left) {
                 userHandRenderer_left.material.SetFloat("_useOutline",1);
                 userHandRenderer_left.material.SetColor("_OutlineColor",c);
@@ -63,9 +63,24 @@ namespace DFKI.NMY
             }
         }
 
-        public void SetSuccessColor(bool left, bool right) => SetColor(successColor, left, right);
-        public void SetErrorColor(bool left, bool right) => SetColor(errorColor, left, right);
-        public void SetDefaultColor(bool left, bool right) => SetColor(defaultColor, left, right);
+        public void SetTimedSuccessOutline(float duration,bool left,bool right)
+        {
+            ResetOutline();
+            StopAllCoroutines();
+            StartCoroutine(TimedOutline(duration,left,right));
+
+        }
+
+        protected IEnumerator TimedOutline(float seconds,bool left,bool right)
+        {
+            SetSuccessOutline(left,right);
+            yield return new WaitForSeconds(seconds);
+            ResetOutline();
+        }
+
+        public void SetSuccessOutline(bool left, bool right) => SetOutlineColor(successColor, left, right);
+        public void SetErrorOutline(bool left, bool right) => SetOutlineColor(errorColor, left, right);
+        public void SetDefaultOutline(bool left, bool right) => SetOutlineColor(defaultColor, left, right);
 
         
     }
