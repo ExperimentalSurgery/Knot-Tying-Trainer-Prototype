@@ -25,23 +25,24 @@ namespace DFKI.NMY
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
-            manager.fps = manipulateFPS ? targetFPS : manager.fps;
+            
+            // stop current player actions
+            player.StopThread();
+            manager.playStream = false;
+            
+            // Setup new stream
             player.pathToSequence = pathToSequence;
-            //player.FinishedPointCloudPlayback.AddListener(OnPlaybackFinished);
+            player.SetupReaderAndPCManager();
+            manager.fps = manipulateFPS ? targetFPS : manager.fps;
             manager.playStream = true;
         }
         
         // POST STEP
         protected override async UniTask PostStepActionAsync(CancellationToken ct) {
             await base.PostStepActionAsync(ct);
-            //player.FinishedPointCloudPlayback.RemoveListener(OnPlaybackFinished);
-            manager.playStream = false;    
+            player.StopThread();
+            manager.playStream = false;
         }
         
-        /*
-         private void OnPlaybackFinished() {
-            FinishedCriteria = true;
-        }
-        */
     }
 }

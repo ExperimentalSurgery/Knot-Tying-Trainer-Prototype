@@ -30,8 +30,7 @@ public class PointCloudPlayer : MonoBehaviour {
 	public UnityEvent FinishedPointCloudPlayback;
 	void Start () {
 
-		string[] args = System.Environment.GetCommandLineArgs ();
-
+		/*string[] args = System.Environment.GetCommandLineArgs ();
 		for (int i = 0; i < args.Length; i++) {
 			if (args [i] == "-folderInput" && i + 1 < args.Length) {
 				pathToSequence = args [i + 1];
@@ -39,24 +38,35 @@ public class PointCloudPlayer : MonoBehaviour {
 			if (args [i] == "-bufferSize" && i + 1 < args.Length) {
 				numberOfFramesBufferedBeforePlay = Convert.ToInt32(args [i + 1]);
 			}
-		}
+		}*/
 
 		upperBufferSize = lowerBufferSize + numberOfFramesBufferedBeforePlay;
-
-		SetupReaderAndPCManager ();
+		//SetupReaderAndPCManager ();
 	}
 
-	void SetupReaderAndPCManager () {
+	public void SetupReaderAndPCManager ()
+	{
 
+		StopThread();
 		bpcReader = new BufferedPointCloudReader(pathToSequence + "/");
-
 		bpcReader.ReadConfig();
 
 		pcManager.setReader(bpcReader);
-
 		readerThread = new Thread(ReaderThreadRunner);
-
+		
 		readerThread.Start();
+		runReaderThread = true;
+
+	}
+
+	public void StopThread()
+	{
+		runReaderThread = false;
+		threadCounter = 0;
+		if (readerThread != null) {
+			readerThread.Abort();
+			readerThread = null;
+		}
 	}
 
 	void OnApplicationQuit () {
