@@ -16,7 +16,6 @@ namespace DFKI.NMY
         [SerializeField] private string bvhFileRight;
         [SerializeField] private int sequenceIndex = 0;
         [SerializeField] private bool showExpertHands = true;
-        [SerializeField] private bool showProgressBar = true;
         
         public int SequenceIndex
         {
@@ -36,8 +35,6 @@ namespace DFKI.NMY
             
             // For this step we want to activate the Expert Hands as Preview (optionally)
             ExpertHands.instance.gameObject.SetActive(showExpertHands);
-            if(showProgressBar)UserInterfaceManager.instance.ShowProgressIndicator();
-            else UserInterfaceManager.instance.HideProgressIndicator();
             
             
         }
@@ -48,7 +45,6 @@ namespace DFKI.NMY
         protected override async UniTask PostStepActionAsync(CancellationToken ct) {
             await base.PostStepActionAsync(ct);
             ExpertHands.instance.gameObject.SetActive(false);
-            UserInterfaceManager.instance.HideProgressIndicator();
         }
 
     }

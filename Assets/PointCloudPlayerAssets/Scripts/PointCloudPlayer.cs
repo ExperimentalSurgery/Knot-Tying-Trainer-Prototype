@@ -44,6 +44,7 @@ public class PointCloudPlayer : MonoBehaviour {
 		//SetupReaderAndPCManager ();
 	}
 
+	[ContextMenu("StartPlaying")]
 	public void SetupReaderAndPCManager ()
 	{
 
