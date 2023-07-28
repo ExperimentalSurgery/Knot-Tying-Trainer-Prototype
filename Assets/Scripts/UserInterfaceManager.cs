@@ -93,12 +93,13 @@ namespace DFKI.NMY
             if (fingerHighlightControl)
             {
                 if (config.LeftHand) {
-                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, config.LeftHand,config.UserHands,config.ExpertHands);
+                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, true,config.UserHands,config.ExpertHands);
                 }
 
                 if (config.RightHand) {
-                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, config.RightHand,config.UserHands,config.ExpertHands);
+                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, false,config.UserHands,config.ExpertHands);
                 }
+                    Debug.Log("FingerHighlight for: " + config.Part.ToString() + " in mode: " + config.Mode.ToString() + " on left hand? " + config.LeftHand);
             }
         }
 
