@@ -589,9 +589,10 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-07-25 15:51:57
-        lastModified: 2023-07-25 15:51:57
+        lastModified: 2023-07-31 10:28:32
         spokenText: "Mit links Spannung aufbauen und halten, w\xE4hrend Sie rechts
-          die drei freien Finger ausstrecken."
+          die drei freien Finger ausstrecken. Der gr\xFCne Faden ruht auf ihrem kleinen
+          Finger."
     - rid: 6073544477279257408
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:

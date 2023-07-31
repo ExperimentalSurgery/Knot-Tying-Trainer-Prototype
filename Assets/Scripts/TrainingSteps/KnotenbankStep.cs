@@ -1,16 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace DFKI.NMY
 {
-    public class KnotbankTensionStep : GreifbarBaseStep
-    {
+    
+    public enum KnotenbankDataType {Contact,Tension} 
+    public class KnotenbankStep : GreifbarBaseStep {
         
-        
-        [Header("Knotbank TensionStep")]
+        [Header("KnotenbankStep")]
+        [SerializeField] private KnotenbankDataType checkValue;
         [Range(0,1)]
         [SerializeField] private int targetValue = 1;
         [SerializeField] private float minHoldDuration = 2f;
@@ -18,9 +17,16 @@ namespace DFKI.NMY
         // runtime vars
         private int tmpInt;
         private int contactVal;
+        private int tensionVal;
         private float remainingDuration;
         private SerialController knotBankSerialController;
-        
+
+        protected override void Reset()
+        {
+            base.Reset();
+            this.name = "[KnotenbankStep] ";
+        }
+
         protected override async UniTask PreStepActionAsync(CancellationToken ct) {
             await base.PreStepActionAsync(ct);
             remainingDuration = minHoldDuration;
@@ -53,9 +59,15 @@ namespace DFKI.NMY
         
         private void Update()
         {
-            if (base.stepState.Equals(StepState.StepStarted))
-            {
-                remainingDuration = contactVal == targetValue ? (remainingDuration - Time.deltaTime) : minHoldDuration;
+            if (base.stepState.Equals(StepState.StepStarted)) {
+                switch (checkValue) {
+                    case KnotenbankDataType.Contact:
+                        remainingDuration = contactVal == targetValue ? (remainingDuration - Time.deltaTime) : minHoldDuration;
+                        break;
+                    case KnotenbankDataType.Tension:
+                        remainingDuration = tensionVal == targetValue ? (remainingDuration - Time.deltaTime) : minHoldDuration;
+                        break;
+                }
 
                 if (remainingDuration <= 0.0f ) {
                     FinishedCriteria = true;

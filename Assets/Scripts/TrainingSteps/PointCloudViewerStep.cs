@@ -21,7 +21,15 @@ namespace DFKI.NMY
         private bool manipulateFPS = false;
         [SerializeField] private int targetFPS = 30;
 
-        
+
+        protected override void Reset()
+        {
+            base.Reset();
+            player = FindObjectOfType<PointCloudPlayer>(true);
+            manager = FindObjectOfType<PointCloudManager>(true);
+            this.name =  "[PointCloudViewerStep] " + this.name.Trim(' ');
+        }
+
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
