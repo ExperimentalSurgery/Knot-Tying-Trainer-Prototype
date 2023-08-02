@@ -268,6 +268,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6073544477279257326
+  - m_Id: 22842240733425664
+    m_Localized: 56b9de5f1d3429f4282fe2cd12fa83d2
+    m_Metadata:
+      m_Items:
+      - rid: 6196651880541323265
+  - m_Id: 22842242176266240
+    m_Localized: fc56a23bb9bc280499012a8c04410d4b
+    m_Metadata:
+      m_Items:
+      - rid: 6196651880541323267
+  - m_Id: 22842243401003008
+    m_Localized: 226b41aa90caa8c42a0c53bb1079fc81
+    m_Metadata:
+      m_Items:
+      - rid: 6196651880541323269
   references:
     version: 2
     RefIds:
@@ -605,3 +620,22 @@ MonoBehaviour:
         created: 2023-07-25 15:51:58
         lastModified: 2023-07-25 15:51:58
         spokenText: Sehr gut! Weiter gehts.
+    - rid: 6196651880541323265
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-02 17:00:43
+        lastModified: 2023-08-02 17:00:43
+        spokenText: Hervorragend! Das war sehr gut!
+    - rid: 6196651880541323267
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-02 17:00:44
+        lastModified: 2023-08-02 17:00:44
+        spokenText: "Schauen wir einmal den Feedbackbogen f\xFCr den Mittelfinger
+          knoten an."
+    - rid: 6196651880541323269
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-02 17:00:44
+        lastModified: 2023-08-02 17:00:44
+        spokenText: "Das war es f\xFCr diese \xDCbung. Fahren Sie fort mit dem Zeigefingerknoten."

@@ -268,6 +268,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6073544477279257325
+  - m_Id: 22842240733425664
+    m_Localized: 53081004328f9624cb336f9aa32dc70c
+    m_Metadata:
+      m_Items:
+      - rid: 6196651880541323264
+  - m_Id: 22842242176266240
+    m_Localized: f279153e6d0f7bd4f9cbfc21353915cf
+    m_Metadata:
+      m_Items:
+      - rid: 6196651880541323266
+  - m_Id: 22842243401003008
+    m_Localized: b67a2ba164b69944f807c03ccf686101
+    m_Metadata:
+      m_Items:
+      - rid: 6196651880541323268
   references:
     version: 2
     RefIds:
@@ -570,4 +585,22 @@ MonoBehaviour:
       data:
         created: 2023-07-25 15:51:58
         lastModified: 2023-07-25 15:51:58
+        spokenText: Not set yet.
+    - rid: 6196651880541323264
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-02 17:00:43
+        lastModified: 2023-08-02 17:00:43
+        spokenText: Not set yet.
+    - rid: 6196651880541323266
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-02 17:00:44
+        lastModified: 2023-08-02 17:00:44
+        spokenText: Not set yet.
+    - rid: 6196651880541323268
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-02 17:00:44
+        lastModified: 2023-08-02 17:00:44
         spokenText: Not set yet.

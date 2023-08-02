@@ -641,6 +641,24 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-de
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56b9de5f1d3429f4282fe2cd12fa83d2
+    m_Address: de_mfk_outro_assi_verygood
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc56a23bb9bc280499012a8c04410d4b
+    m_Address: de_mfk_outro_assi_feedback
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 226b41aa90caa8c42a0c53bb1079fc81
+    m_Address: de_mfk_outro_assi_indexfinger
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:
