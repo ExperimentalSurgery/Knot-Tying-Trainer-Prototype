@@ -215,6 +215,18 @@ MonoBehaviour:
     m_Key: mfk_part1_assi_success
     m_Metadata:
       m_Items: []
+  - m_Id: 22842240733425664
+    m_Key: mfk_outro_assi_verygood
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22842242176266240
+    m_Key: mfk_outro_assi_feedback
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22842243401003008
+    m_Key: mfk_outro_assi_indexfinger
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 5524020211541606736
@@ -740,6 +752,18 @@ MonoBehaviour:
           - en
           - de
         - m_KeyId: 19925835953987584
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 22842240733425664
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 22842242176266240
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 22842243401003008
           m_TableCodes:
           - en
           - de
