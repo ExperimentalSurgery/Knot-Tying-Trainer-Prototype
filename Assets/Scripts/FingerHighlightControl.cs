@@ -9,6 +9,8 @@ namespace DFKI.NMY
     [Serializable]
     public class FingerHighlightContainer
     {
+        
+        
         public FingerHighlightControl.Part Part;
         public FingerHighlightControl.Mode Mode;
         public bool LeftHand=true;
@@ -18,6 +20,9 @@ namespace DFKI.NMY
     }
     public class FingerHighlightControl : MonoBehaviour
     {
+        
+        public bool allowHighlights = true;
+        
         public enum Part {Hand, Thumb, Thumb_Tip, Index, Index_Tip, Middle, Middle_Tip, Ring, Ring_Tip, Pinky, Pinky_Tip};
         public enum Mode {FlashOnce, Pulse, On, Off};
 
@@ -79,6 +84,8 @@ namespace DFKI.NMY
         
         protected void SetHighlight(Part partToHighlight, Mode mode, bool leftHand,Animator animatorLeft,Animator animatorRight)
         {
+            if (!allowHighlights) return;
+            
             string triggerString = "";
 
             triggerString += partToHighlight.ToString() + mode.ToString();

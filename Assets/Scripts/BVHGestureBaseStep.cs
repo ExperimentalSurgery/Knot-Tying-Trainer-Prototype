@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace DFKI.NMY
 {
@@ -14,13 +15,20 @@ namespace DFKI.NMY
         [SerializeField] private bool changeBvhFile=false;
         [SerializeField] private string bvhFileLeft;
         [SerializeField] private string bvhFileRight;
-        [SerializeField] private int sequenceIndex = 0;
+        [FormerlySerializedAs("sequenceIndex")] [SerializeField] private int sequenceIndexLeft = 0;
+        [SerializeField] private int sequenceIndexRight = 0;
         [SerializeField] private bool showExpertHands = true;
-        
-        public int SequenceIndex
+
+        public int SequenceIndexLeft
         {
-            get => sequenceIndex;
-            set => sequenceIndex = value;
+            get => sequenceIndexLeft;
+            set => sequenceIndexLeft = value;
+        }
+
+        public int SequenceIndexRight
+        {
+            get => sequenceIndexRight;
+            set => sequenceIndexRight = value;
         }
 
         protected override async UniTask PreStepActionAsync(CancellationToken ct) {

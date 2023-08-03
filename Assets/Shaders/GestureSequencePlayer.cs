@@ -372,10 +372,10 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         normalizedProgressTotalRight = 0.0f;
     }
 
-    public void Play(int singleSequence=-1)
+    public void Play(int singleSequenceLeft=-1,int singleSequenceRight=-1)
     {
         
-        if (singleSequence > 0) {
+        if (singleSequenceLeft > 0) {
             playAllSequences = false;
         }
 
@@ -384,8 +384,8 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         initialSequenceDuration = SequenceDuration;
         
         // setup
-        currentSequenceLeft = singleSequence >= 0 ? singleSequence : 0;
-        currentSequenceRight = singleSequence >= 0 ? singleSequence : 0;
+        currentSequenceLeft = singleSequenceLeft >= 0 ? singleSequenceLeft : 0;
+        currentSequenceRight = singleSequenceRight >= 0 ? singleSequenceRight : 0;
         currentFrameLeft = _leftGestureModule.GetSequenceStartFrameIndex(currentSequenceLeft);
         currentFrameRight = _rightGestureModule.GetSequenceStartFrameIndex(currentSequenceRight);
         loopStartTimeLeft = Time.time;

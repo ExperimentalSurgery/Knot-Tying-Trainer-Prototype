@@ -13,7 +13,7 @@ namespace DFKI.NMY
 {
     public class UserInterfaceManager : SingletonStartupBehaviour<UserInterfaceManager>
     {
-
+        
         [Header("References")] 
         [SerializeField] private FingerHighlightControl fingerHighlightControl;
         [SerializeField] private ActivatableStartupBehaviour successPanel;

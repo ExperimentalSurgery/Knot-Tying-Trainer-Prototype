@@ -21,7 +21,8 @@ namespace DFKI.NMY
         [SerializeField] private KeyCode manualCompletionKey = KeyCode.N;
         [SerializeField] private float sequenceDuration = 0.5f;
         [SerializeField] private float poseMatchingThreshold = 25;
-
+        [SerializeField] private bool requireLeftMatch = true;
+        [SerializeField] private bool requireRightMatch = true;
        
         // helper vars
         private bool matchedLeft = false;
@@ -40,7 +41,7 @@ namespace DFKI.NMY
             GestureSequencePlayer.instance.PlayAllSequences = false;
             GestureSequencePlayer.instance.LoopSingleSequencePlayback = true;
             GestureSequencePlayer.instance.AnalyzePoseMatching = true;
-            GestureSequencePlayer.instance.Play(SequenceIndex);
+            GestureSequencePlayer.instance.Play(SequenceIndexLeft,SequenceIndexRight);
        
        
             // Register for finish events
@@ -83,8 +84,10 @@ namespace DFKI.NMY
                 matchedRight = true;
                 HandVisualizer.instance.SetSuccessOutline(false,true);
             }
+            
+            
 
-            if (matchedLeft && matchedRight) {
+            if ((matchedLeft || !requireLeftMatch) && (matchedRight || !requireRightMatch)) {
                 TriggerCompletion();
             }
         

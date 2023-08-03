@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using System.Threading;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
-
 
 namespace DFKI.NMY.PoincloudPlayer
 {
@@ -135,9 +133,15 @@ namespace DFKI.NMY.PoincloudPlayer
 
 		public void NextFrame()
 		{
-			// only allowed in next frame
 			if ((playStream || status.Equals(PlayState.Paused)) && ( currentFrameIndex < (bpcReader.nFrames - 1))){
 				currentFrameIndex++;
+				RenderCurrentFrame();
+			} 
+		}
+
+		public void PreviousFrame(){
+			if ((playStream || status.Equals(PlayState.Paused)) && currentFrameIndex>0){
+				currentFrameIndex--;
 				RenderCurrentFrame();
 			} 
 		}
