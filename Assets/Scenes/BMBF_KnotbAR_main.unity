@@ -1580,6 +1580,7 @@ MonoBehaviour:
   bvhFileRight: thumbsup_right
   sequenceIndex: 1
   showExpertHands: 1
+  showProgressBar: 1
   singleSequenceDuration: 1
   finishStepOnSeqEnd: 0
   extraDelay: 3000
@@ -1848,10 +1849,10 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _finishingCriteria: 2
   _parallelSteps:
-  - {fileID: 819056616}
+  - {fileID: 0}
   - {fileID: 860671483}
   _selectedParallelSteps:
-  - {fileID: 819056616}
+  - {fileID: 0}
 --- !u!1 &130254690
 GameObject:
   m_ObjectHideFlags: 0
@@ -5021,7 +5022,7 @@ MonoBehaviour:
   bvhFileRight: expert_poses_right
   sequenceIndex: 2
   showExpertHands: 1
-  successOutlineDuration: 2.5
+  showProgressBar: 1
   checkMethod: 1
   manualCompletionKey: 110
   sequenceDuration: 0.5
@@ -8335,7 +8336,7 @@ MonoBehaviour:
   bvhFileRight: thumbsup_right
   sequenceIndex: 1
   showExpertHands: 1
-  successOutlineDuration: 2.5
+  showProgressBar: 1
   checkMethod: 1
   manualCompletionKey: 110
   sequenceDuration: 1
@@ -9708,7 +9709,7 @@ MonoBehaviour:
   bvhFileRight: thumbsup_right
   sequenceIndex: 1
   showExpertHands: 1
-  successOutlineDuration: 2.5
+  showProgressBar: 1
   checkMethod: 1
   manualCompletionKey: 110
   sequenceDuration: 1
@@ -10627,10 +10628,10 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _finishingCriteria: 2
   _parallelSteps:
-  - {fileID: 494046042}
+  - {fileID: 0}
   - {fileID: 71686568}
   _selectedParallelSteps:
-  - {fileID: 494046042}
+  - {fileID: 0}
 --- !u!1 &785070544
 GameObject:
   m_ObjectHideFlags: 0
@@ -11814,7 +11815,7 @@ MonoBehaviour:
   bvhFileRight: expert_poses_right
   sequenceIndex: 1
   showExpertHands: 1
-  successOutlineDuration: 2.5
+  showProgressBar: 1
   checkMethod: 1
   manualCompletionKey: 110
   sequenceDuration: 0.5
@@ -22241,6 +22242,7 @@ MonoBehaviour:
   bvhFileRight: thumbsup_right
   sequenceIndex: 1
   showExpertHands: 1
+  showProgressBar: 1
   singleSequenceDuration: 3
   finishStepOnSeqEnd: 1
   extraDelay: 0
@@ -25813,7 +25815,7 @@ MonoBehaviour:
   bvhFileRight: thumbsup_right
   sequenceIndex: 1
   showExpertHands: 1
-  successOutlineDuration: 2.5
+  showProgressBar: 1
   checkMethod: 1
   manualCompletionKey: 110
   sequenceDuration: 1

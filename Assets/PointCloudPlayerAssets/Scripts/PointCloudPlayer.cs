@@ -1,138 +1,210 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System;
-using UnityEngine;
+﻿using UnityEngine;
 using System.Threading;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
-public class PointCloudPlayer : MonoBehaviour {
 
-	public string pathToSequence;
+namespace DFKI.NMY.PoincloudPlayer
+{
 
-	public PointCloudManager pcManager;
+	public enum PlayState {Playing,Paused,Buffering,Stopped}
 
-	private BufferedPointCloudReader bpcReader;
-
-	private Thread readerThread = null;
-	public int threadCounter = 0;
-	public bool runReaderThread = true;
-
-	public float millisElapsedInCurrentPlaySequence = 0f;
-
-	public int numberOfFramesBufferedBeforePlay = 200;
-	public bool loopPlay = true;
-	private int upperBufferSize = 100;
-	private int lowerBufferSize = 10;
-	private bool buffering = true;
-
-	public MeshRenderer bufferingText;
-
-	public UnityEvent FinishedPointCloudPlayback;
-	void Start () {
-
-		/*string[] args = System.Environment.GetCommandLineArgs ();
-		for (int i = 0; i < args.Length; i++) {
-			if (args [i] == "-folderInput" && i + 1 < args.Length) {
-				pathToSequence = args [i + 1];
-			}
-			if (args [i] == "-bufferSize" && i + 1 < args.Length) {
-				numberOfFramesBufferedBeforePlay = Convert.ToInt32(args [i + 1]);
-			}
-		}*/
-
-		upperBufferSize = lowerBufferSize + numberOfFramesBufferedBeforePlay;
-		//SetupReaderAndPCManager ();
-	}
-
-	[ContextMenu("StartPlaying")]
-	public void SetupReaderAndPCManager ()
+	public class PointCloudPlayer : MonoBehaviour
 	{
 
-		StopThread();
-		bpcReader = new BufferedPointCloudReader(pathToSequence + "/");
-		bpcReader.ReadConfig();
-
-		pcManager.setReader(bpcReader);
-		readerThread = new Thread(ReaderThreadRunner);
+		[Header("Player Config")] 
+		[SerializeField] private string pathToSequence;
+		[SerializeField] private bool playStream = false;
+		[SerializeField] private bool loopPlay = true;
+		[SerializeField] int numberOfFramesBufferedBeforePlay = 200;
 		
-		readerThread.Start();
-		runReaderThread = true;
+		[Header("References")] [SerializeField]
+		private PointCloudRenderer pointCloudRenderer;
 
-	}
-
-	public void StopThread()
-	{
-		runReaderThread = false;
-		threadCounter = 0;
-		if (readerThread != null) {
-			readerThread.Abort();
-			readerThread = null;
-		}
-	}
-
-	void OnApplicationQuit () {
-		runReaderThread = false;
-		bpcReader.timeOffset = pcManager.timeOffset;
-		//bpcReader.WriteConfig ();
-	}
-
-	public void HandleUserInput () {
-		if (Input.GetKeyDown (KeyCode.Escape)) {
-			Application.Quit();
-		}
-	}
-
-	void Update () {
 		
-		if(bpcReader==null || pcManager == null)return;
+		[Range(1,100)][SerializeField] private float fps = 30f;
+		private float playNextFrameTime;
+
 		
-		//HandleUserInput ();
-		int BufferCount = bpcReader.nFramesRead - pcManager.currentFrameIndex;
-		bool allFramesRead = bpcReader.nFrames == bpcReader.nFramesRead;
+		private bool readerInitialized = false;
+		public PlayState status;
+		
+		// private helper vars
+		private int upperBufferSize = 100;
+		private int lowerBufferSize = 10;
+		private int currentFrameIndex = 0;
+		private float millisElapsedInCurrentPlaySequence = 0f;
+		private bool buffering;
+		private bool runReaderThread;
+		private BufferedPointCloudReader bpcReader;
+		private Thread readerThread = null;
 
-		if (allFramesRead) {
-			pcManager.playStream = true;
-			bufferingText.enabled = false;
-			buffering = false;
-		} else if (buffering && upperBufferSize <= BufferCount) {
-			pcManager.playStream = true;
-			bufferingText.enabled = false;
-			buffering = false;
-		} else if (!buffering && (lowerBufferSize >= BufferCount)) {
-			pcManager.playStream = false;
-			bufferingText.enabled = true;
-			buffering = true;
-		}
+		// Events
+		[Header("Events")] public UnityEvent FinishedStream;
 
-		if (!buffering) {
-			millisElapsedInCurrentPlaySequence += Time.deltaTime * 1000;
-		}
+		#region Propertys
 
-		if (pcManager.streamEnded) {
-			millisElapsedInCurrentPlaySequence = 0f;
-
-			if (loopPlay) {
-				runReaderThread = true;
-				pcManager.restartStream = true;
-				threadCounter = 0;
-				SetupReaderAndPCManager ();
-				
-			}
-			Debug.Log("FINISHED");
-			FinishedPointCloudPlayback.Invoke();
-		}
-	}
-
-	void ReaderThreadRunner ()
-	{
-		while (runReaderThread)
+		public string PathToSequence
 		{
-			threadCounter++;
-			bpcReader.ReadFrame();
+			get => pathToSequence;
+			set => pathToSequence = value;
+		}
 
-			if (bpcReader.nFramesRead == bpcReader.nFrames){
-				runReaderThread = false;
+		public float FPS
+		{
+			get => fps;
+			set => fps = value;
+		}
+
+		public int CurrentFrameIndex
+		{
+			get => currentFrameIndex;
+			set => currentFrameIndex = value;
+		}
+
+		public bool LoopPlay
+		{
+			get => loopPlay;
+			set => loopPlay = value;
+		}
+
+		#endregion
+
+		void Start(){
+			upperBufferSize = lowerBufferSize + numberOfFramesBufferedBeforePlay;
+			status = PlayState.Stopped;
+			pointCloudRenderer.gameObject.SetActive(false);
+		}
+
+		public void Play()
+		{
+			if (!readerInitialized){
+				SetupReaderAndPCManager();
+			}
+			playStream = true;
+		}
+
+		public void Pause()
+		{
+			playStream = false;
+			status = PlayState.Paused;
+		}
+
+		public void Restart()
+		{
+			currentFrameIndex = 0;
+			playNextFrameTime = 0;
+			millisElapsedInCurrentPlaySequence = 0;
+			playStream = true;
+		}
+
+		public void SetupReaderAndPCManager()
+		{
+
+			StopThread();
+			bpcReader = new BufferedPointCloudReader(pathToSequence + "/");
+			bpcReader.ReadConfig();
+
+			readerThread = new Thread(ReaderThreadRunner);
+			readerThread.Start();
+			
+			runReaderThread = true;
+			readerInitialized = true;
+
+		}
+
+		public void StopThread()
+		{
+			playStream = false;
+			runReaderThread = false;
+			readerInitialized = false;
+			if (readerThread != null){
+				readerThread.Abort();
+				readerThread = null;
+			}
+		
+			status = PlayState.Stopped;
+			pointCloudRenderer.gameObject.SetActive(false);
+		}
+
+
+		void ReaderThreadRunner()
+		{
+			while (runReaderThread)
+			{
+				bpcReader.ReadFrame();
+
+				if (bpcReader.nFramesRead == bpcReader.nFrames)
+				{
+					runReaderThread = false;
+				}
 			}
 		}
+
+
+		void Update()
+		{
+
+			if (bpcReader == null) return;
+
+			int bufferCount = bpcReader.nFramesRead - currentFrameIndex;
+			bool allFramesRead = bpcReader.nFrames == bpcReader.nFramesRead;
+
+			if (allFramesRead)
+			{
+				buffering = false;
+			}
+			else if (buffering && upperBufferSize <= bufferCount)
+			{
+				buffering = false;
+			}
+			else if (!buffering && (lowerBufferSize >= bufferCount))
+			{
+				buffering = true;
+				status = PlayState.Buffering;
+			}
+
+			if (!playStream || buffering) return;
+			pointCloudRenderer.gameObject.SetActive(true);
+			status = PlayState.Playing;
+			millisElapsedInCurrentPlaySequence += Time.deltaTime * 1000;
+
+				// Render new pointCloudFrame only if enough time has passed
+				if (millisElapsedInCurrentPlaySequence >= playNextFrameTime)
+				{
+					// render frames only if point data is available
+					if (bpcReader.frameBuffer[currentFrameIndex].frameDataIsAvailable)
+					{
+						// renderer sends vertices and colors to GPU
+						pointCloudRenderer.UpdateMesh(bpcReader.frameBuffer[currentFrameIndex].frameData.frameVertices,
+							bpcReader.frameBuffer[currentFrameIndex].frameData.frameColors, Matrix4x4.identity);
+					}
+
+					currentFrameIndex++;
+					playNextFrameTime += 1000 / fps;
+
+				}
+
+				if (currentFrameIndex > bpcReader.nFrames - 1)
+				{
+					currentFrameIndex = 0;
+					playNextFrameTime = 0;
+					millisElapsedInCurrentPlaySequence = 0;
+					FinishedStream.Invoke();
+					if (loopPlay)
+					{
+						Restart();
+					}
+					else
+					{
+						StopThread();
+					}
+				}
+			
+
+
+		}
+
+
 	}
 }
