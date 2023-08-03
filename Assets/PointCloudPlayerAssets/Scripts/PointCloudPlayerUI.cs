@@ -14,6 +14,7 @@ namespace DFKI.NMY.PoincloudPlayer
         [SerializeField] private Button pauseButton;
         [SerializeField] private Button resetButton;
         [SerializeField] private Button stopButton;
+        [SerializeField] private Button skipFrameButton;
 
         private void OnEnable()
         {
@@ -21,6 +22,7 @@ namespace DFKI.NMY.PoincloudPlayer
             if(pauseButton)pauseButton.onClick.AddListener(player.Pause);
             if(resetButton)resetButton.onClick.AddListener(player.Restart);
             if(stopButton)stopButton.onClick.AddListener(player.StopThread);
+            if(skipFrameButton)skipFrameButton.onClick.AddListener(player.NextFrame);
         }
 
         private void OnDisable()
@@ -29,13 +31,14 @@ namespace DFKI.NMY.PoincloudPlayer
             if(pauseButton)pauseButton.onClick.RemoveListener(player.Pause);
             if(resetButton)resetButton.onClick.RemoveListener(player.Restart);
             if(stopButton)stopButton.onClick.RemoveListener(player.StopThread);
+            if(skipFrameButton)skipFrameButton.onClick.RemoveListener(player.NextFrame);
         }   
 
         private void Update()
         {
             if (player == null) return;
             if(stateTmp)stateTmp.text = player.status.ToString();
-            if(frameTmp)frameTmp.text = player.CurrentFrameIndex.ToString();
+            if(frameTmp)frameTmp.text = player.CurrentFrameIndex.ToString() +" of "+player.GetTotalFrames();
         }
     }
 }

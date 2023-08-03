@@ -68,6 +68,11 @@ namespace DFKI.NMY.PoincloudPlayer
 			set => loopPlay = value;
 		}
 
+		public int GetTotalFrames(){
+			if (bpcReader != null) return bpcReader.nFrames;
+			return 0;
+		} 
+		
 		#endregion
 
 		void Start(){
@@ -76,28 +81,7 @@ namespace DFKI.NMY.PoincloudPlayer
 			pointCloudRenderer.gameObject.SetActive(false);
 		}
 
-		public void Play()
-		{
-			if (!readerInitialized){
-				SetupReaderAndPCManager();
-			}
-			playStream = true;
-		}
-
-		public void Pause()
-		{
-			playStream = false;
-			status = PlayState.Paused;
-		}
-
-		public void Restart()
-		{
-			currentFrameIndex = 0;
-			playNextFrameTime = 0;
-			millisElapsedInCurrentPlaySequence = 0;
-			playStream = true;
-		}
-
+		
 		public void SetupReaderAndPCManager()
 		{
 
@@ -127,6 +111,36 @@ namespace DFKI.NMY.PoincloudPlayer
 			pointCloudRenderer.gameObject.SetActive(false);
 		}
 
+		public void Play()
+		{
+			if (!readerInitialized){
+				SetupReaderAndPCManager();
+			}
+			playStream = true;
+		}
+
+		public void Pause()
+		{
+			playStream = false;
+			status = PlayState.Paused;
+		}
+
+		public void Restart()
+		{
+			currentFrameIndex = 0;
+			playNextFrameTime = 0;
+			millisElapsedInCurrentPlaySequence = 0;
+			playStream = true;
+		}
+
+		public void NextFrame()
+		{
+			// only allowed in next frame
+			if ((playStream || status.Equals(PlayState.Paused)) && ( currentFrameIndex < (bpcReader.nFrames - 1))){
+				currentFrameIndex++;
+				RenderCurrentFrame();
+			} 
+		}
 
 		void ReaderThreadRunner()
 		{
@@ -141,6 +155,16 @@ namespace DFKI.NMY.PoincloudPlayer
 			}
 		}
 
+
+		protected void RenderCurrentFrame()
+		{
+			// render frames only if point data is available
+			if (bpcReader.frameBuffer[currentFrameIndex].frameDataIsAvailable){
+				// renderer sends vertices and colors to GPU
+				pointCloudRenderer.UpdateMesh(bpcReader.frameBuffer[currentFrameIndex].frameData.frameVertices,
+					bpcReader.frameBuffer[currentFrameIndex].frameData.frameColors, Matrix4x4.identity);
+			}
+		}
 
 		void Update()
 		{
@@ -172,14 +196,7 @@ namespace DFKI.NMY.PoincloudPlayer
 				// Render new pointCloudFrame only if enough time has passed
 				if (millisElapsedInCurrentPlaySequence >= playNextFrameTime)
 				{
-					// render frames only if point data is available
-					if (bpcReader.frameBuffer[currentFrameIndex].frameDataIsAvailable)
-					{
-						// renderer sends vertices and colors to GPU
-						pointCloudRenderer.UpdateMesh(bpcReader.frameBuffer[currentFrameIndex].frameData.frameVertices,
-							bpcReader.frameBuffer[currentFrameIndex].frameData.frameColors, Matrix4x4.identity);
-					}
-
+					RenderCurrentFrame();
 					currentFrameIndex++;
 					playNextFrameTime += 1000 / fps;
 
