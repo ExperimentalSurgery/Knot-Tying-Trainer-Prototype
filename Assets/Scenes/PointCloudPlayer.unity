@@ -364,7 +364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 873122258367449471, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: pathToSequence
-      value: PointClouds/Sample2
+      value: PointClouds/Mittelfingerknoten_Part1/mfk_part1_assi_tension
       objectReference: {fileID: 0}
     - target: {fileID: 873122258367449471, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: numberOfFramesBufferedBeforePlay
@@ -1545,6 +1545,8 @@ MonoBehaviour:
   pauseButton: {fileID: 597618051}
   resetButton: {fileID: 1675330229}
   stopButton: {fileID: 1476684405}
+  skipFrameButton: {fileID: 0}
+  prevFrameButton: {fileID: 0}
 --- !u!1001 &3963741378392829750
 PrefabInstance:
   m_ObjectHideFlags: 0

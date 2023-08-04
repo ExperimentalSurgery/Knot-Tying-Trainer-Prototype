@@ -156,7 +156,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         if (autoStart)
         {
             InitSequence();
-            Play();
+            Play(11,11);
         }
     }
 
@@ -371,6 +371,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         normalizedProgressTotalLeft = 0.0f;
         normalizedProgressTotalRight = 0.0f;
     }
+
 
     public void Play(int singleSequenceLeft=-1,int singleSequenceRight=-1)
     {
