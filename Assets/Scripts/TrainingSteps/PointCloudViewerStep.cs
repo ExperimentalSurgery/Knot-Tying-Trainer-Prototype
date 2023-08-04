@@ -40,14 +40,10 @@ namespace DFKI.NMY
             player.PathToSequence = pathToSequence;
             player.SetupReaderAndPCManager();
             player.FPS = manipulateFPS ? targetFPS : player.FPS;
-        }
-
-        protected override async UniTask ClientStepActionAsync(CancellationToken ct)
-        {
-            base.ClientStepActionAsync(ct);
             player.Play();
 
         }
+
 
         // POST STEP
         protected override async UniTask PostStepActionAsync(CancellationToken ct) {
