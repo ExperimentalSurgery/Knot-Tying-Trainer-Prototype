@@ -29,21 +29,18 @@ namespace DFKI.NMY
         }
 
 
-        protected override async UniTask ClientStepActionAsync(CancellationToken ct)
-        {
-            base.ClientStepActionAsync(ct);
-            // Hand Highlighting
-            foreach (FingerHighlightContainer highlightConfig in highlights) {
-                UserInterfaceManager.instance.FingerHighlight(highlightConfig);
-            }
-
-        }
+    
         
         // PRE STEP
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
+        
             UserInterfaceManager.instance.ResetFingerHighlights();
+             // Hand Highlighting
+            foreach (FingerHighlightContainer highlightConfig in highlights) {
+                UserInterfaceManager.instance.FingerHighlight(highlightConfig);
+            }
         }
 
         // POST STEP

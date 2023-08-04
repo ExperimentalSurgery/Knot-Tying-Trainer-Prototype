@@ -56,10 +56,7 @@ namespace DFKI.NMY
                     RaiseClientStepFinished();
                 }
          
-                // Hand Highlighting
-                foreach (FingerHighlightContainer highlightConfig in highlights) {
-                    UserInterfaceManager.instance.FingerHighlight(highlightConfig);
-                }
+                
             
         }
 
@@ -69,6 +66,10 @@ namespace DFKI.NMY
             await base.PreStepActionAsync(ct);
             FinishedCriteria = false;
             UserInterfaceManager.instance.ResetFingerHighlights();
+            // Hand Highlighting
+                foreach (FingerHighlightContainer highlightConfig in highlights) {
+                    UserInterfaceManager.instance.FingerHighlight(highlightConfig);
+                }
             UserInterfaceManager.instance.UpdateStepInfos(stepTitle, stepDescription);
         }
 
