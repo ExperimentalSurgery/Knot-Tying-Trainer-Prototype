@@ -1229,8 +1229,8 @@ MonoBehaviour:
   autoStart: 1
   poseMatchingThreshold: 25
   bvhRelativeDirectory: /../BVHdata/
-  leftHandBvhFile: experthands/expert_poses_mix_left
-  rightHandBvhFile: experthands/expert_poses_mix_right
+  leftHandBvhFile: expert_poses_mix_left
+  rightHandBvhFile: expert_poses_mix_right
   sequenceDuration: 1
   leftRecorder: {fileID: 1778681149}
   rightRecorder: {fileID: 349090846}
