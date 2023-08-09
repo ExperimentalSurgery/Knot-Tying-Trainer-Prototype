@@ -25,7 +25,9 @@ namespace DFKI.NMY
                 try
                 {
                     markerManager = FindObjectOfType<MarkerManager>();
+                    markerManager.MarkerDetectedEventHandler -= OnMarkerDetected;
                     markerManager.MarkerDetectedEventHandler += OnMarkerDetected;
+                    markerManager.markersEnabled = true;
                 }
                 catch (Exception e)
                 {

@@ -1,24 +1,25 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 [Serializable]
 public class GestureStepListEntry : MonoBehaviour
 {
 
-    [SerializeField] private Animator animator;
-    [SerializeField] private TextMeshPro tmpTitle;
-    [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private TextMeshProUGUI tmpTitle;
+    [SerializeField] private Image sprite;
+    [SerializeField] private GameObject inactivePlane;
     public void Highlight(bool state) {
-        animator.SetBool("highlight",state);
+        inactivePlane.gameObject.SetActive(!state);
     }
 
     public void SetTitle(string title) {
         tmpTitle.text = title;
     }
 
-    public void SetIcon(Sprite s) {
-        sprite.sprite = s;
+    public void SetIcon(Image s) {
+        sprite = s;
     }
 
 }

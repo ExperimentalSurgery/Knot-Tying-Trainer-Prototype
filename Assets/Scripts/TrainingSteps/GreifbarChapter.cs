@@ -3,6 +3,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine.Localization;
 using NMY.VirtualRealityTraining.Steps;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace DFKI.NMY
 {
@@ -10,7 +11,7 @@ namespace DFKI.NMY
     {
         
         [SerializeField] private LocalizedString chapterTitle;
-        [SerializeField] private Sprite chapterIcon;
+        [SerializeField] private Image chapterIcon;
 
         public LocalizedString ChapterTitle
         {
@@ -18,7 +19,7 @@ namespace DFKI.NMY
             set => chapterTitle = value;
         }
 
-        public Sprite ChapterIcon
+        public Image ChapterIcon
         {
             get => chapterIcon;
             set => chapterIcon = value;
