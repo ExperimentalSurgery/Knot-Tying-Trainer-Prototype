@@ -11,7 +11,7 @@ namespace DFKI.NMY
     {
         
         [SerializeField] private LocalizedString chapterTitle;
-        [SerializeField] private Image chapterIcon;
+        [SerializeField] private Sprite chapterIcon;
 
         public LocalizedString ChapterTitle
         {
@@ -19,7 +19,7 @@ namespace DFKI.NMY
             set => chapterTitle = value;
         }
 
-        public Image ChapterIcon
+        public Sprite ChapterIcon
         {
             get => chapterIcon;
             set => chapterIcon = value;

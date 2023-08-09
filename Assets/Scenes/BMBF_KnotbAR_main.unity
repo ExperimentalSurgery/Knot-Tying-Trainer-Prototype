@@ -1365,11 +1365,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5270838610523157748, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1410
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5270838610523157748, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5270838610523157748, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1402,6 +1402,26 @@ PrefabInstance:
     - target: {fileID: 5270838610523157748, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681616449881122529, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
+      propertyPath: _mainCamera
+      value: 
+      objectReference: {fileID: 1591485860}
+    - target: {fileID: 8681616449881122529, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
+      propertyPath: _deviceTiltXAxis
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681616449881122529, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
+      propertyPath: _deviceOffsetMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681616449881122529, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
+      propertyPath: _deviceOffsetYAxis
+      value: -0.0112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681616449881122529, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
+      propertyPath: _deviceOffsetZAxis
+      value: 0.0999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3438,6 +3458,22 @@ PrefabInstance:
     - target: {fileID: 1433403209612654069, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
+      propertyPath: m_Size.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
+      propertyPath: m_Size.y
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4494cfaf424cdde49895b91e2b559258, type: 3}
+    - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4353674730400304542, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
       propertyPath: m_Name
@@ -8799,7 +8835,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  chapterIcon: {fileID: 21300000, guid: 20f25674b9512834f88938d45ed495d7, type: 3}
+  chapterIcon: {fileID: 21300000, guid: 5ced9c7e98be2e941a88b5d0a16b2a3b, type: 3}
   references:
     version: 2
     RefIds: []
@@ -10532,9 +10568,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
+      propertyPath: m_Size.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
+      propertyPath: m_Size.y
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300006, guid: 20f25674b9512834f88938d45ed495d7, type: 3}
+      objectReference: {fileID: 21300000, guid: 0bee624b4074e5445929e56287795085, type: 3}
+    - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4353674730400304542, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
       propertyPath: m_Name
       value: GreifbarLeapButton - MenuToggle
@@ -11221,7 +11269,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  chapterIcon: {fileID: 21300010, guid: 20f25674b9512834f88938d45ed495d7, type: 3}
+  chapterIcon: {fileID: 21300000, guid: 4494cfaf424cdde49895b91e2b559258, type: 3}
   references:
     version: 2
     RefIds: []
@@ -13506,7 +13554,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  chapterIcon: {fileID: 21300010, guid: 20f25674b9512834f88938d45ed495d7, type: 3}
+  chapterIcon: {fileID: 21300000, guid: bb1b4a9241fba2042a81428e917afd5d, type: 3}
   references:
     version: 2
     RefIds: []
@@ -23167,9 +23215,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
+      propertyPath: m_Size.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
+      propertyPath: m_Size.y
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 20f25674b9512834f88938d45ed495d7, type: 3}
+      objectReference: {fileID: 21300000, guid: bb1b4a9241fba2042a81428e917afd5d, type: 3}
+    - target: {fileID: 4186854140522543625, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4353674730400304542, guid: 9cf4968273861ff41a777d98df0bbe73, type: 3}
       propertyPath: m_Name
       value: GreifbarLeapButton - Speed

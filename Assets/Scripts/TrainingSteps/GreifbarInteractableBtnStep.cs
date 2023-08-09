@@ -1,12 +1,11 @@
 using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using Microsoft.MixedReality.Toolkit.UI;
 using UnityEngine;
 
 namespace DFKI.NMY
 {
-    public class MRTKInteractableStep : GreifbarBaseStep {
+    public class GreifbarInteractableBtnStep : GreifbarBaseStep {
 
         
         [Header("Button Interactable Step")]

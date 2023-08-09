@@ -1,5 +1,4 @@
 using System;
-using Microsoft.MixedReality.Toolkit.Utilities;
 using NMY.VirtualRealityTraining;
 using NMY.VirtualRealityTraining.Steps;
 using UnityEngine;
@@ -71,7 +70,7 @@ namespace DFKI.NMY
         public void SetListItem(GestureStepListEntry entry) => listItem = entry;
         public void SetTitle(string name)=>listItem.SetTitle(name);
         public void Highlight(bool state) => listItem.Highlight(state);
-        public void SetIcon(Image icon) => listItem.SetIcon(icon);
+        public void SetIcon(Sprite icon) => listItem.SetIcon(icon);
     }
     
 }

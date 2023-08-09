@@ -8,7 +8,7 @@ public class GestureStepListEntry : MonoBehaviour
 {
 
     [SerializeField] private TextMeshProUGUI tmpTitle;
-    [SerializeField] private Image sprite;
+    [SerializeField] private Image icon;
     [SerializeField] private GameObject inactivePlane;
     public void Highlight(bool state) {
         inactivePlane.gameObject.SetActive(!state);
@@ -18,8 +18,8 @@ public class GestureStepListEntry : MonoBehaviour
         tmpTitle.text = title;
     }
 
-    public void SetIcon(Image s) {
-        sprite = s;
+    public void SetIcon(Sprite s) {
+        icon.sprite = s;
     }
 
 }

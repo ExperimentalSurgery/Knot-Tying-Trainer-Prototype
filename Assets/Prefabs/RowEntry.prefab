@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmpTitle: {fileID: 5970220466398675543}
-  sprite: {fileID: 1166474205151647943}
+  icon: {fileID: 1166474205151647943}
   inactivePlane: {fileID: 142547472144412899}
 --- !u!1 &6634804031128849709
 GameObject:
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 20f25674b9512834f88938d45ed495d7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bb1b4a9241fba2042a81428e917afd5d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
