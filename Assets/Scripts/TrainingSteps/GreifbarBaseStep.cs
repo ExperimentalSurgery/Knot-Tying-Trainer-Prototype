@@ -70,7 +70,6 @@ namespace DFKI.NMY
                 foreach (FingerHighlightContainer highlightConfig in highlights) {
                     UserInterfaceManager.instance.FingerHighlight(highlightConfig);
                 }
-            UserInterfaceManager.instance.UpdateStepInfos(stepTitle, stepDescription);
         }
 
         // POST STEP

@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.MixedReality.Toolkit.UI;
 using NMY;
 using NMY.VirtualRealityTraining;
 using TMPro;
@@ -17,14 +16,12 @@ namespace DFKI.NMY
         [Header("References")] 
         [SerializeField] private FingerHighlightControl fingerHighlightControl;
         [SerializeField] private ActivatableStartupBehaviour successPanel;
-        [SerializeField] private TextMeshPro stepTitleMrtk;
-        [SerializeField] private TextMeshProUGUI stepDescriptionMrtk;
-        [SerializeField] private ProgressIndicatorLoadingBar progressIndicatorMrtk;
+     
         
         [Header("Control Panel Buttons")]
-        [SerializeField] private GreifbarMRTKInteractable previouStepBtn;
-        [SerializeField] private GreifbarMRTKInteractable speedToggleBtn;
-        [SerializeField] private GreifbarMRTKInteractable listViewToggleBtn;
+        [SerializeField] private GreifbarLeapInteractionButton previousStepBtn;
+        [SerializeField] private GreifbarLeapInteractionButton speedToggleBtn;
+        [SerializeField] private GreifbarLeapInteractionButton listViewToggleBtn;
 
         public BaseTrainingStep tutorialPreviousStep;
 
@@ -35,10 +32,12 @@ namespace DFKI.NMY
         protected override void StartupEnter()
         {
             base.StartupEnter();
-            if(progressIndicatorMrtk) OpenIndicator(progressIndicatorMrtk);
-            if(previouStepBtn) previouStepBtn.OnClick.AddListener(OnPreviousStepButtonClicked);
-            if(speedToggleBtn) speedToggleBtn.OnClick.AddListener(TogglePlaybackSpeed);
-            if(listViewToggleBtn) listViewToggleBtn.OnClick.AddListener(ToggleStepListView);
+            if(previousStepBtn) previousStepBtn.OnPress-=OnPreviousStepButtonClicked;
+            if(previousStepBtn) previousStepBtn.OnPress+=OnPreviousStepButtonClicked;
+            if(speedToggleBtn) speedToggleBtn.OnPress-=TogglePlaybackSpeed;
+            if(speedToggleBtn) speedToggleBtn.OnPress+=TogglePlaybackSpeed;
+            if(listViewToggleBtn) listViewToggleBtn.OnPress-=ToggleStepListView;
+            if(listViewToggleBtn) listViewToggleBtn.OnPress+=ToggleStepListView;
             mainStepController = FindObjectOfType<TrainingStepController>();
         }
 
@@ -52,23 +51,6 @@ namespace DFKI.NMY
             if(successPanel) successPanel.Deactivate();
         }
 
-        public void ShowProgressIndicator()
-        {
-            if(progressIndicatorMrtk) progressIndicatorMrtk.gameObject.SetActive(true);
-            Debug.Log("ShowProgressIndicator");
-        }
-
-        public void HideProgressIndicator() {
-            if(progressIndicatorMrtk) progressIndicatorMrtk.gameObject.SetActive(false);
-             Debug.Log("HideProgressIndicator");
-        }
-
-        public void UpdateStepInfos(LocalizedString title, LocalizedString description)
-        {
-            if(stepTitleMrtk && !title.IsEmpty) stepTitleMrtk.text = title.GetLocalizedString();
-            if(stepDescriptionMrtk && !description.IsEmpty) stepDescriptionMrtk.text = description.GetLocalizedString();
-            
-        }
 
         public void ResetFingerHighlights()
         {
@@ -123,11 +105,6 @@ namespace DFKI.NMY
             mainStepController.currentStep.TryMoveToStep(mainStepController.previousStep, stepKiller);
         }
         
-        private async void OpenIndicator(IProgressIndicator indicator)
-        {
-            await indicator.AwaitTransitionAsync();
-            await indicator.OpenAsync();
-        }
         
     }
 }
