@@ -22,13 +22,17 @@ namespace DFKI.NMY
     
 public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePlayer>
 {
-
+    [Header("Autostart")]
+    [SerializeField] private bool autoStart = false;
+    [SerializeField] private int autoStartSequenceLeft = 0;
+    [SerializeField] private int autoStartSequenceRight = 0;
+    
     [Header("Config")] 
     [SerializeField] private bool analyzePoseMatching = true;
     [SerializeField] private bool loopAllSequences = false;
     [SerializeField] private bool playAllSequences = false;
     [SerializeField] private bool loopSingleSequencePlayback = false;
-    [SerializeField] private bool autoStart = false;
+ 
     [Tooltip("Threshold for pose matching. Good default = 25")]
     [SerializeField] private float poseMatchingThreshold = 25;
     [Tooltip("The directory where BVH data will be stored or read from")]
@@ -156,7 +160,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         if (autoStart)
         {
             InitSequence();
-            Play(11,11);
+            Play(autoStartSequenceLeft,autoStartSequenceRight);
         }
     }
 
