@@ -75,8 +75,7 @@ namespace DFKI.NMY
                 await Task.Delay(extraDelay);  
 
             await base.PostStepActionAsync(ct);
-            SFXManager.instance.StopAudio();
-            GestureSequencePlayer.instance.Stop();
+                GestureSequencePlayer.instance.Stop();
         }
     }
 }

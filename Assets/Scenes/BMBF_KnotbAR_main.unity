@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -166,8 +166,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9317916}
+  - component: {fileID: 9317917}
   m_Layer: 0
-  m_Name: '[Manager]'
+  m_Name: '[ReferenceContainer]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,17 +187,37 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1148126690}
-  - {fileID: 1420225545}
-  - {fileID: 880068465}
   - {fileID: 327365042}
-  - {fileID: 885057379}
+  - {fileID: 1420225545}
+  - {fileID: 1148126690}
+  - {fileID: 880068465}
   - {fileID: 1824148555}
-  - {fileID: 1931110401}
   - {fileID: 1005840055}
   - {fileID: 1577371214}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9317917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9317915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa4a013f7de8334cb2e1dee091c9952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoStartup: 1
+  startupInAwake: 1
+  userInterfaceManager: {fileID: 327365043}
+  pointCloudPlayer: {fileID: 414589761}
+  gestureSequencePlayer: {fileID: 1420225546}
+  bvhManager: {fileID: 1148126691}
+  handVisualizer: {fileID: 880068466}
+  virtualAssistant: {fileID: 1824148554}
+  serialController: {fileID: 1005840056}
+  markerManager: {fileID: 254323660}
 --- !u!1 &11386905
 GameObject:
   m_ObjectHideFlags: 0
@@ -5093,7 +5114,7 @@ GameObject:
   - component: {fileID: 327365042}
   - component: {fileID: 327365043}
   m_Layer: 0
-  m_Name: UIManager
+  m_Name: UserInterfaceManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5128,8 +5149,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoStartup: 1
   startupInAwake: 0
-  fingerHighlightControl: {fileID: 1931110402}
-  successPanel: {fileID: 1070445663}
   previousStepBtn: {fileID: 1798615332}
   speedToggleBtn: {fileID: 1790651173}
   listViewToggleBtn: {fileID: 764263011}
@@ -12380,6 +12399,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoStartup: 1
   startupInAwake: 0
+  allowHighlights: 1
+  handAnimatorUserRight: {fileID: 1151425969}
+  handAnimatorUserLeft: {fileID: 1031814794}
+  handAnimatorExpertRight: {fileID: 1367451739}
+  handAnimatorExpertLeft: {fileID: 25248625}
+  rightHandRenderer: {fileID: 1151425968}
+  leftHandRenderer: {fileID: 1031814793}
   leftUserHand: {fileID: 1622491100}
   rightUserHand: {fileID: 1247129552}
   leftExpertHand: {fileID: 308798710}
@@ -12389,150 +12415,6 @@ MonoBehaviour:
   errorColor: {r: 1, g: 0, b: 0, a: 1}
   successColor: {r: 0, g: 1, b: 0, a: 1}
   defaultColor: {r: 0, g: 0, b: 1, a: 1}
---- !u!1 &885057378
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 885057379}
-  - component: {fileID: 885057381}
-  - component: {fileID: 885057380}
-  m_Layer: 0
-  m_Name: SFXManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &885057379
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 885057378}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9317916}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &885057380
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 885057378}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &885057381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 885057378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e751775941ec9294da14bbe68488c806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoStartup: 1
-  startupInAwake: 0
-  audioSource: {fileID: 885057380}
 --- !u!1 &885355510
 GameObject:
   m_ObjectHideFlags: 0
@@ -14167,7 +14049,7 @@ GameObject:
   - component: {fileID: 1005840055}
   - component: {fileID: 1005840056}
   m_Layer: 0
-  m_Name: Seral Communicator
+  m_Name: SerialController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23863,7 +23745,7 @@ GameObject:
   - component: {fileID: 1824148554}
   - component: {fileID: 1824148556}
   m_Layer: 0
-  m_Name: '[VirtualAssistant] Dummy'
+  m_Name: VirtualAssistant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24912,57 +24794,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 981166196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1931110400
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1931110401}
-  - component: {fileID: 1931110402}
-  m_Layer: 0
-  m_Name: HandHighlighter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1931110401
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931110400}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9317916}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1931110402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931110400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4af5a3fd4bf99cc45835d86b55268892, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allowHighlights: 1
-  handAnimatorUserRight: {fileID: 1151425969}
-  handAnimatorUserLeft: {fileID: 1031814794}
-  handAnimatorExpertRight: {fileID: 1367451739}
-  handAnimatorExpertLeft: {fileID: 25248625}
-  rightHandRenderer: {fileID: 1151425968}
-  leftHandRenderer: {fileID: 1031814793}
 --- !u!1 &1932889581
 GameObject:
   m_ObjectHideFlags: 0

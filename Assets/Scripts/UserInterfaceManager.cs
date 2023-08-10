@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
 using NMY;
 using NMY.VirtualRealityTraining;
-using TMPro;
 using UnityEngine;
-using UnityEngine.Localization;
 using System.Threading;
 using NMY.VirtualRealityTraining.Steps;
 
@@ -12,22 +8,15 @@ namespace DFKI.NMY
 {
     public class UserInterfaceManager : SingletonStartupBehaviour<UserInterfaceManager>
     {
-        
-        [Header("References")] 
-        [SerializeField] private FingerHighlightControl fingerHighlightControl;
-        [SerializeField] private ActivatableStartupBehaviour successPanel;
-     
-        
+  
         [Header("Control Panel Buttons")]
         [SerializeField] private GreifbarLeapInteractionButton previousStepBtn;
         [SerializeField] private GreifbarLeapInteractionButton speedToggleBtn;
         [SerializeField] private GreifbarLeapInteractionButton listViewToggleBtn;
 
         public BaseTrainingStep tutorialPreviousStep;
-
+        
         private TrainingStepController mainStepController;
-
-        private bool taskListVisible = false;
         
         protected override void StartupEnter()
         {
@@ -41,52 +30,40 @@ namespace DFKI.NMY
             mainStepController = FindObjectOfType<TrainingStepController>();
         }
 
-
-
-        public void ShowSuccessPanel() {
-            if (successPanel) successPanel.Activate();
-        }
-
-        public void HideSuccessPanel() {
-            if(successPanel) successPanel.Deactivate();
-        }
-
-
         public void ResetFingerHighlights()
         {
-            
-            foreach (var trigger in fingerHighlightControl.handAnimatorUserLeft.parameters)
+            HandVisualizer visualizer = GreifbARApp.instance.handVisualizer;
+            foreach (var trigger in visualizer.handAnimatorUserLeft.parameters)
             {
                 if (trigger.type == AnimatorControllerParameterType.Trigger)
                 {
-                    fingerHighlightControl.handAnimatorUserLeft.ResetTrigger(trigger.name);
-                    fingerHighlightControl.handAnimatorUserRight.ResetTrigger(trigger.name);
+                    visualizer.handAnimatorUserLeft.ResetTrigger(trigger.name);
+                    visualizer.handAnimatorUserRight.ResetTrigger(trigger.name);
                 }
                 else if (trigger.type == AnimatorControllerParameterType.Bool)
                 {
-                    fingerHighlightControl.handAnimatorUserLeft.SetBool(trigger.name,false);
-                    fingerHighlightControl.handAnimatorUserRight.SetBool(trigger.name,false);
+                    visualizer.handAnimatorUserLeft.SetBool(trigger.name,false);
+                    visualizer.handAnimatorUserRight.SetBool(trigger.name,false);
                 }
             }
         }
         
         public void FingerHighlight(FingerHighlightContainer config) {
+            HandVisualizer visualizer = GreifbARApp.instance.handVisualizer;
 
-            if (fingerHighlightControl)
-            {
                 if (config.LeftHand) {
-                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, true,config.UserHands,config.ExpertHands);
+                    visualizer.SetHighlight(config.Part, config.Mode, true,config.UserHands,config.ExpertHands);
                 }
 
                 if (config.RightHand) {
-                    fingerHighlightControl.SetHighlight(config.Part, config.Mode, false,config.UserHands,config.ExpertHands);
+                    visualizer.SetHighlight(config.Part, config.Mode, false,config.UserHands,config.ExpertHands);
                 }
-                    Debug.Log("FingerHighlight for: " + config.Part.ToString() + " in mode: " + config.Mode.ToString() + " on left hand? " + config.LeftHand);
-            }
         }
 
-        public void TogglePlaybackSpeed() => GestureSequencePlayer.instance.ToggleSpeed();
-
+        public void TogglePlaybackSpeed()
+        {
+            GestureSequencePlayer.instance.ToggleSpeed();
+        }
         public void ToggleStepListView()
         {
             // As there will be several instances of it for different chapters we need to search and loop over those and configure
