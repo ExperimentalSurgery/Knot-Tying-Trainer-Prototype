@@ -22,6 +22,7 @@ namespace DFKI.NMY
 		
 		[Range(1,100)][SerializeField] private float fps = 30f;
 		private float playNextFrameTime;
+		private float initialFPS;
 
 		
 		private bool readerInitialized = false;
@@ -115,6 +116,7 @@ namespace DFKI.NMY
 				SetupReaderAndPCManager();
 			}
 			playStream = true;
+			initialFPS = FPS;
 		}
 
 		public void Pause()
@@ -169,7 +171,14 @@ namespace DFKI.NMY
 					bpcReader.frameBuffer[currentFrameIndex].frameData.frameColors, Matrix4x4.identity);
 			}
 		}
-
+		
+		[ContextMenu("ToggleSpeed")]
+		public void TogglePlaybackSpeed()
+		{
+			if (status != PlayState.Playing) return;
+			FPS = Mathf.Approximately(fps, initialFPS) ? (int)fps * 0.5f : initialFPS;
+		}
+		
 		void Update()
 		{
 

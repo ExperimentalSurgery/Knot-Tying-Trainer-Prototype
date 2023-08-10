@@ -6,33 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8db4b24e-3b2b-4a07-b416-6d49153c6a95" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/InteractableHighlighter.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/InteractableHighlighter/Highlighter.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/InteractableHighlighter/Highlighter.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/InteractableHighlighter/InteractableHighlight_Hidden.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/InteractableHighlighter/InteractableHighlight_Hidden.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/InteractableHighlighter/InteractableHighlight_Show.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/InteractableHighlighter/InteractableHighlight_Show.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/Steplist.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/Steplist/Highlight.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/Steplist/Highlight.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/Steplist/TrainingStepListEntry.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/Steplist/TrainingStepListEntry.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PointCloudPlayerAssets/Scripts/PointCloudPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PointCloudPlayerAssets/Scripts/PointCloudPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BMBF_KnotbAR_main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BMBF_KnotbAR_main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FingerHighlightControl.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FingerHighlightControl.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HandVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HandVisualizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SFXManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SFXManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/KnotGesturePreviewStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/KnotGesturePreviewStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserInterfaceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserInterfaceManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/~Archive.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/~Archive/Sample.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/~Archive/Sample.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty/Ardity/Prefabs/SerialController_BinaryDelimited.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdParty/Ardity/Prefabs/SerialController_BinaryDelimited.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +51,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Desktop/BUILDS/greifbar/build3\Greifbar_EvaluationPrototype.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/BUILDS/greifbar/build5\Greifbar_EvaluationPrototype.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Mark\Desktop\BUILDS\greifbar\build" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -175,6 +148,7 @@
       <workItem from="1691653138374" duration="2818000" />
       <workItem from="1691658690022" duration="309000" />
       <workItem from="1691659022620" duration="2238000" />
+      <workItem from="1691665072597" duration="592000" />
     </task>
     <servers />
   </component>
