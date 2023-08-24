@@ -17,13 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: c8e9d0b86a14fad48bbc021e7c3afdd7
   m_SerializeEntries:
-  - m_GUID: 236c19ff964e5eb4d99a696768fec33e
-    m_Address: VorschauMittelfingerknoten_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2ce600190b6757e43b7dd09810e8128c
     m_Address: Introduction_en
     m_ReadOnly: 1
@@ -40,20 +33,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b53c11cb11d6c494f80a9ea6b52e6d16
     m_Address: Mittelfingerknoten_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6cc9c2fba91b63044b96e3fce3326b2e
-    m_Address: VorschauZeigefingerknoten_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 241d038df0059f94db60b770f93c2d7a
-    m_Address: Zeigefingerknoten_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

@@ -67,10 +67,6 @@ MonoBehaviour:
     m_Key: intro_assi_view_gesture
     m_Metadata:
       m_Items: []
-  - m_Id: 3558407680000
-    m_Key: intro_assi_try_gesture
-    m_Metadata:
-      m_Items: []
   - m_Id: 3669359603712
     m_Key: intro_assi_after_gesture
     m_Metadata:

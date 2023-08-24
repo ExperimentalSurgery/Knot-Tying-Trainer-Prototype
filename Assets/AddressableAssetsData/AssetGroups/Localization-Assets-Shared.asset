@@ -17,18 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 06d7c10861e82574598199cd3200e065
   m_SerializeEntries:
-  - m_GUID: ecdb536c5a6e77549bd3128316b607ed
-    m_Address: Assets/Localization/StringTables/VorschauMittelfingerknoten Shared
-      Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fc69b00c1ba4be240900452a7030be4e
-    m_Address: Assets/Localization/AssetTables/VorschauMittelfingerknoten_Assets
-      Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8b54c45a014b4d14aabc06489dbe5bc0
     m_Address: Assets/Localization/StringTables/Introduction Shared Data.asset
     m_ReadOnly: 1
@@ -51,28 +39,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bc2ddf4480c37a64585b03465c45fb51
     m_Address: Assets/Localization/AssetTables/Mittelfingerknoten Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6f3ff9144ac54b9418f0f8157c4e9c7b
-    m_Address: Assets/Localization/StringTables/VorschauZeigefingerknoten Shared
-      Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d93a6c64817b89c4eb29fe5ce3220b18
-    m_Address: Assets/Localization/AssetTables/VorschauZeigefingerknoten_Assets Shared
-      Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d118df3f032750240bfd3c3b0da8deed
-    m_Address: Assets/Localization/AssetTables/Zeigefingerknoten_Assets Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2db8d6f7299d77344baec80c35d39145
-    m_Address: Assets/Localization/StringTables/Zeigefingerknoten Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

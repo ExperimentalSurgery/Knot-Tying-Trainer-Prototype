@@ -47,19 +47,7 @@ MonoBehaviour:
     m_Key: mfk_part1_assi_stretchrightfingers
     m_Metadata:
       m_Items: []
-  - m_Id: 19911727099666439
-    m_Key: mfk_part1_assi_turnrighthand
-    m_Metadata:
-      m_Items: []
-  - m_Id: 19911727099666440
-    m_Key: mfk_part1_assi_holdposition
-    m_Metadata:
-      m_Items: []
   - m_Id: 19911727099666441
-    m_Key: mfk_part1_assi_tryrepeat2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 19911727099666442
     m_Key: mfk_part1_assi_tension2
     m_Metadata:
       m_Items: []

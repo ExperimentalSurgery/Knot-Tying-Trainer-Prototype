@@ -46,7 +46,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2480437997568
-    m_Localized: Key 1 is the "One step back" key. In case things happen too fast.
+    m_Localized: On the left there is the "One step back" key. In case things happen
+      too fast.
     m_Metadata:
       m_Items: []
   - m_Id: 2587963174912
@@ -64,7 +65,7 @@ MonoBehaviour:
   - m_Id: 2973616844800
     m_Localized: On the right side of your field of view you can always see which
       step you are currently in and what comes next. If you don't want to see this
-      overview, just use key 3 to hide it.
+      overview, just use the right key to hide it.
     m_Metadata:
       m_Items: []
   - m_Id: 3202382573568
@@ -84,18 +85,14 @@ MonoBehaviour:
       are the trainer hands. They will always show you what to do next.'
     m_Metadata:
       m_Items: []
-  - m_Id: 3558407680000
-    m_Localized: Please imitate the gesture.
-    m_Metadata:
-      m_Items: []
   - m_Id: 3669359603712
     m_Localized: Ah, great! You understand each other.
     m_Metadata:
       m_Items: []
   - m_Id: 3777874636800
     m_Localized: If the trainer's hands are faking something too fast, you can slow
-      down the playback speed at any time. Press button two to switch between half
-      speed and normal speed.
+      down the playback speed at any time. Press the middle button to switch between
+      half speed and normal speed.
     m_Metadata:
       m_Items: []
   - m_Id: 3915733020672
@@ -110,7 +107,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17758107564912640
-    m_Localized: You should now see the trainer hands performing a gesture.
+    m_Localized: You should now see the trainer hands performing a gesture.Please
+      imitate the gesture.
     m_Metadata:
       m_Items: []
   - m_Id: 18429656638828544

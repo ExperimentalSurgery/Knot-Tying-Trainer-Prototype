@@ -490,14 +490,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1090331971584
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -722,14 +714,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1069209456640
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -1111,14 +1095,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925819927552000
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -1141,37 +1117,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!1 &73961949
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 73961950}
-  m_Layer: 0
-  m_Name: '[Persistant Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &73961950
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73961949}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1017806264}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &81281874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2364,14 +2309,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925821861126144
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
@@ -2481,14 +2418,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925835953987584
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
@@ -2644,37 +2573,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!1 &209433062
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 209433063}
-  m_Layer: 0
-  m_Name: '[Next Steps]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &209433063
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209433062}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1327269648}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &210110218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,14 +2751,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1072933998592
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -2990,14 +2880,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 106281144320
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -3754,9 +3636,6 @@ Transform:
   - {fileID: 781818673}
   - {fileID: 201715473}
   - {fileID: 222092231}
-  - {fileID: 981166196}
-  - {fileID: 1049756491}
-  - {fileID: 1017806264}
   - {fileID: 1741791762}
   - {fileID: 202048584}
   m_Father: {fileID: 1796309829}
@@ -3859,14 +3738,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925817977200640
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
@@ -4342,14 +4213,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 111033290752
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -5488,14 +5351,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1084388642816
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -5667,14 +5522,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 107912728576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -6130,14 +5977,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 22842243401003008
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -6278,14 +6117,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925823832449024
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -6655,37 +6486,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 781818673}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &467175864
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 467175865}
-  m_Layer: 0
-  m_Name: '[Next Steps]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &467175865
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 467175864}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1466693469}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &467930892
 GameObject:
@@ -7254,14 +7054,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 101415751680
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -8158,14 +7950,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1094119428096
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -8911,37 +8695,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 990632965}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &620801569
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 620801570}
-  m_Layer: 0
-  m_Name: '[Persistant Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &620801570
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620801569}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1049756491}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &632138757
 GameObject:
   m_ObjectHideFlags: 0
@@ -9415,14 +9168,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 22842242176266240
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -10337,14 +10082,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925831864541184
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -10460,119 +10197,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1313694908}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &758270594
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 758270595}
-  - component: {fileID: 758270597}
-  - component: {fileID: 758270596}
-  m_Layer: 0
-  m_Name: '[PointCloudViewerStep] mfk_part1_assi_stretchrightfingers'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &758270595
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758270594}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1909407242}
-  - {fileID: 1974760734}
-  - {fileID: 903926858}
-  m_Father: {fileID: 950604590}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &758270596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758270594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 263c94d631b487042b4b5ac40d4fc662, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _stepActivatables:
-  - {fileID: 1909407241}
-  _persistantActivatables:
-  - {fileID: 1974760733}
-  _persistantActivatablesDeactivationSteps: []
-  _nextSteps: []
-  _timeoutBeforeStepStart: 0
-  _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
-  _timeoutActivatablesActivating: 0
-  _timeoutActivatablesActivated: 0
-  _timeoutActivatablesDeactivating: 0
-  _timeoutActivatablesDeactivated: 0
-  _timeoutPersistantActivatablesActivating: 0
-  _timeoutPersistantActivatablesActivated: 0
-  _timeoutPersistantActivatablesDeactivating: 0
-  _timeoutPersistantActivatablesDeactivated: 0
-  _waitForAllClientsToFinish: 1
-  stepTitle:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  stepDescription:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  highlights: []
-  pathToSequence: PointClouds/Mittelfingerknoten_Part1/mfk_part1_assi_stretchrightfingers
-  player: {fileID: 414589761}
-  manipulateFPS: 0
-  targetFPS: 30
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &758270597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758270594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1193782248
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
 --- !u!1001 &764263009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11613,14 +11237,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925812017094656
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
@@ -11874,14 +11490,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 109477203968
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -12078,14 +11686,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1076645957632
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -12303,14 +11903,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 98286800896
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -12513,14 +12105,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 122429214720
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -12599,37 +12183,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 724540592}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &903926857
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 903926858}
-  m_Layer: 0
-  m_Name: '[Next Steps]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &903926858
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903926857}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 758270595}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &923100363 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 761880272540280772, guid: 842c73c8e1d3d864a88589efb02cf2d4, type: 3}
@@ -12704,37 +12257,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c01c7a31d205fb4cb9be586bb935b8d, type: 3}
---- !u!1 &926686104
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 926686105}
-  m_Layer: 0
-  m_Name: '[Next Steps]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &926686105
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926686104}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1702521765}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936009456
 GameObject:
   m_ObjectHideFlags: 0
@@ -13084,70 +12606,6 @@ Transform:
   - {fileID: 300583996}
   m_Father: {fileID: 290108156}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &950604589
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 950604590}
-  m_Layer: 0
-  m_Name: '[Parallel Steps]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &950604590
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950604589}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1327269648}
-  - {fileID: 758270595}
-  m_Father: {fileID: 981166196}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &954500317
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 954500318}
-  m_Layer: 0
-  m_Name: '[Persistant Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &954500318
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954500317}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 981166196}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &955217640
 GameObject:
   m_ObjectHideFlags: 0
@@ -13197,37 +12655,6 @@ Transform:
   - {fileID: 1591003684}
   - {fileID: 592259795}
   m_Father: {fileID: 793860948}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &966872572
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 966872573}
-  m_Layer: 0
-  m_Name: '[Next Steps]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &966872573
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966872572}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 981166196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970090768
 GameObject:
@@ -13657,98 +13084,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 312652626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &981166195
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 981166196}
-  - component: {fileID: 981166197}
-  - component: {fileID: 981166198}
-  m_Layer: 0
-  m_Name: '[Parallel Step] mfk_part1_assi_turnrighthand'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &981166196
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981166195}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1928675621}
-  - {fileID: 954500318}
-  - {fileID: 966872573}
-  - {fileID: 950604590}
-  m_Father: {fileID: 256402649}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &981166197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981166195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2596085880
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
---- !u!114 &981166198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981166195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 595548a83687c9543857f193185af431, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _stepActivatables: []
-  _persistantActivatables: []
-  _persistantActivatablesDeactivationSteps: []
-  _nextSteps: []
-  _timeoutBeforeStepStart: 0
-  _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
-  _timeoutActivatablesActivating: 0
-  _timeoutActivatablesActivated: 0
-  _timeoutActivatablesDeactivating: 0
-  _timeoutActivatablesDeactivated: 0
-  _timeoutPersistantActivatablesActivating: 0
-  _timeoutPersistantActivatablesActivated: 0
-  _timeoutPersistantActivatablesDeactivating: 0
-  _timeoutPersistantActivatablesDeactivated: 0
-  _waitForAllClientsToFinish: 1
-  _finishingCriteria: 2
-  _parallelSteps:
-  - {fileID: 1327269649}
-  - {fileID: 758270596}
-  _selectedParallelSteps:
-  - {fileID: 1327269649}
 --- !u!1 &984414219
 GameObject:
   m_ObjectHideFlags: 0
@@ -13926,14 +13261,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1071080116224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -14119,141 +13446,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 724540592}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1017806263
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1017806264}
-  - component: {fileID: 1017806266}
-  - component: {fileID: 1017806265}
-  m_Layer: 0
-  m_Name: '[VA Speak Step] mfk_part1_assi_tryrepeat2'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1017806264
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017806263}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1039967773}
-  - {fileID: 73961950}
-  - {fileID: 1085363182}
-  m_Father: {fileID: 256402649}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1017806265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017806263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa0055f35337a614789df8134ac859ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _stepActivatables:
-  - {fileID: 1039967772}
-  _persistantActivatables:
-  - {fileID: 73961949}
-  _persistantActivatablesDeactivationSteps: []
-  _nextSteps: []
-  _timeoutBeforeStepStart: 0
-  _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
-  _timeoutActivatablesActivating: 0
-  _timeoutActivatablesActivated: 0
-  _timeoutActivatablesDeactivating: 0
-  _timeoutActivatablesDeactivated: 0
-  _timeoutPersistantActivatablesActivating: 0
-  _timeoutPersistantActivatablesActivated: 0
-  _timeoutPersistantActivatablesDeactivating: 0
-  _timeoutPersistantActivatablesDeactivated: 0
-  _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925829830303744
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-  stepTitle:
-    m_TableReference:
-      m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
-    m_TableEntryReference:
-      m_KeyId: 19911727099666441
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  stepDescription:
-    m_TableReference:
-      m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
-    m_TableEntryReference:
-      m_KeyId: 19911727099666441
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  highlights:
-  - Part: 9
-    Mode: 1
-    LeftHand: 0
-    RightHand: 1
-    ExpertHands: 1
-    UserHands: 1
-  - Part: 7
-    Mode: 1
-    LeftHand: 0
-    RightHand: 1
-    ExpertHands: 1
-    UserHands: 1
-  - Part: 5
-    Mode: 1
-    LeftHand: 0
-    RightHand: 1
-    ExpertHands: 1
-    UserHands: 1
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &1017806266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017806263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 212715422
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
 --- !u!1 &1017946179
 GameObject:
   m_ObjectHideFlags: 0
@@ -14359,37 +13551,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1091928040407643390, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
   m_PrefabInstance: {fileID: 2236318551981804636}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1039967772
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1039967773}
-  m_Layer: 0
-  m_Name: '[Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1039967773
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039967772}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1017806264}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1043866702
 GameObject:
   m_ObjectHideFlags: 0
@@ -14483,100 +13644,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 269603599}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1049756490
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1049756491}
-  - component: {fileID: 1049756492}
-  - component: {fileID: 1049756493}
-  m_Layer: 0
-  m_Name: '[Parallel Step] mfk_part1_assi_holdposition'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1049756491
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049756490}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1917445787}
-  - {fileID: 620801570}
-  - {fileID: 1118406829}
-  - {fileID: 1759808837}
-  m_Father: {fileID: 256402649}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1049756492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049756490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 688021074
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
---- !u!114 &1049756493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049756490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 595548a83687c9543857f193185af431, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _stepActivatables:
-  - {fileID: 1917445786}
-  _persistantActivatables:
-  - {fileID: 620801569}
-  _persistantActivatablesDeactivationSteps: []
-  _nextSteps: []
-  _timeoutBeforeStepStart: 0
-  _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
-  _timeoutActivatablesActivating: 0
-  _timeoutActivatablesActivated: 0
-  _timeoutActivatablesDeactivating: 0
-  _timeoutActivatablesDeactivated: 0
-  _timeoutPersistantActivatablesActivating: 0
-  _timeoutPersistantActivatablesActivated: 0
-  _timeoutPersistantActivatablesDeactivating: 0
-  _timeoutPersistantActivatablesDeactivated: 0
-  _waitForAllClientsToFinish: 1
-  _finishingCriteria: 2
-  _parallelSteps:
-  - {fileID: 1702521766}
-  - {fileID: 1466693470}
-  _selectedParallelSteps:
-  - {fileID: 1702521766}
 --- !u!1 &1052507112
 GameObject:
   m_ObjectHideFlags: 0
@@ -14675,14 +13742,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 96713936896
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -14755,37 +13814,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 819056614}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1067294997
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1067294998}
-  m_Layer: 0
-  m_Name: '[Persistant Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1067294998
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067294997}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1327269648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1068081670
 GameObject:
@@ -15026,37 +14054,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 592259795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1085363181
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1085363182}
-  m_Layer: 0
-  m_Name: '[Next Steps]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1085363182
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085363181}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1017806264}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1086597953
 GameObject:
   m_ObjectHideFlags: 0
@@ -15217,14 +14214,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 120843767808
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -15303,37 +14292,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 634907354}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1118406828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1118406829}
-  m_Layer: 0
-  m_Name: '[Next Steps]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1118406829
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118406828}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1049756491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1124362379
 GameObject:
@@ -15526,14 +14484,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925814017777664
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
@@ -15753,14 +14703,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1074804658176
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -16287,14 +15229,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 22842240733425664
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -16472,37 +15406,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1594712959}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1199603090
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1199603091}
-  m_Layer: 0
-  m_Name: '[Persistant Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1199603091
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199603090}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1466693469}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1199967361
 GameObject:
   m_ObjectHideFlags: 0
@@ -16621,14 +15524,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1067288465408
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -16935,14 +15830,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1088431951872
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -17072,14 +15959,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 112731983872
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -17803,14 +16682,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1086456434688
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -18156,141 +17027,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 204668790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1327269647
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1327269648}
-  - component: {fileID: 1327269650}
-  - component: {fileID: 1327269649}
-  m_Layer: 0
-  m_Name: '[VA Speak Step] mfk_part1_assi_turnrighthand'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1327269648
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327269647}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1996951062}
-  - {fileID: 1067294998}
-  - {fileID: 209433063}
-  m_Father: {fileID: 950604590}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1327269649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327269647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa0055f35337a614789df8134ac859ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _stepActivatables:
-  - {fileID: 1996951061}
-  _persistantActivatables:
-  - {fileID: 1067294997}
-  _persistantActivatablesDeactivationSteps: []
-  _nextSteps: []
-  _timeoutBeforeStepStart: 0
-  _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
-  _timeoutActivatablesActivating: 0
-  _timeoutActivatablesActivated: 0
-  _timeoutActivatablesDeactivating: 0
-  _timeoutActivatablesDeactivated: 0
-  _timeoutPersistantActivatablesActivating: 0
-  _timeoutPersistantActivatablesActivated: 0
-  _timeoutPersistantActivatablesDeactivating: 0
-  _timeoutPersistantActivatablesDeactivated: 0
-  _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925825833132032
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-  stepTitle:
-    m_TableReference:
-      m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
-    m_TableEntryReference:
-      m_KeyId: 19911727099666439
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  stepDescription:
-    m_TableReference:
-      m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
-    m_TableEntryReference:
-      m_KeyId: 19911727099666439
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  highlights:
-  - Part: 9
-    Mode: 1
-    LeftHand: 0
-    RightHand: 1
-    ExpertHands: 1
-    UserHands: 1
-  - Part: 7
-    Mode: 1
-    LeftHand: 0
-    RightHand: 1
-    ExpertHands: 1
-    UserHands: 1
-  - Part: 5
-    Mode: 1
-    LeftHand: 0
-    RightHand: 1
-    ExpertHands: 1
-    UserHands: 1
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &1327269650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327269647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3111876581
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
 --- !u!1 &1331126385
 GameObject:
   m_ObjectHideFlags: 0
@@ -18378,14 +17114,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925740047032320
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
@@ -18555,14 +17283,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1080596992000
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -19501,11 +18221,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoStartup: 1
   startupInAwake: 1
+  autoStart: 0
+  autoStartSequenceLeft: 0
+  autoStartSequenceRight: 0
   analyzePoseMatching: 0
   loopAllSequences: 1
   playAllSequences: 0
   loopSingleSequencePlayback: 1
-  autoStart: 0
   poseMatchingThreshold: 25
   bvhRelativeDirectory: /../BVHdata/
   leftHandBvhFile: thumbsup_left
@@ -19875,119 +18597,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1741791762}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1466693468
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1466693469}
-  - component: {fileID: 1466693471}
-  - component: {fileID: 1466693470}
-  m_Layer: 0
-  m_Name: '[PointCloudViewerStep] mfk_part1_assi_stretchrightfingers'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1466693469
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466693468}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1682117408}
-  - {fileID: 1199603091}
-  - {fileID: 467175865}
-  m_Father: {fileID: 1759808837}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1466693470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466693468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 263c94d631b487042b4b5ac40d4fc662, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _stepActivatables:
-  - {fileID: 1682117407}
-  _persistantActivatables:
-  - {fileID: 1199603090}
-  _persistantActivatablesDeactivationSteps: []
-  _nextSteps: []
-  _timeoutBeforeStepStart: 0
-  _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
-  _timeoutActivatablesActivating: 0
-  _timeoutActivatablesActivated: 0
-  _timeoutActivatablesDeactivating: 0
-  _timeoutActivatablesDeactivated: 0
-  _timeoutPersistantActivatablesActivating: 0
-  _timeoutPersistantActivatablesActivated: 0
-  _timeoutPersistantActivatablesDeactivating: 0
-  _timeoutPersistantActivatablesDeactivated: 0
-  _waitForAllClientsToFinish: 1
-  stepTitle:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  stepDescription:
-    m_TableReference:
-      m_TableCollectionName: 
-    m_TableEntryReference:
-      m_KeyId: 0
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  highlights: []
-  pathToSequence: PointClouds/Mittelfingerknoten_Part1/mfk_part1_assi_stretchrightfingers
-  player: {fileID: 414589761}
-  manipulateFPS: 0
-  targetFPS: 30
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &1466693471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466693468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3113120144
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
 --- !u!1 &1471383835
 GameObject:
   m_ObjectHideFlags: 0
@@ -20267,14 +18876,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1065388445696
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -21351,14 +19952,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1092248768512
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -21707,14 +20300,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 102997004288
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -22122,14 +20707,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925816010072064
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
@@ -22172,37 +20749,6 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!1 &1682117407
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1682117408}
-  m_Layer: 0
-  m_Name: '[Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1682117408
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682117407}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1466693469}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1684351907
 GameObject:
   m_ObjectHideFlags: 0
@@ -22493,123 +21039,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1167190147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1702521764
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1702521765}
-  - component: {fileID: 1702521767}
-  - component: {fileID: 1702521766}
-  m_Layer: 0
-  m_Name: '[VA Speak Step] mfk_part1_assi_holdposition'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1702521765
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1702521764}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1728604571}
-  - {fileID: 1851625498}
-  - {fileID: 926686105}
-  m_Father: {fileID: 1759808837}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1702521766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1702521764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa0055f35337a614789df8134ac859ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _stepActivatables:
-  - {fileID: 1728604570}
-  _persistantActivatables:
-  - {fileID: 1851625497}
-  _persistantActivatablesDeactivationSteps: []
-  _nextSteps: []
-  _timeoutBeforeStepStart: 0
-  _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
-  _timeoutActivatablesActivating: 0
-  _timeoutActivatablesActivated: 0
-  _timeoutActivatablesDeactivating: 0
-  _timeoutActivatablesDeactivated: 0
-  _timeoutPersistantActivatablesActivating: 0
-  _timeoutPersistantActivatablesActivated: 0
-  _timeoutPersistantActivatablesDeactivating: 0
-  _timeoutPersistantActivatablesDeactivated: 0
-  _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:bc2ddf4480c37a64585b03465c45fb51
-    m_TableEntryReference:
-      m_KeyId: 19925827833815040
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-  stepTitle:
-    m_TableReference:
-      m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
-    m_TableEntryReference:
-      m_KeyId: 19911727099666440
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  stepDescription:
-    m_TableReference:
-      m_TableCollectionName: GUID:9c3e8db84a4bb604dbec4e87a6e8ec1d
-    m_TableEntryReference:
-      m_KeyId: 19911727099666440
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  highlights: []
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &1702521767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1702521764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2561690100
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
 --- !u!1 &1704039216
 GameObject:
   m_ObjectHideFlags: 0
@@ -22702,37 +21131,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1141153014}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1728604570
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1728604571}
-  m_Layer: 0
-  m_Name: '[Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1728604571
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728604570}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1702521765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1732185093
 GameObject:
@@ -22852,14 +21250,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 91840155648
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -23043,39 +21433,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 204668790}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1759808836
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1759808837}
-  m_Layer: 0
-  m_Name: '[Parallel Steps]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1759808837
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1759808836}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1702521765}
-  - {fileID: 1466693469}
-  m_Father: {fileID: 1049756491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1765188013
 GameObject:
@@ -23447,9 +21804,7 @@ MonoBehaviour:
   - {fileID: 781818675}
   - {fileID: 201715474}
   - {fileID: 222092233}
-  - {fileID: 981166198}
-  - {fileID: 1049756493}
-  - {fileID: 1017806265}
+  - {fileID: 0}
   - {fileID: 1741791764}
   - {fileID: 202048585}
   _timeoutBeforeStepStart: 0
@@ -24159,14 +22514,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 95069769728
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -24301,37 +22648,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 63249518}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1851625497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1851625498}
-  m_Layer: 0
-  m_Name: '[Persistant Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1851625498
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851625497}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1702521765}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1858777146
 GameObject:
@@ -24589,14 +22905,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 104720863232
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -24639,37 +22947,6 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!1 &1909407241
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1909407242}
-  m_Layer: 0
-  m_Name: '[Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1909407242
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909407241}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 758270595}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1915277204
 GameObject:
   m_ObjectHideFlags: 0
@@ -24701,37 +22978,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 583296988}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1917445786
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1917445787}
-  m_Layer: 0
-  m_Name: '[Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1917445787
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917445786}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1049756491}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1923984032
 GameObject:
   m_ObjectHideFlags: 0
@@ -24762,37 +23008,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1903522313}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1928675620
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1928675621}
-  m_Layer: 0
-  m_Name: '[Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1928675621
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928675620}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 981166196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1932889581
 GameObject:
@@ -24943,14 +23158,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1082471845888
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -25175,37 +23382,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 494046040}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1974760733
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1974760734}
-  m_Layer: 0
-  m_Name: '[Persistant Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1974760734
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974760733}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 758270595}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1975510399
 GameObject:
   m_ObjectHideFlags: 0
@@ -25273,14 +23449,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 99914190848
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -25516,14 +23684,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
-    m_TableEntryReference:
-      m_KeyId: 93433991168
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: GUID:03d10c4bda2076040a2706f6e217ee9d
@@ -25627,37 +23787,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2039861101}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1996951061
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1996951062}
-  m_Layer: 0
-  m_Name: '[Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1996951062
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996951061}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1327269648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2003297395
 GameObject:
@@ -26762,14 +24891,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 17757963624787968
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 
@@ -26969,14 +25090,6 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _localizedTtsAudioClip:
-    m_TableReference:
-      m_TableCollectionName: GUID:4de38e98376a1df4fa7901352b647740
-    m_TableEntryReference:
-      m_KeyId: 1078634057728
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
   stepTitle:
     m_TableReference:
       m_TableCollectionName: 

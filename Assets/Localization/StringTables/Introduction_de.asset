@@ -41,13 +41,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2360212467712
-    m_Localized: Vor Ihnen befinden sich drei Tasten mit der sie die ganze Anwendung
+    m_Localized: Vor Ihnen befinden sich drei Tasten mit denen Sie die ganze Anwendung
       steuern.
     m_Metadata:
       m_Items: []
   - m_Id: 2480437997568
-    m_Localized: "Taste 1 ist die \"Ein Schritt zur\xFCck\"-Taste. Falls es mal zu
-      schnell geht."
+    m_Localized: "Ganz links ist die \"Ein Schritt zur\xFCck\"-Taste. Falls es mal
+      zu schnell geht."
     m_Metadata:
       m_Items: []
   - m_Id: 2587963174912
@@ -55,14 +55,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2692426510336
-    m_Localized: "Vor Ihnen befinden sich drei Tasten\u2026\n\nMoment, das hatten
-      wir doch schon. Sehr gut! Weiter gehts!"
+    m_Localized: "Vor Ihnen befinden sich drei Tasten\u2026\n\nJetzt w\xFCrde die
+      letzte Information nochmal abgespielt. Sehr gut! Weiter gehts!"
     m_Metadata:
       m_Items: []
   - m_Id: 2973616844800
     m_Localized: "Rechts in Ihrem Sichtfeld sehen Sie immer bei welchem Schritt sie
       gerade sind und was als n\xE4chstes kommt. Falls Sie diese \xDCbersicht nicht
-      sehen m\xF6chten, nutzen sie einfach Taste 3 um diese auszublenden."
+      sehen m\xF6chten, nutzen sie einfach die rechte Taste um diese auszublenden."
     m_Metadata:
       m_Items: []
   - m_Id: 3202382573568
@@ -80,18 +80,18 @@ MonoBehaviour:
       tun ist."
     m_Metadata:
       m_Items: []
-  - m_Id: 3558407680000
-    m_Localized: Machen Sie die Geste bitte mal nach.
+  - m_Id: 18429656668188680
+    m_Localized: Setzen Sie die Geschwindigkeit
     m_Metadata:
       m_Items: []
   - m_Id: 3669359603712
-    m_Localized: Ah, super! Ich sehe schon, sie verstehen sich.
+    m_Localized: Ah, super! Ich sehe schon, die Kommunikation funktioniert gut.
     m_Metadata:
       m_Items: []
   - m_Id: 3777874636800
     m_Localized: "Wenn die Trainer-H\xE4nde etwas \"zu schnell\" vormachen, k\xF6nnen
-      Sie die Abspiel-Geschwindigkeit jederzeit verlangsamen. Dr\xFCcken Sie Taste
-      Zwei um zwischen halber und normaler Geschwindigkeit zu wechseln."
+      Sie die Abspiel-Geschwindigkeit jederzeit verlangsamen. Dr\xFCcken Sie die
+      mittlere Taste um zwischen halber und normaler Geschwindigkeit zu wechseln."
     m_Metadata:
       m_Items: []
   - m_Id: 3915733020672
@@ -106,7 +106,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17758107564912640
-    m_Localized: "Sie sollten nun sehen, wie die Trainer-H\xE4nde eine Geste vorf\xFChren."
+    m_Localized: "Sie sollten nun sehen, wie die Trainer-H\xE4nde eine Geste vorf\xFChren.
+      Machen Sie die Geste bitte mal nach und halten Sie Ihre H\xE4nde eine Zeit
+      lang in der Endposition."
     m_Metadata:
       m_Items: []
   - m_Id: 18429656638828544

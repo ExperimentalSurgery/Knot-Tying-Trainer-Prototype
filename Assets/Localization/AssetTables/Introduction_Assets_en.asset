@@ -78,11 +78,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 4556038250801397918
-  - m_Id: 1086456434688
-    m_Localized: 0f7d1752ef015f5499b6da75587674de
+  - m_Id: 30803410414047232
+    m_Localized: 111cd08247fa3354083421ba6dc632e2
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397920
+      - rid: 637461113709789186
   - m_Id: 1088431951872
     m_Localized: 8bb7d9c4437b0f64794c1dfda3873789
     m_Metadata:
@@ -108,15 +108,121 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 1383838077761617922
+  - m_Id: 30803419658293248
+    m_Localized: df413315f3bf164458411f1e783d09bb
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789188
+  - m_Id: 30803421222768640
+    m_Localized: 370f9d6194fbb274293bf8609c77b5d2
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789190
+  - m_Id: 30803422787244032
+    m_Localized: 77f0bff05541fae4ab8ef103d8104ee7
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789192
+  - m_Id: 30803424464965632
+    m_Localized: 0a80b0cfd7c89514e872a945a3bdcca2
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789194
+  - m_Id: 30803426016858112
+    m_Localized: 1bfe5fa91602e9b4d9446c4dc97608b0
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789196
+  - m_Id: 30803427585527808
+    m_Localized: 44ede207928bc954b8ccfba316c948ef
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789198
+  - m_Id: 30803429145808896
+    m_Localized: db26986997812094f82e8957dd348416
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789200
+  - m_Id: 30803430714478592
+    m_Localized: 19f4f361b11721e4b959121345afc2dc
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789202
+  - m_Id: 30803432283148288
+    m_Localized: 64582caaa6e52b14b8d902e5444e5a77
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789204
   references:
     version: 2
     RefIds:
+    - rid: 637461113709789186
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:19
+        lastModified: 2023-08-24 15:51:19
+        spokenText: Welcome
+    - rid: 637461113709789188
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:22
+        lastModified: 2023-08-24 15:51:22
+        spokenText: to the GreifbAR demo!
+    - rid: 637461113709789190
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:22
+        lastModified: 2023-08-24 15:51:22
+        spokenText: Raise Hands
+    - rid: 637461113709789192
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:22
+        lastModified: 2023-08-24 15:51:22
+        spokenText: Please raise your hands.
+    - rid: 637461113709789194
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:23
+        lastModified: 2023-08-24 15:51:23
+        spokenText: The controls
+    - rid: 637461113709789196
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:23
+        lastModified: 2023-08-24 15:51:23
+        spokenText: 3 buttons
+    - rid: 637461113709789198
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:24
+        lastModified: 2023-08-24 15:51:24
+        spokenText: Gesture
+    - rid: 637461113709789200
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:24
+        lastModified: 2023-08-24 15:51:24
+        spokenText: Repeat the gesture
+    - rid: 637461113709789202
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:24
+        lastModified: 2023-08-24 15:51:24
+        spokenText: Playback Speed
+    - rid: 637461113709789204
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:25
+        lastModified: 2023-08-24 15:51:25
+        spokenText: Set the playback speed.
     - rid: 1383838077761617922
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-07-19 15:53:23
-        lastModified: 2023-07-19 15:53:23
-        spokenText: You should now see the trainer hands performing a gesture.
+        lastModified: 2023-08-24 16:24:42
+        spokenText: You should now see the trainer hands performing a gesture.Please
+          imitate the gesture.
     - rid: 4556038250801397896
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -160,8 +266,9 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:06
-        lastModified: 2023-05-31 16:00:06
-        spokenText: Key 1 is the "One step back" key. In case things happen too fast.
+        lastModified: 2023-08-24 16:24:40
+        spokenText: On the left there is the "One step back" key. In case things
+          happen too fast.
     - rid: 4556038250801397910
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -182,10 +289,10 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:07
-        lastModified: 2023-05-31 16:00:07
+        lastModified: 2023-08-24 16:24:41
         spokenText: On the right side of your field of view you can always see which
           step you are currently in and what comes next. If you don't want to see
-          this overview, just use key 3 to hide it.
+          this overview, just use the right key to hide it.
     - rid: 4556038250801397916
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -207,12 +314,6 @@ MonoBehaviour:
 
           These
           are the trainer hands. They will always show you what to do next.'
-    - rid: 4556038250801397920
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-05-31 16:00:08
-        lastModified: 2023-05-31 16:00:08
-        spokenText: Please imitate the gesture.
     - rid: 4556038250801397922
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -223,10 +324,10 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:09
-        lastModified: 2023-05-31 16:00:09
+        lastModified: 2023-08-24 16:24:41
         spokenText: If the trainer's hands are faking something too fast, you can
-          slow down the playback speed at any time. Press button two to switch between
-          half speed and normal speed.
+          slow down the playback speed at any time. Press the middle button to switch
+          between half speed and normal speed.
     - rid: 4556038250801397926
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:

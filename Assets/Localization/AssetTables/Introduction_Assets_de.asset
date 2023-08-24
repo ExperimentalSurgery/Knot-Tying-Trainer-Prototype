@@ -78,11 +78,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 4556038250801397919
-  - m_Id: 1086456434688
-    m_Localized: e731863acdac492449dea9a63595227a
+  - m_Id: 30803410414047232
+    m_Localized: 1e533ac7d2d4f894d98a08b5988f81d6
     m_Metadata:
       m_Items:
-      - rid: 4556038250801397921
+      - rid: 637461113709789187
   - m_Id: 1088431951872
     m_Localized: bd718cffee3c246469310bfc38e0826d
     m_Metadata:
@@ -108,15 +108,122 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 1383838077761617923
+  - m_Id: 30803419658293248
+    m_Localized: e07b9a26935d7b7419fc125563039143
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789189
+  - m_Id: 30803421222768640
+    m_Localized: a64891c73c8e02e49bdcfa22cfe4c8fd
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789191
+  - m_Id: 30803422787244032
+    m_Localized: a33746bbbffadfb45abe371ec0f576d4
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789193
+  - m_Id: 30803424464965632
+    m_Localized: e4720da1faefaf0478e05080a4e4bc74
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789195
+  - m_Id: 30803426016858112
+    m_Localized: c302c483b7ded1147b122215140619ff
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789197
+  - m_Id: 30803427585527808
+    m_Localized: b3939f47ab54c6146a631ef5895ce3c8
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789199
+  - m_Id: 30803429145808896
+    m_Localized: a0985b4b504dc1f4da2673afe918d33c
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789201
+  - m_Id: 30803430714478592
+    m_Localized: 4fc305c23e84918488c208de51b233b7
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789203
+  - m_Id: 30803432283148288
+    m_Localized: 79d80e95f6dbcc145954ebcacbab43ce
+    m_Metadata:
+      m_Items:
+      - rid: 637461113709789207
   references:
     version: 2
     RefIds:
+    - rid: 637461113709789187
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:21
+        lastModified: 2023-08-24 15:51:21
+        spokenText: Willkommen
+    - rid: 637461113709789189
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:22
+        lastModified: 2023-08-24 15:51:22
+        spokenText: zur GreifbAR Demo!
+    - rid: 637461113709789191
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:22
+        lastModified: 2023-08-24 15:51:22
+        spokenText: "H\xE4nde heben"
+    - rid: 637461113709789193
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:23
+        lastModified: 2023-08-24 15:51:23
+        spokenText: "Bitte heben Sie ihre H\xE4nde."
+    - rid: 637461113709789195
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:23
+        lastModified: 2023-08-24 15:51:23
+        spokenText: Bedienung
+    - rid: 637461113709789197
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:23
+        lastModified: 2023-08-24 15:51:23
+        spokenText: "3 Kn\xF6pfe"
+    - rid: 637461113709789199
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:24
+        lastModified: 2023-08-24 15:51:24
+        spokenText: Geste
+    - rid: 637461113709789201
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:24
+        lastModified: 2023-08-24 15:51:24
+        spokenText: Machen Sie die Geste nach.
+    - rid: 637461113709789203
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 15:51:24
+        lastModified: 2023-08-24 15:51:24
+        spokenText: Geschwindigkeit
+    - rid: 637461113709789207
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-08-24 16:24:42
+        lastModified: 2023-08-24 16:24:42
+        spokenText: Setzen Sie die Geschwindigkeit
     - rid: 1383838077761617923
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-07-19 15:53:23
-        lastModified: 2023-07-19 15:53:23
-        spokenText: "Sie sollten nun sehen, wie die Trainer-H\xE4nde eine Geste vorf\xFChren."
+        lastModified: 2023-08-24 16:24:42
+        spokenText: "Sie sollten nun sehen, wie die Trainer-H\xE4nde eine Geste vorf\xFChren.
+          Machen Sie die Geste bitte mal nach und halten Sie Ihre H\xE4nde eine Zeit
+          lang in der Endposition."
     - rid: 4556038250801397897
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -153,16 +260,16 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:05
-        lastModified: 2023-07-18 18:31:12
-        spokenText: Vor Ihnen befinden sich drei Tasten mit der sie die ganze Anwendung
+        lastModified: 2023-08-24 16:24:40
+        spokenText: Vor Ihnen befinden sich drei Tasten mit denen Sie die ganze Anwendung
           steuern.
     - rid: 4556038250801397909
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:06
-        lastModified: 2023-05-31 16:00:06
-        spokenText: "Taste 1 ist die \"Ein Schritt zur\xFCck\"-Taste. Falls es mal
-          zu schnell geht."
+        lastModified: 2023-08-24 16:24:40
+        spokenText: "Ganz links ist die \"Ein Schritt zur\xFCck\"-Taste. Falls es
+          mal zu schnell geht."
     - rid: 4556038250801397911
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -173,17 +280,17 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:07
-        lastModified: 2023-07-18 18:31:12
-        spokenText: "Vor Ihnen befinden sich drei Tasten\u2026\n\nMoment, das hatten
-          wir doch schon. Sehr gut! Weiter gehts!"
+        lastModified: 2023-08-24 16:24:41
+        spokenText: "Vor Ihnen befinden sich drei Tasten\u2026\n\nJetzt w\xFCrde
+          die letzte Information nochmal abgespielt. Sehr gut! Weiter gehts!"
     - rid: 4556038250801397915
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:07
-        lastModified: 2023-07-18 18:31:12
+        lastModified: 2023-08-24 16:24:41
         spokenText: "Rechts in Ihrem Sichtfeld sehen Sie immer bei welchem Schritt
           sie gerade sind und was als n\xE4chstes kommt. Falls Sie diese \xDCbersicht
-          nicht sehen m\xF6chten, nutzen sie einfach Taste 3 um diese auszublenden."
+          nicht sehen m\xF6chten, nutzen sie einfach die rechte Taste um diese auszublenden."
     - rid: 4556038250801397917
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
@@ -203,26 +310,20 @@ MonoBehaviour:
           Ihnen sehen Sie nun ein paar digitale H\xE4nde projiziert.\n\nDas sind
           die Trainer-H\xE4nde. Diese werden Ihnen immer vormachen, was als n\xE4chstes
           zu tun ist."
-    - rid: 4556038250801397921
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-05-31 16:00:09
-        lastModified: 2023-07-18 18:31:12
-        spokenText: Machen Sie die Geste bitte mal nach.
     - rid: 4556038250801397923
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:09
-        lastModified: 2023-07-17 18:03:12
-        spokenText: Ah, super! Ich sehe schon, sie verstehen sich.
+        lastModified: 2023-08-24 16:24:41
+        spokenText: Ah, super! Ich sehe schon, die Kommunikation funktioniert gut.
     - rid: 4556038250801397925
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-05-31 16:00:10
-        lastModified: 2023-07-18 18:31:13
+        lastModified: 2023-08-24 16:24:42
         spokenText: "Wenn die Trainer-H\xE4nde etwas \"zu schnell\" vormachen, k\xF6nnen
           Sie die Abspiel-Geschwindigkeit jederzeit verlangsamen. Dr\xFCcken Sie
-          Taste Zwei um zwischen halber und normaler Geschwindigkeit zu wechseln."
+          die mittlere Taste um zwischen halber und normaler Geschwindigkeit zu wechseln."
     - rid: 4556038250801397927
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:

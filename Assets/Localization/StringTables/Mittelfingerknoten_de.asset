@@ -30,28 +30,17 @@ MonoBehaviour:
     m_Localized: "Der gr\xFCne Faden ruht auf Ihrem kleinen Finger."
     m_Metadata:
       m_Items: []
-  - m_Id: 19911727099666442
-    m_Localized: "Mit links Spannung aufbauen und halten, w\xE4hrend Sie rechts die
-      drei freien Finger ausstrecken. Der gr\xFCne Faden ruht auf ihrem kleinen Finger."
-    m_Metadata:
-      m_Items: []
   - m_Id: 19911727099666441
-    m_Localized: 'Machen Sie es mir nun nach:'
-    m_Metadata:
-      m_Items: []
-  - m_Id: 19911727099666440
-    m_Localized: "Diese Position halten Sie dann bitte w\xE4hrend ich den n\xE4chsten
-      Schritt vormache."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 19911727099666439
-    m_Localized: "Dabei drehen Sie Ihre Hand so dass der linke, gr\xFCne Faden auf
-      Ihrem kleinen Finger ruht."
+    m_Localized: "Machen Sie es mir nun nach: Mit links Spannung aufbauen und halten,
+      w\xE4hrend Sie rechts die drei freien Finger ausstrecken. Der gr\xFCne Faden
+      ruht auf ihrem kleinen Finger."
     m_Metadata:
       m_Items: []
   - m_Id: 19911727099666438
     m_Localized: "Als n\xE4chstes Strecken Sie Mittel-, Ring- und den kleinen Finger
-      ihrer rechten Hand aus."
+      ihrer rechten Hand aus. Dabei drehen Sie Ihre Hand so dass der linke, gr\xFCne
+      Faden auf Ihrem kleinen Finger ruht. Diese Position halten Sie dann bitte w\xE4hrend
+      ich den n\xE4chsten Schritt vormache."
     m_Metadata:
       m_Items: []
   - m_Id: 19911727099666437

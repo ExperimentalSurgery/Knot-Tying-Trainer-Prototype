@@ -143,21 +143,6 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6073544477279257398
-  - m_Id: 19925825833132032
-    m_Localized: cbe1d65b6b8d4d34caec24495d130930
-    m_Metadata:
-      m_Items:
-      - rid: 6073544477279257400
-  - m_Id: 19925827833815040
-    m_Localized: a323f32c6348c1f49a5c78923f63bf52
-    m_Metadata:
-      m_Items:
-      - rid: 6073544477279257402
-  - m_Id: 19925829830303744
-    m_Localized: 67b7908c6e3f74546ac306d558841fdc
-    m_Metadata:
-      m_Items:
-      - rid: 6073544477279257404
   - m_Id: 19925831864541184
     m_Localized: 6d439fe55149ddc449f559ce1d6cc1c0
     m_Metadata:
@@ -577,37 +562,19 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-07-25 15:51:56
-        lastModified: 2023-07-25 15:51:56
+        lastModified: 2023-08-24 16:24:45
         spokenText: "Als n\xE4chstes Strecken Sie Mittel-, Ring- und den kleinen
-          Finger ihrer rechten Hand aus."
-    - rid: 6073544477279257400
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-07-25 15:51:56
-        lastModified: 2023-07-25 15:51:56
-        spokenText: "Dabei drehen Sie Ihre Hand so dass der linke, gr\xFCne Faden
-          auf Ihrem kleinen Finger ruht."
-    - rid: 6073544477279257402
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-07-25 15:51:56
-        lastModified: 2023-07-25 15:51:56
-        spokenText: "Diese Position halten Sie dann bitte w\xE4hrend ich den n\xE4chsten
-          Schritt vormache."
-    - rid: 6073544477279257404
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-07-25 15:51:57
-        lastModified: 2023-07-25 15:51:57
-        spokenText: 'Machen Sie es mir nun nach:'
+          Finger ihrer rechten Hand aus. Dabei drehen Sie Ihre Hand so dass der linke,
+          gr\xFCne Faden auf Ihrem kleinen Finger ruht. Diese Position halten Sie
+          dann bitte w\xE4hrend ich den n\xE4chsten Schritt vormache."
     - rid: 6073544477279257406
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-07-25 15:51:57
-        lastModified: 2023-07-31 10:28:32
-        spokenText: "Mit links Spannung aufbauen und halten, w\xE4hrend Sie rechts
-          die drei freien Finger ausstrecken. Der gr\xFCne Faden ruht auf ihrem kleinen
-          Finger."
+        lastModified: 2023-08-24 16:24:45
+        spokenText: "Machen Sie es mir nun nach: Mit links Spannung aufbauen und
+          halten, w\xE4hrend Sie rechts die drei freien Finger ausstrecken. Der gr\xFCne
+          Faden ruht auf ihrem kleinen Finger."
     - rid: 6073544477279257408
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
