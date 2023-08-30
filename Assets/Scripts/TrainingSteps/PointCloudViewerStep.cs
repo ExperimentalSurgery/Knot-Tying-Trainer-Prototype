@@ -32,6 +32,11 @@ namespace DFKI.NMY
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
+
+            if (player == null) {
+                Debug.LogError("PointcloudPlayer not referenced in go="+gameObject.name);
+                return;
+            }
             
             // stop current player actions
             player.StopThread();

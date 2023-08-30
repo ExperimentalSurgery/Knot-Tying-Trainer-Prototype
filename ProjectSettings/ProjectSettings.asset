@@ -729,7 +729,7 @@ PlayerSettings:
   webGLPowerPreference: 2
   scriptingDefineSymbols:
     Android: USE_INPUT_SYSTEM_POSE_CONTROL
-    Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;LEAPMOTIONCORE_PRESENT
+    Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;LEAPMOTIONCORE_PRESENT;NMY_ENABLE_GOOGLE_CLOUD_TTS
     Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;LEAPMOTIONCORE_PRESENT
   additionalCompilerArguments: {}
   platformArchitecture: {}
