@@ -15,6 +15,7 @@ namespace DFKI.NMY
     {
         
         [Header("PointCloudViewerStep")]
+        public bool waitForStreamPlayedOnce = true;
         public bool manipulatePlayerPose = false;
         public Vector3 playerPosition = Vector3.zero;
         public Vector3 playerRotation = Vector3.zero;
@@ -25,6 +26,8 @@ namespace DFKI.NMY
         [Header("(Optional) Player Settings")] [SerializeField]
         private bool manipulateFPS = false;
         [SerializeField] private int targetFPS = 30;
+
+        private bool streamHasPlayedOnce=false;
         
 
         protected override void Reset()
@@ -33,10 +36,19 @@ namespace DFKI.NMY
             player = FindObjectOfType<PointCloudPlayer>(true);
             this.name =  "[PointCloudViewerStep] " + this.name.Trim(' ');
         }
+        void OnStreamFinished(){
+            streamHasPlayedOnce = true;
+            if(waitForStreamPlayedOnce){
+                FinishedCriteria = true;
+            }
 
+        }
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
+
+            streamHasPlayedOnce = false;
+            player.FinishedStream.AddListener(OnStreamFinished);
 
             if (player == null) {
                 Debug.LogError("PointcloudPlayer not referenced in go="+gameObject.name);
@@ -63,6 +75,7 @@ namespace DFKI.NMY
         // POST STEP
         protected override async UniTask PostStepActionAsync(CancellationToken ct) {
             await base.PostStepActionAsync(ct);
+            player.FinishedStream.RemoveListener(OnStreamFinished);
             player.StopThread();
         }
         

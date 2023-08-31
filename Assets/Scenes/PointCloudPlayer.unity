@@ -358,12 +358,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 873122258367449471, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
+      propertyPath: fps
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 873122258367449471, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: status
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 873122258367449471, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: pathToSequence
-      value: PointClouds/Vorbereitung/setup_assi_pickup
+      value: PointClouds/Vorbereitung/setup_assi_cross-3
       objectReference: {fileID: 0}
     - target: {fileID: 873122258367449471, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: numberOfFramesBufferedBeforePlay

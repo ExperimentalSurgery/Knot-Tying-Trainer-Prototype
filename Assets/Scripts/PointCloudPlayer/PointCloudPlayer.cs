@@ -116,8 +116,8 @@ namespace DFKI.NMY
 		public void Play()
 		{
 			// Position player
-			transform.position = playerPosition;
-			transform.eulerAngles = playerRotation;
+			transform.localPosition = playerPosition;
+			transform.localEulerAngles = playerRotation;
 			
 			if (!readerInitialized){
 				SetupReaderAndPCManager();

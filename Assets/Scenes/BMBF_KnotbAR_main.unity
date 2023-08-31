@@ -1018,6 +1018,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 0
   manipulatePlayerPose: 0
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
@@ -1312,7 +1313,7 @@ MonoBehaviour:
   _nextSteps: []
   _timeoutBeforeStepStart: 0
   _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
+  _timeoutBeforeStepComplete: 5
   _timeoutActivatablesActivating: 0
   _timeoutActivatablesActivated: 0
   _timeoutActivatablesDeactivating: 0
@@ -2538,6 +2539,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 0
   manipulatePlayerPose: 0
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
@@ -4053,12 +4055,11 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _finishingCriteria: 2
+  _finishingCriteria: 1
   _parallelSteps:
   - {fileID: 300583997}
   - {fileID: 2050187969}
-  _selectedParallelSteps:
-  - {fileID: 300583997}
+  _selectedParallelSteps: []
 --- !u!114 &290108160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4653,12 +4654,11 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _finishingCriteria: 2
+  _finishingCriteria: 1
   _parallelSteps:
   - {fileID: 1903522314}
   - {fileID: 2038276081}
-  _selectedParallelSteps:
-  - {fileID: 1903522314}
+  _selectedParallelSteps: []
 --- !u!1 &312652625
 GameObject:
   m_ObjectHideFlags: 0
@@ -4765,6 +4765,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 0
   manipulatePlayerPose: 0
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
@@ -4897,10 +4898,11 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 0
   manipulatePlayerPose: 0
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
-  pathToSequence: PointClouds/Vorbereitung/setup_assi_try_pickup
+  pathToSequence: PointClouds/Vorbereitung/setup_assi_pickup
   player: {fileID: 414589761}
   manipulateFPS: 0
   targetFPS: 30
@@ -5812,6 +5814,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 109883779}
     m_Modifications:
+    - target: {fileID: 873122258367449471, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
+      propertyPath: fps
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 873122258367449471, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: numberOfFramesBufferedBeforePlay
       value: 10
@@ -6798,6 +6804,7 @@ MonoBehaviour:
   _persistantActivatablesDeactivationSteps: []
   _nextSteps:
   - {fileID: 793860951}
+  - {fileID: 970090773}
   _timeoutBeforeStepStart: 0
   _timeoutBeforeStepFinish: 0
   _timeoutBeforeStepComplete: 0
@@ -7942,6 +7949,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 1
   manipulatePlayerPose: 0
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
@@ -8029,7 +8037,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592259794}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8206,13 +8214,14 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 1
   manipulatePlayerPose: 1
-  playerPosition: {x: -0.1365, y: 1.54, z: -0.796}
-  playerRotation: {x: -0.193, y: -20.19, z: -0.529}
+  playerPosition: {x: 0.02, y: 0, z: 0.14}
+  playerRotation: {x: 0, y: 90, z: 0}
   pathToSequence: PointClouds/Vorbereitung/setup_assi_show-0
   player: {fileID: 414589761}
-  manipulateFPS: 0
-  targetFPS: 30
+  manipulateFPS: 1
+  targetFPS: 20
   references:
     version: 2
     RefIds: []
@@ -8604,16 +8613,16 @@ MonoBehaviour:
     m_LocalVariables: []
   highlights: []
   changeBvhFile: 1
-  bvhFileLeft: LeftHand
-  bvhFileRight: RightHand
-  sequenceIndexLeft: 3
-  sequenceIndexRight: 5
+  bvhFileLeft: expert_poses_mix_left
+  bvhFileRight: expert_poses_mix_right
+  sequenceIndexLeft: 9
+  sequenceIndexRight: 9
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
   manualCompletionKey: 110
   sequenceDuration: 1
-  poseMatchingThreshold: 25
+  poseMatchingThreshold: 33
   requireLeftMatch: 1
   requireRightMatch: 1
   references:
@@ -9934,20 +9943,20 @@ MonoBehaviour:
   - Part: 0
     Mode: 0
     LeftHand: 1
-    RightHand: 0
-    ExpertHands: 1
+    RightHand: 1
+    ExpertHands: 0
     UserHands: 1
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
   sequenceIndexLeft: 1
-  sequenceIndexRight: 0
+  sequenceIndexRight: 1
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
   manualCompletionKey: 110
   sequenceDuration: 1
-  poseMatchingThreshold: 22
+  poseMatchingThreshold: 18
   requireLeftMatch: 1
   requireRightMatch: 1
   references:
@@ -10950,12 +10959,11 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _finishingCriteria: 2
+  _finishingCriteria: 1
   _parallelSteps:
   - {fileID: 583296989}
   - {fileID: 822744044}
-  _selectedParallelSteps:
-  - {fileID: 822744044}
+  _selectedParallelSteps: []
 --- !u!1 &781818672
 GameObject:
   m_ObjectHideFlags: 0
@@ -13341,7 +13349,7 @@ MonoBehaviour:
   _nextSteps:
   - {fileID: 1732932955}
   - {fileID: 1991272228}
-  - {fileID: 1839313675}
+  - {fileID: 2128948272}
   - {fileID: 491922379}
   - {fileID: 1628621863}
   - {fileID: 310747997}
@@ -13803,6 +13811,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 0
   manipulatePlayerPose: 1
   playerPosition: {x: 0, y: 0, z: 0.31}
   playerRotation: {x: 0, y: 90, z: 0}
@@ -16763,6 +16772,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 0
   manipulatePlayerPose: 0
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
@@ -18795,7 +18805,7 @@ PrefabInstance:
       objectReference: {fileID: 1128101275641750, guid: d12fcfca48d5bea4885b7957a82235f8, type: 3}
     - target: {fileID: 1047440911489469253, guid: 1001440edf42c0c49b9ae525bf1fc717, type: 3}
       propertyPath: markersEnabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1047440911489469253, guid: 1001440edf42c0c49b9ae525bf1fc717, type: 3}
       propertyPath: markerObjects.Array.size
@@ -19326,13 +19336,14 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 0
   manipulatePlayerPose: 1
   playerPosition: {x: 0, y: 0, z: 0.31}
   playerRotation: {x: 0, y: 90, z: 0}
   pathToSequence: PointClouds/Thumbs_up
   player: {fileID: 414589761}
-  manipulateFPS: 0
-  targetFPS: 30
+  manipulateFPS: 1
+  targetFPS: 24
   references:
     version: 2
     RefIds: []
@@ -21650,7 +21661,7 @@ MonoBehaviour:
     m_LocalVariables: []
   highlights:
   - Part: 0
-    Mode: 1
+    Mode: 0
     LeftHand: 1
     RightHand: 1
     ExpertHands: 1
@@ -24747,6 +24758,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 1
   manipulatePlayerPose: 0
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
@@ -24926,7 +24938,7 @@ MonoBehaviour:
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
   sequenceIndexLeft: 1
-  sequenceIndexRight: 0
+  sequenceIndexRight: 1
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
@@ -25168,6 +25180,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 1
   manipulatePlayerPose: 0
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
@@ -25741,6 +25754,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  waitForStreamPlayedOnce: 0
   manipulatePlayerPose: 1
   playerPosition: {x: 0, y: 0, z: 0.31}
   playerRotation: {x: 0, y: 90, z: 0}
@@ -26172,12 +26186,11 @@ MonoBehaviour:
   _timeoutPersistantActivatablesDeactivating: 0
   _timeoutPersistantActivatablesDeactivated: 0
   _waitForAllClientsToFinish: 1
-  _finishingCriteria: 2
+  _finishingCriteria: 1
   _parallelSteps:
   - {fileID: 1839313675}
   - {fileID: 600622487}
-  _selectedParallelSteps:
-  - {fileID: 1839313675}
+  _selectedParallelSteps: []
 --- !u!1 &2133567490
 GameObject:
   m_ObjectHideFlags: 0
