@@ -13,12 +13,12 @@ namespace DFKI.NMY
 
     public class PointCloudViewerStep : GreifbarBaseStep
     {
-
+        
+        [Header("PointCloudViewerStep")]
         public bool manipulatePlayerPose = false;
         public Vector3 playerPosition = Vector3.zero;
         public Vector3 playerRotation = Vector3.zero;
-        
-        [Header("PointCloudViewerStep")]
+        [Header("PointCloud Source Config")]
         [SerializeField] private string pathToSequence = "PointClouds/***";
         [SerializeField] private PointCloudPlayer player;
 

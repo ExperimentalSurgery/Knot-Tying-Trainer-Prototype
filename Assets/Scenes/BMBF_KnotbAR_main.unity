@@ -2788,7 +2788,7 @@ GameObject:
   - component: {fileID: 210940661}
   - component: {fileID: 210940662}
   m_Layer: 0
-  m_Name: '[VA Speak Step] GameObject'
+  m_Name: '[VA Speak Step] setup_assi_thumbsup'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2865,9 +2865,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 106281144320
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -4056,6 +4056,7 @@ MonoBehaviour:
   _finishingCriteria: 2
   _parallelSteps:
   - {fileID: 300583997}
+  - {fileID: 2050187969}
   _selectedParallelSteps:
   - {fileID: 300583997}
 --- !u!114 &290108160
@@ -4335,9 +4336,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 111033290752
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -5179,7 +5180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rootTrainingStep: {fileID: 469847259}
-  _startTrainingStep: {fileID: 469847259}
+  _startTrainingStep: {fileID: 970090773}
   _continueNextStepAction:
     m_UseReference: 0
     m_Action:
@@ -5631,9 +5632,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 107912728576
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -7185,9 +7186,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 101415751680
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -7944,7 +7945,7 @@ MonoBehaviour:
   manipulatePlayerPose: 0
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
-  pathToSequence: PointClouds/Sample
+  pathToSequence: PointClouds/Vorbereitung/setup_assi_pickup
   player: {fileID: 414589761}
   manipulateFPS: 0
   targetFPS: 30
@@ -8205,9 +8206,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
-  manipulatePlayerPose: 0
-  playerPosition: {x: 0, y: 0, z: 0}
-  playerRotation: {x: 0, y: 0, z: 0}
+  manipulatePlayerPose: 1
+  playerPosition: {x: -0.1365, y: 1.54, z: -0.796}
+  playerRotation: {x: -0.193, y: -20.19, z: -0.529}
   pathToSequence: PointClouds/Vorbereitung/setup_assi_show-0
   player: {fileID: 414589761}
   manipulateFPS: 0
@@ -8603,11 +8604,11 @@ MonoBehaviour:
     m_LocalVariables: []
   highlights: []
   changeBvhFile: 1
-  bvhFileLeft: thumbsup_left
-  bvhFileRight: thumbsup_right
-  sequenceIndexLeft: 1
-  sequenceIndexRight: 0
-  showExpertHands: 1
+  bvhFileLeft: LeftHand
+  bvhFileRight: RightHand
+  sequenceIndexLeft: 3
+  sequenceIndexRight: 5
+  showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
   manualCompletionKey: 110
@@ -11902,9 +11903,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 109477203968
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -12572,9 +12573,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 122429214720
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -13148,7 +13149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &970090769
 Transform:
   m_ObjectHideFlags: 0
@@ -14786,9 +14787,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 109477203968
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -15492,7 +15493,7 @@ MonoBehaviour:
   bvhFileRight: expert_poses_mix_right
   sequenceIndexLeft: 9
   sequenceIndexRight: 7
-  showExpertHands: 1
+  showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
   manualCompletionKey: 110
@@ -16610,9 +16611,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 112731983872
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -20885,9 +20886,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 102997004288
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -21623,9 +21624,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 91840155648
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -22925,9 +22926,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 95069769728
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -23324,9 +23325,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 104720863232
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -24127,9 +24128,9 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _localizedTtsAudioClip:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b188132f14f78694489f8b37c2d04742
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 93433991168
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -24926,7 +24927,7 @@ MonoBehaviour:
   bvhFileRight: thumbsup_right
   sequenceIndexLeft: 1
   sequenceIndexRight: 0
-  showExpertHands: 1
+  showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
   manualCompletionKey: 110
@@ -25098,7 +25099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2050187968
 Transform:
   m_ObjectHideFlags: 0
@@ -25170,8 +25171,8 @@ MonoBehaviour:
   manipulatePlayerPose: 0
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
-  pathToSequence: PointClouds/Sample
-  player: {fileID: 0}
+  pathToSequence: PointClouds/Vorbereitung/setup_assi_pickup
+  player: {fileID: 414589761}
   manipulateFPS: 0
   targetFPS: 30
   references:
