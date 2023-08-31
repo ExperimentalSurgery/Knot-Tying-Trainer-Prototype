@@ -367,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 873122258367449471, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: pathToSequence
-      value: PointClouds/Vorbereitung/setup_assi_cross-3
+      value: PointClouds/Mittelfinger/mfk_part1_assi_tension
       objectReference: {fileID: 0}
     - target: {fileID: 873122258367449471, guid: 8f96b83db56ea584296f01307fc11a3d, type: 3}
       propertyPath: numberOfFramesBufferedBeforePlay
