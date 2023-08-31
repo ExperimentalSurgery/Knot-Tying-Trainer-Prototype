@@ -152,9 +152,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 104724767}
   - {fileID: 81281875}
   - {fileID: 1597969205}
+  - {fileID: 994737053}
   m_Father: {fileID: 1591003684}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9317915
@@ -1018,6 +1018,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  manipulatePlayerPose: 0
+  playerPosition: {x: 0, y: 0, z: 0}
+  playerRotation: {x: 0, y: 0, z: 0}
   pathToSequence: PointClouds/Mittelfingerknoten_Part1/mfk_intro_assi_startposition
   player: {fileID: 414589761}
   manipulateFPS: 0
@@ -1515,204 +1518,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 81281875}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &104724766
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 104724767}
-  - component: {fileID: 104724771}
-  - component: {fileID: 104724770}
-  - component: {fileID: 104724769}
-  - component: {fileID: 104724768}
-  m_Layer: 0
-  m_Name: '[Step] ThumbsUpPreview'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &104724767
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104724766}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1425519839}
-  - {fileID: 306386184}
-  - {fileID: 2035277841}
-  m_Father: {fileID: 7657130}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &104724768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104724766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -652722870, guid: a59d05a8903cae94fa99d5b5eee1a253, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pingObject: 1
-  _debugStepStarted: 1
-  _debugStepFinished: 1
-  _debugStepCompleted: 1
-  _debugStepActionStarted: 0
-  _debugStepActionFinished: 0
-  _debugActivatablesActivating: 0
-  _debugActivatablesActivated: 0
-  _debugActivatablesDeactivating: 0
-  _debugActivatablesDeactivated: 0
-  _debugPersistantActivatablesActivating: 0
-  _debugPersistantActivatablesActivated: 0
-  _debugPersistantActivatablesDeactivating: 0
-  _debugPersistantActivatablesDeactivated: 0
---- !u!114 &104724769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104724766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -328589803, guid: a59d05a8903cae94fa99d5b5eee1a253, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stepStartedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  stepFinishedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  stepCompletedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  stepActionStartedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  stepActionFinishedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  activatablesActivating:
-    m_PersistentCalls:
-      m_Calls: []
-  activatablesActivated:
-    m_PersistentCalls:
-      m_Calls: []
-  activatablesDeactivating:
-    m_PersistentCalls:
-      m_Calls: []
-  activatablesDeactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  persistantActivatablesActivating:
-    m_PersistentCalls:
-      m_Calls: []
-  persistantActivatablesActivated:
-    m_PersistentCalls:
-      m_Calls: []
-  persistantActivatablesDeactivating:
-    m_PersistentCalls:
-      m_Calls: []
-  persistantActivatablesDeactivated:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &104724770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104724766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3014c1e248d9713418efe57b25bc547a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _stepActivatables:
-  - {fileID: 562218694}
-  - {fileID: 1425519838}
-  _persistantActivatables:
-  - {fileID: 306386183}
-  _persistantActivatablesDeactivationSteps: []
-  _nextSteps: []
-  _timeoutBeforeStepStart: 0
-  _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
-  _timeoutActivatablesActivating: 0
-  _timeoutActivatablesActivated: 0
-  _timeoutActivatablesDeactivating: 0
-  _timeoutActivatablesDeactivated: 0
-  _timeoutPersistantActivatablesActivating: 0
-  _timeoutPersistantActivatablesActivated: 0
-  _timeoutPersistantActivatablesDeactivating: 0
-  _timeoutPersistantActivatablesDeactivated: 0
-  _waitForAllClientsToFinish: 1
-  stepTitle:
-    m_TableReference:
-      m_TableCollectionName: GUID:8b54c45a014b4d14aabc06489dbe5bc0
-    m_TableEntryReference:
-      m_KeyId: 2022239645696
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  stepDescription:
-    m_TableReference:
-      m_TableCollectionName: GUID:8b54c45a014b4d14aabc06489dbe5bc0
-    m_TableEntryReference:
-      m_KeyId: 2022239645696
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  highlights: []
-  changeBvhFile: 1
-  bvhFileLeft: thumbsup_left
-  bvhFileRight: thumbsup_right
-  sequenceIndexLeft: 1
-  sequenceIndexRight: 0
-  showExpertHands: 1
-  singleSequenceDuration: 1
-  finishStepOnSeqEnd: 0
-  extraDelay: 3000
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &104724771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104724766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 548716036
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
 --- !u!1 &109883777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,6 +2538,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  manipulatePlayerPose: 0
+  playerPosition: {x: 0, y: 0, z: 0}
+  playerRotation: {x: 0, y: 0, z: 0}
   pathToSequence: PointClouds/Sample
   player: {fileID: 0}
   manipulateFPS: 0
@@ -4641,37 +4449,6 @@ MonoBehaviour:
   autoStartup: 1
   startupInAwake: 1
   _isInitiallyActivated: 0
---- !u!1 &306386183
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 306386184}
-  m_Layer: 0
-  m_Name: '[Persistant Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &306386184
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306386183}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 104724767}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &307948249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4987,6 +4764,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  manipulatePlayerPose: 0
+  playerPosition: {x: 0, y: 0, z: 0}
+  playerRotation: {x: 0, y: 0, z: 0}
   pathToSequence: PointClouds/Mittelfingerknoten_Part1/mfk_part1_assi_tension
   player: {fileID: 414589761}
   manipulateFPS: 0
@@ -5116,6 +4896,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  manipulatePlayerPose: 0
+  playerPosition: {x: 0, y: 0, z: 0}
+  playerRotation: {x: 0, y: 0, z: 0}
   pathToSequence: PointClouds/Vorbereitung/setup_assi_try_pickup
   player: {fileID: 414589761}
   manipulateFPS: 0
@@ -8158,6 +7941,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  manipulatePlayerPose: 0
+  playerPosition: {x: 0, y: 0, z: 0}
+  playerRotation: {x: 0, y: 0, z: 0}
   pathToSequence: PointClouds/Sample
   player: {fileID: 414589761}
   manipulateFPS: 0
@@ -8419,6 +8205,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  manipulatePlayerPose: 0
+  playerPosition: {x: 0, y: 0, z: 0}
+  playerRotation: {x: 0, y: 0, z: 0}
   pathToSequence: PointClouds/Vorbereitung/setup_assi_show-0
   player: {fileID: 414589761}
   manipulateFPS: 0
@@ -12590,6 +12379,37 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!1 &875683429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 875683430}
+  m_Layer: 0
+  m_Name: '[Persistant Activatables]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &875683430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875683429}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 994737053}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &880068464
 GameObject:
   m_ObjectHideFlags: 0
@@ -12835,6 +12655,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 724540592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &906694152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 906694153}
+  m_Layer: 0
+  m_Name: '[Activatables]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &906694153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906694152}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 994737053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &923100363 stripped
 GameObject:
@@ -13858,6 +13709,122 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GlobalObjectIdHash: 1825423220
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!1 &994737052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 994737053}
+  - component: {fileID: 994737055}
+  - component: {fileID: 994737054}
+  m_Layer: 0
+  m_Name: '[PointCloudViewerStep] [Step] [PointcloudStep] thumbs up '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &994737053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994737052}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 906694153}
+  - {fileID: 875683430}
+  - {fileID: 1472175873}
+  m_Father: {fileID: 7657130}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &994737054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994737052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 263c94d631b487042b4b5ac40d4fc662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _stepActivatables:
+  - {fileID: 906694152}
+  _persistantActivatables:
+  - {fileID: 875683429}
+  _persistantActivatablesDeactivationSteps: []
+  _nextSteps: []
+  _timeoutBeforeStepStart: 0
+  _timeoutBeforeStepFinish: 0
+  _timeoutBeforeStepComplete: 0
+  _timeoutActivatablesActivating: 0
+  _timeoutActivatablesActivated: 0
+  _timeoutActivatablesDeactivating: 0
+  _timeoutActivatablesDeactivated: 0
+  _timeoutPersistantActivatablesActivating: 0
+  _timeoutPersistantActivatablesActivated: 0
+  _timeoutPersistantActivatablesDeactivating: 0
+  _timeoutPersistantActivatablesDeactivated: 0
+  _waitForAllClientsToFinish: 1
+  stepTitle:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  stepDescription:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  highlights: []
+  manipulatePlayerPose: 1
+  playerPosition: {x: 0, y: 0, z: 0.31}
+  playerRotation: {x: 0, y: 90, z: 0}
+  pathToSequence: PointClouds/Thumbs_up
+  player: {fileID: 414589761}
+  manipulateFPS: 0
+  targetFPS: 30
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &994737055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994737052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1531262683
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
@@ -16795,6 +16762,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  manipulatePlayerPose: 0
+  playerPosition: {x: 0, y: 0, z: 0}
+  playerRotation: {x: 0, y: 0, z: 0}
   pathToSequence: PointClouds/Mittelfingerknoten_Part1/mfk_part1_assi_stretchrightfingers
   player: {fileID: 414589761}
   manipulateFPS: 0
@@ -18771,37 +18741,6 @@ Transform:
   - {fileID: 1678974082}
   m_Father: {fileID: 634907354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1425519838
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1425519839}
-  m_Layer: 0
-  m_Name: '[Activatables]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1425519839
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425519838}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 104724767}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1434729824
 GameObject:
   m_ObjectHideFlags: 0
@@ -19171,6 +19110,37 @@ MonoBehaviour:
   - {fileID: 691232127}
   _selectedParallelSteps:
   - {fileID: 691232127}
+--- !u!1 &1472175872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472175873}
+  m_Layer: 0
+  m_Name: '[Next Steps]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1472175873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472175872}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 994737053}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1476389931
 GameObject:
   m_ObjectHideFlags: 0
@@ -19355,6 +19325,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  manipulatePlayerPose: 1
+  playerPosition: {x: 0, y: 0, z: 0.31}
+  playerRotation: {x: 0, y: 90, z: 0}
   pathToSequence: PointClouds/Thumbs_up
   player: {fileID: 414589761}
   manipulateFPS: 0
@@ -20073,7 +20046,7 @@ MonoBehaviour:
   _waitForAllClientsToFinish: 1
   _finishingCriteria: 2
   _parallelSteps:
-  - {fileID: 104724770}
+  - {fileID: 994737054}
   - {fileID: 81281878}
   - {fileID: 1597969207}
   _selectedParallelSteps:
@@ -24606,37 +24579,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 202048584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2035277840
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2035277841}
-  m_Layer: 0
-  m_Name: '[Next Steps]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2035277841
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2035277840}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 104724767}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2037577100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24804,6 +24746,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  manipulatePlayerPose: 0
+  playerPosition: {x: 0, y: 0, z: 0}
+  playerRotation: {x: 0, y: 0, z: 0}
   pathToSequence: PointClouds/Vorbereitung/setup_assi_cross-3
   player: {fileID: 414589761}
   manipulateFPS: 0
@@ -25222,6 +25167,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  manipulatePlayerPose: 0
+  playerPosition: {x: 0, y: 0, z: 0}
+  playerRotation: {x: 0, y: 0, z: 0}
   pathToSequence: PointClouds/Sample
   player: {fileID: 0}
   manipulateFPS: 0
@@ -25792,6 +25740,9 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   highlights: []
+  manipulatePlayerPose: 1
+  playerPosition: {x: 0, y: 0, z: 0.31}
+  playerRotation: {x: 0, y: 90, z: 0}
   pathToSequence: PointClouds/Thumbs_up
   player: {fileID: 414589761}
   manipulateFPS: 0

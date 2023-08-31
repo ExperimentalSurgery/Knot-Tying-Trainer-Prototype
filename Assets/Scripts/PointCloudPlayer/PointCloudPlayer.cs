@@ -10,6 +10,9 @@ namespace DFKI.NMY
 	public class PointCloudPlayer : MonoBehaviour
 	{
 
+		public Vector3 playerPosition = Vector3.zero;
+		public Vector3 playerRotation = Vector3.zero;
+
 		[Header("Player Config")] 
 		[SerializeField] private string pathToSequence;
 		[SerializeField] private bool playStream = false;
@@ -112,6 +115,10 @@ namespace DFKI.NMY
 
 		public void Play()
 		{
+			// Position player
+			transform.position = playerPosition;
+			transform.eulerAngles = playerRotation;
+			
 			if (!readerInitialized){
 				SetupReaderAndPCManager();
 			}

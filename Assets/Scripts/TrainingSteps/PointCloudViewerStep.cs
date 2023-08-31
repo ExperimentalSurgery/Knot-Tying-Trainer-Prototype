@@ -12,7 +12,12 @@ namespace DFKI.NMY
     
 
     public class PointCloudViewerStep : GreifbarBaseStep
-    {                                                           
+    {
+
+        public bool manipulatePlayerPose = false;
+        public Vector3 playerPosition = Vector3.zero;
+        public Vector3 playerRotation = Vector3.zero;
+        
         [Header("PointCloudViewerStep")]
         [SerializeField] private string pathToSequence = "PointClouds/***";
         [SerializeField] private PointCloudPlayer player;
@@ -37,7 +42,12 @@ namespace DFKI.NMY
                 Debug.LogError("PointcloudPlayer not referenced in go="+gameObject.name);
                 return;
             }
-            
+
+            if (manipulatePlayerPose) {
+                player.playerPosition = playerPosition;
+                player.playerRotation = playerRotation;
+            }
+
             // stop current player actions
             player.StopThread();
             
