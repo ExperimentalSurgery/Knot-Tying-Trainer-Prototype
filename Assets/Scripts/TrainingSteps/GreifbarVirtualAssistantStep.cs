@@ -14,9 +14,6 @@ namespace DFKI.NMY
          [SerializeField] private LocalizedString stepDescription;
          
          
-         [Header("Hand Highlight Config")]
-         [SerializeField] private List<FingerHighlightContainer> highlights = new List<FingerHighlightContainer>();
-
     
          public LocalizedString StepTitle{
             get => stepTitle;
@@ -30,6 +27,9 @@ namespace DFKI.NMY
 
 
     
+         [Header("Hand Highlight Config")]
+         [SerializeField] private List<FingerHighlightContainer> highlights = new List<FingerHighlightContainer>();
+
         
         // PRE STEP
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
@@ -37,6 +37,7 @@ namespace DFKI.NMY
             await base.PreStepActionAsync(ct);
         
             UserInterfaceManager.instance.ResetFingerHighlights();
+            Debug.Log("FingerHighlight");
              // Hand Highlighting
             foreach (FingerHighlightContainer highlightConfig in highlights) {
                 UserInterfaceManager.instance.FingerHighlight(highlightConfig);

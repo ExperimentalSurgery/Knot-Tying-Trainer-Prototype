@@ -55,7 +55,7 @@ namespace DFKI.NMY
                 tensionVal = tmpInt2 * -1;
             }
 
-            Debug.Log("data: " + tmpInt + " " + tmpInt2);
+            //Debug.Log("data: " + tmpInt + " " + tmpInt2);
         }
         protected override async UniTask PostStepActionAsync(CancellationToken ct) {
             await base.PostStepActionAsync(ct);

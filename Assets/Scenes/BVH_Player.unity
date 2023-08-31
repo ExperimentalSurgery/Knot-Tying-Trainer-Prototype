@@ -1227,8 +1227,8 @@ MonoBehaviour:
   loopSingleSequencePlayback: 0
   poseMatchingThreshold: 25
   bvhRelativeDirectory: /../BVHdata/
-  leftHandBvhFile: thumbsup_left
-  rightHandBvhFile: thumbsup_right
+  leftHandBvhFile: expert_poses_mix_left
+  rightHandBvhFile: expert_poses_mix_right
   sequenceDuration: 1
   leftRecorder: {fileID: 1778681149}
   rightRecorder: {fileID: 349090846}
