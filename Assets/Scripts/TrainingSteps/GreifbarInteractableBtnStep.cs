@@ -15,25 +15,36 @@ namespace DFKI.NMY
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
-            interactionButton.OnPress-=OnButtonPressed;
-            interactionButton.OnPress+=OnButtonPressed;
-            interactionButton.ShowHiglighter();
-
+            if (interactionButton)
+            {
+                interactionButton.OnPress -= OnButtonPressed;
+                interactionButton.OnPress += OnButtonPressed;
+                interactionButton.ShowHiglighter();
+            }
+            else
+            {
+                FinishedCriteria = true;
+            }
+            
         }
 
         private void OnButtonPressed()
         {
-            interactionButton.OnPress-=OnButtonPressed;
-            interactionButton.HideHighlighter();
-            FinishedCriteria = true;
+                interactionButton.OnPress -= OnButtonPressed;
+                interactionButton.HideHighlighter();
+                FinishedCriteria = true;
+            
         }
 
         // POST STEP
         protected override async UniTask PostStepActionAsync(CancellationToken ct)
         {
             await base.PostStepActionAsync(ct);
-            interactionButton.OnPress-=OnButtonPressed;
-            interactionButton.HideHighlighter();
+            if (interactionButton)
+            {
+                interactionButton.OnPress -= OnButtonPressed;
+                interactionButton.HideHighlighter();
+            }
         }
 
 

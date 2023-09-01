@@ -32,7 +32,6 @@ namespace DFKI.NMY
 
         public void ResetFingerHighlights()
         {
-            Debug.Log("Reset");
             HandVisualizer visualizer = GreifbARApp.instance.handVisualizer;
             foreach (var trigger in visualizer.handAnimatorUserLeft.parameters)
             {

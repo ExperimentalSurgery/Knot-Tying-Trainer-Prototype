@@ -21,7 +21,7 @@ namespace DFKI.NMY
         
         
         [Header("Hand Highlight Config")]
-        [SerializeField] private List<FingerHighlightContainer> highlights = new List<FingerHighlightContainer>();
+        [SerializeField] public List<FingerHighlightContainer> highlights = new List<FingerHighlightContainer>();
         
         // privates
         private bool _finishedCriteria = false;
@@ -47,6 +47,7 @@ namespace DFKI.NMY
         
         protected override async UniTask ClientStepActionAsync(CancellationToken ct)
         {
+            Debug.Log(this.gameObject.name+" StepActionAsync");
                 try {
                     var finishedCriteriaTask = WaitForFinishedCriteria(ct);
                     await UniTask.WhenAny(finishedCriteriaTask);
@@ -65,6 +66,7 @@ namespace DFKI.NMY
         {
             await base.PreStepActionAsync(ct);
             FinishedCriteria = false;
+            Debug.Log(this.gameObject.name+" PreStepActionAsync");
             UserInterfaceManager.instance.ResetFingerHighlights();
             // Hand Highlighting
                 foreach (FingerHighlightContainer highlightConfig in highlights) {
@@ -76,6 +78,7 @@ namespace DFKI.NMY
         protected override async UniTask PostStepActionAsync(CancellationToken ct)
         {
             await base.PostStepActionAsync(ct);
+            Debug.Log(this.gameObject.name+" PostStepAction");
             UserInterfaceManager.instance.ResetFingerHighlights();
         }
         

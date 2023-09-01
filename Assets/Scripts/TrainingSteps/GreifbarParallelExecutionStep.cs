@@ -1,39 +1,39 @@
-using System.Collections;
-
 using NMY.VirtualRealityTraining.Steps;
 using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using NMY.VirtualRealityTraining.Steps.VirtualAssistant;
 using UnityEngine;
-using UnityEngine.Localization;
 
 namespace DFKI.NMY
 {
     // Override of ParallelExecutionStep for potential extensions in future releases
     public class GreifbarParallelExecutionStep : ParallelExecutionStep {
         
-             [Header("Hand Highlight Config")]
-         [SerializeField] private List<FingerHighlightContainer> highlights = new List<FingerHighlightContainer>();
-
-        
+         [Header("Hand Highlight Config")]
+         [SerializeField] public List<FingerHighlightContainer> highlights = new List<FingerHighlightContainer>();
+         
         // PRE STEP
-        protected override async UniTask PreStepActionAsync(CancellationToken ct)
-        {
+        protected override async UniTask PreStepActionAsync(CancellationToken ct) {
+            Debug.Log(this.gameObject.name+" PretStepAction");
             await base.PreStepActionAsync(ct);
         
             UserInterfaceManager.instance.ResetFingerHighlights();
-            Debug.Log("FingerHighlight");
              // Hand Highlighting
             foreach (FingerHighlightContainer highlightConfig in highlights) {
                 UserInterfaceManager.instance.FingerHighlight(highlightConfig);
             }
         }
 
+        protected override UniTask ClientStepActionAsync(CancellationToken ct) {
+            Debug.Log(this.gameObject.name+" StepAction");
+            return base.ClientStepActionAsync(ct);
+        }
+
 
         // POST STEP
         protected override async UniTask PostStepActionAsync(CancellationToken ct)
         {
+            Debug.Log(this.gameObject.name+" PostStepAction");
             await base.PostStepActionAsync(ct);
             UserInterfaceManager.instance.ResetFingerHighlights();
         }

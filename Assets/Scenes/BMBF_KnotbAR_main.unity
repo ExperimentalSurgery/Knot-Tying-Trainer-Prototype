@@ -784,12 +784,6 @@ MonoBehaviour:
   - Part: 0
     Mode: 0
     LeftHand: 1
-    RightHand: 0
-    ExpertHands: 0
-    UserHands: 1
-  - Part: 0
-    Mode: 0
-    LeftHand: 0
     RightHand: 1
     ExpertHands: 0
     UserHands: 1
@@ -4404,25 +4398,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  highlights:
-  - Part: 5
-    Mode: 1
-    LeftHand: 1
-    RightHand: 1
-    ExpertHands: 0
-    UserHands: 1
-  - Part: 7
-    Mode: 1
-    LeftHand: 1
-    RightHand: 1
-    ExpertHands: 0
-    UserHands: 1
-  - Part: 9
-    Mode: 1
-    LeftHand: 1
-    RightHand: 1
-    ExpertHands: 0
-    UserHands: 1
+  highlights: []
   references:
     version: 2
     RefIds: []
@@ -8568,19 +8544,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  highlights:
-  - Part: 0
-    Mode: 1
-    LeftHand: 1
-    RightHand: 1
-    ExpertHands: 0
-    UserHands: 0
-  - Part: 5
-    Mode: 0
-    LeftHand: 1
-    RightHand: 1
-    ExpertHands: 0
-    UserHands: 0
+  highlights: []
   interactionButton: {fileID: 229996488}
   references:
     version: 2
@@ -10077,13 +10041,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  highlights:
-  - Part: 0
-    Mode: 0
-    LeftHand: 1
-    RightHand: 1
-    ExpertHands: 0
-    UserHands: 1
+  highlights: []
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
@@ -16739,7 +16697,7 @@ GameObject:
   - component: {fileID: 1237328285}
   - component: {fileID: 1237328286}
   m_Layer: 0
-  m_Name: '[VA Speak Step] GameObject'
+  m_Name: '[VA Speak Step] setup_assi_try_pickup'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16840,25 +16798,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  highlights:
-  - Part: 5
-    Mode: 1
-    LeftHand: 1
-    RightHand: 1
-    ExpertHands: 0
-    UserHands: 1
-  - Part: 7
-    Mode: 1
-    LeftHand: 1
-    RightHand: 1
-    ExpertHands: 0
-    UserHands: 1
-  - Part: 9
-    Mode: 1
-    LeftHand: 1
-    RightHand: 1
-    ExpertHands: 0
-    UserHands: 1
+  highlights: []
   references:
     version: 2
     RefIds: []
@@ -19812,6 +19752,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 428733147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1510847791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1510847792}
+  - component: {fileID: 1510847793}
+  m_Layer: 0
+  m_Name: HandVisualizer_Updater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1510847792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510847791}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1510847793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510847791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 0}
+  highlights: []
+  preventResetOnComplete: 0
 --- !u!1 &1511326448
 GameObject:
   m_ObjectHideFlags: 0
@@ -27242,3 +27229,4 @@ SceneRoots:
   - {fileID: 109883779}
   - {fileID: 923178255}
   - {fileID: 1447852860}
+  - {fileID: 1510847792}
