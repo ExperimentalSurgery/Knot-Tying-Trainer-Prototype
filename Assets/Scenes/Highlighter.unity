@@ -1283,6 +1283,7 @@ GameObject:
   - component: {fileID: 977134408}
   - component: {fileID: 977134410}
   - component: {fileID: 977134409}
+  - component: {fileID: 977134411}
   m_Layer: 0
   m_Name: '[Parallel Step] intro_assi_try_backbutton'
   m_TagString: Untagged
@@ -1345,8 +1346,14 @@ MonoBehaviour:
   - {fileID: 159821247}
   - {fileID: 1441057363}
   _selectedParallelSteps:
-  - {fileID: 159821247}
-  highlights: []
+  - {fileID: 1441057363}
+  highlights:
+  - Part: 1
+    Mode: 1
+    LeftHand: 1
+    RightHand: 0
+    ExpertHands: 0
+    UserHands: 1
 --- !u!114 &977134410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1367,6 +1374,27 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &977134411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977134407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 977134409}
+  highlights:
+  - Part: 1
+    Mode: 1
+    LeftHand: 1
+    RightHand: 0
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &1010244805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,6 +1437,7 @@ GameObject:
   - component: {fileID: 1126514197}
   - component: {fileID: 1126514199}
   - component: {fileID: 1126514198}
+  - component: {fileID: 1126514200}
   m_Layer: 0
   m_Name: '[Parallel Step] intro_assi_start'
   m_TagString: Untagged
@@ -1471,7 +1500,7 @@ MonoBehaviour:
   - {fileID: 733085450}
   - {fileID: 1491554800}
   _selectedParallelSteps:
-  - {fileID: 1491554800}
+  - {fileID: 733085450}
   highlights:
   - Part: 1
     Mode: 1
@@ -1505,6 +1534,33 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &1126514200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126514196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 1126514198}
+  highlights:
+  - Part: 1
+    Mode: 1
+    LeftHand: 1
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 5
+    Mode: 1
+    LeftHand: 1
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1001 &1130989077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2550,19 +2606,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  highlights:
-  - Part: 0
-    Mode: 1
-    LeftHand: 1
-    RightHand: 1
-    ExpertHands: 0
-    UserHands: 0
-  - Part: 5
-    Mode: 0
-    LeftHand: 1
-    RightHand: 1
-    ExpertHands: 0
-    UserHands: 0
+  highlights: []
   interactionButton: {fileID: 0}
   references:
     version: 2
@@ -2724,6 +2768,7 @@ GameObject:
   - component: {fileID: 1695415442}
   - component: {fileID: 1695415446}
   - component: {fileID: 1695415445}
+  - component: {fileID: 1695415447}
   m_Layer: 0
   m_Name: '[VA Speak Step] intro_assi_backbutton'
   m_TagString: Untagged
@@ -2806,7 +2851,13 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  highlights: []
+  highlights:
+  - Part: 0
+    Mode: 0
+    LeftHand: 1
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
   references:
     version: 2
     RefIds: []
@@ -2830,6 +2881,27 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &1695415447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695415441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 1695415445}
+  highlights:
+  - Part: 0
+    Mode: 0
+    LeftHand: 1
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &1716882669
 GameObject:
   m_ObjectHideFlags: 0
@@ -2966,6 +3038,7 @@ GameObject:
   - component: {fileID: 1964287835}
   - component: {fileID: 1964287837}
   - component: {fileID: 1964287836}
+  - component: {fileID: 1964287838}
   m_Layer: 0
   m_Name: '[VA Speak Step] intro_2'
   m_TagString: Untagged
@@ -3078,6 +3151,74 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &1964287838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964287834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 1964287836}
+  highlights:
+  - Part: 7
+    Mode: 1
+    LeftHand: 1
+    RightHand: 0
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
+--- !u!1 &1973074139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1973074140}
+  - component: {fileID: 1973074141}
+  m_Layer: 0
+  m_Name: UPDATE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1973074140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973074139}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.015659302, z: 0.0007852316}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1973074141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973074139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 0}
+  highlights: []
+  preventResetOnComplete: 0
 --- !u!1 &1985093961
 GameObject:
   m_ObjectHideFlags: 0
@@ -5228,3 +5369,4 @@ SceneRoots:
   - {fileID: 1304597766}
   - {fileID: 8933528534658863166}
   - {fileID: 922072115}
+  - {fileID: 1973074140}
