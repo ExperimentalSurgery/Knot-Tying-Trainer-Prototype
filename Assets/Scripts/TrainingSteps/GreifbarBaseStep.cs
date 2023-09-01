@@ -67,11 +67,12 @@ namespace DFKI.NMY
             await base.PreStepActionAsync(ct);
             FinishedCriteria = false;
             Debug.Log(this.gameObject.name+" PreStepActionAsync");
-            UserInterfaceManager.instance.ResetFingerHighlights();
+            /*UserInterfaceManager.instance.ResetFingerHighlights();
             // Hand Highlighting
                 foreach (FingerHighlightContainer highlightConfig in highlights) {
                     UserInterfaceManager.instance.FingerHighlight(highlightConfig);
                 }
+            */
         }
 
         // POST STEP
@@ -79,7 +80,7 @@ namespace DFKI.NMY
         {
             await base.PostStepActionAsync(ct);
             Debug.Log(this.gameObject.name+" PostStepAction");
-            UserInterfaceManager.instance.ResetFingerHighlights();
+            //UserInterfaceManager.instance.ResetFingerHighlights();
         }
         
         public virtual UniTask WaitForFinishedCriteria(CancellationToken ct)

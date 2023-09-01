@@ -36,11 +36,11 @@ namespace DFKI.NMY
             Debug.Log(this.gameObject.name+" PretStepAction");
             await base.PreStepActionAsync(ct);
         
-            UserInterfaceManager.instance.ResetFingerHighlights();
+            /*UserInterfaceManager.instance.ResetFingerHighlights();
              // Hand Highlighting
             foreach (FingerHighlightContainer highlightConfig in highlights) {
                 UserInterfaceManager.instance.FingerHighlight(highlightConfig);
-            }
+            }*/
         }
 
         protected override UniTask ClientStepActionAsync(CancellationToken ct)
@@ -55,7 +55,7 @@ namespace DFKI.NMY
             
             Debug.Log(this.gameObject.name+" PostStepAction");
             await base.PostStepActionAsync(ct);
-            UserInterfaceManager.instance.ResetFingerHighlights();
+            //UserInterfaceManager.instance.ResetFingerHighlights();
         }
 
         
