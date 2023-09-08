@@ -33,6 +33,7 @@ public class BufferedPointCloudReader
 
         try
         {
+            Debug.Log("Looking for ply files at " + folder);
             plyFilePaths = Directory.GetFiles(folder, "*.ply");
         }
 
