@@ -48,8 +48,8 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     [Tooltip("GameObject of left expert hand")] public GameObject leftExpertHand;
     [Tooltip("GameObject of right expert hand")] public GameObject rightExpertHand;
 
-    public Vector3 rightHandPosMod;
-    public Vector3 rightHandRotMod;
+    public Vector3 rightHandPosMod = new Vector3(x:-1,y:-1, z:1);
+    public Vector3 rightHandRotMod = new Vector3(x: 1, y: 1, z: -1);
     public Vector3 originOffset;
 
     [SerializeField] private bool useReducedSpeed = false;
@@ -485,29 +485,28 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     }
     
         void ApplyBVHFrame(float[] bvhFrame, GameObject model) {
+            
+            // Adaption of Coordinates
+            int i = 4, j = 3, k = 5;
+            int sign1 = 1, sign2 = -1, sign3 = 1;
 
-        // Adaption of Coordinates
-        int i = 4, j = 3, k = 5;
-        int sign1 = 1, sign2 = -1, sign3 = 1;
-
-        Transform elbow = model.transform.Find("Elbow");
-        if (elbow.parent.name == "Right")
-        {
-            elbow.localPosition = new Vector3(rightHandPosMod.x *( bvhFrame[0] + originOffset.x), rightHandPosMod.y *( bvhFrame[1] + originOffset.y), rightHandPosMod.z * (bvhFrame[2] + originOffset.z));
-            elbow.localEulerAngles = new Vector3(rightHandRotMod.x * bvhFrame[i], rightHandRotMod.y * bvhFrame[j], rightHandRotMod.z * bvhFrame[k]);
-        }
-        else
-        {
-            elbow.localPosition = new Vector3(-1 * (bvhFrame[0] + originOffset.x), sign2 * (bvhFrame[1] + originOffset.y), sign3 * (bvhFrame[2] + originOffset.z));
-            elbow.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
-        }
+            Transform elbow = model.transform.Find("Elbow");
+            if (elbow.parent.name == "Right")
+            {
+                elbow.localPosition = new Vector3(rightHandPosMod.x *( bvhFrame[0] + originOffset.x), rightHandPosMod.y *( bvhFrame[1] + originOffset.y), rightHandPosMod.z * (bvhFrame[2] + originOffset.z));
+                elbow.localEulerAngles = new Vector3(rightHandRotMod.x * bvhFrame[i], rightHandRotMod.y * bvhFrame[j], rightHandRotMod.z * bvhFrame[k]);
+            }
+            else
+            {
+                elbow.localPosition = new Vector3(-1 * (bvhFrame[0] + originOffset.x), sign2 * (bvhFrame[1] + originOffset.y), sign3 * (bvhFrame[2] + originOffset.z));
+                elbow.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
+            }
 
 
-        // L_Wrist
-        i += 3; j += 3; k += 3;
-        Transform L_Wrist = elbow.transform.Find("L_Wrist");
-        L_Wrist.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
-
+            // L_Wrist
+            i += 3; j += 3; k += 3;
+            Transform L_Wrist = elbow.transform.Find("L_Wrist");
+            L_Wrist.localEulerAngles = new Vector3(sign1 * bvhFrame[i], sign2 * bvhFrame[j], sign3 * bvhFrame[k]);
 
         // L_index_Proximal
         i += 3; j += 3; k += 3;
