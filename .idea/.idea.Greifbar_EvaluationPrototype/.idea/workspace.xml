@@ -6,14 +6,31 @@
   <component name="ChangeListManager">
     <list default="true" id="8db4b24e-3b2b-4a07-b416-6d49153c6a95" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HandTrackingPreview.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HandTrackingPreview.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/BMBF_KnotbAR_main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BMBF_KnotbAR_main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GreifbARApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GreifbARApp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PreviewHands.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PreviewHands.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/LeapHandsVisibleStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/LeapHandsVisibleStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BVH_Player.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BVH_Player.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GestureSequencePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GestureSequencePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/Archive/Counting_Left.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/Archive/Counting_Right.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/Archive/expert_poses_left.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/Archive/expert_poses_right.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/LeftHand.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/MFK_LeftHand.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/MFK_RightHand.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/RightHand.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/expert_poses_mix_left.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/expert_poses_mix_right.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/expert_poses_padded_left.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/expert_poses_padded_right.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/left_frames.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/recording_left.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/recording_left_1.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/recording_right.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/recording_right_1.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/right_frames.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/thumbsup_left.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BVHdata/thumbsup_right.bvh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +197,7 @@
       <workItem from="1693546918082" duration="7875000" />
       <workItem from="1693556233281" duration="1491000" />
       <workItem from="1694164851248" duration="348000" />
-      <workItem from="1694677332412" duration="4196000" />
+      <workItem from="1694677332412" duration="5697000" />
     </task>
     <servers />
   </component>

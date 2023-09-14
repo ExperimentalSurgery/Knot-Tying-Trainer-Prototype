@@ -6,6 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace DFKI.NMY
 {
@@ -32,28 +33,33 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     [SerializeField] private bool loopAllSequences = false;
     [SerializeField] private bool playAllSequences = false;
     [SerializeField] private bool loopSingleSequencePlayback = false;
- 
+    [SerializeField] private bool useReducedSpeed = false;
+
     [Tooltip("Threshold for pose matching. Good default = 25")]
-    [SerializeField] private float poseMatchingThreshold = 25;
+    [SerializeField] [Range(0,50)] private float poseMatchingThreshold = 25;
+    [SerializeField] [Range(0,10)] private float sequenceDuration = 5f;
+
+    [Header("Hand Offsets")]
+    public Vector3 rightHandPosMod = new Vector3(x:-1,y:-1, z:1);
+    public Vector3 rightHandRotMod = new Vector3(x: 1, y: 1, z: -1);
+    public Vector3 originOffset;
+
+    
+    [Header("File References")]
+    [FormerlySerializedAs("bvhRelativeDirectory")]
     [Tooltip("The directory where BVH data will be stored or read from")]
-    [SerializeField] private string bvhRelativeDirectory = "/../BVHdata/";
+    [SerializeField] private string streamingAssetsSubDirectory = "BVHdata";
 
     [SerializeField] private string leftHandBvhFile = "recording_left";
     [SerializeField] private string rightHandBvhFile = "recording_right";
-    [SerializeField] private float sequenceDuration = 5f;
-
+   
     [Header("References")]
     [SerializeField] private BVHRecorder leftRecorder;
     [SerializeField] private BVHRecorder rightRecorder;
     [Tooltip("GameObject of left expert hand")] public GameObject leftExpertHand;
     [Tooltip("GameObject of right expert hand")] public GameObject rightExpertHand;
-
-    public Vector3 rightHandPosMod = new Vector3(x:-1,y:-1, z:1);
-    public Vector3 rightHandRotMod = new Vector3(x: 1, y: 1, z: -1);
-    public Vector3 originOffset;
-
-    [SerializeField] private bool useReducedSpeed = false;
     
+
     // Consts
     private const string BvhSuffix = ".bvh";
    
@@ -82,11 +88,6 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         set => loopAllSequences = value;
     }
 
-    public string BvhRelativeDirectory
-    {
-        get => bvhRelativeDirectory;
-        set => bvhRelativeDirectory = value;
-    }
 
     public float SequenceDuration
     {
@@ -118,7 +119,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         set => playAllSequences = value;
     }
 
-    public string BvhDirectory => Application.dataPath + bvhRelativeDirectory;
+    public string BvhDirectory => Application.streamingAssetsPath+"/" + streamingAssetsSubDirectory+"/";
 
 
     
