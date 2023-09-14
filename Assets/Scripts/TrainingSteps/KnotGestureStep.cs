@@ -35,7 +35,7 @@ namespace DFKI.NMY
             matchedRight = false;
             
             // Apply config to GestureSequencePlayer
-            GestureSequencePlayer.instance.PoseMatchingThreshold = poseMatchingThreshold;
+            GestureSequencePlayer.instance.PoseMatchingThresholdRight = poseMatchingThreshold;
             GestureSequencePlayer.instance.ToggleSpeed(useDefault:true);
             GestureSequencePlayer.instance.ChangeDuration(sequenceDuration);
             GestureSequencePlayer.instance.PlayAllSequences = false;

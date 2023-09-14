@@ -167,6 +167,20 @@ namespace DFKI {
             return true;
         }
 
+        public float GetMaximumDifferenceFromCurrentPose(int index, float[] frame, bool[] mask = null) {
+            float maximum = 0.0f;
+            if (mask != null)
+                Assert.AreEqual(param_count, mask.Length, "Mask does not match number of parameters. (158)");
+            float[] floats = CalculateFrameDeviation(index, frame);
+            if (floats==null) return maximum;
+            for (int i = 0; i < param_count; i++) {
+                if (mask == null || mask[i]) {
+                    maximum = Mathf.Abs(floats[i]) > maximum ? Mathf.Abs(floats[i]) : maximum;
+                }
+            }
+            return maximum;
+        }
+
         /*
          * Function pre-processes the given file. Should be called in a start function of MonoBehavior
          */

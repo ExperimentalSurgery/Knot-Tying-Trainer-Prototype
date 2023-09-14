@@ -27,8 +27,8 @@ namespace DFKI.NMY
                 catch (NullReferenceException e)
                 {
                     Debug.Log("No Varjo detected. Disable Varjo related Components");
-                        markerManager.gameObject.SetActive(false);
-                        mixedRealityExample.gameObject.SetActive(false);
+                    markerManager.gameObject.SetActive(false);
+                    mixedRealityExample.gameObject.SetActive(false);
             
                 }
 

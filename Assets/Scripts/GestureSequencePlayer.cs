@@ -1,12 +1,15 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using NMY;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 namespace DFKI.NMY
 {
@@ -30,13 +33,16 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     
     [Header("Config")] 
     [SerializeField] private bool analyzePoseMatching = true;
+    [SerializeField] private bool analyzeFinalFrameOnly=true;
     [SerializeField] private bool loopAllSequences = false;
     [SerializeField] private bool playAllSequences = false;
     [SerializeField] private bool loopSingleSequencePlayback = false;
     [SerializeField] private bool useReducedSpeed = false;
 
+    [FormerlySerializedAs("poseMatchingThreshold")]
     [Tooltip("Threshold for pose matching. Good default = 25")]
-    [SerializeField] [Range(0,50)] private float poseMatchingThreshold = 25;
+    [SerializeField] [Range(0,50)] private float poseMatchingThresholdRight = 25;
+    [SerializeField] [Range(0,50)] private float poseMatchingThresholdLeft = 25;
     [SerializeField] [Range(0,10)] private float sequenceDuration = 5f;
 
     [Header("Hand Offsets")]
@@ -95,10 +101,16 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         set => sequenceDuration = value;
     }
 
-    public float PoseMatchingThreshold
+    public float PoseMatchingThresholdRight
     {
-        get => poseMatchingThreshold;
-        set => poseMatchingThreshold = value;
+        get => poseMatchingThresholdRight;
+        set => poseMatchingThresholdRight = value;
+    }
+
+    public float PoseMatchingThresholdLeft
+    {
+        get => poseMatchingThresholdLeft;
+        set => poseMatchingThresholdLeft = value;
     }
 
     public string LeftHandBvhFile
@@ -257,25 +269,70 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
             
            
         }
+
+
+    [SerializeField] private float poseMatchHelperDuration = 10.0f;
+    [SerializeField] private TextMeshProUGUI medianTextLeft;
+    [SerializeField] private TextMeshProUGUI medianTextRight;
+    [SerializeField] private Image progress;
+    private bool PoseMatchHelperStarted=false;
+    private float remainingPoseMatchHelperDuration;
+    private List<float> mediansLeft;
+    private List<float> mediansRight;
+    
+    public void StartPoseMatchHelper() {
+        remainingPoseMatchHelperDuration = poseMatchHelperDuration+2.0f;
+        PoseMatchHelperStarted = true;
+        mediansLeft = new List<float>();
+        mediansRight = new List<float>();
+    }
+
     
     private void Update()
     {
         ProcessFrame(_leftGestureModule, ref currentFrameLeft, ref currentSequenceLeft, leftExpertHand, ref loopStartTimeLeft, loopEndTimeLeft, ref isPlayingLeft, ref playedFramesLeft, ref normalizedProgressLeft, ref normalizedProgressTotalLeft, Hand.Left);
         ProcessFrame(_rightGestureModule, ref currentFrameRight, ref currentSequenceRight, rightExpertHand, ref loopStartTimeRight, loopEndTimeRight, ref isPlayingRight, ref playedFramesRight, ref normalizedProgressRight, ref normalizedProgressTotalRight, Hand.Right);
-
-
-        if (Application.isEditor)
-        {
-
-            if (Input.GetKeyDown(KeyCode.P))
-            {
+        
+        if (Application.isEditor) {
+            
+            if (Input.GetKeyDown(KeyCode.P)) {
                 Pause();
             }
 
-            if (Input.GetKeyDown(KeyCode.R))
-            {
+            if (Input.GetKeyDown(KeyCode.R)) {
                 Resume();
             }
+
+
+            if (PoseMatchHelperStarted && remainingPoseMatchHelperDuration > 0) {
+                remainingPoseMatchHelperDuration -= Time.deltaTime;
+                
+                if (isPlayingLeft && (remainingPoseMatchHelperDuration<=poseMatchHelperDuration)) {
+                    // get current life user frames from headset
+                    float[] user_frame_data_left = GetFrame(leftRecorder);
+                    var result = _leftGestureModule.GetMaximumDifferenceFromCurrentPose(_leftGestureModule.GetSequenceEndFrameIndex(currentSequenceLeft), user_frame_data_left,left_hand_compare_mask);
+                    if (result > 0.0f) {
+                        mediansLeft.Add(result);
+                    }
+
+                    float currentMedianLeft = mediansLeft.Sum() / mediansLeft.Count;
+                    if(medianTextLeft)medianTextLeft.text = currentMedianLeft.ToString();
+                    if(progress) progress.fillAmount = 1.0f-(remainingPoseMatchHelperDuration/(poseMatchHelperDuration));
+                }
+
+                if (isPlayingRight && (remainingPoseMatchHelperDuration<=poseMatchHelperDuration)) {
+                    // get current life user frames from headset
+                    float[] user_frame_data_right = GetFrame(rightRecorder);
+                    var result = _rightGestureModule.GetMaximumDifferenceFromCurrentPose(_rightGestureModule.GetSequenceEndFrameIndex(currentSequenceRight), user_frame_data_right,  right_hand_compare_mask);
+                    if (result > 0.0f) {
+                        mediansRight.Add(result);
+                    }
+
+                    float currentMedianRight = mediansRight.Sum() / mediansRight.Count;
+                    if(medianTextRight) medianTextRight.text = currentMedianRight.ToString();
+                }
+            }
+            
 
         }
 
@@ -318,7 +375,9 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         }
         return c;
     }
-    
+
+
+
     
     protected void AnalyzePoseMatch() {
        
@@ -329,7 +388,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
             // get current life user frames from headset
             float[] user_frame_data_left = GetFrame(leftRecorder);
             // compare user frames with end poses
-            if (_leftGestureModule.SimilarPose(_leftGestureModule.GetSequenceEndFrameIndex(currentSequenceLeft), user_frame_data_left, poseMatchingThreshold, left_hand_compare_mask)) {
+            if (_leftGestureModule.SimilarPose(_leftGestureModule.GetSequenceEndFrameIndex(currentSequenceLeft), user_frame_data_left, PoseMatchingThresholdLeft, left_hand_compare_mask)) {
                 HandGestureParams gestureParams = new HandGestureParams();
                 gestureParams.isMatching = true;
                 gestureParams.side = Hand.Left;
@@ -344,7 +403,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
             // get current life user frames from headset
             float[] user_frame_data_right = GetFrame(rightRecorder);
             // compare user frames with end poses
-            if (_rightGestureModule.SimilarPose(_rightGestureModule.GetSequenceEndFrameIndex(currentSequenceRight), user_frame_data_right, poseMatchingThreshold, right_hand_compare_mask)) {
+            if (_rightGestureModule.SimilarPose(_rightGestureModule.GetSequenceEndFrameIndex(currentSequenceRight), user_frame_data_right, PoseMatchingThresholdRight, right_hand_compare_mask)) {
                 HandGestureParams gestureParams = new HandGestureParams();
                 gestureParams.isMatching = true;
                 gestureParams.side = Hand.Right;
