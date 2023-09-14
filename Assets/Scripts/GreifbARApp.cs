@@ -18,7 +18,7 @@ namespace DFKI.NMY
         public SerialController serialController;
         [Header("Varjo")]
         public MarkerManager markerManager;
-
+        public GreifbARVarjoManager varjoManager;
 
         protected override void StartupEnter()
         {
@@ -31,6 +31,11 @@ namespace DFKI.NMY
             Assert.IsNotNull(virtualAssistant);
             Assert.IsNotNull(serialController);
             Assert.IsNotNull(markerManager);
+            Assert.IsNotNull(varjoManager);
         }
+
+
+        
+        
     }
 }

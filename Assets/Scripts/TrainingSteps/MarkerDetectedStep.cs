@@ -31,6 +31,7 @@ namespace DFKI.NMY
                 }
                 catch (Exception e)
                 {
+                    Debug.Log("Skipping MarkerStep. Probably running the app without varjo connected is causing this...");
                     FinishedCriteria = true;
                 }
 

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using Leap.Unity;
+using NMY;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -15,16 +16,20 @@ namespace DFKI.NMY
         [SerializeField] private float minTrackedDuration = 2f;
         [SerializeField] private HandModelBase leftHand;
         [SerializeField] private HandModelBase rightHand;
+        [SerializeField] private ActivatableStartupBehaviour trackedHandsPreview;
         
         // helper vars
-        public float trackedLeftRemaining;
-        public float trackedRightRemaining;
+        private float trackedLeftRemaining;
+        private float trackedRightRemaining;
 
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
             trackedLeftRemaining = minTrackedDuration;
             trackedRightRemaining = minTrackedDuration;
+            if (trackedHandsPreview) {
+                trackedHandsPreview.Activate();
+            }
         }
         
         
@@ -34,6 +39,9 @@ namespace DFKI.NMY
             await base.PostStepActionAsync(ct);
             trackedLeftRemaining = 0f;
             trackedRightRemaining = 0f;
+            if (trackedHandsPreview) {
+                trackedHandsPreview.Deactivate();
+            }
         }
 
         private void Update()
