@@ -306,7 +306,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
 
             if (PoseMatchHelperStarted && remainingPoseMatchHelperDuration > 0) {
                 remainingPoseMatchHelperDuration -= Time.deltaTime;
-                
+                if(progress) progress.fillAmount = 1.0f-(remainingPoseMatchHelperDuration/(poseMatchHelperDuration));
                 if (isPlayingLeft && (remainingPoseMatchHelperDuration<=poseMatchHelperDuration)) {
                     // get current life user frames from headset
                     float[] user_frame_data_left = GetFrame(leftRecorder);
@@ -317,7 +317,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
 
                     float currentMedianLeft = mediansLeft.Sum() / mediansLeft.Count;
                     if(medianTextLeft)medianTextLeft.text = currentMedianLeft.ToString();
-                    if(progress) progress.fillAmount = 1.0f-(remainingPoseMatchHelperDuration/(poseMatchHelperDuration));
+                   
                 }
 
                 if (isPlayingRight && (remainingPoseMatchHelperDuration<=poseMatchHelperDuration)) {
