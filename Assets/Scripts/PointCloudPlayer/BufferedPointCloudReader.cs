@@ -34,7 +34,7 @@ public class BufferedPointCloudReader
         try
         {
             Debug.Log("Looking for ply files at " + folder);
-            plyFilePaths = Directory.GetFiles(folder, "*.ply");
+            plyFilePaths = Directory.GetFiles(Application.streamingAssetsPath+"/"+folder, "*.ply");
         }
 
         catch (Exception e)
@@ -166,7 +166,7 @@ public class BufferedPointCloudReader
     {
         //configFileLines = File.ReadAllLines(folder + "_PointCloudConfig.txt");
 
-        nFrames = Directory.GetFiles(folder, "*.ply").Length;
+        nFrames = Directory.GetFiles(Application.streamingAssetsPath+"/"+folder, "*.ply").Length;
         frameBuffer = new Frame[nFrames];
 
         //timeOffset = Convert.ToSingle (configFileLines [0]);

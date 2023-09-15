@@ -141,111 +141,84 @@ MonoBehaviour:
         m_Entries:
         - m_KeyId: 1063530369024
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1065388445696
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1067288465408
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1069209456640
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1071080116224
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1072933998592
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1074804658176
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1076645957632
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1078634057728
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1080596992000
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1082471845888
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1084388642816
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 30803410414047232
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1088431951872
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1090331971584
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1092248768512
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 1094119428096
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 17757963624787968
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 30803419658293248
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 30803421222768640
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 30803422787244032
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 30803424464965632
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 30803426016858112
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 30803427585527808
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 30803429145808896
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 30803430714478592
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 30803432283148288
           m_TableCodes:
-          - en
           - de
         m_TypeString: NMY.GoogleCloudTextToSpeech.LocalizedTextToSpeechItem, com.nmy.googlecloudtexttospeech,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

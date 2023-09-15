@@ -16,48 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: c8e9d0b86a14fad48bbc021e7c3afdd7
-  m_SerializeEntries:
-  - m_GUID: 2ce600190b6757e43b7dd09810e8128c
-    m_Address: Introduction_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b25d83ca43e061947bbe4b88a0ff30c8
-    m_Address: Setup_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b53c11cb11d6c494f80a9ea6b52e6d16
-    m_Address: Mittelfingerknoten_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 613aaf61b86a56645bdb3f824eab26a5
-    m_Address: FeedbackScreen_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 18900a985779a9040bf3884d2df11bfb
-    m_Address: UserInterface_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8968dc014cf63cc4e82c51a62c583926
-    m_Address: Chapter_Titles_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:

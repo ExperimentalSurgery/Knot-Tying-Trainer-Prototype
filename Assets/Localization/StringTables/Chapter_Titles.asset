@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SharedTableData: {fileID: 11400000, guid: 73b59995f20aa944984c9788ef9db8e7, type: 2}
   m_Tables:
-  - {fileID: 11400000, guid: 8968dc014cf63cc4e82c51a62c583926, type: 2}
   - {fileID: 11400000, guid: 9195cc55a30b4c14cae3059edc2ef86f, type: 2}
   m_Extensions:
   - rid: 2782521483282874371
@@ -31,24 +30,16 @@ MonoBehaviour:
         m_SheetId: 1771239698
         m_Columns:
         - rid: 2782521483282874373
-        - rid: 2782521483282874374
         - rid: 2782521483282874375
         m_RemoveMissingPulledKeys: 1
     - rid: 2782521483282874373
       type: {class: KeyColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
       data:
         m_Column: A
-    - rid: 2782521483282874374
-      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
-      data:
-        m_Column: B
-        m_LocaleIdentifier:
-          m_Code: en
-        m_IncludeComments: 0
     - rid: 2782521483282874375
       type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
       data:
-        m_Column: C
+        m_Column: B
         m_LocaleIdentifier:
           m_Code: de
         m_IncludeComments: 0

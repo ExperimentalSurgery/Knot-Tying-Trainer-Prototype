@@ -6,9 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8db4b24e-3b2b-4a07-b416-6d49153c6a95" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-German (de).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-German (de).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/AssetTables/Mittelfingerknoten Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/AssetTables/Mittelfingerknoten Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/AssetTables/Mittelfingerknoten_de.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/AssetTables/Mittelfingerknoten_de.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/BMBF_KnotbAR_main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BMBF_KnotbAR_main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BVH_Player.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BVH_Player.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GestureModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GestureModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BVHGestureBaseStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BVHGestureBaseStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PointCloudPlayer/BufferedPointCloudReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PointCloudPlayer/BufferedPointCloudReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/mfk_intro_assi_tryrepeat/de_mfk_intro_assi_tryrepeat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/mfk_intro_assi_tryrepeat/de_mfk_intro_assi_tryrepeat.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/mfk_intro_assi_tryrepeat/de_mfk_intro_assi_tryrepeat.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/mfk_intro_assi_tryrepeat/de_mfk_intro_assi_tryrepeat.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/tbd_39/de_tbd_39.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/tbd_39/de_tbd_39.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/tbd_39/de_tbd_39.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/tbd_39/de_tbd_39.asset.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +185,7 @@
       <workItem from="1694677332412" duration="9599000" />
       <workItem from="1694699178652" duration="1257000" />
       <workItem from="1694762714804" duration="5012000" />
+      <workItem from="1694781726081" duration="2022000" />
     </task>
     <servers />
   </component>

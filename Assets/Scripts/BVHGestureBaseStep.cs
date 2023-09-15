@@ -17,7 +17,7 @@ namespace DFKI.NMY
         [SerializeField] private string bvhFileRight;
         [FormerlySerializedAs("sequenceIndex")] [SerializeField] private int sequenceIndexLeft = 0;
         [SerializeField] private int sequenceIndexRight = 0;
-        [SerializeField] private bool showExpertHands = true;
+        [SerializeField] private bool showExpertHands = false;
 
         public int SequenceIndexLeft
         {

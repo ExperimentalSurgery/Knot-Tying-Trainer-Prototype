@@ -117,87 +117,66 @@ MonoBehaviour:
         m_Entries:
         - m_KeyId: 90237931520
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 91840155648
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 93433991168
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 95069769728
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 96713936896
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 98286800896
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 99914190848
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 101415751680
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 102997004288
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 104720863232
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 106281144320
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 107912728576
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 109477203968
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 111033290752
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 112731983872
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 114380345344
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 115919654912
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 117618348032
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 119182823424
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 120843767808
           m_TableCodes:
-          - en
           - de
         - m_KeyId: 122429214720
           m_TableCodes:
-          - en
           - de
         m_TypeString: NMY.GoogleCloudTextToSpeech.LocalizedTextToSpeechItem, com.nmy.googlecloudtexttospeech,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

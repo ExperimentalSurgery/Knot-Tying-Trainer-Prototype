@@ -79,6 +79,50 @@ MonoBehaviour:
     m_Key: mfk_part2_assi_position
     m_Metadata:
       m_Items: []
+  - m_Id: 38769910089355264
+    m_Key: mfk_part2_assi_bend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492608
+    m_Key: mfk_part2_assi_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492609
+    m_Key: mfk_part3_assi_demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492610
+    m_Key: mfk_part3_assi_demostretch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492611
+    m_Key: mfk_part3_assi_demopinch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492612
+    m_Key: mfk_part3_assi_hold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492613
+    m_Key: mfk_part3_assi_imitate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492614
+    m_Key: mfk_part3_assi_stretch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492615
+    m_Key: mfk_part3_assi_pinch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492616
+    m_Key: mfk_part3_assi_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492617
+    m_Key: mfk_part4_assi_demo
+    m_Metadata:
+      m_Items: []
   - m_Id: 2158436651011
     m_Key: mfk_part4_assi_demoletgo
     m_Metadata:
@@ -105,6 +149,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2158436651028
     m_Key: mfk_part4_assi_pull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492618
+    m_Key: mfk_part4_assi_fasten
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651029

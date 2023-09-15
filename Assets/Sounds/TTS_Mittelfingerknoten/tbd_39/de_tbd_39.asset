@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f38d5e8f078243e9a23136c4c2e38365, type: 3}
   m_Name: de_tbd_39
   m_EditorClassIdentifier: 
-  _audioClip: {fileID: 8300000, guid: afa78731b1ecf684e90947f3cb7ae8f4, type: 3}
-  _timestampAsset: {fileID: 4900000, guid: 8bcf40f2e15fa094e934ed190bab38ab, type: 3}
+  _audioClip: {fileID: 8300000, guid: 0790b486cfb4be94fb82326d4bb585b7, type: 3}
+  _timestampAsset: {fileID: 4900000, guid: fee197085e76c8e419c69c7d0cbe6495, type: 3}
   _timestamps: []
