@@ -58,8 +58,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19911727099666434
-    m_Localized: "Ihr Ziel f\xFCr heute ist es erfolgreich diese Sequenzen nach zu
-      knoten."
+    m_Localized: "Ihr Ziel f\xFCr heute ist es erfolgreiche diese Sequenzen nach
+      zu knoten."
     m_Metadata:
       m_Items: []
   - m_Id: 19911727099666433
@@ -72,127 +72,71 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2158432456716
-    m_Localized: "Als n\xE4chstes werden Sie den roten Faden mit Ihrem Ringfinger
-      unter den gr\xFCnen Faden f\xFChren."
+    m_Localized: "Als n\xE4chstes werden Sie den roten Faden mit Ihrem Mittelfinger
+      unter den gr\xFCnen Faden f\xFChren. Das klingt kompliziert, ist aber ganz
+      einfach. Ich mache es Ihnen einmal vor."
     m_Metadata:
       m_Items: []
   - m_Id: 2158432456717
-    m_Localized: Das klingt kompliziert, ist aber ganz einfach. Ich mache es Ihnen
-      einmal vor.
+    m_Localized: Als erstes legen wir den rechten Mittelfinger an den roten Faden.
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651008
-    m_Localized: Als erster bewegen Sie Ihre rechte Hand auf den roten Faden zu.
+    m_Localized: "Mit etwas Geschick kr\xFCmmen Sie dann den Mittelfinger und ziehen
+      dabei den roten Faden in Richtung Handinnenfl\xE4che unter dem gr\xFCnen Faden
+      hindurch. In der Position verweilen Sie dann bitte."
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651009
-    m_Localized: Ziel ist es den roten Faden auf das Gelenk zwischen Fingermittelgelenke
-      des Mittelfingers der rechten Hand zu platzieren.
+    m_Localized: 'Machen Sie es mir nun nach:'
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651010
-    m_Localized: "Wenn der Faden dort platziert ist, f\xFChren Sie den roten Faden
-      in Richtung ihrer Ringfingerspitze."
+    m_Localized: "Bewegen Sie die rechte Hand zwischen die zwei F\xE4den. Der gr\xFCne
+      Faden bleibt dabei auf dem Endgelenk des kleinen Fingers und der roten Faden
+      wird auf dem Mittelgelenk des Mittelfingers der rechten Hand platziert."
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651011
-    m_Localized: "Mit etwas Geschick kr\xFCmmen Sie dann den Mittelfinger und ziehen
-      dabei den roten Faden in Richtung Handinnenfl\xE4che unter den den gr\xFCnen
-      Faden."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651012
-    m_Localized: In der Position verweilen Sie dann bitte.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651013
-    m_Localized: 'Machen Sie es mir nun nach:'
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651014
-    m_Localized: "Bewegen Sie die rechte Hand zwischen die zwei F\xE4den. der gr\xFCne
-      Faden bleibt dabei auf dem Endgelenke des kleinen Fingers und der roten Faden
-      wird auf dem Mittelgelenk des Mittelfinger der rechten Hand platziert."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651015
     m_Localized: "Dann kr\xFCmmen Sie den Mittelfinger der rechten Hand und f\xFChren
-      den roten Faden unter dem gr\xFCnen Faden hindurch."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651016
-    m_Localized: Wunderbar! Direkt weiter zum bereits vorletzten Schritt. Sie haben
-      es fast geschafft!
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651017
-    m_Localized: "In diesem Schritt werden Sie den gr\xFCnen Faden zwischen Ring-
-      und Mittelfinger f\xFChren und dort festhalten."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651018
-    m_Localized: "Sie werden einfach den gekr\xFCmmten Mittelfinger wieder strecken
-      und dabei den gr\xFCnen Faden nach unten dr\xFCcken."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651019
-    m_Localized: Klemmen Sie dann den Faden mit zwischen dem gestreckten Ring- und
-      Mittelfinger ein.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651020
-    m_Localized: "Lassen Sie den gr\xFCnen Faden mit Ihrem Zeigenfinger und Daumen
-      noch nicht los."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651021
-    m_Localized: In der Position verweilen Sie dann bitte.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651022
-    m_Localized: 'Machen Sie es mir nun nach:'
+      den roten Faden unter dem gr\xFCnen hindurch."
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651023
-    m_Localized: "Strecken Sie den Mittelfinger und dr\xFCcken so den gr\xFCnen Faden
-      herunter."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651024
-    m_Localized: "Klemmen Sie den gr\xFCnen Faden zwischen Ihrem Ring- und Mittelfinger
-      ein."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651025
-    m_Localized: "Hervorragend! Gehen wir \xFCber zum letzten Schritt \xFCber."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651026
-    m_Localized: "Die letzte Abfolge die Sie bew\xE4ltigen, wirkt erstmal etwas l\xE4nger
-      als die anderen. Daf\xFCr ist sie aber wirklich simpel und intuitiv."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651027
-    m_Localized: Das Ziel ist es den Knoten nun fertig zu stellen.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651028
-    m_Localized: "Das erste was Sie machen ist den Faden zwischen Zeigefinger und
-      Daumen loszulassen. Am besten Strecken Sie den Zeigefinger um das lose, gr\xFCne
-      Fadenende frei zu bekommen."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651029
     m_Localized: "Ziehen Sie nun Ihren Mittel-, Ring- und Kleinenfinger aus der Schlaufe,
       w\xE4hrend Sie den gr\xFCnen Faden zwischen Ring- und Mittelfinger halten."
     m_Metadata:
       m_Items: []
-  - m_Id: 2158436651030
-    m_Localized: "Greifen Sie den gr\xFCnen Faden nun mit Ihrem Daumen und Zeigenfinger."
+  - m_Id: 2158436651024
+    m_Localized: "Greifen Sie den gr\xFCnen Faden nun mit Ihrem Daumen und Zeigenfinger
+      und ziehen den Knoten mit der rechten Hand fest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651025
+    m_Localized: "Dr\xFCcken Sie nun den Knoten mit dem Zeigefinger auf die Knotenbank,
+      um maximale Festigkeit zu gew\xE4hrleisten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651026
+    m_Localized: Das sind jetzt viele Schritte aber Sie schaffen das. Machen Sie
+      es mir nun nach.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651027
+    m_Localized: Erst Zeigefinger und Daumen los lassen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651028
+    m_Localized: Faden durch die Schlaufe ziehen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651029
+    m_Localized: "Greifen Sie den gr\xFCnen Faden mit Zeigefinger und Daumen und
+      ziehen Sie den Knoten fest."
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651031
-    m_Localized: Ziehen Sie nun den Knoten mit der rechten Hand fest.
+    m_Localized: Hervorragend! Das war sehr gut!
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651032
@@ -236,6 +180,25 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2158436651041
     m_Localized: "Das war es f\xFCr diese \xDCbung. Fahren Sie fort mit dem Zeigefingerknoten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451548184576
+    m_Localized: "Deine Handhaltung stimmt noch nicht ganz. Sieh dir die Trainerh\xE4nde
+      noch einmal genau an und mache die Gesten nach."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516224
+    m_Localized: Entspanne den Faden ein wenig. Wir haben zu viel Spannung auf der
+      Knotenbank.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516225
+    m_Localized: Spanne den Faden etwas fester. Wir haben zu wenig Spannung auf der
+      Knotenbank.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516226
+    m_Localized: Sehr gut, so passt es!
     m_Metadata:
       m_Items: []
   references:

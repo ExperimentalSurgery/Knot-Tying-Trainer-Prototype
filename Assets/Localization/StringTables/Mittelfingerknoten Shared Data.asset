@@ -60,103 +60,55 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2158432456716
-    m_Key: tbd_14
+    m_Key: mfk_part2_assi_demo
     m_Metadata:
       m_Items: []
   - m_Id: 2158432456717
-    m_Key: tbd_15
+    m_Key: mfk_part2_assi_demoposition
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651008
-    m_Key: tbd_16
+    m_Key: mfk_part2_assi_demobend
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651009
-    m_Key: tbd_17
+    m_Key: mfk_part2_assi_imitate
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651010
-    m_Key: tbd_18
+    m_Key: mfk_part2_assi_position
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651011
-    m_Key: tbd_19
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651012
-    m_Key: tbd_20
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651013
-    m_Key: tbd_21
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651014
-    m_Key: tbd_22
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651015
-    m_Key: tbd_23
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651016
-    m_Key: tbd_24
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651017
-    m_Key: tbd_25
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651018
-    m_Key: tbd_26
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651019
-    m_Key: tbd_27
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651020
-    m_Key: tbd_28
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651021
-    m_Key: tbd_29
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651022
-    m_Key: tbd_30
+    m_Key: mfk_part4_assi_demoletgo
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651023
-    m_Key: tbd_31
+    m_Key: mfk_part4_assi_demopull
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651024
-    m_Key: tbd_32
+    m_Key: mfk_part4_assi_demofasten
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651025
-    m_Key: tbd_33
+    m_Key: mfk_part4_assi_demopress
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651026
-    m_Key: tbd_34
+    m_Key: mfk_part4_assi_imitate
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651027
-    m_Key: tbd_35
+    m_Key: mfk_part4_assi_letgo
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651028
-    m_Key: tbd_36
+    m_Key: mfk_part4_assi_pull
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651029
-    m_Key: tbd_37
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651030
-    m_Key: tbd_38
+    m_Key: mfk_part4_assi_press
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651031
@@ -201,6 +153,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2158436651041
     m_Key: mfk_outro_assi_indexfinger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451548184576
+    m_Key: mfk_mistake_gesture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516224
+    m_Key: mfk_mistake_hightension
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516225
+    m_Key: mfk_mistake_lowtension
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516226
+    m_Key: mfk_mistake_corrected
     m_Metadata:
       m_Items: []
   m_Metadata:

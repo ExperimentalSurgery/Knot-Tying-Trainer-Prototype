@@ -215,6 +215,70 @@ MonoBehaviour:
     m_Key: mfk_outro_assi_indexfinger
     m_Metadata:
       m_Items: []
+  - m_Id: 38753480002342912
+    m_Key: mfk_part2_assi_demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753482552479744
+    m_Key: mfk_part2_assi_demoposition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753486524485632
+    m_Key: mfk_part2_assi_demobend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753489879928832
+    m_Key: mfk_part2_assi_imitate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753492174213120
+    m_Key: mfk_part2_assi_position
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753494330085376
+    m_Key: mfk_part4_assi_demoletgo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753495965863936
+    m_Key: mfk_part4_assi_demopull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753497643585536
+    m_Key: mfk_part4_assi_demofasten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753499312918528
+    m_Key: mfk_part4_assi_demopress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753500940308480
+    m_Key: mfk_part4_assi_imitate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753502580281344
+    m_Key: mfk_part4_assi_letgo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753504144756736
+    m_Key: mfk_part4_assi_pull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753505700843520
+    m_Key: mfk_part4_assi_press
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753508930457600
+    m_Key: mfk_mistake_gesture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753509735763968
+    m_Key: mfk_mistake_hightension
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753510532681728
+    m_Key: mfk_mistake_lowtension
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 5524020211541606736
@@ -742,6 +806,67 @@ MonoBehaviour:
         - m_KeyId: 22842243401003008
           m_TableCodes:
           - en
+          - de
+        - m_KeyId: 38753480002342912
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753482552479744
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753486524485632
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753489879928832
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753492174213120
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753494330085376
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753495965863936
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753497643585536
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753499312918528
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753500940308480
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753502580281344
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753504144756736
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753505700843520
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 38753508930457600
+          m_TableCodes:
+          - de
+        - m_KeyId: 38753509735763968
+          m_TableCodes:
+          - de
+        - m_KeyId: 38753510532681728
+          m_TableCodes:
           - de
         m_TypeString: NMY.GoogleCloudTextToSpeech.LocalizedTextToSpeechItem, com.nmy.googlecloudtexttospeech,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

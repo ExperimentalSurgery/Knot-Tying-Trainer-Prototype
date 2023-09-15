@@ -1606,13 +1606,13 @@ MonoBehaviour:
   autoStartup: 1
   startupInAwake: 0
   autoStart: 1
-  autoStartSequenceLeft: 1
-  autoStartSequenceRight: 1
+  autoStartSequenceLeft: 0
+  autoStartSequenceRight: 0
   analyzePoseMatching: 0
   analyzeFinalFrameOnly: 1
   loopAllSequences: 1
   playAllSequences: 1
-  loopSingleSequencePlayback: 1
+  loopSingleSequencePlayback: 0
   useReducedSpeed: 0
   poseMatchingThresholdRight: 25
   poseMatchingThresholdLeft: 25
@@ -1620,9 +1620,9 @@ MonoBehaviour:
   rightHandPosMod: {x: -1, y: -1, z: 1}
   rightHandRotMod: {x: 1, y: 1, z: -1}
   originOffset: {x: 0, y: 0.1, z: -1}
-  streamingAssetsSubDirectory: BVHdata
-  leftHandBvhFile: thumbsup_left
-  rightHandBvhFile: thumbsup_right
+  streamingAssetsSubDirectory: BVHdata/Zeigefinger_BVH
+  leftHandBvhFile: ZFK_LeftHand
+  rightHandBvhFile: ZFK_LeftHand
   leftRecorder: {fileID: 1778681149}
   rightRecorder: {fileID: 349090846}
   leftExpertHand: {fileID: 1778607812}
