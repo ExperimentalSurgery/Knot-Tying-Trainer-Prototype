@@ -139,38 +139,6 @@ MonoBehaviour:
     m_Key: mfk_mistake_corrected
     m_Metadata:
       m_Items: []
-  - m_Id: 38770053119315968
-    m_Key: tbd_39
-    m_Metadata:
-      m_Items: []
-  - m_Id: 38770053928816640
-    m_Key: tbd_40
-    m_Metadata:
-      m_Items: []
-  - m_Id: 38770054717345792
-    m_Key: tbd_41
-    m_Metadata:
-      m_Items: []
-  - m_Id: 38770055497486336
-    m_Key: tbd_42
-    m_Metadata:
-      m_Items: []
-  - m_Id: 38770056269238272
-    m_Key: tbd_43
-    m_Metadata:
-      m_Items: []
-  - m_Id: 38770057057767424
-    m_Key: tbd_44
-    m_Metadata:
-      m_Items: []
-  - m_Id: 38770057842102272
-    m_Key: tbd_45
-    m_Metadata:
-      m_Items: []
-  - m_Id: 38770058622242816
-    m_Key: tbd_46
-    m_Metadata:
-      m_Items: []
   - m_Id: 38770059402383360
     m_Key: mfk_part2_assi_bend
     m_Metadata:
@@ -638,30 +606,6 @@ MonoBehaviour:
           m_TableCodes:
           - de
         - m_KeyId: 38753511329599488
-          m_TableCodes:
-          - de
-        - m_KeyId: 38770053119315968
-          m_TableCodes:
-          - de
-        - m_KeyId: 38770053928816640
-          m_TableCodes:
-          - de
-        - m_KeyId: 38770054717345792
-          m_TableCodes:
-          - de
-        - m_KeyId: 38770055497486336
-          m_TableCodes:
-          - de
-        - m_KeyId: 38770056269238272
-          m_TableCodes:
-          - de
-        - m_KeyId: 38770057057767424
-          m_TableCodes:
-          - de
-        - m_KeyId: 38770057842102272
-          m_TableCodes:
-          - de
-        - m_KeyId: 38770058622242816
           m_TableCodes:
           - de
         - m_KeyId: 38770059402383360

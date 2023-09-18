@@ -159,38 +159,6 @@ MonoBehaviour:
     m_Key: mfk_part4_assi_press
     m_Metadata:
       m_Items: []
-  - m_Id: 2158436651031
-    m_Key: tbd_39
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651032
-    m_Key: tbd_40
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651033
-    m_Key: tbd_41
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651034
-    m_Key: tbd_42
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651035
-    m_Key: tbd_43
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651036
-    m_Key: tbd_44
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651037
-    m_Key: tbd_45
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651038
-    m_Key: tbd_46
-    m_Metadata:
-      m_Items: []
   - m_Id: 2158436651039
     m_Key: mfk_outro_assi_verygood
     m_Metadata:

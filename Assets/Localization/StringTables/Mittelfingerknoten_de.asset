@@ -135,40 +135,6 @@ MonoBehaviour:
     m_Localized: "Dr\xFCcken Sie den Knoten fest."
     m_Metadata:
       m_Items: []
-  - m_Id: 2158436651031
-    m_Localized: Hervorragend! Das war sehr gut!
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651032
-    m_Localized: "Dr\xFCcken Sie nun den Knoten mit dem Zeigefinger auf die Knotenbank,
-      um maximale Festigkeit zu gew\xE4hrleisten."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651033
-    m_Localized: Das sind jetzt viele Schritte aber Sie schaffen das.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651034
-    m_Localized: 'Machen Sie es mir nun nach:'
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651035
-    m_Localized: Erst Zeigefinger und Daumen los lassen.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651036
-    m_Localized: Faden durch die Schlaufe ziehen.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651037
-    m_Localized: "Greifen Sie den gr\xFCnen Faden mit Zeigefinger und Daumen und
-      ziehen Sie den Knoten fest."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158436651038
-    m_Localized: "Dr\xFCcken Sie den Knoten fest."
-    m_Metadata:
-      m_Items: []
   - m_Id: 2158436651039
     m_Localized: Hervorragend! Das war sehr gut!
     m_Metadata:

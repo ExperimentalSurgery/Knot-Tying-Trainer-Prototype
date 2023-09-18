@@ -173,46 +173,6 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 401043919429959711
-  - m_Id: 38770053119315968
-    m_Localized: fd8ac3695ca4bf9449b3190657a47498
-    m_Metadata:
-      m_Items:
-      - rid: 401043920369483778
-  - m_Id: 38770053928816640
-    m_Localized: 9020ef2bf24955649a832300c144915a
-    m_Metadata:
-      m_Items:
-      - rid: 401043920369483779
-  - m_Id: 38770054717345792
-    m_Localized: 5ffe495686b76d64bac0a1254241d8c7
-    m_Metadata:
-      m_Items:
-      - rid: 401043920369483780
-  - m_Id: 38770055497486336
-    m_Localized: b52c77f2122dd5a4cb1fdf4ad2cb7118
-    m_Metadata:
-      m_Items:
-      - rid: 401043920369483781
-  - m_Id: 38770056269238272
-    m_Localized: 22681bd693df0a548b9a87c96da58120
-    m_Metadata:
-      m_Items:
-      - rid: 401043920369483782
-  - m_Id: 38770057057767424
-    m_Localized: 908fba8b1566907479baf84fd004bf86
-    m_Metadata:
-      m_Items:
-      - rid: 401043920369483783
-  - m_Id: 38770057842102272
-    m_Localized: 9eefeb7befc811f4498b5e064bae4ffc
-    m_Metadata:
-      m_Items:
-      - rid: 401043920369483784
-  - m_Id: 38770058622242816
-    m_Localized: 790f6f7c70d637a4abfb452f690bcfcb
-    m_Metadata:
-      m_Items:
-      - rid: 401043920369483785
   - m_Id: 38770059402383360
     m_Localized: ebc78288f81c5634fb0d3ebf7b2037f4
     m_Metadata:
@@ -395,56 +355,6 @@ MonoBehaviour:
         created: 2023-09-15 14:46:26
         lastModified: 2023-09-15 14:46:26
         spokenText: Sehr gut, so passt es!
-    - rid: 401043920369483778
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-09-15 15:52:10
-        lastModified: 2023-09-15 15:52:10
-        spokenText: Hervorragend! Das war sehr gut!
-    - rid: 401043920369483779
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-09-15 15:52:10
-        lastModified: 2023-09-15 15:52:10
-        spokenText: "Dr\xFCcken Sie nun den Knoten mit dem Zeigefinger auf die Knotenbank,
-          um maximale Festigkeit zu gew\xE4hrleisten."
-    - rid: 401043920369483780
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-09-15 15:52:10
-        lastModified: 2023-09-15 15:52:10
-        spokenText: Das sind jetzt viele Schritte aber Sie schaffen das.
-    - rid: 401043920369483781
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-09-15 15:52:10
-        lastModified: 2023-09-15 15:52:10
-        spokenText: 'Machen Sie es mir nun nach:'
-    - rid: 401043920369483782
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-09-15 15:52:10
-        lastModified: 2023-09-15 15:52:10
-        spokenText: Erst Zeigefinger und Daumen los lassen.
-    - rid: 401043920369483783
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-09-15 15:52:11
-        lastModified: 2023-09-15 15:52:11
-        spokenText: Faden durch die Schlaufe ziehen.
-    - rid: 401043920369483784
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-09-15 15:52:11
-        lastModified: 2023-09-15 15:52:11
-        spokenText: "Greifen Sie den gr\xFCnen Faden mit Zeigefinger und Daumen und
-          ziehen Sie den Knoten fest."
-    - rid: 401043920369483785
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-09-15 15:52:11
-        lastModified: 2023-09-15 15:52:11
-        spokenText: "Dr\xFCcken Sie den Knoten fest."
     - rid: 401043920369483786
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
