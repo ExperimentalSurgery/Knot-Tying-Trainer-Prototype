@@ -30,6 +30,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b458504077354ecdbd57c443ed5768eb34600/bd/649803a8/BaseVirtualAssistantTrainingStep.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/DataIntegrityTests/GreifbarIntegrityTests_Steps.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/TestTools.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Geometry_Sequence_Streaming_Package-main/Runtime/Scripts/Core/BufferedGeometryReader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GreifbarGeometrySequencePlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cysharp.unitask@d210e3d76a/Runtime/UniTaskScheduler.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -124,6 +127,7 @@
       <workItem from="1695047017438" duration="730000" />
       <workItem from="1695047774581" duration="2169000" />
       <workItem from="1695108518083" duration="275000" />
+      <workItem from="1695108810080" duration="8563000" />
     </task>
     <servers />
   </component>

@@ -34,7 +34,6 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     
     [Header("Config")] 
     [SerializeField] private bool analyzePoseMatching = true;
-    [SerializeField] private bool analyzeFinalFrameOnly=true;
     [SerializeField] private bool loopAllSequences = false;
     [SerializeField] private bool playAllSequences = false;
     [SerializeField] private bool loopSingleSequencePlayback = false;

@@ -1,43 +1,36 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using DFKI.NMY.PoincloudPlayer;
-using NMY.VirtualRealityTraining.VirtualAssistant;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace DFKI.NMY
 {
     
-
     public class PointCloudViewerStep : GreifbarBaseStep
     {
         
         [Header("PointCloudViewerStep")]
         public bool waitForStreamPlayedOnce = true;
         public bool manipulatePlayerPose = false;
-        public Vector3 playerPosition = Vector3.zero;
-        public Vector3 playerRotation = Vector3.zero;
+        public Vector3 playerPosition;
+        public Vector3 playerRotation;
         [Header("PointCloud Source Config")]
         [SerializeField] private string pathToSequence = "PointClouds/***";
-        [SerializeField] private PointCloudPlayer player;
+        
 
         [Header("(Optional) Player Settings")] [SerializeField]
         private bool manipulateFPS = false;
         [SerializeField] private int targetFPS = 30;
 
-        private bool streamHasPlayedOnce=false;
-        
+        private GreifbarGeometrySequencePlayer player;
 
         protected override void Reset()
         {
             base.Reset();
-            player = FindObjectOfType<PointCloudPlayer>(true);
             this.name =  "[PointCloudViewerStep] " + this.name.Trim(' ');
+            
         }
         void OnStreamFinished(){
-            streamHasPlayedOnce = true;
             if(waitForStreamPlayedOnce){
                 FinishedCriteria = true;
             }
@@ -46,8 +39,12 @@ namespace DFKI.NMY
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
             await base.PreStepActionAsync(ct);
+            if (!player)
+            {
+                player = FindObjectOfType<GreifbarGeometrySequencePlayer>(true);
+                Assert.IsNotNull(player, "Missing GreifbarGeometryPlayer in scene");
+            }
 
-            streamHasPlayedOnce = false;
             player.FinishedStream.AddListener(OnStreamFinished);
 
             if (player == null) {
@@ -61,12 +58,11 @@ namespace DFKI.NMY
             }
 
             // stop current player actions
-            player.StopThread();
+            player.Stop();
             
             // Setup new stream
-            player.PathToSequence = pathToSequence;
-            player.SetupReaderAndPCManager();
-            player.FPS = manipulateFPS ? targetFPS : player.FPS;
+            player.RelativePath = pathToSequence;
+            player.PlaybackFPS = manipulateFPS ? targetFPS : player.PlaybackFPS;
             player.Play();
 
         }
@@ -76,7 +72,7 @@ namespace DFKI.NMY
         protected override async UniTask PostStepActionAsync(CancellationToken ct) {
             await base.PostStepActionAsync(ct);
             player.FinishedStream.RemoveListener(OnStreamFinished);
-            player.StopThread();
+            player.Stop();
         }
         
     }

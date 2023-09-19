@@ -63,7 +63,7 @@ namespace DFKI.NMY
         public void TogglePlaybackSpeed()
         {
             GreifbARApp.instance.gestureSequencePlayer.ToggleSpeed();
-            GreifbARApp.instance.pointCloudPlayer.TogglePlaybackSpeed();
+            GreifbARApp.instance.pointCloudPlayer.ToggleSpeed();
         }
         public void ToggleStepListView()
         {

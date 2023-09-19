@@ -19,7 +19,7 @@ namespace DFKI.NMY
             
             Debug.Log(this.gameObject.name+" PretStepAction");
             await base.PreStepActionAsync(ct);
-        
+            
             /*UserInterfaceManager.instance.ResetFingerHighlights();
              // Hand Highlighting
             foreach (FingerHighlightContainer highlightConfig in highlights) {

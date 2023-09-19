@@ -1,3 +1,4 @@
+using BuildingVolumes.Streaming;
 using NMY;
 using NMY.VirtualRealityTraining.VirtualAssistant;
 using UnityEngine;
@@ -9,7 +10,7 @@ namespace DFKI.NMY
     {
         [Header("Various")] 
         public UserInterfaceManager userInterfaceManager;
-        public PointCloudPlayer pointCloudPlayer;
+        public GreifbarGeometrySequencePlayer pointCloudPlayer;
         public GestureSequencePlayer gestureSequencePlayer;
         public BVHManager bvhManager;
         public HandVisualizer handVisualizer;
