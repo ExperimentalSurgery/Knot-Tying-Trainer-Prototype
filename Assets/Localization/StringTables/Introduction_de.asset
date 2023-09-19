@@ -18,10 +18,6 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 11020050432
-    m_Localized: Noch nicht gesetzt.
-    m_Metadata:
-      m_Items: []
   - m_Id: 516874579968
     m_Localized: "Willkommen zur GreifbAR-Demo. Hier lernen Sie wie Sie einen chirurgischen
       Knoten kn\xFCpfen."

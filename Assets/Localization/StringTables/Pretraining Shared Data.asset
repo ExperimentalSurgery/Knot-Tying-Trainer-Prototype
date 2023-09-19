@@ -15,10 +15,6 @@ MonoBehaviour:
   m_TableCollectionName: Setup
   m_TableCollectionNameGuidString: 03d10c4bda2076040a2706f6e217ee9d
   m_Entries:
-  - m_Id: 11020050432
-    m_Key: tbd
-    m_Metadata:
-      m_Items: []
   - m_Id: 323437473792
     m_Key: setup_assi_start
     m_Metadata:

@@ -15,10 +15,6 @@ MonoBehaviour:
   m_TableCollectionName: Introduction_Assets
   m_TableCollectionNameGuidString: 4de38e98376a1df4fa7901352b647740
   m_Entries:
-  - m_Id: 1063530369024
-    m_Key: tbd
-    m_Metadata:
-      m_Items: []
   - m_Id: 1065388445696
     m_Key: intro_assi_start
     m_Metadata:
@@ -139,9 +135,6 @@ MonoBehaviour:
       type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries:
-        - m_KeyId: 1063530369024
-          m_TableCodes:
-          - de
         - m_KeyId: 1065388445696
           m_TableCodes:
           - de

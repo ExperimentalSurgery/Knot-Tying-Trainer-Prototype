@@ -18,11 +18,6 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 1063530369024
-    m_Localized: 0be2d1a4427b79242959a5b718345e8a
-    m_Metadata:
-      m_Items:
-      - rid: 4556038250801397897
   - m_Id: 1065388445696
     m_Localized: 07df0f3e3def16b4c9e76b1f11a2f172
     m_Metadata:
@@ -224,12 +219,6 @@ MonoBehaviour:
         spokenText: "Sie sollten nun sehen, wie die Trainer-H\xE4nde eine Geste vorf\xFChren.
           Machen Sie die Geste bitte mal nach und halten Sie Ihre H\xE4nde eine Zeit
           lang in der Endposition."
-    - rid: 4556038250801397897
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-05-31 16:00:03
-        lastModified: 2023-05-31 16:00:03
-        spokenText: Noch nicht gesetzt.
     - rid: 4556038250801397899
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:

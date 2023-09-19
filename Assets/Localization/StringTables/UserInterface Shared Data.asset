@@ -15,10 +15,6 @@ MonoBehaviour:
   m_TableCollectionName: UserInterface
   m_TableCollectionNameGuidString: e1e1b9f435608844c844ff6f4baf2bd6
   m_Entries:
-  - m_Id: 11020050432
-    m_Key: tbd
-    m_Metadata:
-      m_Items: []
   - m_Id: 985852293120
     m_Key: ui_next
     m_Metadata:

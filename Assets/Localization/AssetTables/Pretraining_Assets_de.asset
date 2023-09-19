@@ -18,11 +18,6 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 90237931520
-    m_Localized: 8c40801a7b1422840851aef4442ab290
-    m_Metadata:
-      m_Items:
-      - rid: 5524020116102840324
   - m_Id: 91840155648
     m_Localized: 35c0754951d4e034abe8bd244553886d
     m_Metadata:
@@ -126,12 +121,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5524020116102840324
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-06-01 11:08:05
-        lastModified: 2023-06-01 11:08:05
-        spokenText: Noch nicht gesetzt.
     - rid: 5524020116102840326
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:

@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8db4b24e-3b2b-4a07-b416-6d49153c6a95" name="Changes" comment="">
+    <list default="true" id="413a0c9f-64e6-445e-8035-98f7d03f9075" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-German (de).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-German (de).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Localization/AssetTables/Mittelfingerknoten Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/AssetTables/Mittelfingerknoten Shared Data.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Localization/AssetTables/Mittelfingerknoten_de.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/AssetTables/Mittelfingerknoten_de.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vsconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/BMBF_KnotbAR_main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BMBF_KnotbAR_main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BVHGestureBaseStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BVHGestureBaseStep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PointCloudPlayer/BufferedPointCloudReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PointCloudPlayer/BufferedPointCloudReader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/mfk_intro_assi_tryrepeat/de_mfk_intro_assi_tryrepeat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/mfk_intro_assi_tryrepeat/de_mfk_intro_assi_tryrepeat.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/mfk_intro_assi_tryrepeat/de_mfk_intro_assi_tryrepeat.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/mfk_intro_assi_tryrepeat/de_mfk_intro_assi_tryrepeat.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/tbd_39/de_tbd_39.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/tbd_39/de_tbd_39.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/tbd_39/de_tbd_39.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/TTS_Mittelfingerknoten/tbd_39/de_tbd_39.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GreifbarVirtualAssistantStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TrainingSteps/GreifbarVirtualAssistantStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thumbsup_left.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thumbsup_right.bvh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,16 +24,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c196f7eb1814e0981addc314866526330e00/d0/5c0960c4/BaseTrainingStep.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c196f7eb1814e0981addc314866526330e00/f6/dfe47e35/BaseVirtualAssistantTrainingStep.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/646da9943c144a169e6f871051ae4fe833000/03/7c4a7798/ParallelExecutionStep.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b458504077354ecdbd57c443ed5768eb34600/4b/b9481fd9/ChapterTrainingStep.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e97d84204f8d4aef92b538c5bab948f1172800/90/84e2d3ce/ISerializationCallbackReceiver.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GreifbARVarjoManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HandHighlights.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cysharp.unitask@d210e3d76a/Runtime/UniTaskScheduler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.4.4/Editor/Plugins/Google/SheetsServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.4.4/Editor/Settings/LocalizationTableCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/646da9943c144a169e6f871051ae4fe833000/15/4ddf0c90/BaseVirtualAssistantTrainingStep.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/646da9943c144a169e6f871051ae4fe833000/23/81bde732/VirtualAssistantSpeakStep.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b458504077354ecdbd57c443ed5768eb34600/2e/f65eb299/VirtualAssistantSpeakStep.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b458504077354ecdbd57c443ed5768eb34600/bd/649803a8/BaseVirtualAssistantTrainingStep.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/DataIntegrityTests/GreifbarIntegrityTests_Steps.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/TestTools.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,7 +38,7 @@
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2PopzFZQb2pE3KWxkFkSY8lgMWZ" />
+  <component name="ProjectId" id="2VZcOea76WStVHFWVsZ27rbHzVK" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -53,8 +47,6 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -64,8 +56,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -80,7 +71,7 @@
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Desktop/BUILDS/GreifbAR/20230809-GreifbAR-KnotbAR-v0.9.0 Incl. PointClouds\Greifbar_KnotbAR.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\Mark\Desktop\BUILDS\greifbar\build" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Mark\Desktop\BUILDS\GreifbAR\20230809-GreifbAR-KnotbAR-v0.9.0 Incl. PointClouds" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
@@ -97,14 +88,6 @@
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\Mark\Documents\wkspaces\GIT\Greifbar_EvaluationPrototype -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Mark\Documents\wkspaces\GIT\Greifbar_EvaluationPrototype" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <method v="2" />
-    </configuration>
-    <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\UnityEditor\2022.3.0f1\Editor\Unity.exe" />
-      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\lenovo\Documents\GitHub\Greifbar_EvaluationPrototype -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\lenovo\Documents\GitHub\Greifbar_EvaluationPrototype" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
@@ -133,59 +116,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8db4b24e-3b2b-4a07-b416-6d49153c6a95" name="Changes" comment="" />
-      <created>1684133556198</created>
+      <changelist id="413a0c9f-64e6-445e-8035-98f7d03f9075" name="Changes" comment="" />
+      <created>1695047013112</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1684133556198</updated>
-      <workItem from="1684133557803" duration="9586000" />
-      <workItem from="1684154901633" duration="5613000" />
-      <workItem from="1684220642223" duration="13112000" />
-      <workItem from="1684250612816" duration="1664000" />
-      <workItem from="1684316086281" duration="10488000" />
-      <workItem from="1684336397494" duration="2084000" />
-      <workItem from="1684475319317" duration="443000" />
-      <workItem from="1684476009204" duration="13332000" />
-      <workItem from="1684500528014" duration="3890000" />
-      <workItem from="1684739073795" duration="3088000" />
-      <workItem from="1684744080772" duration="1419000" />
-      <workItem from="1684748408971" duration="1193000" />
-      <workItem from="1685612310658" duration="2109000" />
-      <workItem from="1685620988632" duration="6892000" />
-      <workItem from="1685691253702" duration="6739000" />
-      <workItem from="1685972930159" duration="1153000" />
-      <workItem from="1686126304067" duration="1484000" />
-      <workItem from="1686130823319" duration="568000" />
-      <workItem from="1686131445438" duration="49000" />
-      <workItem from="1686131512857" duration="12000" />
-      <workItem from="1686131614101" duration="6000" />
-      <workItem from="1688364647762" duration="639000" />
-      <workItem from="1688365301221" duration="58000" />
-      <workItem from="1688367821916" duration="9558000" />
-      <workItem from="1688386243768" duration="8632000" />
-      <workItem from="1688450398631" duration="8202000" />
-      <workItem from="1688559270726" duration="5078000" />
-      <workItem from="1688718775955" duration="73000" />
-      <workItem from="1688718879080" duration="32000" />
-      <workItem from="1688983414480" duration="3823000" />
-      <workItem from="1690273126968" duration="2764000" />
-      <workItem from="1690277182476" duration="636000" />
-      <workItem from="1690277834715" duration="4456000" />
-      <workItem from="1690448697869" duration="1169000" />
-      <workItem from="1691653138374" duration="2818000" />
-      <workItem from="1691658690022" duration="309000" />
-      <workItem from="1691659022620" duration="2238000" />
-      <workItem from="1691665072597" duration="592000" />
-      <workItem from="1691671193461" duration="326000" />
-      <workItem from="1693400280331" duration="2005000" />
-      <workItem from="1693459048661" duration="806000" />
-      <workItem from="1693546918082" duration="7875000" />
-      <workItem from="1693556233281" duration="1491000" />
-      <workItem from="1694164851248" duration="348000" />
-      <workItem from="1694677332412" duration="9599000" />
-      <workItem from="1694699178652" duration="1257000" />
-      <workItem from="1694762714804" duration="5012000" />
-      <workItem from="1694781726081" duration="2430000" />
+      <updated>1695047013112</updated>
+      <workItem from="1695047017438" duration="730000" />
+      <workItem from="1695047774581" duration="2169000" />
+      <workItem from="1695108518083" duration="275000" />
     </task>
     <servers />
   </component>
@@ -193,18 +131,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

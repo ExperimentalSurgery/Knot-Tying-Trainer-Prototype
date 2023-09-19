@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Leap.Unity;
 using NMY;
 using TMPro;
 using UnityEditor;
@@ -64,7 +65,14 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
     [SerializeField] private BVHRecorder rightRecorder;
     [Tooltip("GameObject of left expert hand")] public GameObject leftExpertHand;
     [Tooltip("GameObject of right expert hand")] public GameObject rightExpertHand;
+    [SerializeField] private HandModelBase leftHand;
+    [SerializeField] private HandModelBase rightHand;
     
+    [SerializeField] private float poseMatchHelperDuration = 10.0f;
+    [SerializeField] private TextMeshProUGUI medianTextLeft;
+    [SerializeField] private TextMeshProUGUI medianTextRight;
+    [SerializeField] private Image progress;
+   
 
     // Consts
     private const string BvhSuffix = ".bvh";
@@ -74,6 +82,51 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
 
     private float currentSpeedMultiplier = 1f;
     private float initialSequenceDuration =5;
+    
+
+    public string BvhDirectory => Application.streamingAssetsPath+"/" + streamingAssetsSubDirectory+"/";
+
+    
+    [Header("Runtime Variables")]
+    // Runtime vars with public access
+    public float normalizedProgressLeft;
+    public float normalizedProgressRight;
+    public float normalizedProgressTotalLeft;
+    public float normalizedProgressTotalRight;
+    public int currentFrameLeft = 0;
+    public int currentFrameRight = 0;
+    public int currentSequenceLeft = 0;
+    public int currentSequenceRight = 0;
+    public bool isPlayingLeft = false;
+    public bool isPlayingRight = false;
+    public bool isPausedLeft = false;
+    public bool isPausedRight = false;
+    
+    // Private runtime vars
+    private bool[] left_hand_compare_mask;
+    private bool[] right_hand_compare_mask;
+    private float loopStartTimeLeft;
+    private float loopStartTimeRight;
+    private List<int> playedFramesLeft;
+    private List<int> playedFramesRight;
+    private bool PoseMatchHelperStarted=false;
+    private float remainingPoseMatchHelperDuration;
+    private List<float> mediansLeft;
+    private List<float> mediansRight;
+
+
+    // Gesture Module Class Instances    
+    private readonly DFKI.GestureModule _leftGestureModule = new();
+    private readonly DFKI.GestureModule _rightGestureModule = new();
+    
+    [Header("Events")]
+    // Events
+    public UnityEvent<HandGestureParams> SequenceFinishedEvent = new UnityEvent<HandGestureParams>();
+    public UnityEvent<HandGestureParams> AllSequencesPlayedEvent = new UnityEvent<HandGestureParams>();
+
+    
+    
+    #region Propertys
     
     // Properties
     public bool AnalyzePoseMatching
@@ -130,43 +183,8 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         get => playAllSequences;
         set => playAllSequences = value;
     }
-
-    public string BvhDirectory => Application.streamingAssetsPath+"/" + streamingAssetsSubDirectory+"/";
-
-
+    #endregion
     
-    [Header("Runtime Variables")]
-    // Runtime vars with public access
-    public float normalizedProgressLeft;
-    public float normalizedProgressRight;
-    public float normalizedProgressTotalLeft;
-    public float normalizedProgressTotalRight;
-    public int currentFrameLeft = 0;
-    public int currentFrameRight = 0;
-    public int currentSequenceLeft = 0;
-    public int currentSequenceRight = 0;
-    public bool isPlayingLeft = false;
-    public bool isPlayingRight = false;
-    public bool isPausedLeft = false;
-    public bool isPausedRight = false;
-    
-    // Private runtime vars
-    private bool[] left_hand_compare_mask;
-    private bool[] right_hand_compare_mask;
-    private float loopStartTimeLeft;
-    private float loopStartTimeRight;
-    private List<int> playedFramesLeft;
-    private List<int> playedFramesRight;
-
-    // Gesture Module Class Instances    
-    private readonly DFKI.GestureModule _leftGestureModule = new();
-    private readonly DFKI.GestureModule _rightGestureModule = new();
-    
-    [Header("Events")]
-    // Events
-    public UnityEvent<HandGestureParams> SequenceFinishedEvent = new UnityEvent<HandGestureParams>();
-    public UnityEvent<HandGestureParams> AllSequencesPlayedEvent = new UnityEvent<HandGestureParams>();
-
     protected override void StartupEnter()
     {
         base.StartupEnter();
@@ -271,15 +289,6 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
         }
 
 
-    [SerializeField] private float poseMatchHelperDuration = 10.0f;
-    [SerializeField] private TextMeshProUGUI medianTextLeft;
-    [SerializeField] private TextMeshProUGUI medianTextRight;
-    [SerializeField] private Image progress;
-    private bool PoseMatchHelperStarted=false;
-    private float remainingPoseMatchHelperDuration;
-    private List<float> mediansLeft;
-    private List<float> mediansRight;
-    
     public void StartPoseMatchHelper() {
         remainingPoseMatchHelperDuration = poseMatchHelperDuration+2.0f;
         PoseMatchHelperStarted = true;
@@ -307,7 +316,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
             if (PoseMatchHelperStarted && remainingPoseMatchHelperDuration > 0) {
                 remainingPoseMatchHelperDuration -= Time.deltaTime;
                 if(progress) progress.fillAmount = 1.0f-(remainingPoseMatchHelperDuration/(poseMatchHelperDuration));
-                if (isPlayingLeft && (remainingPoseMatchHelperDuration<=poseMatchHelperDuration)) {
+                if (leftHand.IsTracked && isPlayingLeft && (remainingPoseMatchHelperDuration<=poseMatchHelperDuration)) {
                     // get current life user frames from headset
                     float[] user_frame_data_left = GetFrame(leftRecorder);
                     var result = _leftGestureModule.GetMaximumDifferenceFromCurrentPose(_leftGestureModule.GetSequenceEndFrameIndex(currentSequenceLeft), user_frame_data_left,left_hand_compare_mask);
@@ -320,7 +329,7 @@ public class GestureSequencePlayer : SingletonStartupBehaviour<GestureSequencePl
                    
                 }
 
-                if (isPlayingRight && (remainingPoseMatchHelperDuration<=poseMatchHelperDuration)) {
+                if (rightHand.IsTracked && isPlayingRight && (remainingPoseMatchHelperDuration <= poseMatchHelperDuration)) {
                     // get current life user frames from headset
                     float[] user_frame_data_right = GetFrame(rightRecorder);
                     var result = _rightGestureModule.GetMaximumDifferenceFromCurrentPose(_rightGestureModule.GetSequenceEndFrameIndex(currentSequenceRight), user_frame_data_right,  right_hand_compare_mask);

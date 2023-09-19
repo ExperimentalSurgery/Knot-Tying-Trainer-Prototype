@@ -14,11 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableCollectionName: FeedbackScreen
   m_TableCollectionNameGuidString: aa99f3308bc977c4386bcfc929b68d92
-  m_Entries:
-  - m_Id: 11020050432
-    m_Key: tbd
-    m_Metadata:
-      m_Items: []
+  m_Entries: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

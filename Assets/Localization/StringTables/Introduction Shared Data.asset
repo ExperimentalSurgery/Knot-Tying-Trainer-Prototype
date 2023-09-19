@@ -15,10 +15,6 @@ MonoBehaviour:
   m_TableCollectionName: Introduction
   m_TableCollectionNameGuidString: 8b54c45a014b4d14aabc06489dbe5bc0
   m_Entries:
-  - m_Id: 11020050432
-    m_Key: tbd
-    m_Metadata:
-      m_Items: []
   - m_Id: 516874579968
     m_Key: intro_assi_start
     m_Metadata:
