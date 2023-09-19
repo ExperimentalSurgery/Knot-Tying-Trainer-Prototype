@@ -6,9 +6,6 @@ namespace DFKI.NMY
 {
     public class GreifbarGeometrySequencePlayer : MonoBehaviour {
         
-        public Vector3 playerPosition = Vector3.zero;
-        public Vector3 playerRotation = Vector3.zero;
-        
         [SerializeField] private bool useReducedSpeed = false;
         private float currentSpeedMultiplier = 1f;
         
@@ -24,8 +21,7 @@ namespace DFKI.NMY
         [SerializeField]
         GeometrySequenceStream.PathType pathRelation;
 
-        [SerializeField]
-        bool playAtStart = true;
+        //[SerializeField] bool playAtStart = true;
         [SerializeField]
         bool loopPlay = true;
         [SerializeField]
@@ -107,7 +103,7 @@ namespace DFKI.NMY
         /// Returns false when sequence could not be loaded, see Unity Console output for details in this case
         /// </summary>
         /// <param name="path"></param>
-        public bool LoadSequence(string path, GeometrySequenceStream.PathType relativeTo, float playbackFPS , bool autoplay = false)
+        public bool LoadSequence(string path, GeometrySequenceStream.PathType relativeTo, float playbackFPS)
         {
             if (path.Length < 1)
                 return false;
@@ -132,7 +128,7 @@ namespace DFKI.NMY
 
             bool sucess = stream.ChangeSequence(absolutePath, playbackFPS);
 
-            if (autoplay && sucess)
+            if (sucess)
                 PlayFromStart();
 
             return sucess;
@@ -143,11 +139,7 @@ namespace DFKI.NMY
         /// </summary>
         public void Play()
         {
-            // Position player
-            transform.localPosition = playerPosition;
-            transform.localEulerAngles = playerRotation;
-            LoadSequence(relativePath, pathRelation, playbackFPS * currentSpeedMultiplier, playAtStart);
-            play = true;
+            LoadSequence(relativePath, pathRelation, playbackFPS * currentSpeedMultiplier);
         }
 
         /// <summary>
@@ -171,27 +163,17 @@ namespace DFKI.NMY
             loopPlay = enabled;
         }
 
-        /// <summary>
-        /// Activate or deactivate automatic playback (when the scene starts)
-        /// </summary>
-        /// <param name="enabled"></param>
-        public void SetAutoStart(bool enabled)
-        {
-            playAtStart = false;
-        }
 
         /// <summary>
         /// Seeks to the start of the sequence and then starts playback
         /// </summary>
-        public bool PlayFromStart()
+        public void PlayFromStart()
         {
             if (GoToFrame(0))
             {
                 play = true;
-                return true;
             }
 
-            return false;
         }
 
         /// <summary>

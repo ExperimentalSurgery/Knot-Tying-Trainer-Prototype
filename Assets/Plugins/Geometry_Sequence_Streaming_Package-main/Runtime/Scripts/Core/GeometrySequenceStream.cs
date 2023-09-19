@@ -21,7 +21,7 @@ namespace BuildingVolumes.Streaming
         [HideInInspector]
         public bool frameDropped = false;
 
-        [HideInInspector]
+        
         public int currentFrameIndex = 0;
         [HideInInspector] 
         public float targetFrameTimeMs = 0;
@@ -34,6 +34,7 @@ namespace BuildingVolumes.Streaming
         TextureMode textureMode = TextureMode.None;
 
         public BufferedGeometryReader bufferedReader;
+        public Transform meshParent;
         GameObject meshObject;
         MeshFilter meshFilter;
         MeshRenderer meshRenderer;
@@ -121,9 +122,10 @@ namespace BuildingVolumes.Streaming
         bool SetupMesh()
         {
             meshObject = new GameObject("StreamedMesh");
+            if(meshParent) meshObject.transform.parent = meshParent;
             meshObject.transform.localPosition = Vector3.zero;
             meshObject.transform.localRotation = Quaternion.identity;
-
+            
             string[] paths;
 
             try { paths = Directory.GetFiles(pathToSequence, "*.ply"); }

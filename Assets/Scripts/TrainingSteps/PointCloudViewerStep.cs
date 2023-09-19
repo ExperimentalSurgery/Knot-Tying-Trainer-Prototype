@@ -52,10 +52,6 @@ namespace DFKI.NMY
                 return;
             }
 
-            if (manipulatePlayerPose) {
-                player.playerPosition = playerPosition;
-                player.playerRotation = playerRotation;
-            }
 
             // stop current player actions
             player.Stop();
