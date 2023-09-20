@@ -551,6 +551,66 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-de
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a14469b622451341bf024d813c13efd
+    m_Address: de_zfk_intro_assi_start
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ef81a15ee304684a992cae0912a0f87
+    m_Address: de_zfk_part1_assi_startposition
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 121095482493b6b4aab3ed4fbc372c58
+    m_Address: de_zfk_part1_assi_grip
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a9e79f662d970c40b5b19e1163852db
+    m_Address: de_zfk_part1_assi_indexturn
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 612f714582e819446bcb973572e4c42c
+    m_Address: de_zfk_part1_assi_cross
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a4ce0169379faa43980ad6ebe1dda91
+    m_Address: de_zfk_part1_assi_takered
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae5586ad150b76e46bc159f6fae60939
+    m_Address: de_zfk_part1_assi_greenback
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14711d0601f3c0348bb449961531d145
+    m_Address: de_zfk_part1_assi_loop
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6ce9920de2d9d3c4ab53d488958177b1
+    m_Address: de_zfk_part1_assi_looseend
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a0b5e57a5bebce48b265c89bd533b23
+    m_Address: de_zfk_part1_assi_tighten
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:

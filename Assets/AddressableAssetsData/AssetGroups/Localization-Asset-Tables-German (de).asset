@@ -38,6 +38,12 @@ MonoBehaviour:
     - Locale-de
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39eb2b130230832408a386b3ad1ec724
+    m_Address: Zeigefingerknoten_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:

@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: Zeigefingerknoten_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: c78bc8cbdc7da8640b966af3c9fee4b9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 957833908224
+    m_Localized: 1a14469b622451341bf024d813c13efd
+    m_Metadata:
+      m_Items:
+      - rid: 401044029348249633
+  - m_Id: 958643408896
+    m_Localized: 9ef81a15ee304684a992cae0912a0f87
+    m_Metadata:
+      m_Items:
+      - rid: 401044029348249634
+  - m_Id: 959440326656
+    m_Localized: 121095482493b6b4aab3ed4fbc372c58
+    m_Metadata:
+      m_Items:
+      - rid: 401044029348249635
+  - m_Id: 960262410240
+    m_Localized: 8a9e79f662d970c40b5b19e1163852db
+    m_Metadata:
+      m_Items:
+      - rid: 401044029348249636
+  - m_Id: 961059328000
+    m_Localized: 612f714582e819446bcb973572e4c42c
+    m_Metadata:
+      m_Items:
+      - rid: 401044029348249637
+  - m_Id: 961868828672
+    m_Localized: 2a4ce0169379faa43980ad6ebe1dda91
+    m_Metadata:
+      m_Items:
+      - rid: 401044029348249638
+  - m_Id: 962674135040
+    m_Localized: ae5586ad150b76e46bc159f6fae60939
+    m_Metadata:
+      m_Items:
+      - rid: 401044029348249639
+  - m_Id: 963479441408
+    m_Localized: 14711d0601f3c0348bb449961531d145
+    m_Metadata:
+      m_Items:
+      - rid: 401044029348249640
+  - m_Id: 964288942080
+    m_Localized: 6ce9920de2d9d3c4ab53d488958177b1
+    m_Metadata:
+      m_Items:
+      - rid: 401044029348249641
+  - m_Id: 965085859840
+    m_Localized: 1a0b5e57a5bebce48b265c89bd533b23
+    m_Metadata:
+      m_Items:
+      - rid: 401044029348249642
+  references:
+    version: 2
+    RefIds:
+    - rid: 401044029348249633
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-09-20 14:47:52
+        lastModified: 2023-09-20 14:47:52
+        spokenText: Zum Anschluss folgt nun noch der sogenannte Zeigefingerknoten.
+          Dieser dient dazu, die vorhergegangenen Knoten zu sichern.
+    - rid: 401044029348249634
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-09-20 14:47:52
+        lastModified: 2023-09-20 14:47:52
+        spokenText: Beginnen wir wie immer damit, die Ausgangsposition einzunehmen.
+          Das kennst du ja schon.
+    - rid: 401044029348249635
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-09-20 14:47:52
+        lastModified: 2023-09-20 14:47:52
+        spokenText: "Genau so. \xC4ndere nun deinen Griff in der rechten Hand so,
+          dass du den Faden zwischen Daumen und Mittelfinger h\xE4ltst. Strecke anschlie\xDFend
+          deinen Zeigefinger gerade aus."
+    - rid: 401044029348249636
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-09-20 14:47:52
+        lastModified: 2023-09-20 14:47:52
+        spokenText: "Bewege deine Hand nach rechts, und straffe dabei den gr\xFCnen
+          Faden. Bewege dann deinen Zeigefinger unter dem Faden hindurch und dr\xFCcke
+          ihn dabei leicht nach oben."
+    - rid: 401044029348249637
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-09-20 14:47:53
+        lastModified: 2023-09-20 14:47:53
+        spokenText: "Als n\xE4chstes spanne den Faden zwischen Zeige und Mittelfinger
+          auf und halte die rote und gr\xFCne Fadenh\xE4lfte \xFCberkreuz, sodass
+          sie sich ber\xFChren."
+    - rid: 401044029348249638
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-09-20 14:47:53
+        lastModified: 2023-09-20 14:47:53
+        spokenText: "Kr\xFCmme deinen Zeigefinger und nimm in der Bewegung den roten
+          Faden mit. Der gr\xFCne Faden muss nicht gestrafft sein dabei."
+    - rid: 401044029348249639
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-09-20 14:47:53
+        lastModified: 2023-09-20 14:47:53
+        spokenText: "Strecke den Zeigefinger aus und dr\xFCcke dabei den gr\xFCnen
+          Faden nach hinten."
+    - rid: 401044029348249640
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-09-20 14:47:53
+        lastModified: 2023-09-20 14:47:53
+        spokenText: "Dr\xFCcke die gr\xFCne Fadenh\xE4lfte mit deinem Zeigefinger
+          nach rechts durch die Schlaufe."
+    - rid: 401044029348249641
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-09-20 14:47:53
+        lastModified: 2023-09-20 14:47:53
+        spokenText: "Jetzt klemme die gr\xFCne Fadenh\xE4lfte zwischen deinem rechten
+          Zeige- und Mittelfinger ein und ziehe das lose Ende durch die Schlaufe."
+    - rid: 401044029348249642
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-09-20 14:47:54
+        lastModified: 2023-09-20 14:47:54
+        spokenText: "Halte das gr\xFCne Ende weiterhin fest in deiner Hand, und lege
+          den Zeigefinger auf den entstandenen Knoten. Zum Schluss dr\xFCckst du
+          den Knoten einfach nach unten, um ihn zu festigen."

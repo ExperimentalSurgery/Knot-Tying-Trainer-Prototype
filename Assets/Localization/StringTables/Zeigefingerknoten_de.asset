@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Zeigefingerknoten_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: d5228afa33b3b3540a4c4b91443f1668, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 726975221760
+    m_Localized: Zum Anschluss folgt nun noch der sogenannte Zeigefingerknoten. Dieser
+      dient dazu, die vorhergegangenen Knoten zu sichern.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942016
+    m_Localized: Beginnen wir wie immer damit, die Ausgangsposition einzunehmen.
+      Das kennst du ja schon.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942017
+    m_Localized: "Genau so. \xC4ndere nun deinen Griff in der rechten Hand so, dass
+      du den Faden zwischen Daumen und Mittelfinger h\xE4ltst. Strecke anschlie\xDFend
+      deinen Zeigefinger gerade aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942018
+    m_Localized: "Bewege deine Hand nach rechts, und straffe dabei den gr\xFCnen
+      Faden. Bewege dann deinen Zeigefinger unter dem Faden hindurch und dr\xFCcke
+      ihn dabei leicht nach oben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942019
+    m_Localized: "Als n\xE4chstes spanne den Faden zwischen Zeige und Mittelfinger
+      auf und halte die rote und gr\xFCne Fadenh\xE4lfte \xFCberkreuz, sodass sie
+      sich ber\xFChren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942020
+    m_Localized: "Kr\xFCmme deinen Zeigefinger und nimm in der Bewegung den roten
+      Faden mit. Der gr\xFCne Faden muss nicht gestrafft sein dabei."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942021
+    m_Localized: "Strecke den Zeigefinger aus und dr\xFCcke dabei den gr\xFCnen Faden
+      nach hinten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942022
+    m_Localized: "Dr\xFCcke die gr\xFCne Fadenh\xE4lfte mit deinem Zeigefinger nach
+      rechts durch die Schlaufe."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942023
+    m_Localized: "Jetzt klemme die gr\xFCne Fadenh\xE4lfte zwischen deinem rechten
+      Zeige- und Mittelfinger ein und ziehe das lose Ende durch die Schlaufe."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942024
+    m_Localized: "Halte das gr\xFCne Ende weiterhin fest in deiner Hand, und lege
+      den Zeigefinger auf den entstandenen Knoten. Zum Schluss dr\xFCckst du den
+      Knoten einfach nach unten, um ihn zu festigen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942025
+    m_Localized: Wunderbar, das war es auch schon. Gute Arbeit!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

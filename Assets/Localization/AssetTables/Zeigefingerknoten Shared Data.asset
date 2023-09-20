@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Zeigefingerknoten Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Zeigefingerknoten
+  m_TableCollectionNameGuidString: c78bc8cbdc7da8640b966af3c9fee4b9
+  m_Entries:
+  - m_Id: 957833908224
+    m_Key: zfk_intro_assi_start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 958643408896
+    m_Key: zfk_part1_assi_startposition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959440326656
+    m_Key: zfk_part1_assi_grip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 960262410240
+    m_Key: zfk_part1_assi_indexturn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 961059328000
+    m_Key: zfk_part1_assi_cross
+    m_Metadata:
+      m_Items: []
+  - m_Id: 961868828672
+    m_Key: zfk_part1_assi_takered
+    m_Metadata:
+      m_Items: []
+  - m_Id: 962674135040
+    m_Key: zfk_part1_assi_greenback
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963479441408
+    m_Key: zfk_part1_assi_loop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 964288942080
+    m_Key: zfk_part1_assi_looseend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 965085859840
+    m_Key: zfk_part1_assi_tighten
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items:
+    - rid: 401044029348249632
+  m_KeyGenerator:
+    rid: 401044029348249627
+  references:
+    version: 2
+    RefIds:
+    - rid: 401044029348249627
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1695213843939
+    - rid: 401044029348249632
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 957833908224
+          m_TableCodes:
+          - de
+        - m_KeyId: 958643408896
+          m_TableCodes:
+          - de
+        - m_KeyId: 959440326656
+          m_TableCodes:
+          - de
+        - m_KeyId: 960262410240
+          m_TableCodes:
+          - de
+        - m_KeyId: 961059328000
+          m_TableCodes:
+          - de
+        - m_KeyId: 961868828672
+          m_TableCodes:
+          - de
+        - m_KeyId: 962674135040
+          m_TableCodes:
+          - de
+        - m_KeyId: 963479441408
+          m_TableCodes:
+          - de
+        - m_KeyId: 964288942080
+          m_TableCodes:
+          - de
+        - m_KeyId: 965085859840
+          m_TableCodes:
+          - de
+        m_TypeString: NMY.GoogleCloudTextToSpeech.LocalizedTextToSpeechItem, com.nmy.googlecloudtexttospeech,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

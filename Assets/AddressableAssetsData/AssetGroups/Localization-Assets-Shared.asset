@@ -62,6 +62,16 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5228afa33b3b3540a4c4b91443f1668
+    m_Address: Assets/Localization/StringTables/Zeigefingerknoten Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c78bc8cbdc7da8640b966af3c9fee4b9
+    m_Address: Assets/Localization/AssetTables/Zeigefingerknoten Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:
