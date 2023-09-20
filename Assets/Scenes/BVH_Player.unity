@@ -1609,7 +1609,6 @@ MonoBehaviour:
   autoStartSequenceLeft: 0
   autoStartSequenceRight: 0
   analyzePoseMatching: 0
-  analyzeFinalFrameOnly: 1
   loopAllSequences: 1
   playAllSequences: 1
   loopSingleSequencePlayback: 0
@@ -1620,13 +1619,19 @@ MonoBehaviour:
   rightHandPosMod: {x: -1, y: -1, z: 1}
   rightHandRotMod: {x: 1, y: 1, z: -1}
   originOffset: {x: 0, y: 0.1, z: -1}
-  streamingAssetsSubDirectory: BVHdata/Zeigefinger_BVH
-  leftHandBvhFile: ZFK_LeftHand
-  rightHandBvhFile: ZFK_LeftHand
+  streamingAssetsSubDirectory: BVHdata
+  leftHandBvhFile: expert_poses_mix_left
+  rightHandBvhFile: expert_poses_mix_right
   leftRecorder: {fileID: 1778681149}
   rightRecorder: {fileID: 349090846}
   leftExpertHand: {fileID: 1778607812}
   rightExpertHand: {fileID: 1787332227}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
+  poseMatchHelperDuration: 10
+  medianTextLeft: {fileID: 1163348347}
+  medianTextRight: {fileID: 1449037360}
+  progress: {fileID: 304613571}
   normalizedProgressLeft: 0
   normalizedProgressRight: 0
   normalizedProgressTotalLeft: 0
@@ -1645,10 +1650,6 @@ MonoBehaviour:
   AllSequencesPlayedEvent:
     m_PersistentCalls:
       m_Calls: []
-  poseMatchHelperDuration: 10
-  medianTextLeft: {fileID: 1163348347}
-  medianTextRight: {fileID: 1449037360}
-  progress: {fileID: 304613571}
 --- !u!4 &677676044
 Transform:
   m_ObjectHideFlags: 0
