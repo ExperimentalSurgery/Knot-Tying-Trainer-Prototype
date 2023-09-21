@@ -611,6 +611,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-de
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c746930160c714841b3dc71e02df6017
+    m_Address: de_zfk_part1_assi_completed
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
   m_SchemaSet:

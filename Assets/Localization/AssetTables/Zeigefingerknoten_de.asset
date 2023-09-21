@@ -68,6 +68,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 401044029348249642
+  - m_Id: 965891166208
+    m_Localized: c746930160c714841b3dc71e02df6017
+    m_Metadata:
+      m_Items:
+      - rid: 401044029348249643
   references:
     version: 2
     RefIds:
@@ -145,3 +150,9 @@ MonoBehaviour:
         spokenText: "Halte das gr\xFCne Ende weiterhin fest in deiner Hand, und lege
           den Zeigefinger auf den entstandenen Knoten. Zum Schluss dr\xFCckst du
           den Knoten einfach nach unten, um ihn zu festigen."
+    - rid: 401044029348249643
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-09-20 14:47:54
+        lastModified: 2023-09-20 14:47:54
+        spokenText: Wunderbar, das war es auch schon. Gute Arbeit!

@@ -55,6 +55,10 @@ MonoBehaviour:
     m_Key: zfk_part1_assi_tighten
     m_Metadata:
       m_Items: []
+  - m_Id: 965891166208
+    m_Key: zfk_part1_assi_completed
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 401044029348249632
@@ -99,6 +103,9 @@ MonoBehaviour:
           m_TableCodes:
           - de
         - m_KeyId: 965085859840
+          m_TableCodes:
+          - de
+        - m_KeyId: 965891166208
           m_TableCodes:
           - de
         m_TypeString: NMY.GoogleCloudTextToSpeech.LocalizedTextToSpeechItem, com.nmy.googlecloudtexttospeech,
