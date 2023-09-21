@@ -33,6 +33,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Geometry_Sequence_Streaming_Package-main/Runtime/Scripts/Core/BufferedGeometryReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GreifbarGeometrySequencePlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cysharp.unitask@d210e3d76a/Runtime/UniTaskScheduler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.varjo.xr@65f849e090/Runtime/Markers/VarjoMarkers.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -80,7 +81,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\Mark\Documents\wkspaces\GIT\Greifbar_EvaluationPrototype -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Mark\Documents\wkspaces\GIT\Greifbar_EvaluationPrototype" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -88,7 +89,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\Mark\Documents\wkspaces\GIT\Greifbar_EvaluationPrototype -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Mark\Documents\wkspaces\GIT\Greifbar_EvaluationPrototype" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -128,6 +129,7 @@
       <workItem from="1695047774581" duration="2169000" />
       <workItem from="1695108518083" duration="275000" />
       <workItem from="1695108810080" duration="9687000" />
+      <workItem from="1695277067612" duration="1394000" />
     </task>
     <servers />
   </component>

@@ -46,6 +46,7 @@ public class MarkerManager : MonoBehaviour
         absentIds = new List<long>();
         markerVisualizers = new Dictionary<long, MarkerVisualizer>();
     }
+    
 
     void Update()
     {

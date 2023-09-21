@@ -57,8 +57,6 @@ namespace DFKI.NMY
                     RaiseClientStepFinished();
                 }
          
-                
-            
         }
 
         // PRE STEP

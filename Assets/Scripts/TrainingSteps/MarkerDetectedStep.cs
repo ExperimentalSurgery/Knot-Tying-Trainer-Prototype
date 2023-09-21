@@ -22,8 +22,29 @@ namespace DFKI.NMY
         {
             await base.PreStepActionAsync(ct);
 
+
+            if (Application.isEditor)
+            {
+                FinishedCriteria = true;
+            }
+            else
+            {
                 try
                 {
+                    // Option 1: Already tracked
+                    List<VarjoMarker> markers = new List<VarjoMarker>();
+                    VarjoMarkers.GetVarjoMarkers(out markers);
+                    if (markers.Count > 0) {
+                        foreach (var marker in markers) {
+                            if (marker.id.Equals(markerID))
+                            {
+                                FinishedCriteria = true;
+                                return;
+                            }
+                        }
+                    }
+
+                    // Option 2: Wait for upcoming events
                     markerManager = FindObjectOfType<MarkerManager>();
                     markerManager.MarkerDetectedEventHandler -= OnMarkerDetected;
                     markerManager.MarkerDetectedEventHandler += OnMarkerDetected;
@@ -33,9 +54,10 @@ namespace DFKI.NMY
                 {
                     Debug.Log("Skipping MarkerStep. Probably running the app without varjo connected is causing this...");
                     Debug.Log(e.Message);
+                    markerManager.MarkerDetectedEventHandler += OnMarkerDetected;
                     FinishedCriteria = true;
                 }
-
+            }
         }
         
         
