@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2731264125d1524693cb97001b1cfc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relativePath: PointClouds\Mittelfinger
+  relativePath: PointClouds\Zeigefinger
   absolutePath: 
   pathRelation: 3
   playAtStart: 0
