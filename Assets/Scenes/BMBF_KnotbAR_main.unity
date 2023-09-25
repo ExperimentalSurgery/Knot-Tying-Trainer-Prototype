@@ -12126,6 +12126,7 @@ MonoBehaviour:
   _persistantActivatablesDeactivationSteps: []
   _nextSteps:
   - {fileID: 1983606772}
+  - {fileID: 608255353}
   - {fileID: 1218478218}
   _timeoutBeforeStepStart: 0
   _timeoutBeforeStepFinish: 0
@@ -14754,7 +14755,7 @@ MonoBehaviour:
   _nextSteps: []
   _timeoutBeforeStepStart: 0
   _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
+  _timeoutBeforeStepComplete: 1.5
   _timeoutActivatablesActivating: 0
   _timeoutActivatablesActivated: 0
   _timeoutActivatablesDeactivating: 0
@@ -15599,7 +15600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &608255349
 Transform:
   m_ObjectHideFlags: 0
@@ -20852,7 +20853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &793860948
 Transform:
   m_ObjectHideFlags: 0
@@ -24512,7 +24513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &970090769
 Transform:
   m_ObjectHideFlags: 0
@@ -34703,7 +34704,7 @@ MonoBehaviour:
   _nextSteps: []
   _timeoutBeforeStepStart: 0
   _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
+  _timeoutBeforeStepComplete: 1.5
   _timeoutActivatablesActivating: 0
   _timeoutActivatablesActivated: 0
   _timeoutActivatablesDeactivating: 0
@@ -40489,7 +40490,7 @@ MonoBehaviour:
   _nextSteps: []
   _timeoutBeforeStepStart: 0
   _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
+  _timeoutBeforeStepComplete: 1.5
   _timeoutActivatablesActivating: 0
   _timeoutActivatablesActivated: 0
   _timeoutActivatablesDeactivating: 0
@@ -44363,7 +44364,7 @@ MonoBehaviour:
   _nextSteps: []
   _timeoutBeforeStepStart: 0
   _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
+  _timeoutBeforeStepComplete: 1.5
   _timeoutActivatablesActivating: 0
   _timeoutActivatablesActivated: 0
   _timeoutActivatablesDeactivating: 0
