@@ -4245,8 +4245,8 @@ MonoBehaviour:
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
-  sequenceIndexLeft: 0
-  sequenceIndexRight: 0
+  sequenceIndexLeft: 1
+  sequenceIndexRight: 1
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
@@ -9050,7 +9050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rootTrainingStep: {fileID: 469847259}
-  _startTrainingStep: {fileID: 1218478218}
+  _startTrainingStep: {fileID: 469847259}
   _continueNextStepAction:
     m_UseReference: 0
     m_Action:
@@ -12128,9 +12128,6 @@ MonoBehaviour:
   _persistantActivatablesDeactivationSteps: []
   _nextSteps:
   - {fileID: 1983606772}
-  - {fileID: 793860951}
-  - {fileID: 970090773}
-  - {fileID: 608255353}
   - {fileID: 1218478218}
   _timeoutBeforeStepStart: 0
   _timeoutBeforeStepFinish: 0
@@ -15605,7 +15602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &608255349
 Transform:
   m_ObjectHideFlags: 0
@@ -18723,8 +18720,8 @@ MonoBehaviour:
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
-  sequenceIndexLeft: 0
-  sequenceIndexRight: 0
+  sequenceIndexLeft: 1
+  sequenceIndexRight: 1
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
@@ -20862,7 +20859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &793860948
 Transform:
   m_ObjectHideFlags: 0
@@ -24523,7 +24520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &970090769
 Transform:
   m_ObjectHideFlags: 0
@@ -25777,8 +25774,8 @@ MonoBehaviour:
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
-  sequenceIndexLeft: 0
-  sequenceIndexRight: 0
+  sequenceIndexLeft: 1
+  sequenceIndexRight: 1
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
@@ -31335,8 +31332,8 @@ MonoBehaviour:
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
-  sequenceIndexLeft: 0
-  sequenceIndexRight: 0
+  sequenceIndexLeft: 1
+  sequenceIndexRight: 1
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
@@ -33004,8 +33001,8 @@ MonoBehaviour:
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
-  sequenceIndexLeft: 0
-  sequenceIndexRight: 0
+  sequenceIndexLeft: 1
+  sequenceIndexRight: 1
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
@@ -37050,8 +37047,8 @@ MonoBehaviour:
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
-  sequenceIndexLeft: 0
-  sequenceIndexRight: 0
+  sequenceIndexLeft: 1
+  sequenceIndexRight: 1
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
@@ -37962,8 +37959,8 @@ MonoBehaviour:
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
-  sequenceIndexLeft: 0
-  sequenceIndexRight: 0
+  sequenceIndexLeft: 1
+  sequenceIndexRight: 1
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
@@ -42825,8 +42822,8 @@ MonoBehaviour:
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
-  sequenceIndexLeft: 0
-  sequenceIndexRight: 0
+  sequenceIndexLeft: 1
+  sequenceIndexRight: 1
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
@@ -46309,8 +46306,8 @@ MonoBehaviour:
   changeBvhFile: 1
   bvhFileLeft: thumbsup_left
   bvhFileRight: thumbsup_right
-  sequenceIndexLeft: 0
-  sequenceIndexRight: 0
+  sequenceIndexLeft: 1
+  sequenceIndexRight: 1
   showExpertHands: 0
   successOutlineDuration: 2.5
   checkMethod: 1
