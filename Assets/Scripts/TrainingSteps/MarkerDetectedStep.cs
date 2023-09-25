@@ -22,24 +22,32 @@ namespace DFKI.NMY
         {
             await base.PreStepActionAsync(ct);
 
+            try
+            {
 
-            if (Application.isEditor)
-            {
-                FinishedCriteria = true;
-            }
-            else
-            {
-                try
+                var loader = XRGeneralSettings.Instance.Manager.activeLoader as Varjo.XR.VarjoLoader;
+                var cameraSubsystem = loader.cameraSubsystem as VarjoCameraSubsystem;
+
+                if (XRGeneralSettings.Instance != null && XRGeneralSettings.Instance.Manager != null)
                 {
-                    // Option 1: Already tracked
-                    List<VarjoMarker> markers = new List<VarjoMarker>();
-                    VarjoMarkers.GetVarjoMarkers(out markers);
-                    if (markers.Count > 0) {
-                        foreach (var marker in markers) {
-                            if (marker.id.Equals(markerID))
+
+                    if (VarjoMarkers.IsVarjoMarkersEnabled())
+                    {
+
+                        // Option 1: Already tracked
+                        List<VarjoMarker> markers = new List<VarjoMarker>();
+                        VarjoMarkers.GetVarjoMarkers(out markers);
+
+                        if (markers.Count > 0)
+                        {
+                            foreach (var marker in markers)
                             {
-                                FinishedCriteria = true;
-                                return;
+                                if (marker.id.Equals(markerID))
+                                {
+
+                                    FinishedCriteria = true;
+                                    return;
+                                }
                             }
                         }
                     }
@@ -50,14 +58,19 @@ namespace DFKI.NMY
                     markerManager.MarkerDetectedEventHandler += OnMarkerDetected;
                     markerManager.markersEnabled = true;
                 }
-                catch (Exception e)
+                else
                 {
-                    Debug.Log("Skipping MarkerStep. Probably running the app without varjo connected is causing this...");
-                    Debug.Log(e.Message);
-                    markerManager.MarkerDetectedEventHandler += OnMarkerDetected;
                     FinishedCriteria = true;
                 }
             }
+            catch (Exception e){
+                Debug.Log("Skipping MarkerStep. Probably running the app without varjo connected is causing this...");
+                Debug.Log(e.Message.ToString());
+                FinishedCriteria = true;
+                }
+
+            
+            
         }
         
         

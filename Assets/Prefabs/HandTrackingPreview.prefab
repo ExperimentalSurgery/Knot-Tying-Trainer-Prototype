@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4997288128877642178}
-  - component: {fileID: 6827317894471322234}
   - component: {fileID: 6060965917067117844}
   m_Layer: 0
   m_Name: HandTrackingPreview
@@ -35,27 +34,6 @@ Transform:
   - {fileID: 6876357264360647741}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 42.216, y: 0, z: 0}
---- !u!95 &6827317894471322234
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761880272540280772}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e7c1bec8af8fd88428bc22481c8bd541, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &6060965917067117844
 MonoBehaviour:
   m_ObjectHideFlags: 0
