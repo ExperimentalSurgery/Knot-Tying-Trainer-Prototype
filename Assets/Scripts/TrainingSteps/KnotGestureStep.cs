@@ -19,7 +19,6 @@ namespace DFKI.NMY
         [SerializeField] private float successOutlineDuration = 2.5f;
         [SerializeField] private GestureCheckMethod checkMethod = GestureCheckMethod.PoseMatch;
         [SerializeField] private KeyCode manualCompletionKey = KeyCode.N;
-        [SerializeField] private float sequenceDuration = 0.5f;
         [SerializeField] private float poseMatchingThreshold = 25;
         [SerializeField] private bool requireLeftMatch = true;
         [SerializeField] private bool requireRightMatch = true;
@@ -37,7 +36,6 @@ namespace DFKI.NMY
             // Apply config to GestureSequencePlayer
             GestureSequencePlayer.instance.PoseMatchingThresholdRight = poseMatchingThreshold;
             GestureSequencePlayer.instance.ToggleSpeed(useDefault:true);
-            GestureSequencePlayer.instance.ChangeDuration(sequenceDuration);
             GestureSequencePlayer.instance.PlayAllSequences = false;
             GestureSequencePlayer.instance.LoopSingleSequencePlayback = true;
             GestureSequencePlayer.instance.AnalyzePoseMatching = true;
@@ -54,11 +52,6 @@ namespace DFKI.NMY
                     break;
             }
         
-        
-            // show expert hands
-            HandVisualizer.instance.SetExpertHandVisibleRight(true);
-            HandVisualizer.instance.SetExpertHandVisibleLeft(true);
-            
             StopAllCoroutines();
           
         }
@@ -105,8 +98,6 @@ namespace DFKI.NMY
         
             GestureSequencePlayer.instance.SequenceFinishedEvent.RemoveListener(OnGestureEvent);
             GestureSequencePlayer.instance.Stop();
-            HandVisualizer.instance.SetExpertHandVisibleRight(false);
-            HandVisualizer.instance.SetExpertHandVisibleLeft(false);
             HandVisualizer.instance.SetTimedSuccessOutline(successOutlineDuration,true,true);
             FinishedCriteria = true;
         }
