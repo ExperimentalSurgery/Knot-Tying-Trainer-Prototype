@@ -10,7 +10,7 @@ namespace DFKI.NMY
     {
         
         [Header("PointCloudViewerStep")]
-        public bool waitForStreamPlayedOnce = true;
+        public bool finishWhenStreamPlayedOnce = false;
         public bool manipulatePlayerPose = false;
         public Vector3 playerPosition;
         public Vector3 playerRotation;
@@ -31,7 +31,7 @@ namespace DFKI.NMY
             
         }
         void OnStreamFinished(){
-            if(waitForStreamPlayedOnce){
+            if(finishWhenStreamPlayedOnce){
                 FinishedCriteria = true;
             }
 

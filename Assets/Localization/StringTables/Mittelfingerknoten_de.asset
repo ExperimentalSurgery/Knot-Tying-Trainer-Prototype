@@ -82,13 +82,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2158436651008
-    m_Localized: "Mit etwas Geschick kr\xFCmmen Sie dann den Mittelfinger und ziehen
-      dabei den roten Faden in Richtung Handinnenfl\xE4che unter dem gr\xFCnen Faden
-      hindurch. In der Position verweilen Sie dann bitte."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2158432456717
-    m_Localized: Als erstes legen wir den rechten Mittelfinger an den roten Faden.
+    m_Localized: "Als erstes legen wir den rechten Mittelfinger an den roten Faden.Mit
+      etwas Geschick kr\xFCmmen Sie dann den Mittelfinger und ziehen dabei den roten
+      Faden in Richtung Handinnenfl\xE4che unter dem gr\xFCnen Faden hindurch. In
+      der Position verweilen Sie dann bitte."
     m_Metadata:
       m_Items: []
   - m_Id: 2158432456716

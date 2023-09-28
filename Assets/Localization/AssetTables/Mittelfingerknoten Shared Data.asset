@@ -75,10 +75,6 @@ MonoBehaviour:
     m_Key: mfk_part2_assi_demo
     m_Metadata:
       m_Items: []
-  - m_Id: 38753482552479744
-    m_Key: mfk_part2_assi_demoposition
-    m_Metadata:
-      m_Items: []
   - m_Id: 38753486524485632
     m_Key: mfk_part2_assi_demobend
     m_Metadata:
@@ -558,9 +554,6 @@ MonoBehaviour:
           m_TableCodes:
           - de
         - m_KeyId: 38753480002342912
-          m_TableCodes:
-          - de
-        - m_KeyId: 38753482552479744
           m_TableCodes:
           - de
         - m_KeyId: 38753486524485632

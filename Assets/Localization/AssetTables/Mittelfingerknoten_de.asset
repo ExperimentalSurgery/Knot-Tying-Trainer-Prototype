@@ -93,11 +93,6 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 401043919429959683
-  - m_Id: 38753482552479744
-    m_Localized: c504ae0613ed15442bc847e0d95ea309
-    m_Metadata:
-      m_Items:
-      - rid: 401043919429959685
   - m_Id: 38753486524485632
     m_Localized: c12f427e4d653a34a83384568f8a8123
     m_Metadata:
@@ -244,20 +239,15 @@ MonoBehaviour:
         spokenText: "Als n\xE4chstes werden Sie den roten Faden mit Ihrem Mittelfinger
           unter den gr\xFCnen Faden f\xFChren. Das klingt kompliziert, ist aber ganz
           einfach. Ich mache es Ihnen einmal vor."
-    - rid: 401043919429959685
-      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
-      data:
-        created: 2023-09-15 14:46:19
-        lastModified: 2023-09-15 14:46:19
-        spokenText: Als erstes legen wir den rechten Mittelfinger an den roten Faden.
     - rid: 401043919429959687
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2023-09-15 14:46:20
-        lastModified: 2023-09-15 14:46:20
-        spokenText: "Mit etwas Geschick kr\xFCmmen Sie dann den Mittelfinger und
-          ziehen dabei den roten Faden in Richtung Handinnenfl\xE4che unter dem gr\xFCnen
-          Faden hindurch. In der Position verweilen Sie dann bitte."
+        lastModified: 2023-09-28 09:41:30
+        spokenText: "Als erstes legen wir den rechten Mittelfinger an den roten Faden.Mit
+          etwas Geschick kr\xFCmmen Sie dann den Mittelfinger und ziehen dabei den
+          roten Faden in Richtung Handinnenfl\xE4che unter dem gr\xFCnen Faden hindurch.
+          In der Position verweilen Sie dann bitte."
     - rid: 401043919429959689
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:

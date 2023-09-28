@@ -383,12 +383,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-de
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c504ae0613ed15442bc847e0d95ea309
-    m_Address: de_mfk_part2_assi_demoposition
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-de
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c12f427e4d653a34a83384568f8a8123
     m_Address: de_mfk_part2_assi_demobend
     m_ReadOnly: 1
