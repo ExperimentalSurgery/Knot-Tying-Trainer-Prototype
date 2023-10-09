@@ -8103,7 +8103,7 @@ MonoBehaviour:
   _nextSteps: []
   _timeoutBeforeStepStart: 0
   _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 1
+  _timeoutBeforeStepComplete: 2
   _timeoutActivatablesActivating: 0
   _timeoutActivatablesActivated: 0
   _timeoutActivatablesDeactivating: 0
@@ -55510,7 +55510,7 @@ MonoBehaviour:
   playerRotation: {x: 0, y: 0, z: 0}
   pathToSequence: PointClouds/Mittelfinger/mfk_part4_assi_demofasten
   manipulateFPS: 1
-  targetFPS: 15
+  targetFPS: 10
   references:
     version: 2
     RefIds: []

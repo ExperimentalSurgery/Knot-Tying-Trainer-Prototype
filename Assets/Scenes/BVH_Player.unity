@@ -1631,8 +1631,8 @@ MonoBehaviour:
   rightHandRotMod: {x: 1, y: 1, z: -1}
   originOffset: {x: 0, y: 0.1, z: -1}
   streamingAssetsSubDirectory: BVHdata
-  leftHandBvhFile: thumbsup_left
-  rightHandBvhFile: thumbsup_right
+  leftHandBvhFile: expert_poses_mix_left
+  rightHandBvhFile: expert_poses_mix_right
   leftRecorder: {fileID: 1778681149}
   rightRecorder: {fileID: 349090846}
   leftExpertHand: {fileID: 1778607812}
