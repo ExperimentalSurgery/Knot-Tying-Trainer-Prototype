@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0885a5fe3a56cf04690a8fc44a1380a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bufferSize: 12
+  bufferSize: 8
   useAllThreads: 1
   threadCount: 4
   pointcloudMaterial: {fileID: 2100000, guid: bbcad6c3341b77645b06192a47c07027, type: 2}
@@ -380,12 +380,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2731264125d1524693cb97001b1cfc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relativePath: PointClouds\Mittelfinger\mfk_part2_assi_position
+  relativePath: PointClouds\Mittelfinger\mfk_part3_assi_demopinch
   absolutePath: 
   pathRelation: 3
-  playAtStart: 0
+  playAtStart: 1
   loopPlay: 1
-  playbackFPS: 10
+  playbackFPS: 30
 --- !u!4 &847671247
 Transform:
   m_ObjectHideFlags: 0

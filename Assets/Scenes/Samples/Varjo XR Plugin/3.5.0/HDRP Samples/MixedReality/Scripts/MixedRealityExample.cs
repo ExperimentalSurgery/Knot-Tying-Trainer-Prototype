@@ -117,8 +117,10 @@ public class MixedRealityExample : MonoBehaviour
                 VarjoMixedReality.StopRender();
                 // if (HDCameraData)
                 //     HDCameraData.clearColorMode = HDAdditionalCameraData.ClearColorMode.Sky;
+                if(xrCamera){
                 xrCamera.clearFlags = CameraClearFlags.Skybox;
-            }
+                }
+                }
             videoSeeThroughEnabled = videoSeeThrough;
         }
     }
