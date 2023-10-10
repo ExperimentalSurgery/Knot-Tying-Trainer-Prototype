@@ -9,7 +9,7 @@ using Unity.Jobs;
 using System.Text;
 using System.Linq;
 using System.Text.RegularExpressions;
-
+using UnityEngine.UIElements;
 
 namespace BuildingVolumes.Streaming
 {
@@ -49,6 +49,26 @@ namespace BuildingVolumes.Streaming
         public bool error;
     }
 
+    public struct VertexStrucPointcloud
+    {
+        public Vector3 vertices;
+        public byte R;
+        public byte G;
+        public byte B;
+        public byte A;
+    }
+
+    public struct VertexStrucMeshUVs
+    {
+        public Vector3 vertices;
+        public Vector2 uvs;
+    }
+
+    public struct VertexStruc
+    {
+        public Vector3 vertices;
+    }
+
     public enum TextureMode { None, Single, PerFrame };
 
     public class BufferedGeometryReader
@@ -58,6 +78,9 @@ namespace BuildingVolumes.Streaming
         public string[] texturesFilePath;
         public int bufferSize = 4;
         public int totalFrames = 0;
+        public bool flipX;
+        public bool flipY;
+        public bool flipZ;
 
         public Frame[] frameBuffer;
 
@@ -366,6 +389,9 @@ namespace BuildingVolumes.Streaming
             frame.geoJob.pathCharArray = new NativeArray<byte>(Encoding.UTF8.GetBytes(plyPath), Allocator.TempJob);
             frame.geoJob.headerInfo = frame.plyHeaderInfo;
             frame.geoJob.mesh = frame.meshArray[0];
+            frame.geoJob.flipX = flipX;
+            frame.geoJob.flipY = flipY;
+            frame.geoJob.flipZ = flipZ;
 
             frame.geoJobHandle = frame.geoJob.Schedule(frame.geoJobHandle);
 
@@ -624,6 +650,9 @@ namespace BuildingVolumes.Streaming
         public Mesh.MeshData mesh;
         public bool readFinished;
         public HeaderPLY headerInfo;
+        public bool flipX;
+        public bool flipY;
+        public bool flipZ;
 
         [DeallocateOnJobCompletion]
         public NativeArray<byte> pathCharArray;
@@ -659,6 +688,26 @@ namespace BuildingVolumes.Streaming
 
                 mesh.subMeshCount = 1;
                 mesh.SetSubMesh(0, new SubMeshDescriptor(0, indices.Length, MeshTopology.Points));
+
+                if (flipX || flipY || flipZ)
+                {
+                    NativeArray<VertexStrucPointcloud> rawPositions = mesh.GetVertexData<VertexStrucPointcloud>();
+
+                    for (int i = 0; i < rawPositions.Length; i++)
+                    {
+                        VertexStrucPointcloud vert = rawPositions[i];
+
+                        if(flipX)
+                            vert.vertices.x = -vert.vertices.x;
+                        if (flipY)
+                            vert.vertices.y = -vert.vertices.y;
+                        if (flipZ)
+                            vert.vertices.z = -vert.vertices.z;
+
+                        rawPositions[i] = vert;
+                    }
+
+                }
             }
 
             else if (headerInfo.meshType == MeshTopology.Triangles)
@@ -693,7 +742,71 @@ namespace BuildingVolumes.Streaming
 
                 mesh.subMeshCount = 1;
                 mesh.SetSubMesh(0, new SubMeshDescriptor(0, indices.Length, MeshTopology.Triangles));
+
+                if (flipX || flipY || flipZ)
+                {
+                    int amountflipped = 0;
+
+                    if (flipX) 
+                        amountflipped++;
+                    if (flipY) 
+                        amountflipped++;
+                    if (flipZ)
+                        amountflipped++;
+
+
+                    if (headerInfo.hasUVs)
+                    {
+                        NativeArray<VertexStrucMeshUVs> rawPositions = mesh.GetVertexData<VertexStrucMeshUVs>();
+                        for (int i = 0; i < rawPositions.Length; i++)
+                        {
+                            VertexStrucMeshUVs vert = rawPositions[i];
+
+                            if (flipX)
+                                vert.vertices.x = -vert.vertices.x;
+                            if (flipY)
+                                vert.vertices.y = -vert.vertices.y;
+                            if (flipZ)
+                                vert.vertices.z = -vert.vertices.z;
+
+                            rawPositions[i] = vert;
+                        }
+                    }
+
+                    else
+                    {
+                        NativeArray<VertexStruc> rawPositions = mesh.GetVertexData<VertexStruc>();
+                        for (int i = 0; i < rawPositions.Length; i++)
+                        {
+                            VertexStruc vert = rawPositions[i];
+
+                            if (flipX)
+                                vert.vertices.x = -vert.vertices.x;
+                            if (flipY)
+                                vert.vertices.y = -vert.vertices.y;
+                            if (flipZ)
+                                vert.vertices.z = -vert.vertices.z;
+
+                            rawPositions[i] = vert;
+                        }
+                    }
+
+                    if(amountflipped == 1 || amountflipped == 3)
+                    {
+                        NativeArray<int> indexes = mesh.GetIndexData<int>();
+
+                        for (int i = 0; i < indexes.Length; i+=3)
+                        {
+                            indexes[i] = indexes[i + 2];
+                            indexes[i + 2] = indexes[i];
+                        }
+                    }
+                }
             }
+
+            
+
+            
 
             readFinished = true;
 

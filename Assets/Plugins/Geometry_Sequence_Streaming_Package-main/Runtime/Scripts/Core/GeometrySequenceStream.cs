@@ -17,11 +17,15 @@ namespace BuildingVolumes.Streaming
         public Material pointcloudMaterial;
         public Material meshMaterial;
 
+        public bool flipX = false;
+        public bool flipY = false;
+        public bool flipZ = false;
+
         bool readerIsReady = false;
         [HideInInspector]
         public bool frameDropped = false;
 
-        
+        [HideInInspector]
         public int currentFrameIndex = 0;
         [HideInInspector] 
         public float targetFrameTimeMs = 0;
@@ -34,7 +38,6 @@ namespace BuildingVolumes.Streaming
         TextureMode textureMode = TextureMode.None;
 
         public BufferedGeometryReader bufferedReader;
-        public Transform meshParent;
         GameObject meshObject;
         MeshFilter meshFilter;
         MeshRenderer meshRenderer;
@@ -83,6 +86,10 @@ namespace BuildingVolumes.Streaming
             if (!readerIsReady)
                 return;
 
+            bufferedReader.flipX = flipX;
+            bufferedReader.flipY = flipY;
+            bufferedReader.flipZ = flipZ;
+
             //Fill the buffer with new data from the disk, and delete unused frames (In case of lag/skip)
             bufferedReader.BufferFrames(currentFrameIndex);
 
@@ -122,10 +129,9 @@ namespace BuildingVolumes.Streaming
         bool SetupMesh()
         {
             meshObject = new GameObject("StreamedMesh");
-            if(meshParent) meshObject.transform.parent = meshParent;
             meshObject.transform.localPosition = Vector3.zero;
             meshObject.transform.localRotation = Quaternion.identity;
-            
+
             string[] paths;
 
             try { paths = Directory.GetFiles(pathToSequence, "*.ply"); }
@@ -331,7 +337,7 @@ namespace BuildingVolumes.Streaming
         }
 
 
-        public void CleanupSequence()
+        void CleanupSequence()
         {
             if (bufferedReader != null)
             {
@@ -358,6 +364,12 @@ namespace BuildingVolumes.Streaming
         void OnDestroy()
         {
             CleanupSequence();
+        }
+
+        private void Reset()
+        {
+            if (pointcloudMaterial == null && meshMaterial == null)
+                SetupMaterials();
         }
 
     }

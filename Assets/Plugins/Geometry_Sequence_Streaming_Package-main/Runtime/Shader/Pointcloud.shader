@@ -24,7 +24,6 @@ Shader "Pointcloud/Pointcloud"
         {
             Tags{ "RenderType" = "Opaque" }
             LOD 200
-            Cull Off
             CGPROGRAM
 
             #pragma target 5.0
