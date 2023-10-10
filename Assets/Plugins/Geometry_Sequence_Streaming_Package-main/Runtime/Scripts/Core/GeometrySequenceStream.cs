@@ -126,9 +126,12 @@ namespace BuildingVolumes.Streaming
 
         }
 
+        public Transform meshRoot;
+
         bool SetupMesh()
         {
             meshObject = new GameObject("StreamedMesh");
+            meshObject.gameObject.transform.parent = meshRoot;
             meshObject.transform.localPosition = Vector3.zero;
             meshObject.transform.localRotation = Quaternion.identity;
 
