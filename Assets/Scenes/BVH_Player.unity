@@ -1617,8 +1617,8 @@ MonoBehaviour:
   autoStartup: 1
   startupInAwake: 0
   autoStart: 1
-  autoStartSequenceLeft: 1
-  autoStartSequenceRight: 1
+  autoStartSequenceLeft: 24
+  autoStartSequenceRight: 24
   analyzePoseMatching: 0
   loopAllSequences: 0
   playAllSequences: 0

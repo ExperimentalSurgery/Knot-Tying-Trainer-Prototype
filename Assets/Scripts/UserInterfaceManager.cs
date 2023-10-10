@@ -49,8 +49,8 @@ namespace DFKI.NMY
         }
         
         public void FingerHighlight(FingerHighlightContainer config) {
-            HandVisualizer visualizer = GreifbARApp.instance.handVisualizer;
-
+                HandVisualizer visualizer = GreifbARApp.instance.handVisualizer;
+                Debug.Log("FingerHighlight");
                 if (config.LeftHand) {
                     visualizer.SetHighlight(config.Part, config.Mode, true,config.UserHands,config.ExpertHands);
                 }

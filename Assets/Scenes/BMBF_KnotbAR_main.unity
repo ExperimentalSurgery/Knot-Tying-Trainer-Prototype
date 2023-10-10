@@ -572,7 +572,7 @@ MonoBehaviour:
   manipulatePlayerPose: 0
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
-  pathToSequence: PointClouds/Mittelfinger/mfk_part2_assi_bend
+  pathToSequence: PointClouds/Mittelfinger/mfk_part2_assi_position
   manipulateFPS: 1
   targetFPS: 10
   references:
@@ -1171,6 +1171,7 @@ GameObject:
   - component: {fileID: 42102823}
   - component: {fileID: 42102822}
   - component: {fileID: 42102821}
+  - component: {fileID: 42102825}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part4_assi_demopull'
   m_TagString: Untagged
@@ -1344,6 +1345,33 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &42102825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42102819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 42102823}
+  highlights:
+  - Part: 5
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 7
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &43188010
 GameObject:
   m_ObjectHideFlags: 0
@@ -3098,6 +3126,7 @@ GameObject:
   - component: {fileID: 126055025}
   - component: {fileID: 126055024}
   - component: {fileID: 126055023}
+  - component: {fileID: 126055027}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part3_assi_demopinch'
   m_TagString: Untagged
@@ -3238,7 +3267,19 @@ MonoBehaviour:
   - {fileID: 1889830306}
   _selectedParallelSteps:
   - {fileID: 730810054}
-  highlights: []
+  highlights:
+  - Part: 5
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 7
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
 --- !u!114 &126055026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3259,6 +3300,33 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &126055027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126055021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 126055025}
+  highlights:
+  - Part: 5
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 7
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &127874210
 GameObject:
   m_ObjectHideFlags: 0
@@ -5796,6 +5864,7 @@ GameObject:
   - component: {fileID: 224282263}
   - component: {fileID: 224282262}
   - component: {fileID: 224282261}
+  - component: {fileID: 224282265}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part3_assi_demostretch'
   m_TagString: Untagged
@@ -5963,6 +6032,27 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &224282265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224282259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 224282263}
+  highlights:
+  - Part: 6
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &224515325
 GameObject:
   m_ObjectHideFlags: 0
@@ -7980,6 +8070,7 @@ GameObject:
   - component: {fileID: 321142967}
   - component: {fileID: 321142966}
   - component: {fileID: 321142965}
+  - component: {fileID: 321142969}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part4_assi_demofasten'
   m_TagString: Untagged
@@ -8120,7 +8211,19 @@ MonoBehaviour:
   - {fileID: 2138187604}
   _selectedParallelSteps:
   - {fileID: 1091318173}
-  highlights: []
+  highlights:
+  - Part: 2
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 4
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
 --- !u!114 &321142968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8141,6 +8244,33 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &321142969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321142963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 321142967}
+  highlights:
+  - Part: 2
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 4
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &323445568
 GameObject:
   m_ObjectHideFlags: 0
@@ -13846,7 +13976,7 @@ MonoBehaviour:
   _nextSteps: []
   _timeoutBeforeStepStart: 0
   _timeoutBeforeStepFinish: 0
-  _timeoutBeforeStepComplete: 0
+  _timeoutBeforeStepComplete: 1
   _timeoutActivatablesActivating: 0
   _timeoutActivatablesActivated: 0
   _timeoutActivatablesDeactivating: 0
@@ -14239,6 +14369,7 @@ GameObject:
   - component: {fileID: 597519463}
   - component: {fileID: 597519462}
   - component: {fileID: 597519461}
+  - component: {fileID: 597519465}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part4_assi_pull'
   m_TagString: Untagged
@@ -14414,6 +14545,33 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &597519465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597519459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 597519463}
+  highlights:
+  - Part: 5
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 7
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &597583444
 GameObject:
   m_ObjectHideFlags: 0
@@ -15398,7 +15556,12 @@ MonoBehaviour:
   - {fileID: 701676606}
   _persistantActivatablesDeactivationSteps: []
   _nextSteps:
+  - {fileID: 634907353}
+  - {fileID: 1796309833}
+  - {fileID: 1225912504}
+  - {fileID: 1274154203}
   - {fileID: 1003935693}
+  - {fileID: 1313694910}
   _timeoutBeforeStepStart: 0
   _timeoutBeforeStepFinish: 0
   _timeoutBeforeStepComplete: 0
@@ -15765,7 +15928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &634907353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17887,7 +18050,7 @@ MonoBehaviour:
   successOutlineDuration: 2.5
   checkMethod: 1
   manualCompletionKey: 110
-  poseMatchingThreshold: 25
+  poseMatchingThreshold: 40
   requireLeftMatch: 1
   requireRightMatch: 1
   references:
@@ -19563,6 +19726,7 @@ GameObject:
   - component: {fileID: 768543473}
   - component: {fileID: 768543472}
   - component: {fileID: 768543471}
+  - component: {fileID: 768543475}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part2_assi_bend'
   m_TagString: Untagged
@@ -19732,6 +19896,27 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &768543475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768543469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 768543473}
+  highlights:
+  - Part: 6
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &772939513
 GameObject:
   m_ObjectHideFlags: 0
@@ -22327,7 +22512,7 @@ MonoBehaviour:
   successOutlineDuration: 2.5
   checkMethod: 1
   manualCompletionKey: 110
-  poseMatchingThreshold: 25
+  poseMatchingThreshold: 20
   requireLeftMatch: 1
   requireRightMatch: 1
   references:
@@ -30765,6 +30950,7 @@ GameObject:
   - component: {fileID: 1207583132}
   - component: {fileID: 1207583131}
   - component: {fileID: 1207583130}
+  - component: {fileID: 1207583134}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part3_assi_stretch'
   m_TagString: Untagged
@@ -30934,6 +31120,27 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &1207583134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207583128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 1207583132}
+  highlights:
+  - Part: 6
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &1207740653
 GameObject:
   m_ObjectHideFlags: 0
@@ -31567,7 +31774,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1225912502
 Transform:
   m_ObjectHideFlags: 0
@@ -33433,7 +33640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1274154199
 Transform:
   m_ObjectHideFlags: 0
@@ -34115,7 +34322,6 @@ MonoBehaviour:
   - {fileID: 259101967}
   - {fileID: 1926397792}
   _selectedParallelSteps:
-  - {fileID: 1926397792}
   - {fileID: 1078477500}
   highlights: []
 --- !u!114 &1291937364
@@ -35338,7 +35544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1313694908
 Transform:
   m_ObjectHideFlags: 0
@@ -38098,6 +38304,7 @@ GameObject:
   - component: {fileID: 1419580843}
   - component: {fileID: 1419580842}
   - component: {fileID: 1419580841}
+  - component: {fileID: 1419580845}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part4_assi_demoletgo'
   m_TagString: Untagged
@@ -38271,6 +38478,33 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &1419580845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419580839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 1419580843}
+  highlights:
+  - Part: 1
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 3
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &1420056241
 GameObject:
   m_ObjectHideFlags: 0
@@ -39149,7 +39383,7 @@ Transform:
   m_GameObject: {fileID: 1445743786}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0.017, y: 0.003, z: 0.162}
+  m_LocalPosition: {x: 0.017, y: 0.003, z: 0.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39669,6 +39903,7 @@ GameObject:
   - component: {fileID: 1469677966}
   - component: {fileID: 1469677965}
   - component: {fileID: 1469677964}
+  - component: {fileID: 1469677968}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part4_assi_fasten'
   m_TagString: Untagged
@@ -39811,7 +40046,19 @@ MonoBehaviour:
   _selectedParallelSteps:
   - {fileID: 1401611348}
   - {fileID: 1005682482}
-  highlights: []
+  highlights:
+  - Part: 2
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 4
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
 --- !u!114 &1469677967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39832,6 +40079,33 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &1469677968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469677962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 1469677966}
+  highlights:
+  - Part: 2
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 4
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &1471383835
 GameObject:
   m_ObjectHideFlags: 0
@@ -40162,7 +40436,7 @@ MonoBehaviour:
   successOutlineDuration: 2.5
   checkMethod: 1
   manualCompletionKey: 110
-  poseMatchingThreshold: 25
+  poseMatchingThreshold: 17
   requireLeftMatch: 1
   requireRightMatch: 1
   references:
@@ -43512,6 +43786,7 @@ GameObject:
   - component: {fileID: 1609291936}
   - component: {fileID: 1609291935}
   - component: {fileID: 1609291934}
+  - component: {fileID: 1609291938}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part4_assi_letgo'
   m_TagString: Untagged
@@ -43687,6 +43962,33 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &1609291938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609291932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 1609291936}
+  highlights:
+  - Part: 1
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 3
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &1610418484
 GameObject:
   m_ObjectHideFlags: 0
@@ -46638,7 +46940,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1796309829
 Transform:
   m_ObjectHideFlags: 0
@@ -48118,6 +48420,7 @@ GameObject:
   - component: {fileID: 1829483943}
   - component: {fileID: 1829483942}
   - component: {fileID: 1829483941}
+  - component: {fileID: 1829483945}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part2_assi_position'
   m_TagString: Untagged
@@ -48260,7 +48563,25 @@ MonoBehaviour:
   _selectedParallelSteps:
   - {fileID: 876481031}
   - {fileID: 1201643560}
-  highlights: []
+  highlights:
+  - Part: 9
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 7
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 5
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
 --- !u!114 &1829483944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48281,6 +48602,39 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &1829483945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829483939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 1829483943}
+  highlights:
+  - Part: 9
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 7
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 5
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &1830442178
 GameObject:
   m_ObjectHideFlags: 0
@@ -51161,7 +51515,7 @@ MonoBehaviour:
   successOutlineDuration: 2.5
   checkMethod: 1
   manualCompletionKey: 110
-  poseMatchingThreshold: 25
+  poseMatchingThreshold: 30
   requireLeftMatch: 1
   requireRightMatch: 1
   references:
@@ -54417,6 +54771,7 @@ GameObject:
   - component: {fileID: 2098963486}
   - component: {fileID: 2098963485}
   - component: {fileID: 2098963484}
+  - component: {fileID: 2098963488}
   m_Layer: 0
   m_Name: '[Parallel Step] mfk_part3_assi_pinch'
   m_TagString: Untagged
@@ -54559,7 +54914,19 @@ MonoBehaviour:
   _selectedParallelSteps:
   - {fileID: 653290523}
   - {fileID: 461818873}
-  highlights: []
+  highlights:
+  - Part: 5
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 7
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
 --- !u!114 &2098963487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54580,6 +54947,33 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &2098963488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098963482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30da635f59f9bba41a95f303556c3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStep: {fileID: 2098963486}
+  highlights:
+  - Part: 5
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  - Part: 7
+    Mode: 1
+    LeftHand: 0
+    RightHand: 1
+    ExpertHands: 0
+    UserHands: 1
+  preventResetOnComplete: 0
 --- !u!1 &2102543511
 GameObject:
   m_ObjectHideFlags: 0
@@ -56009,19 +56403,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 831249703847831767, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000000009938958
+      value: -0.000000010015356
       objectReference: {fileID: 0}
     - target: {fileID: 831249703847831767, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0000000058361307
+      value: 0.000000005775401
       objectReference: {fileID: 0}
     - target: {fileID: 831249703847831767, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000025378313
+      value: -0.00000000257279
       objectReference: {fileID: 0}
     - target: {fileID: 1757533719427426928, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.0000001
+      value: 1.0000002
       objectReference: {fileID: 0}
     - target: {fileID: 1757533719427426928, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalScale.z
@@ -56033,11 +56427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1757533719427426928, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000000019251381
+      value: 0.000000019171747
       objectReference: {fileID: 0}
     - target: {fileID: 1757533719427426928, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.000000005355105
+      value: -0.000000005180482
       objectReference: {fileID: 0}
     - target: {fileID: 2099123827351733874, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56057,7 +56451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2497905560487868474, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0037503121
+      value: -0.0037503066
       objectReference: {fileID: 0}
     - target: {fileID: 2497905560487868474, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56065,11 +56459,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2497905560487868474, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0802743
+      value: 0.080274284
       objectReference: {fileID: 0}
     - target: {fileID: 2497905560487868474, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.06854231
+      value: 0.06854234
       objectReference: {fileID: 0}
     - target: {fileID: 2509386149134144790, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56085,11 +56479,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2509386149134144790, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000000044703484
+      value: -0.000000029802322
       objectReference: {fileID: 0}
     - target: {fileID: 2509386149134144790, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000014901161
+      value: -0.000000014901161
       objectReference: {fileID: 0}
     - target: {fileID: 2512113839320550176, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56109,7 +56503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774398393153418580, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0020835146
+      value: -0.0020835085
       objectReference: {fileID: 0}
     - target: {fileID: 2774398393153418580, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56117,11 +56511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774398393153418580, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00021690848
+      value: 0.00021689646
       objectReference: {fileID: 0}
     - target: {fileID: 2774398393153418580, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.07437592
+      value: 0.07437596
       objectReference: {fileID: 0}
     - target: {fileID: 3011813206102141428, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56145,7 +56539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3026116672906737014, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.000000022351742
+      value: 0.000000019557774
       objectReference: {fileID: 0}
     - target: {fileID: 3396965167795510057, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalScale.y
@@ -56181,15 +56575,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3692257536254564438, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000000018736664
+      value: -0.000000018681558
       objectReference: {fileID: 0}
     - target: {fileID: 3692257536254564438, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.000000028405339
+      value: 0.000000030500814
       objectReference: {fileID: 0}
     - target: {fileID: 3692257536254564438, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1.6543614e-24
+      value: 8.271807e-25
       objectReference: {fileID: 0}
     - target: {fileID: 3943200878226878062, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56209,7 +56603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4258928568940354503, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 4258928568940354503, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56217,11 +56611,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4258928568940354503, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000000011496821
+      value: -0.000000001191004
       objectReference: {fileID: 0}
     - target: {fileID: 4258928568940354503, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.000000011240026
+      value: -0.0000000112778356
       objectReference: {fileID: 0}
     - target: {fileID: 4471186063348311531, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56273,7 +56667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4617113562394926431, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.027285386
+      value: -0.027285384
       objectReference: {fileID: 0}
     - target: {fileID: 4617113562394926431, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -56281,7 +56675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4617113562394926431, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.000000016705599
+      value: 0.000000016239937
       objectReference: {fileID: 0}
     - target: {fileID: 4639330427801656090, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalScale.y
@@ -56301,7 +56695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4639330427801656090, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00000004656613
+      value: -0.00000004377216
       objectReference: {fileID: 0}
     - target: {fileID: 5223984046225419688, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalScale.y
@@ -56329,7 +56723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262064049964806193, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.004583654
+      value: 0.0045836563
       objectReference: {fileID: 0}
     - target: {fileID: 5262064049964806193, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56337,7 +56731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5262064049964806193, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.06647214
+      value: 0.06647218
       objectReference: {fileID: 0}
     - target: {fileID: 5751654177728482974, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56345,7 +56739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5751654177728482974, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0037503403
+      value: -0.0037503357
       objectReference: {fileID: 0}
     - target: {fileID: 5751654177728482974, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56353,11 +56747,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5751654177728482974, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1103902
+      value: 0.11039019
       objectReference: {fileID: 0}
     - target: {fileID: 5751654177728482974, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.05827981
+      value: 0.05827984
       objectReference: {fileID: 0}
     - target: {fileID: 5772962800387585703, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56389,15 +56783,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6593295457236096525, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000000012572855
+      value: -0.000000013038516
       objectReference: {fileID: 0}
     - target: {fileID: 6593295457236096525, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.000000017462298
+      value: 0.000000017753337
       objectReference: {fileID: 0}
     - target: {fileID: 6593295457236096525, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000037252903
+      value: 0.0000000018626451
       objectReference: {fileID: 0}
     - target: {fileID: 6622408591889106132, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalScale.y
@@ -56409,15 +56803,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6622408591889106132, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01509285
+      value: -0.015092855
       objectReference: {fileID: 0}
     - target: {fileID: 6622408591889106132, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000000015126062
+      value: -0.000000016057385
       objectReference: {fileID: 0}
     - target: {fileID: 6622408591889106132, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0000000020372686
+      value: 4.0745315e-10
       objectReference: {fileID: 0}
     - target: {fileID: 6665974056480338056, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalScale.y
@@ -56461,7 +56855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7212726696742843678, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00041672558
+      value: -0.00041672186
       objectReference: {fileID: 0}
     - target: {fileID: 7212726696742843678, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56469,11 +56863,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7212726696742843678, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17912486
+      value: 0.17912485
       objectReference: {fileID: 0}
     - target: {fileID: 7212726696742843678, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.013585571
+      value: 0.013585598
       objectReference: {fileID: 0}
     - target: {fileID: 8092382900551656307, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalScale.y
@@ -56513,15 +56907,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8684515827469828215, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000000011641532
+      value: 0.0000000117579475
       objectReference: {fileID: 0}
     - target: {fileID: 8684515827469828215, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0000000012805685
+      value: 0.0000000013969839
       objectReference: {fileID: 0}
     - target: {fileID: 8684515827469828215, guid: df09de4f9b8b6344d8a30f193913d22e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000002793968
+      value: 0.000000001396984
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
