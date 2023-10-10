@@ -9,9 +9,6 @@ namespace DFKI.NMY
     // Override of ParallelExecutionStep for potential extensions in future releases
     public class GreifbarParallelExecutionStep : ParallelExecutionStep {
         
-         [Header("Hand Highlight Config")]
-         [SerializeField] public List<FingerHighlightContainer> highlights = new List<FingerHighlightContainer>();
-         
         // PRE STEP
         protected override async UniTask PreStepActionAsync(CancellationToken ct) {
             Debug.Log(this.gameObject.name+" PretStepAction");

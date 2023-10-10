@@ -20,9 +20,6 @@ namespace DFKI.NMY
         [SerializeField] private LocalizedString stepDescription;
         
         
-        [Header("Hand Highlight Config")]
-        [SerializeField] public List<FingerHighlightContainer> highlights = new List<FingerHighlightContainer>();
-        
         // privates
         private bool _finishedCriteria = false;
         

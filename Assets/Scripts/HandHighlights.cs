@@ -19,43 +19,7 @@ namespace DFKI.NMY
         #region Migration Stuff
         private void Reset() {
             parentStep = GetComponent<BaseTrainingStep>();
-            highlights = GetHighlightsOfStep(parentStep);
-        }
-
-        List<FingerHighlightContainer> GetHighlightsOfStep(BaseTrainingStep step) {
-            List<FingerHighlightContainer> result = new List<FingerHighlightContainer>();
-            result.Clear();
-            if (step as GreifbarBaseStep) {
-                GreifbarBaseStep gbbs = step as GreifbarBaseStep;
-                result = gbbs.highlights;
-            }
-            else if (step as GreifbarParallelExecutionStep) {
-                GreifbarParallelExecutionStep gbbs = step as GreifbarParallelExecutionStep;
-                result=gbbs.highlights;
-            }
-            else if (step as GreifbarVirtualAssistantStep) {
-                GreifbarVirtualAssistantStep gbbs = step as GreifbarVirtualAssistantStep;
-                result=gbbs.highlights;
-            }
-            else if (step as PointCloudViewerStep) {
-                PointCloudViewerStep gbbs = step as PointCloudViewerStep;
-                result=gbbs.highlights;
-            }
-            return result;
-        }
-
-        [ContextMenu("Update Scene to Highlighter")]
-        public void UpdateSteps() {
-            var steps = FindObjectsOfType<BaseTrainingStep>(includeInactive:true);
-            foreach (var s in steps)
-            {
-                List<FingerHighlightContainer> highlightsOnStep = GetHighlightsOfStep(s);
-                if (!s.gameObject.GetComponent<HandHighlights>() && highlightsOnStep.Count > 0) {
-                    Debug.Log("Step has Highlights "+s.gameObject.name +" c="+highlightsOnStep.Count);
-                    s.gameObject.AddComponent<HandHighlights>();
-                }
-
-            }
+            highlights = new List<FingerHighlightContainer>();
         }
         #endregion
 

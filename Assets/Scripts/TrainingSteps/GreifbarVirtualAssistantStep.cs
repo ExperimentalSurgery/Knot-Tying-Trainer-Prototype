@@ -9,10 +9,6 @@ namespace DFKI.NMY
 {
     public class GreifbarVirtualAssistantStep : VirtualAssistantSpeakStep {
     
-         [Header("Hand Highlight Config")]
-         [SerializeField] public List<FingerHighlightContainer> highlights = new List<FingerHighlightContainer>();
-
-         
         // PRE STEP
         protected override async UniTask PreStepActionAsync(CancellationToken ct)
         {
