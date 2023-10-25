@@ -1,0 +1,564 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ORMi</name>
+    </assembly>
+    <members>
+        <member name="M:ORMi.Interfaces.IWMIHelper.AddInstance(System.Object)">
+            <summary>
+            Adds a new WMI Instance
+            </summary>
+            <param name="obj">Object to add. The classname and properties or corresponding attributes will be maped to the corresponding WMI structure</param>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.AddInstanceAsync(System.Object)">
+            <summary>
+            Adds a new WMI Instance asynchronously
+            </summary>
+            <param name="obj">Object to add. The classname and properties or corresponding attributes will be maped to the corresponding WMI structure</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.BulkInsert(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Runs a WMI bulk insertion. If there are any errors on the bulk insert, it will throw an AggregateException at the end of the run. You might want to catch that exception.
+            </summary>
+            <param name="instances">List of objects containing all the instances to insert</param>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.BulkInsertAsync(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Runs an asynchronous WMI bulk insertion. If there are any errors on the bulk insert, it will throw an AggregateException at the end of the run. You might want to catch that exception.
+            </summary>
+            <param name="instances">List of objects containing all the instances to insert</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.BulkUpdate(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Runs a WMI bulk update. If there are any errors on the bulk update, it will throw an AggregateException at the end of the run. You might want to catch that exception.
+            </summary>
+            <param name="instances">List of objects containing all the instances to update</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.BulkUpdateAsync(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Runs an asynchronous WMI bulk update. If there are any errors on the bulk update, it will throw an AggregateException at the end of the run. You might want to catch that exception.
+            </summary>
+            <param name="instances">List of objects containing all the instances to update</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.Query(System.String)">
+            <summary>
+            Runs a query against WMI. It will return a IEnumerable of dynamic type. No type mapping is done.
+            </summary>
+            <param name="query">Query to be run against WMI</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.Query``1">
+            <summary>
+            Runs a query against WMI. It will return all instances of the class corresponding to the WMI class set on the Type on IEnumerable.
+            </summary>
+            <typeparam name="T">The Type of IEnumerable that will be returned</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.Query``1(System.String)">
+            <summary>
+            Runs a custom query against WMI.
+            </summary>
+            <typeparam name="T">The Type of IEnumerable that will be returned</typeparam>
+            <param name="query">Query to be run against WMI</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.QueryAsync(System.String)">
+            <summary>
+            Runs a async query against WMI. It will return a IEnumerable of dynamic type. No type mapping is done.
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.QueryAsync``1">
+            <summary>
+            Runs an async query against WMI.
+            </summary>
+            <typeparam name="T">The Type of IEnumerable that will be returned</typeparam>
+            <param name="query">Query to be run against WMI</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.QueryAsync``1(System.String)">
+            <summary>
+            Runs an async query against WMI. It will return all instances of the class corresponding to the WMI class set on the Type on IEnumerable.
+            </summary>
+            <typeparam name="T">The Type of IEnumerable that will be returned</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.QueryFirstOrDefault(System.String)">
+            <summary>
+            Runs a custom query against WMI returning a single value.
+            </summary>
+            <param name="query">Query to be run</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.QueryFirstOrDefault``1">
+            <summary>
+            Runs a query against WMI. It will return the first instance of the specified Type.
+            </summary>
+            <typeparam name="T">The Type of object that will be returned</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.QueryFirstOrDefault``1(System.String)">
+            <summary>
+            Runs an custom query against WMI returning a single value of specified Type.
+            </summary>
+            <typeparam name="T">The Type of object that will be returned</typeparam>
+            <param name="query">Query to be run</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.QueryFirstOrDefaultAsync(System.String)">
+            <summary>
+            Runs an async query against WMI returning a single value.
+            </summary>
+            <param name="query">Query to be run</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.QueryFirstOrDefaultAsync``1">
+            <summary>
+            Runs an async query against WMI. It will return the first instance of the specified Type.
+            </summary>
+            <typeparam name="T">The Type of object that will be returned</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.QueryFirstOrDefaultAsync``1(System.String)">
+            <summary>
+            Runs an async query against WMI returning a single value.
+            </summary>
+            <param name="query">Query to be run</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.RemoveInstance(System.Object)">
+            <summary>
+            Remove a WMI instance.
+            </summary>
+            <param name="obj">Object to be removed.</param>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.RemoveInstance(System.String)">
+            <summary>
+            Remove WMI instances based on a custom query.
+            </summary>
+            <param name="query">Query that returns the objects to be removed</param>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.RemoveInstanceAsync(System.Object)">
+            <summary>
+            Remove a WMI instance asynchronously.
+            </summary>
+            <param name="obj">Object to be removed.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.RemoveInstanceAsync(System.String)">
+            <summary>
+            Remove WMI instances based on a custom query asynchronously.
+            </summary>
+            <param name="query">Query that returns the objects to be removed</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.UpdateInstance(System.Object)">
+            <summary>
+            Modifies an existing instance.
+            </summary>
+            <param name="obj">Object to be updated. ORMi will search the property with the SearchKey attribute. That value is going to be used to make the update.</param>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.UpdateInstance(System.Object,System.String)">
+            <summary>
+            Modifies an existing instance based on a custom query.
+            </summary>
+            <param name="obj">Object to be updated</param>
+            <param name="query">Query to be run against WMI. The resulting instances will be updated</param>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.UpdateInstanceAsync(System.Object)">
+            <summary>
+            Modifies an existing instance asynchonously.
+            </summary>
+            <param name="obj">Object to be updated. ORMi will search the property with the SearchKey attribute. That value is going to be used to make the update.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIHelper.UpdateInstanceAsync(System.Object,System.String)">
+            <summary>
+            Modifies an existing instance based on a custom query asynchonously.
+            </summary>
+            <param name="obj">Object to be updated</param>
+            <param name="query">Query to be run. The resulting instances will be updated</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIWatcher.Dispose">
+            <summary>
+            Disposes the WMIWatcher object.
+            </summary>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIWatcher.Initialize(System.String,System.String,System.Type,System.Management.ConnectionOptions)">
+            <summary>
+            Initializes the WMIWatcher with the desired parameters.
+            </summary>
+            <param name="scope">Desired Scope</param>
+            <param name="query">Query to be watch</param>
+            <param name="type">Type of result</param>
+            <param name="options">Connection options. If null, default options are used</param>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIWatcher.StartWatcher">
+            <summary>
+            Starts the current WMI Event watcher
+            </summary>
+        </member>
+        <member name="M:ORMi.Interfaces.IWMIWatcher.StopWatcher">
+            <summary>
+            Stops the current WMI Event watcher
+            </summary>
+        </member>
+        <member name="M:ORMi.WMIHelper.#ctor(System.String)">
+            <summary>
+            Creates a WMIHelper object targeting the desired scope. Default credentials are used.
+            </summary>
+            <param name="scope">WMI namespace</param>
+        </member>
+        <member name="M:ORMi.WMIHelper.#ctor(System.String,System.String,System.Management.AuthenticationLevel)">
+            <summary>
+            Creates a WMIHelper object targeting the desired scope on the specified hostname with optional authentication level. Beware that in order to make WMI calls work, the user running the application must have the corresponding privileges on the client machine. Otherwise it will throw an 'Access Denied' exception.
+            </summary>
+            <param name="scope">WMI namespace</param>
+            <param name="hostname">Client machine</param>
+            <param name="auth">Athentication level</param>
+        </member>
+        <member name="M:ORMi.WMIHelper.#ctor(System.String,System.String,System.String,System.Management.AuthenticationLevel)">
+            <summary>
+            Creates a WMIHelper object targeting the desired scope on the specified hostname with a domain to use when authorizing WMI calls on the client machine.
+            Beware that in order to make WMI calls work, the user running the application must have the corresponding privileges on the client machine. Otherwise it will throw an 'Access Denied' exception.
+            </summary>
+            <param name="scope"></param>
+            <param name="hostname"></param>
+            <param name="domain"></param>
+            <param name="auth">Athentication level</param>
+        </member>
+        <member name="M:ORMi.WMIHelper.#ctor(System.String,System.String,System.String,System.String,System.Management.AuthenticationLevel)">
+            <summary>
+            Creates a WMIHelper object targeting the desired scope on the specified hostname with specified credentials.
+            </summary>
+            <param name="scope">WMI namespace</param>
+            <param name="hostname">Client machine</param>
+            <param name="username">Username that will make the WMI connection</param>
+            <param name="password">The username´s password</param>
+            <param name="auth">Athentication level</param>
+        </member>
+        <member name="M:ORMi.WMIHelper.#ctor(System.String,System.String,System.String,System.String,System.Security.SecureString,System.Management.AuthenticationLevel)">
+            <summary>
+            Creates a WMIHelper object targeting the desired scope on the specified hostname with specified credentials.
+            </summary>
+            <param name="scope">WMI namespace</param>
+            <param name="hostname">Client machine</param>
+            <param name="domain">User account domain that will make the WMI connection</param>
+            <param name="username">Username that will make the WMI connection</param>
+            <param name="password">The username´s password (SecureString)</param>
+            <param name="auth">Athentication level</param>
+        </member>
+        <member name="M:ORMi.WMIHelper.AddInstance(System.Object)">
+            <summary>
+            Adds a new WMI Instance
+            </summary>
+            <param name="obj">Object to add. The classname and properties or corresponding attributes will be maped to the corresponding WMI structure</param>
+        </member>
+        <member name="M:ORMi.WMIHelper.AddInstanceAsync(System.Object)">
+            <summary>
+            Adds a new WMI Instance asynchronously
+            </summary>
+            <param name="obj">Object to add. The classname and properties or corresponding attributes will be maped to the corresponding WMI structure</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.UpdateInstance(System.Object)">
+            <summary>
+            Modifies an existing instance.
+            </summary>
+            <param name="obj">Object to be updated. ORMi will search the property with the SearchKey attribute. That value is going to be used to make the update.</param>
+        </member>
+        <member name="M:ORMi.WMIHelper.UpdateInstanceAsync(System.Object)">
+            <summary>
+            Modifies an existing instance asynchronously.
+            </summary>
+            <param name="obj">Object to be updated. ORMi will search the property with the SearchKey attribute. That value is going to be used to make the update.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.UpdateInstance(System.Object,System.String)">
+            <summary>
+            Modifies an existing instance based on a custom query.
+            </summary>
+            <param name="obj">Object to be updated</param>
+            <param name="query">Query to be run against WMI. The resulting instances will be updated</param>
+        </member>
+        <member name="M:ORMi.WMIHelper.UpdateInstanceAsync(System.Object,System.String)">
+            <summary>
+            Modifies an existing instance based on a custom query asynchronously.
+            </summary>
+            <param name="obj">Object to be updated</param>
+            <param name="query">Query to be run. The resulting instances will be updated</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.RemoveInstance(System.Object)">
+            <summary>
+            Remove a WMI instance.
+            </summary>
+            <param name="obj">Object to be removed.</param>
+        </member>
+        <member name="M:ORMi.WMIHelper.RemoveInstanceAsync(System.Object)">
+            <summary>
+            Remove a WMI instance asynchronously.
+            </summary>
+            <param name="obj">Object to be removed.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.RemoveInstance(System.String)">
+            <summary>
+            Remove WMI instances based on a custom query.
+            </summary>
+            <param name="query">Query that returns the objects to be removed</param>
+        </member>
+        <member name="M:ORMi.WMIHelper.RemoveInstanceAsync(System.String)">
+            <summary>
+            Remove WMI instances based on a custom query asynchronously.
+            </summary>
+            <param name="query">Query that returns the objects to be removed</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.Query(System.String)">
+            <summary>
+            Runs a query against WMI. It will return a IEnumerable of dynamic type. No type mapping is done.
+            </summary>
+            <param name="query">Query to be run against WMI</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.QueryAsync(System.String)">
+            <summary>
+            Runs a async query against WMI. It will return a IEnumerable of dynamic type. No type mapping is done.
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.Query``1">
+            <summary>
+            Runs a query against WMI. It will return all instances of the class corresponding to the WMI class set on the Type on IEnumerable.
+            </summary>
+            <typeparam name="T">The Type of IEnumerable that will be returned</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.QueryAsync``1">
+            <summary>
+            Runs an async query against WMI. It will return all instances of the class corresponding to the WMI class set on the Type on IEnumerable.
+            </summary>
+            <typeparam name="T">The Type of IEnumerable that will be returned</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.Query``1(System.String)">
+            <summary>
+            Runs a custom query against WMI.
+            </summary>
+            <typeparam name="T">The Type of IEnumerable that will be returned</typeparam>
+            <param name="query">Query to be run against WMI</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.QueryAsync``1(System.String)">
+            <summary>
+            Runs an async query against WMI.
+            </summary>
+            <typeparam name="T">The Type of IEnumerable that will be returned</typeparam>
+            <param name="query">Query to be run against WMI</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.QueryFirstOrDefault(System.String)">
+            <summary>
+            Runs a custom query against WMI returning a single value.
+            </summary>
+            <param name="query">Query to be run</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.QueryFirstOrDefaultAsync(System.String)">
+            <summary>
+            Runs an async query against WMI returning a single value.
+            </summary>
+            <param name="query">Query to be run</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.QueryFirstOrDefault``1">
+            <summary>
+            Runs a query against WMI. It will return the first instance of the specified Type.
+            </summary>
+            <typeparam name="T">The Type of object that will be returned</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.QueryFirstOrDefaultAsync``1">
+            <summary>
+            Runs an async query against WMI. It will return the first instance of the specified Type.
+            </summary>
+            <typeparam name="T">The Type of object that will be returned</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.QueryFirstOrDefault``1(System.String)">
+            <summary>
+            Runs an custom query against WMI returning a single value of specified Type.
+            </summary>
+            <typeparam name="T">The Type of object that will be returned</typeparam>
+            <param name="query">Query to be run</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.QueryFirstOrDefaultAsync``1(System.String)">
+            <summary>
+            Runs an custom async query against WMI returning a single value of specified Type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.BulkInsert(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Runs a WMI bulk insertion. If there are any errors on the bulk insert, it will throw an AggregateException at the end of the run. You might want to catch that exception.
+            </summary>
+            <param name="instances">List of objects containing all the instances to insert</param>
+        </member>
+        <member name="M:ORMi.WMIHelper.BulkInsertAsync(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Runs an asynchronous WMI bulk insertion. If there are any errors on the bulk insert, it will throw an AggregateException at the end of the run. You might want to catch that exception.
+            </summary>
+            <param name="instances">List of objects containing all the instances to insert</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.BulkUpdate(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Runs a WMI bulk update. If there are any errors on the bulk update, it will throw an AggregateException at the end of the run. You might want to catch that exception.
+            </summary>
+            <param name="instances">List of objects containing all the instances to update</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIHelper.BulkUpdateAsync(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Runs an asynchronous WMI bulk update. If there are any errors on the bulk update, it will throw an AggregateException at the end of the run. You might want to catch that exception.
+            </summary>
+            <param name="instances">List of objects containing all the instances to update</param>
+            <returns></returns>
+        </member>
+        <member name="T:ORMi.WMIMethod">
+            <summary>
+            Static class for WMI method helpers.
+            </summary>
+        </member>
+        <member name="M:ORMi.WMIMethod.ExecuteMethod(System.Object)">
+            <summary>
+            Executes an WMI instance method with no parameter. Returns dynamic object.
+            </summary>
+            <param name="obj">Instance which will be instanciated to call the method.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIMethod.ExecuteMethod``1(System.Object)">
+            <summary>
+            Executes WMI instance method with no parameter. Returns an object of specified type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj">Instance which will be instanciated to call the method.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIMethod.ExecuteMethod(System.Object,System.Object)">
+            <summary>
+            Executes an instance method with parameters. Returns a dynamic object.
+            </summary>
+            <param name="obj">Instance which will be instanciated to call the method.</param>
+            <param name="parameters">Anonymous object with properties matching the parameter names of the method.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIMethod.ExecuteMethod``1(System.Object,System.Object)">
+            <summary>
+            Executes an instance method with parameters. Returns an object of specified type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIMethod.ExecuteStaticMethod">
+            <summary>
+            Executes a static method without parameters.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIMethod.ExecuteStaticMethod``1">
+            <summary>
+            Executes a static method without parameters. Returns an object of specified type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIMethod.ExecuteStaticMethod(System.Object)">
+            <summary>
+            Executes a static method with parameters.
+            </summary>
+            <param name="parameters">Anonymous object with properties matching the WMI method parameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIMethod.ExecuteStaticMethod``1(System.Object)">
+            <summary>
+            Executes a static method with parameters. Returns an object of specified type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ORMi.WMIWatcher.#ctor">
+            <summary>
+            Creates empty WMIWatcher. BEWARE that if you use this constructor you will hace to manually call Initialize method. Otherwise nothing will work.
+            </summary>
+        </member>
+        <member name="M:ORMi.WMIWatcher.#ctor(System.String,System.String,System.Management.ConnectionOptions)">
+            <summary>
+            Creeates a WMI Watcher for the specified query. It returns a dynamic object.
+            </summary>
+            <param name="scope">Desired Scope</param>
+            <param name="query">Query to be watch</param>
+            <param name="options">Connection options. If null, default options are used</param>
+        </member>
+        <member name="M:ORMi.WMIWatcher.#ctor(System.String,System.Type,System.Management.ConnectionOptions)">
+            <summary>
+            Creates a WMI Event watcher based on the WMIClass atribute that has been set to the desired Type
+            </summary>
+            <param name="scope">Desired Scope</param>
+            <param name="type">Type of object that will initiate the watch</param>
+            <param name="options">Connection options. If null, default options are used</param>
+        </member>
+        <member name="M:ORMi.WMIWatcher.#ctor(System.String,System.String,System.Type,System.Management.ConnectionOptions)">
+            <summary>
+            Creates a WMI Event watcher based on custom query
+            </summary>
+            <param name="scope">Desired Scope</param>
+            <param name="query">Query to be watch</param>
+            <param name="type">Type of result</param>
+            <param name="options">Connection options. If null, default options are used</param>
+        </member>
+        <member name="M:ORMi.WMIWatcher.Initialize(System.String,System.String,System.Type,System.Management.ConnectionOptions)">
+            <summary>
+            Initializes the WMIWatcher with the desired parameters.
+            </summary>
+            <param name="scope">Desired Scope</param>
+            <param name="query">Query to be watch</param>
+            <param name="type">Type of result</param>
+            <param name="options">Connection options. If null, default options are used</param>
+        </member>
+        <member name="M:ORMi.WMIWatcher.CreateWatcher(System.Management.ConnectionOptions)">
+            <summary>
+            Create a WMI Event Watcher
+            </summary>
+        </member>
+        <member name="M:ORMi.WMIWatcher.StartWatcher">
+            <summary>
+            Starts the current WMI Event watcher
+            </summary>
+        </member>
+        <member name="M:ORMi.WMIWatcher.StopWatcher">
+            <summary>
+            Stops the current WMI Event watcher
+            </summary>
+        </member>
+        <member name="M:ORMi.WMIWatcher.Dispose">
+            <summary>
+            Disposes the WMIWatcher object.
+            </summary>
+        </member>
+    </members>
+</doc>

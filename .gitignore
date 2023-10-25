@@ -80,3 +80,4 @@ crashlytics-build.properties
 /PointClouds/Volumetrischer_Knoten/
 .idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml
 Assets/StreamingAssets/PointClouds/*
+SerialPortInfo/serialInfo.txt

@@ -67,20 +67,20 @@ public class SerialController : SingletonStartupBehaviour<SerialController>
     }
 
 
-    // ------------------------------------------------------------------------
-    // Invoked whenever the SerialController gameobject is activated.
-    // It creates a new thread that tries to connect to the serial device
-    // and start reading from it.
-    // ------------------------------------------------------------------------
-    void OnEnable()
-    {
-        serialThread = new SerialThreadLines(portName, 
-                                             baudRate, 
-                                             reconnectionDelay,
-                                             maxUnreadMessages);
-        thread = new Thread(new ThreadStart(serialThread.RunForever));
-        thread.Start();
-    }
+    //// ------------------------------------------------------------------------
+    //// Invoked whenever the SerialController gameobject is activated.
+    //// It creates a new thread that tries to connect to the serial device
+    //// and start reading from it.
+    //// ------------------------------------------------------------------------
+    //void OnEnable()
+    //{
+    //    serialThread = new SerialThreadLines(portName, 
+    //                                         baudRate, 
+    //                                         reconnectionDelay,
+    //                                         maxUnreadMessages);
+    //    thread = new Thread(new ThreadStart(serialThread.RunForever));
+    //    thread.Start();
+    //}
 
     // ------------------------------------------------------------------------
     // Invoked whenever the SerialController gameobject is deactivated.
@@ -110,6 +110,30 @@ public class SerialController : SingletonStartupBehaviour<SerialController>
         }
     }
 
+
+    // ------------------------------------------------------------------------
+    // Invoked whenever the SerialController gameobject is activated.
+    // It creates a new thread that tries to connect to the serial device
+    // and start reading from it.
+    // ------------------------------------------------------------------------
+    protected override void StartupEnter()
+    {
+        base.StartupEnter();
+        Debug.Log("SerialController startup");
+
+    }
+
+    public void Init()
+    {
+        serialThread = new SerialThreadLines(portName,
+                                     baudRate,
+                                     reconnectionDelay,
+                                     maxUnreadMessages);
+        thread = new Thread(new ThreadStart(serialThread.RunForever));
+        thread.Start();
+        init = true;
+    }
+
     // ------------------------------------------------------------------------
     // Polls messages from the queue that the SerialThread object keeps. Once a
     // message has been polled it is removed from the queue. There are some
@@ -118,6 +142,9 @@ public class SerialController : SingletonStartupBehaviour<SerialController>
     // ------------------------------------------------------------------------
     void Update()
     {
+        if (!init)
+            return;
+
         // Read the next message from the queue
         string message = (string)serialThread.ReadMessage();
         if (message == null)
@@ -160,6 +187,8 @@ public class SerialController : SingletonStartupBehaviour<SerialController>
     // ------------------------------------------------------------------------
     public delegate void TearDownFunction();
     private TearDownFunction userDefinedTearDownFunction;
+    private bool init;
+
     public void SetTearDownFunction(TearDownFunction userFunction)
     {
         this.userDefinedTearDownFunction = userFunction;
