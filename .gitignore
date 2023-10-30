@@ -81,3 +81,4 @@ crashlytics-build.properties
 .idea/.idea.Greifbar_EvaluationPrototype/.idea/workspace.xml
 Assets/StreamingAssets/PointClouds/*
 SerialPortInfo/serialInfo.txt
+SerialPortInfo/data.csv

@@ -147,7 +147,7 @@ public class SerialController : SingletonStartupBehaviour<SerialController>
 
         // Read the next message from the queue
         string message = (string)serialThread.ReadMessage();
-        if (message == null)
+        if (string.IsNullOrEmpty(message))
             return;
 
         // Check if the message is plain data or a connect/disconnect event.
