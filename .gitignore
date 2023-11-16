@@ -82,3 +82,4 @@ crashlytics-build.properties
 Assets/StreamingAssets/PointClouds/*
 SerialPortInfo/serialInfo.txt
 SerialPortInfo/data.csv
+Assets/ThirdParty/Chart And Graph/*

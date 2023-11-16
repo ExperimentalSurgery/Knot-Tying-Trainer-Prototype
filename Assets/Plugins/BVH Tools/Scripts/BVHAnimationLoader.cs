@@ -401,6 +401,21 @@ public class BVHAnimationLoader : MonoBehaviour {
         anim.Play(clip.name);
     }
 
+    // CHANGES: Added
+    public void loopAnimation()
+    {
+        if (bp == null)
+        {
+            throw new InvalidOperationException("No BVH file has been parsed.");
+        }
+        if (anim == null || clip == null)
+        {
+            loadAnimation();
+        }
+        anim.wrapMode= WrapMode.Loop;
+        anim.Play(clip.name);
+    }
+
     public void stopAnimation() {
         if (clip != null) {
             if (anim.IsPlaying(clip.name)) {
