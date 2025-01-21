@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 06d7c10861e82574598199cd3200e065
+  m_SerializeEntries:
+  - m_GUID: 8b54c45a014b4d14aabc06489dbe5bc0
+    m_Address: Assets/Localization/StringTables/Introduction Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4de38e98376a1df4fa7901352b647740
+    m_Address: Assets/Localization/AssetTables/Introduction_Assets Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 03d10c4bda2076040a2706f6e217ee9d
+    m_Address: Assets/Localization/StringTables/Setup Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c3e8db84a4bb604dbec4e87a6e8ec1d
+    m_Address: Assets/Localization/StringTables/Mittelfingerknoten Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc2ddf4480c37a64585b03465c45fb51
+    m_Address: Assets/Localization/AssetTables/Mittelfingerknoten Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa99f3308bc977c4386bcfc929b68d92
+    m_Address: Assets/Localization/StringTables/FeedbackScreen Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1e1b9f435608844c844ff6f4baf2bd6
+    m_Address: Assets/Localization/StringTables/UserInterface Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b188132f14f78694489f8b37c2d04742
+    m_Address: Assets/Localization/AssetTables/Setup_Assets Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73b59995f20aa944984c9788ef9db8e7
+    m_Address: Assets/Localization/StringTables/Chapter_Titles Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5228afa33b3b3540a4c4b91443f1668
+    m_Address: Assets/Localization/StringTables/Zeigefingerknoten Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c78bc8cbdc7da8640b966af3c9fee4b9
+    m_Address: Assets/Localization/AssetTables/Zeigefingerknoten Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 3224293c3a3612b4d93cb429abb651e9, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ca3efd080b88f3d4d8cda787cffeaee6, type: 2}
+    - {fileID: 11400000, guid: b9f603bebaeb402449fbb7dee8773abc, type: 2}

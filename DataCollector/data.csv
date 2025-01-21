@@ -1,0 +1,18 @@
+Time,Chapter,Step,ChapterOptimalTime,ChapterUserTime,Tension,GestureDeviation
+2024-02-01 09:28:25.168,Einführung,[Timeout Step] 1,60.0,0.0,20.0,0.0
+2024-02-01 09:28:26.185,Einführung,[Timeout Step] 1,60.0,0.0,20.0,0.0
+2024-02-01 09:28:27.200,Einführung,[VA Speak Step] TTS ,60.0,0.2,20.0,0.0
+2024-02-01 09:28:28.215,Einführung,[VA Speak Step] TTS ,60.0,1.2,20.0,0.0
+2024-02-01 09:28:29.232,Einführung,[VA Speak Step] TTS ,60.0,2.2,20.0,0.0
+2024-02-01 09:28:30.249,Einführung,[VA Speak Step] TTS ,60.0,3.3,20.0,0.0
+2024-02-01 09:28:31.253,Einführung,[VA Speak Step] TTS ,60.0,4.3,1.0,0.0
+2024-02-01 09:28:32.255,Einführung,[VA Speak Step] TTS ,60.0,5.3,20.0,0.0
+2024-02-01 09:28:34.094,Vorbereitung,[Timeout Step] 1,60.0,0.1,20.0,0.0
+2024-02-01 09:28:35.109,Vorbereitung,[Timeout Step] 1,60.0,0.1,10.0,0.0
+2024-02-01 09:28:36.109,Vorbereitung,[VA Speak Step] TTS ,60.0,0.8,10.0,0.0
+2024-02-01 09:28:37.126,Vorbereitung,[VA Speak Step] TTS ,60.0,1.8,20.0,0.0
+2024-02-01 09:28:38.126,Vorbereitung,[VA Speak Step] TTS ,60.0,2.8,18.0,0.0
+2024-02-01 09:28:39.141,Vorbereitung,[VA Speak Step] TTS ,60.0,0.9,20.0,0.0
+2024-02-01 09:28:40.141,Vorbereitung,[VA Speak Step] TTS ,60.0,1.9,20.0,0.0
+2024-02-01 09:28:41.211,Vorbereitung,[VA Speak Step] TTS ,60.0,2.9,20.0,0.0
+2024-02-01 09:28:42.226,Vorbereitung,[VA Speak Step] TTS ,60.0,4.0,20.0,0.0

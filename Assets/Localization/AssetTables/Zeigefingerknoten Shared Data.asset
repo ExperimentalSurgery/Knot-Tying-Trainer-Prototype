@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Zeigefingerknoten Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Zeigefingerknoten
+  m_TableCollectionNameGuidString: c78bc8cbdc7da8640b966af3c9fee4b9
+  m_Entries:
+  - m_Id: 50071112286658560
+    m_Key: zfk_intro_assi_start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071112932581376
+    m_Key: zfk_intro_assi_startposition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071113494618112
+    m_Key: zfk_part1_assi_grip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071114106986496
+    m_Key: zfk_part1_assi_indexturn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071114786463744
+    m_Key: zfk_part1_assi_cross
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071115440775168
+    m_Key: zfk_part2_assi_takered
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071116103475200
+    m_Key: zfk_part2_assi_greenback
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071116652929024
+    m_Key: zfk_part2_assi_loop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071117256908800
+    m_Key: zfk_part2_assi_looseend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071117944774656
+    m_Key: zfk_part3_assi_tighten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071118519394304
+    m_Key: zfk_part3_assi_completed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071119140151296
+    m_Key: zfk_intro_assi_start_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071119756713984
+    m_Key: zfk_part1_assi_grip_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071120339722240
+    m_Key: zfk_part1_assi_indexturn_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071120880787456
+    m_Key: zfk_part1_assi_cross_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071121497350144
+    m_Key: zfk_intro_assi_startposition_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071122277490688
+    m_Key: zfk_part2_assi_takered_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071122919219200
+    m_Key: zfk_part2_assi_greenback_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071123489644544
+    m_Key: zfk_part2_assi_loop_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071124097818624
+    m_Key: zfk_part2_assi_looseend_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071124693409792
+    m_Key: zfk_part3_assi_tighten_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50071125263835136
+    m_Key: zfk_part3_assi_completed_short
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items:
+    - rid: 2554457008285942288
+  m_KeyGenerator:
+    rid: 401044029348249627
+  references:
+    version: 2
+    RefIds:
+    - rid: 401044029348249627
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1695213843939
+    - rid: 2554457008285942288
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 50071112286658560
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071112932581376
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071113494618112
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071114106986496
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071114786463744
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071115440775168
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071116103475200
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071116652929024
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071117256908800
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071117944774656
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071118519394304
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071119140151296
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071119756713984
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071120339722240
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071120880787456
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071121497350144
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071122277490688
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071122919219200
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071123489644544
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071124097818624
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071124693409792
+          m_TableCodes:
+          - de
+        - m_KeyId: 50071125263835136
+          m_TableCodes:
+          - de
+        m_TypeString: NMY.GoogleCloudTextToSpeech.LocalizedTextToSpeechItem, com.nmy.googlecloudtexttospeech,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Pretraining_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 03d10c4bda2076040a2706f6e217ee9d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 323437473792
+    m_Localized: "Wir beginnen mit der Vorbereitung f\xFCr das Knotenbinden. Auf
+      dem Tisch vor dir siehst Du eine Knotenbank. Diese besteht aus zwei Str\xE4ngen,
+      die wir mit einem Knoten zusammenbinden wollen. Der Faden ist farblich in zwei
+      H\xE4lften unterteilt: Die rechte H\xE4lfte ist pink. Die Linke ist Gelb markiert."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403796144128
+    m_Localized: "F\xFChre den Faden unter beiden Str\xE4ngen hindurch, sodass die
+      Farben auf den korrekten Seiten liegen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 601767292928
+    m_Localized: Ich mache es Dir vor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4628605317120
+    m_Localized: Jetzt ziehst Du bitte leicht an beiden Enden, so dass etwas Spannung
+      auf dem Faden ist. Wenn das System die Richtige Menge an Spannung erkennt,
+      geht es weiter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5811793309696
+    m_Localized: Ich mache es Dir wieder vor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6157886304256
+    m_Localized: Gut!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6286148120576
+    m_Localized: "Jetzt werde ich den Faden einmal \xFCberkreuz legen, das hei\xDFt
+      einmal um das zu verknotende Material f\xFChren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6416377065472
+    m_Localized: "Wir binden mit der rechten Hand, daher muss nach dem \xDCberkreuzen
+      das linke Ende unten, n\xE4her an Dir liegen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6546966720512
+    m_Localized: "Schaue mir zu und lege selbst die beiden Fadenenden \xFCber Kreuz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6606739746816
+    m_Localized: "Wenn Du fertig bist, zeige mir bitte einen Daumen hoch mit beiden
+      H\xE4nden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10700191707136
+    m_Localized: Gut! Machen wir weiter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 776125590052864
+    m_Localized: "Nimm jede Fadenh\xE4lfte zwischen Daumen und Zeigefinger. Die losen
+      Fadenenden greifst Du mit den restlichen Fingern."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 776301767598080
+    m_Localized: "Kleiner Finger, Ringfinger und Mittelfinger bilden eine R\xF6hre,
+      durch die der Faden l\xE4uft."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 776486484746240
+    m_Localized: Wenn Du fertig bist, dann nimm die Endposition ein.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 776692848697344
+    m_Localized: Das stimmt noch nicht ganz.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 776861702987776
+    m_Localized: Du musst den Faden zwischen Zeigefinger und Daumen greifen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 777000618336256
+    m_Localized: Bitte spanne den Faden etwas mehr, um einen festen Knoten zu erhalten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 777022990753792
+    m_Localized: "Bitte entspanne den Faden etwas, um sp\xE4ter keinen Hautabriss
+      zu verursachen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 777167929122816
+    m_Localized: 'Super! Das hat gut funktioniert!  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 777330127052800
+    m_Localized: "Dies ist die Ausgangsposition, in der jeder Knoten beginnt. Der
+      blaue Haken, der an deinen H\xE4nden angezeigt wurde, bedeutet, dass Du die
+      richtige Position erreicht hast. Jetzt gehts zur Levelauswahl. Wenn Du erstmals
+      Knoten lernst, dann starte mit Level eins."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11020050432
+    m_Localized: Noch nicht gesetzt.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

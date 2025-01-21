@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Zeigefingerknoten Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Zeigefingerknoten
+  m_TableCollectionNameGuidString: d5228afa33b3b3540a4c4b91443f1668
+  m_Entries:
+  - m_Id: 726975221760
+    m_Key: zfk_intro_assi_start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942016
+    m_Key: zfk_intro_assi_startposition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942017
+    m_Key: zfk_part1_assi_grip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942018
+    m_Key: zfk_part1_assi_indexturn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942019
+    m_Key: zfk_part1_assi_cross
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942020
+    m_Key: zfk_part2_assi_takered
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942021
+    m_Key: zfk_part2_assi_greenback
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942022
+    m_Key: zfk_part2_assi_loop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942023
+    m_Key: zfk_part2_assi_looseend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942024
+    m_Key: zfk_part3_assi_tighten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727033942025
+    m_Key: zfk_part3_assi_completed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48478340232437760
+    m_Key: zfk_intro_assi_start_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50070960251527168
+    m_Key: zfk_intro_assi_startposition_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48478340249214977
+    m_Key: zfk_part1_assi_grip_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48478340249214978
+    m_Key: zfk_part1_assi_indexturn_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48478340249214979
+    m_Key: zfk_part1_assi_cross_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50070960264110080
+    m_Key: zfk_part2_assi_takered_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50070960264110081
+    m_Key: zfk_part2_assi_greenback_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50070960264110082
+    m_Key: zfk_part2_assi_loop_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50070960264110083
+    m_Key: zfk_part2_assi_looseend_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50070960264110084
+    m_Key: zfk_part3_assi_tighten_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50070960264110085
+    m_Key: zfk_part3_assi_completed_short
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 401044029348249626
+  references:
+    version: 2
+    RefIds:
+    - rid: 401044029348249626
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1695213829240

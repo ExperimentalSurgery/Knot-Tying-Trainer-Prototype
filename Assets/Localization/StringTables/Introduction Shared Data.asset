@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Introduction Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Introduction
+  m_TableCollectionNameGuidString: 8b54c45a014b4d14aabc06489dbe5bc0
+  m_Entries:
+  - m_Id: 11020050432
+    m_Key: tbd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516874579968
+    m_Key: intro_assi_start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1317680459776
+    m_Key: intro_assi_raisehands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1740894121984
+    m_Key: intro_assi_welcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2022239645696
+    m_Key: intro_assi_basics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2360212467712
+    m_Key: intro_assi_buttons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99236666821763072
+    m_Key: intro_assi_stepui_buttons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99236666842734592
+    m_Key: intro_assi_stepui_buttons2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2480437997568
+    m_Key: intro_assi_backbutton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2587963174912
+    m_Key: intro_assi_try_backbutton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2692426510336
+    m_Key: intro_assi_after_backbutton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2973616844800
+    m_Key: intro_assi_nextstepsbutton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202382573568
+    m_Key: intro_assi_try_nextstepsbutton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3411770617856
+    m_Key: intro_assi_trainerhands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17758107564912640
+    m_Key: intro_assi_view_gesture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3669359603712
+    m_Key: intro_assi_after_gesture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3777874636800
+    m_Key: intro_assi_trainerhands_speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3915733020672
+    m_Key: intro_assi_try_trainerhands_speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4005684064256
+    m_Key: intro_assi_starttraining
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4556038250801397844
+  references:
+    version: 2
+    RefIds:
+    - rid: 4556038250801397844
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1685540923079
