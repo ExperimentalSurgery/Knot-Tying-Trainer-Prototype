@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.nmy.googlecloudtexttospeech": "file:../LocalPackages/com.nmy.googlecloudtexttospeech@0.0.1-r.14",
     "com.nmy.virtualrealitytrainingsteps": "6.2.5",
     "com.ultraleap.tracking": "6.15.0",
     "com.unity-atoms.unity-atoms-base-atoms": "4.5.0",
