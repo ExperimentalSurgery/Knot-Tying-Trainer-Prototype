@@ -1,0 +1,22 @@
+Key,German(de)
+tbd,Noch nicht gesetzt.
+setup_assi_start,"Wir beginnen mit der Vorbereitung für das Knotenbinden. Auf dem Tisch vor dir siehst Du eine Knotenbank. Diese besteht aus zwei Strängen, die wir mit einem Knoten zusammenbinden wollen. Der Faden ist farblich in zwei Hälften unterteilt: Die rechte Hälfte ist pink. Die Linke ist Gelb markiert."
+setup_assi_rubberbands,"Führe den Faden unter beiden Strängen hindurch, sodass die Farben auf den korrekten Seiten liegen."
+setup_assi_show-0,Ich mache es Dir vor.
+setup_assi_pull,"Jetzt ziehst Du bitte leicht an beiden Enden, so dass etwas Spannung auf dem Faden ist. Wenn das System die Richtige Menge an Spannung erkennt, geht es weiter."
+setup_assi_show-1,Ich mache es Dir wieder vor.
+setup_assi_verynice-1,Gut!
+setup_assi_cross-1,"Jetzt werde ich den Faden einmal überkreuz legen, das heißt einmal um das zu verknotende Material führen."
+setup_assi_cross-2,"Wir binden mit der rechten Hand, daher muss nach dem Überkreuzen das linke Ende unten, näher an Dir liegen"
+setup_assi_cross-3,Schaue mir zu und lege selbst die beiden Fadenenden über Kreuz.
+setup_assi_thumbsup,"Wenn Du fertig bist, zeige mir bitte einen Daumen hoch mit beiden Händen."
+setup_assi_verynice-2,Gut! Machen wir weiter.
+setup_assi_pickup-1,Nimm jede Fadenhälfte zwischen Daumen und Zeigefinger. Die losen Fadenenden greifst Du mit den restlichen Fingern.
+setup_assi_pickup-2,"Kleiner Finger, Ringfinger und Mittelfinger bilden eine Röhre, durch die der Faden läuft."
+setup_assi_try_pickup,"Wenn Du fertig bist, dann nimm die Endposition ein."
+setup_assi_fail,Das stimmt noch nicht ganz.
+setup_assi_help-1,Du musst den Faden zwischen Zeigefinger und Daumen greifen.
+setup_assi_help-2,"Bitte spanne den Faden etwas mehr, um einen festen Knoten zu erhalten."
+setup_assi_help-3,"Bitte entspanne den Faden etwas, um später keinen Hautabriss zu verursachen."
+setup_assi_success,Super! Das hat gut funktioniert!  
+setup_assi_end,"Dies ist die Ausgangsposition, in der jeder Knoten beginnt. Der blaue Haken, der an deinen Händen angezeigt wurde, bedeutet, dass Du die richtige Position erreicht hast. Jetzt gehts zur Levelauswahl. Wenn Du erstmals Knoten lernst, dann starte mit Level eins."

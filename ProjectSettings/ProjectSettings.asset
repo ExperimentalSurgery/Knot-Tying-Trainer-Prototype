@@ -140,11 +140,6 @@ PlayerSettings:
   preloadedAssets:
   - {fileID: 11400000, guid: 442b734da8c18d34d99221827ca14f1d, type: 2}
   - {fileID: 0}
-  - {fileID: 11400000, guid: 597868d2401066f419c2ffe302637b9a, type: 2}
-  - {fileID: 11400000, guid: 193edbd0753342c4fb4861d6003f1053, type: 2}
-  - {fileID: -7657301429289593502, guid: 1f4372c32bef0944ba5fd810ce86e47d, type: 2}
-  - {fileID: 11400000, guid: a5d1ad538b6bcc64a8d8304db25c0a05, type: 2}
-  - {fileID: 2833567943406698928, guid: d51c0ecc082ad2847842bed8d72234be, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -742,7 +737,8 @@ PlayerSettings:
     Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;LEAPMOTIONCORE_PRESENT
   additionalCompilerArguments: {}
   platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingBackend:
+    Standalone: 1
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   managedStrippingLevel:

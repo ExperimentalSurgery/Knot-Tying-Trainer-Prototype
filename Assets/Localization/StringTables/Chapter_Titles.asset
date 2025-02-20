@@ -16,30 +16,33 @@ MonoBehaviour:
   m_Tables:
   - {fileID: 11400000, guid: 9195cc55a30b4c14cae3059edc2ef86f, type: 2}
   m_Extensions:
-  - rid: 2782521483282874371
+  - rid: 6674618783415402500
   m_Group: String Table
   references:
     version: 2
     RefIds:
-    - rid: 2782521483282874371
-      type: {class: GoogleSheetsExtension, ns: UnityEditor.Localization.Plugins.Google, asm: Unity.Localization.Editor}
+    - rid: 6674618783415402500
+      type: {class: CsvExtension, ns: UnityEditor.Localization.Plugins.CSV, asm: Unity.Localization.Editor}
       data:
         m_Collection: {fileID: 11400000}
-        m_SheetsServiceProvider: {fileID: 11400000, guid: 69fe8e3d3eb158c46a07a949cecd2287, type: 2}
-        m_SpreadsheetId: 1jWIurlJBMtL0z0yfrDsUfYcyVt7MDmmFbIR9Gvf21B4
-        m_SheetId: 1771239698
-        m_Columns:
-        - rid: 2782521483282874373
-        - rid: 2782521483282874375
-        m_RemoveMissingPulledKeys: 1
-    - rid: 2782521483282874373
-      type: {class: KeyColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+        m_ColumnsList:
+        - rid: 6674618783415402501
+        - rid: 6674618783415402502
+        m_ConnectedFile: Assets/Localization/CSV/GreifbAR_KnotbAR Localization -
+          Chapter_Titles.csv
+    - rid: 6674618783415402501
+      type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
       data:
-        m_Column: A
-    - rid: 2782521483282874375
-      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+        m_IncludeId: 1
+        m_IncludeSharedComments: 1
+        m_KeyFieldName: Key
+        m_IdFieldName: Id
+        m_CommentFieldName: Shared Comments
+    - rid: 6674618783415402502
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
       data:
-        m_Column: B
         m_LocaleIdentifier:
           m_Code: de
-        m_IncludeComments: 0
+        m_FieldName: German(de)
+        m_CommentFieldName: German(de) Comments
+        m_IncludeComments: 1
