@@ -1,0 +1,24 @@
+Key,German(de)
+tbd,Noch nicht gesetzt.
+intro_assi_start,"Willkommen zu Knotbar. Hier lernst Du, wie Du einen chirurgischen Knoten knüpfst."
+intro_assi_raisehands,Hebe Deine Hände bitte einmal vor dich.
+intro_assi_welcome,"Gut, deine Hände wurden erkannt."
+intro_assi_basics,"Bevor wir mit der Erläuterung des Mittelfingerknotens beginnen, kurz noch ein paar Grundlagen."
+intro_assi_buttons,Zu deiner Rechten befinden sich einige Tasten. Direkt neben der Anzeige der Knotenschritte.
+intro_assi_stepui_buttons,Du kannst die Tasten mit dem Finger antippen oder einfach länger ansehen. Du erscheint ein kleiner weißer Punkt. Schaue den Knopf an bis die weiße Umrandung ihre Farbe geänder hat. Probiere es mal aus. Deaktiviere die Anzeige der Knotenschritte. Das ist der oberste Knopf. 
+intro_assi_stepui_buttons2,Gut. Du kannst die Anzeige mit dem Knopf ein und ausschalten.
+intro_assi_backbutton,"Ganz oben, neben dem letzten Schritt, ist die ""Ein Schritt zurück""-Taste. Falls es mal zu schnell geht."
+intro_assi_try_backbutton,Probiere die Zurück Taste bitte jetzt aus.
+intro_assi_after_backbutton,"Zu deiner Rechten befinden sich einige Tasten...
+
+Jetzt würde die letzte Information nochmal abgespielt. Sehr gut! Weiter gehts!"
+intro_assi_nextstepsbutton,"Rechts ist auch die der ""Wiederholen""-Taste. Sie startet den aktuellen Schritt von vorne. Schließlich kannst Du die ""Überspringen""-Taste nutzen, um zum nächsten Schritt zu gehen. Das solltest Du nur machen, wenn Du einen Schritt richtig gemacht hast, aber die Anwendung es nicht erkennt. "
+intro_assi_try_nextstepsbutton,"Probiere jetzt die ""Überspringen""-Taste aus."
+intro_assi_trainerhands,"Als letztes noch das Wichtigste. Vor Dir siehst Du die digitalen Trainerhände. Diese machen die Knotenschritte vor, die Du nachmachen und lernen sollst."
+intro_assi_view_gesture,Jetzt machen die Trainer-Hände eine Geste vor. Mache die Geste nach und halte beiden Hände eine Zeit lang in der Endposition.
+intro_assi_after_gesture,Gut. Das hat funktioniert.
+intro_assi_trainerhands_speed,"Wenn die Trainer-Hände zu schnell sind, dann kannst Du zwischen normaler und langsamer Geschwindigkeit umschalten. Drücke dazu die Geschwindigkeitstaste, auf der Normal oder Langsam steht. "
+intro_assi_try_trainerhands_speed,Probiere das aus.
+intro_assi_starttraining,"Gut. Du kannst auch wieder auf normale Geschwindigkeit zurückschalten.
+
+Fangen wir nun an mit Deinem Training."

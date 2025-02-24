@@ -1,0 +1,316 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Mittelfingerknoten Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Mittelfingerknoten
+  m_TableCollectionNameGuidString: 9c3e8db84a4bb604dbec4e87a6e8ec1d
+  m_Entries:
+  - m_Id: 11020050432
+    m_Key: mfk_intro_assi_getactive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666432
+    m_Key: mfk_intro_assi_startposition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666433
+    m_Key: mfk_intro_assi_sequences
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666434
+    m_Key: mfk_intro_assi_tryrepeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666435
+    m_Key: mfk_part1_assi_firststep
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666436
+    m_Key: mfk_part1_assi_tension
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666437
+    m_Key: mfk_part1_assi_tensionlights
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666438
+    m_Key: mfk_part1_assi_stretchrightfingers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666441
+    m_Key: mfk_part1_assi_tension2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666443
+    m_Key: mfk_part1_assi_greenstringonfinger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666444
+    m_Key: mfk_part1_assi_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158432456716
+    m_Key: mfk_part2_assi_demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651008
+    m_Key: mfk_part2_assi_demobend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651009
+    m_Key: mfk_part2_assi_imitate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651010
+    m_Key: mfk_part2_assi_position
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910089355264
+    m_Key: mfk_part2_assi_bend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492608
+    m_Key: mfk_part2_assi_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492609
+    m_Key: mfk_part3_assi_demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492610
+    m_Key: mfk_part3_assi_demostretch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492611
+    m_Key: mfk_part3_assi_demopinch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492612
+    m_Key: mfk_part3_assi_hold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492613
+    m_Key: mfk_part3_assi_imitate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492614
+    m_Key: mfk_part3_assi_stretch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492615
+    m_Key: mfk_part3_assi_pinch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492616
+    m_Key: mfk_part3_assi_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492617
+    m_Key: mfk_part4_assi_demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651011
+    m_Key: mfk_part4_assi_demoletgo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651023
+    m_Key: mfk_part4_assi_demopull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651024
+    m_Key: mfk_part4_assi_demofasten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651025
+    m_Key: mfk_part4_assi_demopress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651026
+    m_Key: mfk_part4_assi_imitate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651027
+    m_Key: mfk_part4_assi_letgo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651028
+    m_Key: mfk_part4_assi_pull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492618
+    m_Key: mfk_part4_assi_fasten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651029
+    m_Key: mfk_part4_assi_press
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651039
+    m_Key: mfk_outro_assi_verygood
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651040
+    m_Key: mfk_outro_assi_feedback
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651041
+    m_Key: mfk_outro_assi_indexfinger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451548184576
+    m_Key: mfk_mistake_gesture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516224
+    m_Key: mfk_mistake_hightension
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516225
+    m_Key: mfk_mistake_lowtension
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516226
+    m_Key: mfk_mistake_corrected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112187060224
+    m_Key: mfk_intro_assi_getactive_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837440
+    m_Key: mfk_intro_assi_startposition_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93068000413540352
+    m_Key: mfk_intro_assi_tryrepeat_short_lvl1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837441
+    m_Key: mfk_intro_assi_tryrepeat_short_lvl2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837442
+    m_Key: mfk_intro_assi_tryrepeat_short_lvl3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837444
+    m_Key: mfk_part1_assi_tension_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837445
+    m_Key: mfk_part1_assi_stretchrightfingers_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837446
+    m_Key: mfk_part1_assi_tension2_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837447
+    m_Key: mfk_part1_assi_success_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837448
+    m_Key: mfk_part2_assi_demo_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837449
+    m_Key: mfk_part2_assi_demobend_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837450
+    m_Key: mfk_part2_assi_imitate_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837451
+    m_Key: mfk_part2_assi_position_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837452
+    m_Key: mfk_part2_assi_bend_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837453
+    m_Key: mfk_part2_assi_success_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837454
+    m_Key: mfk_part3_assi_demo_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837455
+    m_Key: mfk_part3_assi_demostretch_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837456
+    m_Key: mfk_part3_assi_stretch_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837457
+    m_Key: mfk_part3_assi_pinch_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837458
+    m_Key: mfk_part3_assi_success_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837459
+    m_Key: mfk_part4_assi_demo_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837460
+    m_Key: mfk_part4_assi_demoletgo_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837461
+    m_Key: mfk_part4_assi_letgo_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837462
+    m_Key: mfk_part4_assi_pull_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837463
+    m_Key: mfk_part4_assi_fasten_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837464
+    m_Key: mfk_part4_assi_press_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837465
+    m_Key: mfk_outro_assi_verygood_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837466
+    m_Key: mfk_outro_assi_feedback_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837467
+    m_Key: mfk_outro_assi_indexfinger_short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104281985518084096
+    m_Key: mfk_outro_assi_second
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4556038250801397977
+  references:
+    version: 2
+    RefIds:
+    - rid: 4556038250801397977
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1685542414015

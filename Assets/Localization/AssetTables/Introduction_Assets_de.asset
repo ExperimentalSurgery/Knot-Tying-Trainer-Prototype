@@ -1,0 +1,290 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: Introduction_Assets_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 4de38e98376a1df4fa7901352b647740, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1065388445696
+    m_Localized: 07df0f3e3def16b4c9e76b1f11a2f172
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125505
+  - m_Id: 1067288465408
+    m_Localized: dd9ed35fab3a1f540ba043a99d5d8aba
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125506
+  - m_Id: 1069209456640
+    m_Localized: 2dd8414c66e7c9d4da8f743f87fba297
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125507
+  - m_Id: 1071080116224
+    m_Localized: 476573346672ea848b5d1874f3ebdeaf
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125508
+  - m_Id: 1072933998592
+    m_Localized: c06a4ef58f03bbe458d54ad792ed6c5c
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125509
+  - m_Id: 1074804658176
+    m_Localized: 4e7dc5c7ff655994cb75357eecdf584e
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125510
+  - m_Id: 1076645957632
+    m_Localized: 152bb8a9b62d2ec4dab33bd4b6131b5b
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125511
+  - m_Id: 1078634057728
+    m_Localized: 4d3510c2b7debc84f95ea4b5b0d6e009
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125512
+  - m_Id: 1080596992000
+    m_Localized: 8d1263880653ba84cb0541b8e4a193f9
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125513
+  - m_Id: 1082471845888
+    m_Localized: f215b9c20f31c684ab981fd33e9b8c99
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125514
+  - m_Id: 1084388642816
+    m_Localized: 181bb4983e04fcc4caf2ac9e3232b5b2
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125515
+  - m_Id: 30803410414047232
+    m_Localized: 1e533ac7d2d4f894d98a08b5988f81d6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1088431951872
+    m_Localized: bd718cffee3c246469310bfc38e0826d
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125516
+  - m_Id: 1090331971584
+    m_Localized: 3edde0bdf1b024040adf969ecae37376
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125517
+  - m_Id: 1092248768512
+    m_Localized: 223cf0abb13c8de43807c8f2889d0eb6
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125518
+  - m_Id: 1094119428096
+    m_Localized: 489441f210851ec4eae2ce6b6dae0cc7
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125519
+  - m_Id: 17757963624787968
+    m_Localized: 140fc492f9f4fcf45b718f6ee88ef626
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125520
+  - m_Id: 30803419658293248
+    m_Localized: e07b9a26935d7b7419fc125563039143
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803421222768640
+    m_Localized: a64891c73c8e02e49bdcfa22cfe4c8fd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803422787244032
+    m_Localized: a33746bbbffadfb45abe371ec0f576d4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803424464965632
+    m_Localized: e4720da1faefaf0478e05080a4e4bc74
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803426016858112
+    m_Localized: c302c483b7ded1147b122215140619ff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803427585527808
+    m_Localized: b3939f47ab54c6146a631ef5895ce3c8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803429145808896
+    m_Localized: a0985b4b504dc1f4da2673afe918d33c
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803430714478592
+    m_Localized: 4fc305c23e84918488c208de51b233b7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803432283148288
+    m_Localized: 79d80e95f6dbcc145954ebcacbab43ce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89049782124470272
+    m_Localized: 85dce1cb97445ee45af729a7d2d019d0
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125504
+  - m_Id: 99236473678258176
+    m_Localized: dce2ca9329eb6b446bac0f09f2b4adff
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125521
+  - m_Id: 99236474366124032
+    m_Localized: 731018ae0d0a57141bc90e43166dfcae
+    m_Metadata:
+      m_Items:
+      - rid: 4131869364831125522
+  references:
+    version: 2
+    RefIds:
+    - rid: 4131869364831125504
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:09
+        lastModified: 2024-03-14 09:33:09
+        spokenText: Noch nicht gesetzt.
+    - rid: 4131869364831125505
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:09
+        lastModified: 2024-05-06 17:14:22
+        spokenText: "Willkommen zu Knotbar. Hier lernst Du, wie Du einen chirurgischen
+          Knoten kn\xFCpfst."
+    - rid: 4131869364831125506
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:10
+        lastModified: 2024-03-14 09:33:10
+        spokenText: "Hebe Deine H\xE4nde bitte einmal vor dich."
+    - rid: 4131869364831125507
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:10
+        lastModified: 2024-05-06 17:14:22
+        spokenText: "Gut, deine H\xE4nde wurden erkannt."
+    - rid: 4131869364831125508
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:10
+        lastModified: 2024-03-14 09:33:10
+        spokenText: "Bevor wir mit der Erl\xE4uterung des Mittelfingerknotens beginnen,
+          kurz noch ein paar Grundlagen."
+    - rid: 4131869364831125509
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:10
+        lastModified: 2024-05-06 17:14:22
+        spokenText: Zu deiner Rechten befinden sich einige Tasten. Direkt neben der
+          Anzeige der Knotenschritte.
+    - rid: 4131869364831125510
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:10
+        lastModified: 2024-03-14 09:33:10
+        spokenText: "Ganz oben, neben dem letzten Schritt, ist die \"Ein Schritt
+          zur\xFCck\"-Taste. Falls es mal zu schnell geht."
+    - rid: 4131869364831125511
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:10
+        lastModified: 2024-03-14 09:33:10
+        spokenText: "Probiere die Zur\xFCck Taste bitte jetzt aus."
+    - rid: 4131869364831125512
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:10
+        lastModified: 2024-03-14 09:33:10
+        spokenText: "Zu deiner Rechten befinden sich einige Tasten...\n\nJetzt w\xFCrde
+          die letzte Information nochmal abgespielt. Sehr gut! Weiter gehts!"
+    - rid: 4131869364831125513
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:11
+        lastModified: 2024-05-06 17:14:22
+        spokenText: "Rechts ist auch die der \"Wiederholen\"-Taste. Sie startet den
+          aktuellen Schritt von vorne. Schlie\xDFlich kannst Du die \"\xDCberspringen\"-Taste
+          nutzen, um zum n\xE4chsten Schritt zu gehen. Das solltest Du nur machen,
+          wenn Du einen Schritt richtig gemacht hast, aber die Anwendung es nicht
+          erkennt. "
+    - rid: 4131869364831125514
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:11
+        lastModified: 2024-03-14 09:33:11
+        spokenText: "Probiere jetzt die \"\xDCberspringen\"-Taste aus."
+    - rid: 4131869364831125515
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:11
+        lastModified: 2024-05-06 17:14:22
+        spokenText: "Als letztes noch das Wichtigste. Vor Dir siehst Du die digitalen
+          Trainerh\xE4nde. Diese machen die Knotenschritte vor, die Du nachmachen
+          und lernen sollst."
+    - rid: 4131869364831125516
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:11
+        lastModified: 2024-05-06 17:14:22
+        spokenText: Gut. Das hat funktioniert.
+    - rid: 4131869364831125517
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:11
+        lastModified: 2024-05-06 17:14:23
+        spokenText: "Wenn die Trainer-H\xE4nde zu schnell sind, dann kannst Du zwischen
+          normaler und langsamer Geschwindigkeit umschalten. Dr\xFCcke dazu die Geschwindigkeitstaste,
+          auf der Normal oder Langsam steht. "
+    - rid: 4131869364831125518
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:11
+        lastModified: 2024-05-06 17:14:23
+        spokenText: Probiere das aus.
+    - rid: 4131869364831125519
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:12
+        lastModified: 2024-05-06 17:14:23
+        spokenText: "Gut. Du kannst auch wieder auf normale Geschwindigkeit zur\xFCckschalten.\r\n\r\nFangen
+          wir nun an mit Deinem Training."
+    - rid: 4131869364831125520
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:12
+        lastModified: 2024-05-06 17:14:23
+        spokenText: "Jetzt machen die Trainer-H\xE4nde eine Geste vor. Mache die
+          Geste nach und halte beiden H\xE4nde eine Zeit lang in der Endposition."
+    - rid: 4131869364831125521
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:12
+        lastModified: 2024-05-06 17:14:23
+        spokenText: "Du kannst die Tasten mit dem Finger antippen oder einfach l\xE4nger
+          ansehen. Du erscheint ein kleiner wei\xDFer Punkt. Schaue den Knopf an
+          bis die wei\xDFe Umrandung ihre Farbe ge\xE4nder hat. Probiere es mal aus.
+          Deaktiviere die Anzeige der Knotenschritte. Das ist der oberste Knopf. "
+    - rid: 4131869364831125522
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-14 09:33:12
+        lastModified: 2024-05-06 17:14:23
+        spokenText: Gut. Du kannst die Anzeige mit dem Knopf ein und ausschalten.

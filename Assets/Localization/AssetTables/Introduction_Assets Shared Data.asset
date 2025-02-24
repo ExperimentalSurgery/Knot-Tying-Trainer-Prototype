@@ -1,0 +1,238 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Introduction_Assets Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Introduction_Assets
+  m_TableCollectionNameGuidString: 4de38e98376a1df4fa7901352b647740
+  m_Entries:
+  - m_Id: 1065388445696
+    m_Key: intro_assi_start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1067288465408
+    m_Key: intro_assi_raisehands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1069209456640
+    m_Key: intro_assi_welcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1071080116224
+    m_Key: intro_assi_basics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1072933998592
+    m_Key: intro_assi_buttons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1074804658176
+    m_Key: intro_assi_backbutton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1076645957632
+    m_Key: intro_assi_try_backbutton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1078634057728
+    m_Key: intro_assi_after_backbutton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1080596992000
+    m_Key: intro_assi_nextstepsbutton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1082471845888
+    m_Key: intro_assi_try_nextstepsbutton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1084388642816
+    m_Key: intro_assi_trainerhands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1088431951872
+    m_Key: intro_assi_after_gesture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1090331971584
+    m_Key: intro_assi_trainerhands_speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1092248768512
+    m_Key: intro_assi_try_trainerhands_speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1094119428096
+    m_Key: intro_assi_starttraining
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17757963624787968
+    m_Key: intro_assi_view_gesture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803410414047232
+    m_Key: intro_tasklist_welcome_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803419658293248
+    m_Key: intro_tasklist_welcome_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803421222768640
+    m_Key: intro_tasklist_hands_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803422787244032
+    m_Key: intro_tasklist_hands_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803424464965632
+    m_Key: intro_tasklist_buttons_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803426016858112
+    m_Key: intro_tasklist_buttons_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803427585527808
+    m_Key: intro_tasklist_gesture_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803429145808896
+    m_Key: intro_tasklist_gesture_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803430714478592
+    m_Key: intro_tasklist_speed_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30803432283148288
+    m_Key: intro_tasklist_speed_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89049782124470272
+    m_Key: tbd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99236473678258176
+    m_Key: intro_assi_stepui_buttons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99236474366124032
+    m_Key: intro_assi_stepui_buttons2
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items:
+    - rid: 4556038250801397850
+  m_KeyGenerator:
+    rid: 4556038250801397845
+  references:
+    version: 2
+    RefIds:
+    - rid: 4556038250801397845
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1685540974626
+    - rid: 4556038250801397850
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 1065388445696
+          m_TableCodes:
+          - de
+        - m_KeyId: 1067288465408
+          m_TableCodes:
+          - de
+        - m_KeyId: 1069209456640
+          m_TableCodes:
+          - de
+        - m_KeyId: 1071080116224
+          m_TableCodes:
+          - de
+        - m_KeyId: 1072933998592
+          m_TableCodes:
+          - de
+        - m_KeyId: 1074804658176
+          m_TableCodes:
+          - de
+        - m_KeyId: 1076645957632
+          m_TableCodes:
+          - de
+        - m_KeyId: 1078634057728
+          m_TableCodes:
+          - de
+        - m_KeyId: 1080596992000
+          m_TableCodes:
+          - de
+        - m_KeyId: 1082471845888
+          m_TableCodes:
+          - de
+        - m_KeyId: 1084388642816
+          m_TableCodes:
+          - de
+        - m_KeyId: 30803410414047232
+          m_TableCodes:
+          - de
+        - m_KeyId: 1088431951872
+          m_TableCodes:
+          - de
+        - m_KeyId: 1090331971584
+          m_TableCodes:
+          - de
+        - m_KeyId: 1092248768512
+          m_TableCodes:
+          - de
+        - m_KeyId: 1094119428096
+          m_TableCodes:
+          - de
+        - m_KeyId: 17757963624787968
+          m_TableCodes:
+          - de
+        - m_KeyId: 30803419658293248
+          m_TableCodes:
+          - de
+        - m_KeyId: 30803421222768640
+          m_TableCodes:
+          - de
+        - m_KeyId: 30803422787244032
+          m_TableCodes:
+          - de
+        - m_KeyId: 30803424464965632
+          m_TableCodes:
+          - de
+        - m_KeyId: 30803426016858112
+          m_TableCodes:
+          - de
+        - m_KeyId: 30803427585527808
+          m_TableCodes:
+          - de
+        - m_KeyId: 30803429145808896
+          m_TableCodes:
+          - de
+        - m_KeyId: 30803430714478592
+          m_TableCodes:
+          - de
+        - m_KeyId: 30803432283148288
+          m_TableCodes:
+          - de
+        - m_KeyId: 89049782124470272
+          m_TableCodes:
+          - de
+        - m_KeyId: 99236473678258176
+          m_TableCodes:
+          - de
+        - m_KeyId: 99236474366124032
+          m_TableCodes:
+          - de
+        m_TypeString: NMY.GoogleCloudTextToSpeech.LocalizedTextToSpeechItem, com.nmy.googlecloudtexttospeech,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

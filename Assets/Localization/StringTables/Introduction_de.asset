@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Introduction_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 8b54c45a014b4d14aabc06489dbe5bc0, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 516874579968
+    m_Localized: "Willkommen zu Knotbar. Hier lernst Du, wie Du einen chirurgischen
+      Knoten kn\xFCpfst."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1317680459776
+    m_Localized: "Hebe Deine H\xE4nde bitte einmal vor dich."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1740894121984
+    m_Localized: "Gut, deine H\xE4nde wurden erkannt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2022239645696
+    m_Localized: "Bevor wir mit der Erl\xE4uterung des Mittelfingerknotens beginnen,
+      kurz noch ein paar Grundlagen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2360212467712
+    m_Localized: Zu deiner Rechten befinden sich einige Tasten. Direkt neben der
+      Anzeige der Knotenschritte.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2480437997568
+    m_Localized: "Ganz oben, neben dem letzten Schritt, ist die \"Ein Schritt zur\xFCck\"-Taste.
+      Falls es mal zu schnell geht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2587963174912
+    m_Localized: "Probiere die Zur\xFCck Taste bitte jetzt aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2692426510336
+    m_Localized: "Zu deiner Rechten befinden sich einige Tasten...\n\nJetzt w\xFCrde
+      die letzte Information nochmal abgespielt. Sehr gut! Weiter gehts!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2973616844800
+    m_Localized: "Rechts ist auch die der \"Wiederholen\"-Taste. Sie startet den
+      aktuellen Schritt von vorne. Schlie\xDFlich kannst Du die \"\xDCberspringen\"-Taste
+      nutzen, um zum n\xE4chsten Schritt zu gehen. Das solltest Du nur machen, wenn
+      Du einen Schritt richtig gemacht hast, aber die Anwendung es nicht erkennt. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3202382573568
+    m_Localized: "Probiere jetzt die \"\xDCberspringen\"-Taste aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3411770617856
+    m_Localized: "Als letztes noch das Wichtigste. Vor Dir siehst Du die digitalen
+      Trainerh\xE4nde. Diese machen die Knotenschritte vor, die Du nachmachen und
+      lernen sollst."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3669359603712
+    m_Localized: Gut. Das hat funktioniert.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3777874636800
+    m_Localized: "Wenn die Trainer-H\xE4nde zu schnell sind, dann kannst Du zwischen
+      normaler und langsamer Geschwindigkeit umschalten. Dr\xFCcke dazu die Geschwindigkeitstaste,
+      auf der Normal oder Langsam steht. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3915733020672
+    m_Localized: Probiere das aus.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4005684064256
+    m_Localized: "Gut. Du kannst auch wieder auf normale Geschwindigkeit zur\xFCckschalten.\r\n\r\nFangen
+      wir nun an mit Deinem Training."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17758107564912640
+    m_Localized: "Jetzt machen die Trainer-H\xE4nde eine Geste vor. Mache die Geste
+      nach und halte beiden H\xE4nde eine Zeit lang in der Endposition."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11020050432
+    m_Localized: Noch nicht gesetzt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99236666821763072
+    m_Localized: "Du kannst die Tasten mit dem Finger antippen oder einfach l\xE4nger
+      ansehen. Du erscheint ein kleiner wei\xDFer Punkt. Schaue den Knopf an bis
+      die wei\xDFe Umrandung ihre Farbe ge\xE4nder hat. Probiere es mal aus. Deaktiviere
+      die Anzeige der Knotenschritte. Das ist der oberste Knopf. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99236666842734592
+    m_Localized: Gut. Du kannst die Anzeige mit dem Knopf ein und ausschalten.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

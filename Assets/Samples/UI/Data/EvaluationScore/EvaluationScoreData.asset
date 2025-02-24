@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b762e3534edb1b44a89785584ee604f7, type: 3}
+  m_Name: EvaluationScoreData
+  m_EditorClassIdentifier: 
+  scoreDataList:
+  - scoreLetter: A
+    scoreMin: 80
+    scoreMax: 100
+    scoreText: "Sehr gut!<br>Du bist bereit f\xFCr die n\xE4chste Schwierigkeitsstufe."
+    scoreColor: {r: 0.24705882, g: 0.8980392, b: 0.1764706, a: 1}
+  - scoreLetter: B
+    scoreMin: 64
+    scoreMax: 80
+    scoreText: "Gut!<br>Du bist bereit f\xFCr die n\xE4chste Schwierigkeitsstufe."
+    scoreColor: {r: 0.32941177, g: 0.7607844, b: 0.34901962, a: 1}
+  - scoreLetter: C
+    scoreMin: 48
+    scoreMax: 64
+    scoreText: "Okay.<br>Du bist gerado sobereit f\xFCr die n\xE4chste Schwierigkeitsstufe."
+    scoreColor: {r: 0.7077697, g: 0.7607843, b: 0.3294118, a: 1}
+  - scoreLetter: D
+    scoreMin: 32
+    scoreMax: 48
+    scoreText: Naja!<br>Dranbleiben, dann schaffst du das!
+    scoreColor: {r: 0.7607843, g: 0.65391964, b: 0.3294118, a: 1}
+  - scoreLetter: E
+    scoreMin: 16
+    scoreMax: 32
+    scoreText: Uhm!<br>Nicht so dolle!
+    scoreColor: {r: 0.7607843, g: 0.49089384, b: 0.3294118, a: 1}
+  - scoreLetter: F
+    scoreMin: 0
+    scoreMax: 16
+    scoreText: Aaarg!<br>WTF?!
+    scoreColor: {r: 0.7607843, g: 0.33918223, b: 0.3294118, a: 1}

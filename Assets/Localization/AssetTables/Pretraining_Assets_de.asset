@@ -1,0 +1,272 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: Pretraining_Assets_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: b188132f14f78694489f8b37c2d04742, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 91840155648
+    m_Localized: 35c0754951d4e034abe8bd244553886d
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840326
+  - m_Id: 93433991168
+    m_Localized: b8584923b3a0ab94ba025aacce70a033
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840328
+  - m_Id: 95069769728
+    m_Localized: 756507ba7d89db946b351b6ed22d555a
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840330
+  - m_Id: 96713936896
+    m_Localized: 1ab3c2ed74fbe374c8bf0c863d7cd4b1
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840332
+  - m_Id: 98286800896
+    m_Localized: 142858b67f5d1914ea28fa8bb53cee83
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840334
+  - m_Id: 99914190848
+    m_Localized: 5175c2d536d4e444088954be8ac8da2e
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840336
+  - m_Id: 101415751680
+    m_Localized: ee5264ca755a50f4188e460b3332e7d2
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840338
+  - m_Id: 102997004288
+    m_Localized: 55da8c2914e9bcb4fa9fe50c9b59ce90
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840340
+  - m_Id: 104720863232
+    m_Localized: c61d07e83cedd8140bee83f9d2c3932e
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840342
+  - m_Id: 106281144320
+    m_Localized: 8821d8442d2dcc3479571fb4cae9b6de
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840344
+  - m_Id: 107912728576
+    m_Localized: aabfbd1191e720345bdfb4e285cd222d
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840346
+  - m_Id: 109477203968
+    m_Localized: 8613cd9e47774db478e7c9ac17167078
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840348
+  - m_Id: 111033290752
+    m_Localized: ef0564e4913cfa0438658e1c02537c67
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840350
+  - m_Id: 112731983872
+    m_Localized: 194ed89a5ef3a074a9a624199f4f72b1
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840352
+  - m_Id: 114380345344
+    m_Localized: 7265ab36629242440ba93d4e0176242f
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840354
+  - m_Id: 115919654912
+    m_Localized: dd5d67fe0cc5d454a869173e9e8bd58f
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840356
+  - m_Id: 117618348032
+    m_Localized: 5dda439d1224e124284b3b32a83651ee
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840358
+  - m_Id: 119182823424
+    m_Localized: 4edbe255528e7614ca59ff7031ffba59
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840360
+  - m_Id: 120843767808
+    m_Localized: 1324b674b8e543c4f9df8fae2f035d30
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840362
+  - m_Id: 122429214720
+    m_Localized: cad1cb2f523f11641bdc0f5cbd764472
+    m_Metadata:
+      m_Items:
+      - rid: 5524020116102840364
+  - m_Id: 88758581915738112
+    m_Localized: cf5c52e934906eb47a37062d9ae4ca50
+    m_Metadata:
+      m_Items:
+      - rid: 2554456911500279838
+  references:
+    version: 2
+    RefIds:
+    - rid: 2554456911500279838
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-01 08:22:38
+        lastModified: 2024-02-01 08:22:38
+        spokenText: Noch nicht gesetzt.
+    - rid: 5524020116102840326
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:05
+        lastModified: 2024-05-06 17:15:14
+        spokenText: "Wir beginnen mit der Vorbereitung f\xFCr das Knotenbinden. Auf
+          dem Tisch vor dir siehst Du eine Knotenbank. Diese besteht aus zwei Str\xE4ngen,
+          die wir mit einem Knoten zusammenbinden wollen. Der Faden ist farblich
+          in zwei H\xE4lften unterteilt: Die rechte H\xE4lfte ist pink. Die Linke
+          ist Gelb markiert."
+    - rid: 5524020116102840328
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:06
+        lastModified: 2024-02-01 08:22:39
+        spokenText: "F\xFChre den Faden unter beiden Str\xE4ngen hindurch, sodass
+          die Farben auf den korrekten Seiten liegen."
+    - rid: 5524020116102840330
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:06
+        lastModified: 2024-05-06 17:15:14
+        spokenText: Ich mache es Dir vor.
+    - rid: 5524020116102840332
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:07
+        lastModified: 2024-02-01 08:22:39
+        spokenText: Jetzt ziehst Du bitte leicht an beiden Enden, so dass etwas Spannung
+          auf dem Faden ist. Wenn das System die Richtige Menge an Spannung erkennt,
+          geht es weiter.
+    - rid: 5524020116102840334
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:07
+        lastModified: 2024-02-01 08:22:39
+        spokenText: Ich mache es Dir wieder vor.
+    - rid: 5524020116102840336
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:07
+        lastModified: 2024-05-06 17:15:14
+        spokenText: Gut!
+    - rid: 5524020116102840338
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:08
+        lastModified: 2023-06-01 11:08:08
+        spokenText: "Jetzt werde ich den Faden einmal \xFCberkreuz legen, das hei\xDFt
+          einmal um das zu verknotende Material f\xFChren."
+    - rid: 5524020116102840340
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:08
+        lastModified: 2024-02-01 08:22:39
+        spokenText: "Wir binden mit der rechten Hand, daher muss nach dem \xDCberkreuzen
+          das linke Ende unten, n\xE4her an Dir liegen"
+    - rid: 5524020116102840342
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:08
+        lastModified: 2024-05-06 17:15:14
+        spokenText: "Schaue mir zu und lege selbst die beiden Fadenenden \xFCber
+          Kreuz."
+    - rid: 5524020116102840344
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:09
+        lastModified: 2024-02-01 08:22:39
+        spokenText: "Wenn Du fertig bist, zeige mir bitte einen Daumen hoch mit beiden
+          H\xE4nden."
+    - rid: 5524020116102840346
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:09
+        lastModified: 2024-05-06 17:15:15
+        spokenText: Gut! Machen wir weiter.
+    - rid: 5524020116102840348
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:10
+        lastModified: 2024-05-06 17:15:15
+        spokenText: "Nimm jede Fadenh\xE4lfte zwischen Daumen und Zeigefinger. Die
+          losen Fadenenden greifst Du mit den restlichen Fingern."
+    - rid: 5524020116102840350
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:10
+        lastModified: 2024-05-06 17:15:15
+        spokenText: "Kleiner Finger, Ringfinger und Mittelfinger bilden eine R\xF6hre,
+          durch die der Faden l\xE4uft."
+    - rid: 5524020116102840352
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:10
+        lastModified: 2024-05-06 17:15:15
+        spokenText: Wenn Du fertig bist, dann nimm die Endposition ein.
+    - rid: 5524020116102840354
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:11
+        lastModified: 2023-08-24 16:24:51
+        spokenText: Das stimmt noch nicht ganz.
+    - rid: 5524020116102840356
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:11
+        lastModified: 2024-02-01 08:22:40
+        spokenText: Du musst den Faden zwischen Zeigefinger und Daumen greifen.
+    - rid: 5524020116102840358
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:12
+        lastModified: 2024-02-01 08:22:40
+        spokenText: Bitte spanne den Faden etwas mehr, um einen festen Knoten zu
+          erhalten.
+    - rid: 5524020116102840360
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:12
+        lastModified: 2024-02-01 08:22:40
+        spokenText: "Bitte entspanne den Faden etwas, um sp\xE4ter keinen Hautabriss
+          zu verursachen."
+    - rid: 5524020116102840362
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:12
+        lastModified: 2023-06-01 11:08:12
+        spokenText: 'Super! Das hat gut funktioniert!  '
+    - rid: 5524020116102840364
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2023-06-01 11:08:13
+        lastModified: 2024-05-06 17:15:15
+        spokenText: "Dies ist die Ausgangsposition, in der jeder Knoten beginnt.
+          Der blaue Haken, der an deinen H\xE4nden angezeigt wurde, bedeutet, dass
+          Du die richtige Position erreicht hast. Jetzt gehts zur Levelauswahl. Wenn
+          Du erstmals Knoten lernst, dann starte mit Level eins."

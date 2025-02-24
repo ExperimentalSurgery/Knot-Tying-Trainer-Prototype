@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae7f4d33b45ed147851a7f3a7a5fe54, type: 3}
+  m_Name: GestureConfig_zfk_part1_assi_indexturn
+  m_EditorClassIdentifier: 
+  gestureKey: zfk_part1_assi_indexturn
+  bvhPathLeft: /Zeigefinger_BVH/LeftHand_20230914170031
+  bvhPathRight: /Zeigefinger_BVH/RightHand_20230914170031
+  sequenceLeft: 5
+  sequenceRight: 5
+  pointCloudFilePath: PointClouds/Zeigefinger/zfk_part1_assi_indexturn
+  manipulateFPS: 1
+  targetFPS: 15
+  poseMatchingThresholdLeft: 7
+  poseMatchingThresholdRight: 6.5
+  thumbLeftWeight: 1
+  indexLeftWeight: 1
+  middleLeftWeight: 0
+  ringLeftWeight: 0
+  pinkyLeftWeight: 0
+  thumbRightWeight: 1
+  indexRightWeight: 1
+  middleRightWeight: 0
+  ringRightWeight: 0
+  pinkyRightWeight: 0
+  wristXLeftWeight: 0.15
+  wristYLeftWeight: 0.15
+  wristZLeftWeight: 0.5
+  wristXRightWeight: 0.15
+  wristYRightWeight: 0.15
+  wristZRightWeight: 0.5
+  elbowXLeftWeight: 0.1
+  elbowYLeftWeight: 0.1
+  elbowZLeftWeight: 0.3
+  elbowXRightWeight: 0.1
+  elbowYRightWeight: 0.1
+  elbowZRightWeight: 0.3
+  preview: {fileID: 21300000, guid: 5a0080de5aec66945b221db6495b5630, type: 3}

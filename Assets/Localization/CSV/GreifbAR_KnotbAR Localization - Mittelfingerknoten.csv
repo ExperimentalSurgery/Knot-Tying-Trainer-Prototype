@@ -1,0 +1,73 @@
+Key,German(de)
+mfk_intro_assi_getactive,Wir starten den Mittelfingerknoten.
+mfk_intro_assi_startposition,Nimm die Ausgangsposition ein.
+mfk_intro_assi_sequences,"Der Knoten besteht aus Sequenzen ausführen, die immer in Ruhepositionen enden."
+mfk_intro_assi_tryrepeat,"Ziel dieses Levels ist es, diese Sequenzen nachzuknoten."
+mfk_part1_assi_firststep,Wir starten mit der ersten Sequenz.
+mfk_part1_assi_tension,Als erstes bringst und hältst Du mit der linken Hand während des gesamten Knotenvorgangs den Faden unter Spannung.
+mfk_part1_assi_tensionlights,"Ob die Spannung stimmt siehst Du an der Anzeige neben der Knotenbank. Blau ist gute Spannung, gelb ist kritisch und rot zeigt zu starken, gewebeschädigenden Zug."
+mfk_part1_assi_stretchrightfingers,"Jetzt streckst Du Mittel-, Ring- und den kleinen Finger deiner rechten Hand aus. Dabei drehst Du Deine Hand so, dass der linke, gelbe Faden auf Deinem kleinen Finger ruht."
+mfk_part1_assi_tension2,Mache es mir nun nach.
+mfk_part1_assi_greenstringonfinger,Der grüne Faden ruht auf Ihrem kleinen Finger.
+mfk_part1_assi_success,Gut!
+mfk_part2_assi_demo,Jetzt führen wir den pinken Faden mit den Mittelfinger unter den gelben. 
+mfk_part2_assi_demobend,Bewege die rechte Hand zwischen die zwei Fäden. Dann krümme den Mittelfinger der rechten Hand und führe den pinken Faden unter dem gelben hindurch.
+mfk_part2_assi_imitate,Mache es mir nun nach:
+mfk_part2_assi_position,Bewege die rechte Hand zwischen die zwei Fäden.
+mfk_part2_assi_bend,Dann krümme den Mittelfinger der rechten Hand und führe den pinken Faden unter dem gelben hindurch.
+mfk_part2_assi_success,Gut! 
+mfk_part3_assi_demo,Nun führen wir den gelben Faden zwischen Ring- und Mittelfinger und halten ihn fest.
+mfk_part3_assi_demostretch,Strecke den Mittelfinger und drücke so den gelben Faden herunter.
+mfk_part3_assi_demopinch,Klemme den gelben Faden zwischen Deinem Ring- und Mittelfinger ein.
+mfk_part3_assi_hold,In der Position verweilst Du dann bitte.
+mfk_part3_assi_imitate,Mache es mir nun nach.
+mfk_part3_assi_stretch,Strecke den Mittelfinger und drücke so den gelben Faden herunter.
+mfk_part3_assi_pinch,Klemme den gelben Faden zwischen Deinem Ring- und Mittelfinger ein.
+mfk_part3_assi_success,Hervorragend! Gehen wir zum letzten Schritt über.
+mfk_part4_assi_demo,"Das Ziel ist es, den Knoten nun fertig zu stellen. Schaue mir erst einmal zu."
+mfk_part4_assi_demoletgo,Erst Zeigefinger und Daumen los lassen.
+mfk_part4_assi_demopull,Faden durch die Schlaufe ziehen.
+mfk_part4_assi_demofasten,Greife den gelben Faden mit Zeigefinger und Daumen und ziehe den Knoten fest.
+mfk_part4_assi_demopress,Drücke den Knoten fest.
+mfk_part4_assi_imitate,Das sind jetzt viele Schritte aber Du schaffst das. Mache es mir nun nach.
+mfk_part4_assi_letgo,Erst Zeigefinger und Daumen los lassen.
+mfk_part4_assi_pull,Faden durch die Schlaufe ziehen.
+mfk_part4_assi_fasten,Greife den gelben Faden mit Zeigefinger und Daumen und ziehe den Knoten fest.
+mfk_part4_assi_press,Drücke den Knoten fest.
+mfk_outro_assi_verygood,Das war sehr gut!
+mfk_outro_assi_feedback,Schauen wir einmal den Feedbackbogen für den Mittelfingerknoten an.
+mfk_outro_assi_indexfinger,Das war es für diese Übung. Fahren wir fort mit dem Zeigefingerknoten.
+mfk_mistake_gesture,Deine Handhaltung stimmt noch nicht ganz. Sieh dir die Trainerhände noch einmal genau an und mache die Gesten nach.
+mfk_mistake_hightension,Entspanne den Faden ein wenig. Wir haben zu viel Spannung auf der Knotenbank.
+mfk_mistake_lowtension,Spanne den Faden etwas fester. Wir haben zu wenig Spannung auf der Knotenbank.
+mfk_mistake_corrected,"Sehr gut, so passt es!"
+mfk_intro_assi_getactive_short,Fangen wir noch einmal von vorne an.
+mfk_intro_assi_startposition_short,Löse den Knoten aus dem letzten Durchlauf und nimm wieder die Ausgansposition ein.
+mfk_intro_assi_tryrepeat_short_lvl1,"In diesem Level wollen wir besonderes Augenmerk auf die Knotentechnik legen. Achte darauf, die Handbewegungen ordentlich und präzise durchzuführen. Am Ende bekommst Du auch Feedback zu deiner Leistung. Los geht's!"
+mfk_intro_assi_tryrepeat_short_lvl2,"In diesem Level wollen wir vor allem darauf achten, dass die Knotenspannung richtig ist. Behalte die Spannungsanzeige über der Knotenbank im Blick und achte darauf, möglichst im blauen Bereich zu bleiben. Am Ende der Übung bekommst du wieder eine Übersicht über deine Fortschritte. Und nicht vergessen: Die Knotentechnik aus dem letzten Level wird auch mitgemessen. Legen wir los!"
+mfk_intro_assi_tryrepeat_short_lvl3,"In diesem Level wollen wir besonderes darauf achten, den Ablauf in möglichst kurzer Zeit zu absolvieren. Knotentechnik und Fadenspannung bleiben natürlich ebenfalls wichtig, also nicht vergessen! Fangen wir an!"
+mfk_part1_assi_tension_short,Stelle zunächst die Grundspannung her.
+mfk_part1_assi_stretchrightfingers_short,Als nächstes die drei freien Finger ausstrecken.
+mfk_part1_assi_tension2_short,Und jetzt den Faden am kleinen Finger ansetzen.
+mfk_part1_assi_success_short,Sehr gut! Weiter gehts.
+mfk_part2_assi_demo_short,Als nächstes führen wir den pinken Faden unter dem gelben hindurch.
+mfk_part2_assi_demobend_short,So geht es.
+mfk_part2_assi_imitate_short,Mache es mir nun nach:
+mfk_part2_assi_position_short,"Bewege deine rechte Hand zwischen die beiden Fäden, sodass der pinke Faden mittig auf dem Mittelfinger ruht."
+mfk_part2_assi_bend_short,Krümme den Mittelfinger und führe den pinken Faden unter dem gelben hindurch.
+mfk_part2_assi_success_short,Wunderbar! Direkt weiter zum vorletzten Schritt.
+mfk_part3_assi_demo_short,Jetzt wirst du den gelben Faden zwischen Ring- und Mittelfinger führen und dort festhalten.
+mfk_part3_assi_demostretch_short,Hier wieder eine Demonstration.
+mfk_part3_assi_stretch_short,Strecke den Mittelfinger und drücke so den gelben Faden herunter.
+mfk_part3_assi_pinch_short,Klemme den gelben Faden zwischen Deinem Ring- und Mittelfinger ein.
+mfk_part3_assi_success_short,Hervorragend! Gehen wir zum letzten Schritt über.
+mfk_part4_assi_demo_short,Jetzt müssen wir den Knoten nur noch fertig stellen.
+mfk_part4_assi_demoletgo_short,Hier siehst du erst einmal die Abfolge.
+mfk_part4_assi_letgo_short,Erst Zeigefinger und Daumen los lassen.
+mfk_part4_assi_pull_short,Faden durch die Schlaufe ziehen.
+mfk_part4_assi_fasten_short,Greife den gelben Faden mit Zeigefinger und Daumen und ziehe den Knoten fest.
+mfk_part4_assi_press_short,Drücke den Knoten fest.
+mfk_outro_assi_verygood_short,Hervorragend! Das war sehr gut!
+mfk_outro_assi_feedback_short,Schauen wir einmal den Feedbackbogen für den Mittelfingerknoten an.
+mfk_outro_assi_indexfinger_short,Das war es für diese Übung. Fahren wir fort mit dem Zeigefingerknoten.
+mfk_outro_assi_second,"Um den Knoten zu festigen, binden wir nun noch einen zweiten Mittelfingerknoten auf den bereits bestehenden. "

@@ -1,0 +1,347 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mittelfingerknoten_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 9c3e8db84a4bb604dbec4e87a6e8ec1d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 11020050432
+    m_Localized: Wir starten den Mittelfingerknoten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666444
+    m_Localized: Gut!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666443
+    m_Localized: "Der gr\xFCne Faden ruht auf Ihrem kleinen Finger."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666441
+    m_Localized: Mache es mir nun nach.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666438
+    m_Localized: Jetzt streckst Du Mittel-, Ring- und den kleinen Finger deiner rechten
+      Hand aus. Dabei drehst Du Deine Hand so, dass der linke, gelbe Faden auf Deinem
+      kleinen Finger ruht.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666437
+    m_Localized: "Ob die Spannung stimmt siehst Du an der Anzeige neben der Knotenbank.
+      Blau ist gute Spannung, gelb ist kritisch und rot zeigt zu starken, gewebesch\xE4digenden
+      Zug."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666436
+    m_Localized: "Als erstes bringst und h\xE4ltst Du mit der linken Hand w\xE4hrend
+      des gesamten Knotenvorgangs den Faden unter Spannung."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666435
+    m_Localized: Wir starten mit der ersten Sequenz.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666434
+    m_Localized: Ziel dieses Levels ist es, diese Sequenzen nachzuknoten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666433
+    m_Localized: "Der Knoten besteht aus Sequenzen ausf\xFChren, die immer in Ruhepositionen
+      enden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19911727099666432
+    m_Localized: Nimm die Ausgangsposition ein.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651010
+    m_Localized: "Bewege die rechte Hand zwischen die zwei F\xE4den."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651009
+    m_Localized: 'Mache es mir nun nach:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651008
+    m_Localized: "Bewege die rechte Hand zwischen die zwei F\xE4den. Dann kr\xFCmme
+      den Mittelfinger der rechten Hand und f\xFChre den pinken Faden unter dem gelben
+      hindurch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158432456716
+    m_Localized: "Jetzt f\xFChren wir den pinken Faden mit den Mittelfinger unter
+      den gelben. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651011
+    m_Localized: Erst Zeigefinger und Daumen los lassen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651023
+    m_Localized: Faden durch die Schlaufe ziehen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651024
+    m_Localized: Greife den gelben Faden mit Zeigefinger und Daumen und ziehe den
+      Knoten fest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651025
+    m_Localized: "Dr\xFCcke den Knoten fest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651026
+    m_Localized: Das sind jetzt viele Schritte aber Du schaffst das. Mache es mir
+      nun nach.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651027
+    m_Localized: Erst Zeigefinger und Daumen los lassen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651028
+    m_Localized: Faden durch die Schlaufe ziehen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651029
+    m_Localized: "Dr\xFCcke den Knoten fest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651039
+    m_Localized: Das war sehr gut!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651040
+    m_Localized: "Schauen wir einmal den Feedbackbogen f\xFCr den Mittelfingerknoten
+      an."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2158436651041
+    m_Localized: "Das war es f\xFCr diese \xDCbung. Fahren wir fort mit dem Zeigefingerknoten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451548184576
+    m_Localized: "Deine Handhaltung stimmt noch nicht ganz. Sieh dir die Trainerh\xE4nde
+      noch einmal genau an und mache die Gesten nach."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516224
+    m_Localized: Entspanne den Faden ein wenig. Wir haben zu viel Spannung auf der
+      Knotenbank.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516225
+    m_Localized: Spanne den Faden etwas fester. Wir haben zu wenig Spannung auf der
+      Knotenbank.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38753451598516226
+    m_Localized: Sehr gut, so passt es!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910089355264
+    m_Localized: "Dann kr\xFCmme den Mittelfinger der rechten Hand und f\xFChre den
+      pinken Faden unter dem gelben hindurch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492608
+    m_Localized: 'Gut! '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492609
+    m_Localized: "Nun f\xFChren wir den gelben Faden zwischen Ring- und Mittelfinger
+      und halten ihn fest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492610
+    m_Localized: "Strecke den Mittelfinger und dr\xFCcke so den gelben Faden herunter."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492611
+    m_Localized: Klemme den gelben Faden zwischen Deinem Ring- und Mittelfinger ein.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492612
+    m_Localized: In der Position verweilst Du dann bitte.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492613
+    m_Localized: Mache es mir nun nach.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492614
+    m_Localized: "Strecke den Mittelfinger und dr\xFCcke so den gelben Faden herunter."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492615
+    m_Localized: Klemme den gelben Faden zwischen Deinem Ring- und Mittelfinger ein.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492616
+    m_Localized: "Hervorragend! Gehen wir zum letzten Schritt \xFCber."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492617
+    m_Localized: Das Ziel ist es, den Knoten nun fertig zu stellen. Schaue mir erst
+      einmal zu.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38769910135492618
+    m_Localized: Greife den gelben Faden mit Zeigefinger und Daumen und ziehe den
+      Knoten fest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112187060224
+    m_Localized: Fangen wir noch einmal von vorne an.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837440
+    m_Localized: "L\xF6se den Knoten aus dem letzten Durchlauf und nimm wieder die
+      Ausgansposition ein."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837441
+    m_Localized: "In diesem Level wollen wir vor allem darauf achten, dass die Knotenspannung
+      richtig ist. Behalte die Spannungsanzeige \xFCber der Knotenbank im Blick und
+      achte darauf, m\xF6glichst im blauen Bereich zu bleiben. Am Ende der \xDCbung
+      bekommst du wieder eine \xDCbersicht \xFCber deine Fortschritte. Und nicht
+      vergessen: Die Knotentechnik aus dem letzten Level wird auch mitgemessen. Legen
+      wir los!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837442
+    m_Localized: "In diesem Level wollen wir besonderes darauf achten, den Ablauf
+      in m\xF6glichst kurzer Zeit zu absolvieren. Knotentechnik und Fadenspannung
+      bleiben nat\xFCrlich ebenfalls wichtig, also nicht vergessen! Fangen wir an!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837444
+    m_Localized: "Stelle zun\xE4chst die Grundspannung her."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837445
+    m_Localized: "Als n\xE4chstes die drei freien Finger ausstrecken."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837446
+    m_Localized: Und jetzt den Faden am kleinen Finger ansetzen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837447
+    m_Localized: Sehr gut! Weiter gehts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837448
+    m_Localized: "Als n\xE4chstes f\xFChren wir den pinken Faden unter dem gelben
+      hindurch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837449
+    m_Localized: So geht es.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837450
+    m_Localized: 'Mache es mir nun nach:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837451
+    m_Localized: "Bewege deine rechte Hand zwischen die beiden F\xE4den, sodass der
+      pinke Faden mittig auf dem Mittelfinger ruht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837452
+    m_Localized: "Kr\xFCmme den Mittelfinger und f\xFChre den pinken Faden unter
+      dem gelben hindurch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837453
+    m_Localized: Wunderbar! Direkt weiter zum vorletzten Schritt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837454
+    m_Localized: "Jetzt wirst du den gelben Faden zwischen Ring- und Mittelfinger
+      f\xFChren und dort festhalten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837455
+    m_Localized: Hier wieder eine Demonstration.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837456
+    m_Localized: "Strecke den Mittelfinger und dr\xFCcke so den gelben Faden herunter."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837457
+    m_Localized: Klemme den gelben Faden zwischen Deinem Ring- und Mittelfinger ein.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837458
+    m_Localized: "Hervorragend! Gehen wir zum letzten Schritt \xFCber."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837459
+    m_Localized: "Jetzt m\xFCssen wir den Knoten nur noch fertig stellen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837460
+    m_Localized: Hier siehst du erst einmal die Abfolge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837461
+    m_Localized: Erst Zeigefinger und Daumen los lassen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837462
+    m_Localized: Faden durch die Schlaufe ziehen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837463
+    m_Localized: Greife den gelben Faden mit Zeigefinger und Daumen und ziehe den
+      Knoten fest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837464
+    m_Localized: "Dr\xFCcke den Knoten fest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837465
+    m_Localized: Hervorragend! Das war sehr gut!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837466
+    m_Localized: "Schauen wir einmal den Feedbackbogen f\xFCr den Mittelfingerknoten
+      an."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89043112203837467
+    m_Localized: "Das war es f\xFCr diese \xDCbung. Fahren wir fort mit dem Zeigefingerknoten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93068000413540352
+    m_Localized: "In diesem Level wollen wir besonderes Augenmerk auf die Knotentechnik
+      legen. Achte darauf, die Handbewegungen ordentlich und pr\xE4zise durchzuf\xFChren.
+      Am Ende bekommst Du auch Feedback zu deiner Leistung. Los geht's!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104281985518084096
+    m_Localized: 'Um den Knoten zu festigen, binden wir nun noch einen zweiten Mittelfingerknoten
+      auf den bereits bestehenden. '
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
