@@ -24,7 +24,10 @@ This repository contains a prototype implemtation of our mixed reality training 
 - Click play! Make sure to have audio enabled, as the voiceover contains important instructions
 
 # Citation
-Coming sooon
+
+M. Queisner, C. Remde, R. Luzsa and I. M. Sauer, "Immersive Mixed Reality Training Concept for Mastering Surgical Knot-tying," 2025 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW), Saint Malo, France, 2025, pp. 1010-1015, doi: 10.1109/VRW66409.2025.00204.
+
+[Paper](https://doi.org/10.1109/VRW66409.2025.00204)
 
 # License
 
